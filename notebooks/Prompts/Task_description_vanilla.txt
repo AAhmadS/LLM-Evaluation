@@ -1,0 +1,1 @@
+We provide a task where contestants will be given a conversation and some additional facts, and are supposed to provide a continuation to the conversation, the way they see fit. Now we want to assess the quality of their responses.

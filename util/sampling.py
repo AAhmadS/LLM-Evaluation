@@ -69,11 +69,11 @@ def process_dataframe(df, context_function, column, use_response = True):
   def key_stringer(index, context, good, bad):
     # Replace this with your actual key_stringer function implementation
     if good:
-      return f"[Sample_{index}]: "+ context+ "\n[Good_Response] "+good+" [Good_Response]\n[Bad_Response]"+bad+" [Bad_Response]\n"
+      return f"[Sample_{index}]: "+ context+ "\n[Good_Response]"+good+"[/Good_Response]\n[Bad_Response]"+bad+"[/Bad_Response]\n"
     else:
       return f"[Sample_{index}]: "+ context+ "\n"
 
-  output_string = ""
+  output_string = "\nHere are some samples from the dataset:\n"
   values = df[column].unique()
 
   for index,value in enumerate(values):

@@ -13,17 +13,20 @@ from util.similarity_tools import merge_similar_metrics
 from results.save_and_load import save_results
 
 def end_to_end_definement(api_function, 
+                          set_of_tools,
                           parser,
                           run_configuration,
                           dataset, 
                           seed = 42):
   random.seed(seed)
+  
+  # extracting run args
   use_system, use_sample, use_response, number_of_shots, use_temperature, use_restriction = run_configuration.dump()
   
   # extract dataset information
   data = dataset.data
   dataset_name = dataset.dataset_name
-  task_description = dataset.task_description
+  task_description = dataset.definement_task_description
   overall_score_column_name = dataset.overall_score_column_name
   content_column_name = dataset.content_column_name
   
@@ -33,11 +36,11 @@ def end_to_end_definement(api_function,
   # check for expert identity
   system_prompt = generate_system_prompt(task_description, use_system,api_function)
   print("system_prompt:\n", system_prompt)
-  
+    
   # check for using samples
   if use_sample:
     samples_prompt = generate_samples_prompt(data,
-                                             use_response, 
+                                             use_response,
                                              number_of_shots, 
                                              overall_score_column_name, 
                                              content_column_name
@@ -46,7 +49,6 @@ def end_to_end_definement(api_function,
   else:
     samples_prompt = ""
   print("samples_prompt:\n", samples_prompt)
-  
   # finalizing the definition prompt
   definition_chain_of_prompts = format_definition_prompt(system_prompt,
                                                          task_description,
@@ -65,16 +67,16 @@ def end_to_end_definement(api_function,
     temperatures = np.arange(0.5, 0.9, 0.1, dtype=float)
   else:
     temperatures = [0.7] * 5
-
+    
   for temperature in temperatures:
-    metrics.extend(generate_metrics(api_function, parser, definition_chain_of_prompts, temperature))
+    metrics.extend(generate_metrics(api_function, parser, set_of_tools, definition_chain_of_prompts, temperature))
     print(f"---Generated Metrics with Temperature {temperature}---")
 
   new_row = {'metrics': metrics}
   metrics_dataframe = pd.concat([metrics_dataframe, pd.DataFrame([new_row])], ignore_index=True)
   
   print("---Saving Metrics---")
-  save_results("definition",metrics, dataset_name, saving_settings_string)
+  save_results("definition",metrics_dataframe, dataset_name, saving_settings_string)
   
   return metrics
   

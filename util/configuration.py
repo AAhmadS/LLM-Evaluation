@@ -12,4 +12,4 @@ class Configuration:
     
     def to_string(self):
         ordered_config = {key: self.config[key] for key in self.DUMP_ORDER if key in self.config}
-        return str(ordered_config)
+        return "".join([f"{key}={value}-" for key, value in ordered_config.items()])[:-1]

@@ -1,7 +1,0 @@
-name,description,scale
-Relevance,Measures how well the response aligns with the preceding conversation and contributes to the ongoing dialogue.,1 to 5 (1 - Not relevant at all; 5 - Highly relevant)
-Engagement,"Assesses the response's ability to maintain or spark interest in the conversation, encouraging further dialogue.",1 to 5 (1 - Not engaging at all; 5 - Highly engaging)
-Tone Appropriateness,"Assesses whether the tone of the response is respectful, polite, and fitting for the nature of the dialogue and relationship between participants.","Low, Medium, High"
-Coherence,"Determines how logically and smoothly the response fits within the conversational context, including grammatical correctness and clarity.","Low, Medium, High"
-Value Addition,Measures the extent to which the response contributes new and meaningful information or perspective to the conversation.,"Low, Medium, High"
-Informative Value,Evaluates the degree to which the response provides valuable or insightful information that adds depth to the conversation. This includes whether the interesting fact presented is novel or enriching to the dialogue.,1 (Not informative) to 5 (Highly informative)

@@ -19,19 +19,33 @@ class StringFormatter:
             return self.template.format(**values)
         except KeyError as e:
             raise ValueError(f"Missing value for placeholder: {e}") from None
+        
+def retrieve_set_of_tools(api_name):
+    if api_name == "vicuna":
+        return [get_vicuna_metric_prompt, get_vicuna_instruction_prompt, get_vicuna_score_prompt]
+    elif "gpt" in api_name:
+        return [MetricsList, MetricInstruction, MetricScore]
+    else:
+        return [define_metrics, set_metric_instruction, get_metric_score]
 
 ####################GPT-API Prompt Formatting Classes#####################
+class simple_response(BaseModel):
+    response: str = Field(description="your response to the prompt.")
+    
+class role_description(BaseModel):
+    role_description: str = Field(description="description of the role.")
+    
 class AbstractMetric(BaseModel):
     name: str = Field(description="name of the metric.")
     description: str = Field(description="description of the metric. What does it measure?") 
     scale: str = Field(description="scale of the metric. What are the possible values or range?")
-
-class AbstractStep(BaseModel):
-    step_id: str = Field(description="step number.")
-    description: str = Field(description="description of the step. What should be done?")
     
 class MetricsList(BaseModel):
     metrics: List[AbstractMetric] = Field(description="List of metrics to be evaluated.")
+    
+class AbstractStep(BaseModel):
+    step_id: str = Field(description="step number.")
+    description: str = Field(description="description of the step. What should be done?")
     
 class MetricInstruction(BaseModel):
     steps: List[str] = Field(description="List of steps to be evaluated.")

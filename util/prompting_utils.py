@@ -1,6 +1,7 @@
 import pandas as pd 
-from prompts.prompt_template import StringFormatter
+from prompts.prompt_template import StringFormatter, role_description
 from util.sampling import sample_dataframe, get_distinct_random_values, process_dataframe
+
 
 EXPERT_PROMPT = "For each instruction, write a high-quality description about the most capable\
  and suitable agent to answer the instruction. In second person perspective.\
@@ -61,7 +62,7 @@ Role: [Agent Description]\
 \
 Based on these steps, provide a revised version that removes all evaluation criteria while preserving the expert's qualifications and knowledge.\
 \
-[Revised Role]:\n"
+[Revised Role]:"
 
 def generate_system_prompt(task_description, use_system, api_function):
   if use_system:
@@ -70,23 +71,22 @@ def generate_system_prompt(task_description, use_system, api_function):
     system_prompt = "You are a helpful and knowledgeable AI assistant who provides accurate and detailed responses."
   return system_prompt
 
-
 def generate_expert_prompt(task_description, api):
-  task_specific_question = task_description+" You should define metrics for assessing this response."
+  task_specific_question = task_description
   prompt = EXPERT_PROMPT.replace("[Description]", task_specific_question)
-  output = api(None, prompt,temperature = 0)
+  messages = [{"role": "user", "content": prompt}]
+  output = api(messages, role_description,temperature = 0).role_description
   print("Expert Identity generated")
-  verification_prompt = f"Answer the following question with a single word (yes/no):\n Does the provided role description include any terms that could be interpreted as potential metrics for evaluating the quality of a sample related to the given task?\nRole:{output}\nTask: {Task_description}\n Your answer:"
-  if "Yes" in api(None, verification_prompt,temperature = 0):
-    print("Expert Idnetity under revision.")
-    output = api(None, REVISION_PROMPT.replace("[Agent Description]", output).replace("[Description]", task_description),temperature = 0)
-    print("Expert Identity revised.")
+  revision_prompt = REVISION_PROMPT.replace("[Agent Description]", output).replace("[Description]", task_description)
+  messages = [{"role": "user", "content": revision_prompt}]
+  output = api(messages, role_description, temperature = 0).role_description
+  print("Expert Identity revised.")
   return output
 
-def generate_metrics(api_function, parser, definement_prompt, temperature):
+def generate_metrics(api_function, parser, set_of_tools, definement_prompt, temperature):
   list_of_results = []
-  output = api_function(definement_prompt, temperature=temperature)
-  parsed_results = [parser.parse(output)]
+  output = api_function(definement_prompt, set_of_tools, temperature=temperature)
+  parsed_results = [parser(output)]
   return parsed_results
 
 def generate_samples_prompt(data, 
@@ -96,7 +96,7 @@ def generate_samples_prompt(data,
                             content_column_name):
   distinct_values = get_distinct_random_values(data, content_column_name, num_values = number_of_shots)
   sampled_dataframe = sample_dataframe(data, content_column_name, distinct_values, overall_score_column_name)
-  samples_prompt = process_dataframe(sampled_dataframe, lambda x: "[Context] "+ x["context"] + " [Context]\n[Facts] "+ x["fact"]+ " [Facts]", "context", use_response)
+  samples_prompt = process_dataframe(sampled_dataframe, lambda x: "[Context] "+ x["context"] + "[/Context]\n[Facts] "+ x["fact"]+ "[/Facts]", content_column_name, use_response)
   return samples_prompt
   
 def format_definition_prompt(system_prompt,
@@ -104,12 +104,12 @@ def format_definition_prompt(system_prompt,
                             samples_prompt,
                             use_restriction):
     template = StringFormatter("{Description}\n{samples_prompt}\nBased on"\
-      "this information define a set of metrics that we should use to assess the quality of contestants' answers."\
-      "You should provide {_metrics_} as a dictionary in a JSON format. For each metric only include"\
+      "this information define a {_metrics_} that we should use to assess the quality of contestants' answers. "\
+      "For each metric only include "\
       "these entities: Name, Description, Scale")
     user_prompt = template.apply({
       "Description": task_description,
-      "_metrics_": "five metrics" if use_restriction else "the metrics",
+      "_metrics_": "five metrics" if use_restriction else "a set of metrics",
       "samples_prompt": samples_prompt
     })
     return [

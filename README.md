@@ -20,4 +20,6 @@ Selected tasks:
 *  SummEval
 *  SumPubMed
 *  HelpSteer2
+*  CommonGen
+
 

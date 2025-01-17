@@ -1,4 +1,6 @@
 import os
+import json
+from models.metric import serialize_metric
 
 base_path = os.path.dirname(os.path.abspath(__file__))
 def save_results(phase,
@@ -11,4 +13,6 @@ def save_results(phase,
         """
         save_path = os.path.join(base_path, phase, dataset_name)
         os.makedirs(save_path, exist_ok=True)
-        results.to_csv(f"{os.path.join(save_path, setting_name)}.csv")
+        results = [[serialize_metric(metric) for metric in metrics] for metrics in results]
+        json.dump(results, open(os.path.join(save_path, setting_name + ".json"),"w"))
+        # results.to_csv(f"{os.path.join(save_path, setting_name)}.csv")

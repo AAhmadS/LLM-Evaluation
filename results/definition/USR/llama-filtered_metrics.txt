@@ -1,0 +1,156 @@
+Filename: model_name=llama-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Coherence, Description: How well the continuation fits with the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Relevance, Description: How relevant the continuation is to the topic, Scale: 1-5 [Metric]
+
+[Metric]: Name: Creativity, Description: How unique and original the continuation is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Fluency, Description: How natural and smooth the continuation sounds, Scale: 1-5 [Metric]
+
+[Metric]: Name: Accuracy, Description: How accurate the continuation is in terms of facts and information, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Relevance, Description: How well the continuation relates to the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: How logically connected the continuation is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How interesting and engaging the continuation is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Contextual Understanding, Description: How well the contestant understands the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Creativity, Description: How unique and creative the continuation is, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Relevance, Description: How well the response relates to the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: How logical and consistent the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How engaging and interesting the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name:  Fluency, Description: How natural and fluent the response sounds, Scale: 1-5 [Metric]
+
+[Metric]: Name: Contextual Understanding, Description: How well the response demonstrates understanding of the context, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Relevance, Description: How well the response relates to the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: How logical and consistent the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How engaging and interesting the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Fluency, Description: How natural and fluent the response sounds, Scale: 1-5 [Metric]
+
+[Metric]: Name: Contextual Understanding, Description: How well the response demonstrates understanding of the context, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Relevance, Description: How well the response relates to the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: How logical and consistent the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Interestingness, Description: How interesting and engaging the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Contextual Understanding, Description: How well the response demonstrates understanding of the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Response Length, Description: The length of the response in words, Scale: 1-100 [Metric]
+
+
+Filename: model_name=llama-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Relevance, Description: How well the response is related to the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Informativeness, Description: How much new information the response provides, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How engaging and interesting the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Contextual Understanding, Description: How well the response demonstrates understanding of the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: How logically connected the response is, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Relevance, Description: How well the continuation relates to the context and interesting fact, Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: How logical and consistent the continuation is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Fluency, Description: How natural and smooth the language used in the continuation is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How interesting and captivating the continuation is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Semantic Similarity, Description: How similar the continuation is to the context and interesting fact in terms of meaning, Scale: 0-1 [Metric]
+
+[Metric]: Name: Novelty, Description: How unique and original the continuation is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Diversity, Description: How varied and diverse the continuation is in terms of language and ideas, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Relevance, Description: How well the response relates to the context and interesting fact, Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: How logical and consistent the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Fluency, Description: How natural and smooth the language used in the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How interesting and captivating the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Originality, Description: How unique and creative the response is, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Coherence, Description: How well the response follows the context and is logically connected to the previous message, Scale: 1-5 [Metric]
+
+[Metric]: Name: Relevance, Description: How relevant the response is to the topic or question being discussed, Scale: 1-5 [Metric]
+
+[Metric]: Name: Fluency, Description: How natural and smooth the language used in the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How engaging and interesting the response is, including the use of questions, anecdotes, or other interactive elements, Scale: 1-5 [Metric]
+
+[Metric]: Name: Semantic Similarity, Description: How similar the response is in meaning to the context and previous messages, Scale: 0-1 [Metric]
+
+[Metric]: Name: Novelty, Description: How unique and original the response is, including the introduction of new information or perspectives, Scale: 1-5 [Metric]
+
+[Metric]: Name: Diversity, Description: How diverse the response is in terms of vocabulary, syntax, and ideas, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Coherence, Description: How well the response is connected to the context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Relevance, Description: How relevant the response is to the topic, Scale: 1-5 [Metric]
+
+[Metric]: Name: Fluency, Description: How smooth and natural the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How engaging and interesting the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Novelty, Description: How unique and original the response is, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Coherence, Description: How well the response follows the context and conversation flow, Scale: 1-5 [Metric]
+
+[Metric]: Name: Relevance, Description: How relevant the response is to the conversation topic, Scale: 1-5 [Metric]
+
+[Metric]: Name: Fluency, Description: How natural and smooth the response sounds, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How engaging and interesting the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Semantic Similarity, Description: How similar the response is to the context in terms of meaning, Scale: 0-1 [Metric]
+
+[Metric]: Name: Novelty, Description: How unique and original the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Diversity, Description: How diverse the response is in terms of vocabulary and ideas, Scale: 1-5 [Metric]
+
+
+Filename: model_name=llama-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Coherence, Description: How well the response follows the conversation context, Scale: 1-5 [Metric]
+
+[Metric]: Name: Relevance, Description: How relevant the response is to the conversation topic, Scale: 1-5 [Metric]
+
+[Metric]: Name: Fluency, Description: How natural and smooth the response sounds, Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: How engaging and interesting the response is, Scale: 1-5 [Metric]
+
+[Metric]: Name: Informative Value, Description: How informative and insightful the response is, Scale: 1-5 [Metric]
+
+

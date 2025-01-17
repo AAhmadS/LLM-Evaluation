@@ -8,7 +8,7 @@ class Configuration:
         unknown_keys = set(self.config.keys()) - set(self.DUMP_ORDER)
         if unknown_keys:
             raise ValueError(f"Found keys in config that are not in DUMP_ORDER: {unknown_keys}")
-        return [self.config[key] for key in self.DUMP_ORDER if key in self.config if key!="model_name"]
+        return [self.config[key] for key in self.DUMP_ORDER if key in self.config]
     
     def to_string(self):
         ordered_config = {key: self.config[key] for key in self.DUMP_ORDER if key in self.config}

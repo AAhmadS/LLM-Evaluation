@@ -3,8 +3,14 @@ import os
 import pandas as pd
 from typing import List
 from models.metric import Metric
-from prompts.prompt_template import MetricsList, define_metrics
- 
+from prompts.prompt_template import (
+MetricsList, 
+define_metrics,
+RoleDescription,
+role_description_output
+)
+
+#################Definement api parsers#######################
 def gpt_api_parser(metrics: MetricsList):
   metrics_list = []
   for abs_metric in metrics.metrics:
@@ -37,6 +43,38 @@ def gen_api_parser(api_response: str):
   metrics_list  = define_metrics(list_of_string_metrics)
   return metrics_list 
 
+def llama_api_parser(api_response: dict):
+  metrics_list = []
+  metrics = json.loads(api_response["choices"][0]["message"]["tool_calls"][0]["function"]["arguments"])["metrics"]
+  if type(metrics) == str:
+    metrics = json.loads(metrics)
+  for metric_dict in metrics:    
+    metric = Metric(**metric_dict["metric"])
+    metrics_list.append(metric)
+  return metrics_list
+
+##################Idnetity api parsers########################
+def gpt_identity_parser(api_response: RoleDescription):
+  return api_response.role_description
+
+def vicuna_identity_parser(api_response: str):
+  structured_response = json.loads(api_response)
+  role_description = structured_response["expert identity"]
+  return role_description
+
+def llama_identity_parser(api_response: dict):
+  try:
+    role_description = json.loads(api_response["choices"][0]["message"]["tool_calls"][0]["function"]["arguments"])["role_description"]
+    return role_description
+  except:
+      role_description = api_response["choices"][0]["message"]["content"]
+      return role_description
+
+def gen_identity_parser(api_response: str):
+  role_description = extract_arguments(api_response)
+  role_description = role_description_output(role_description)
+  return role_description
+###################Parser classes#############################
 class DefinitionParser:
   
   def __init__(self, api_name):
@@ -45,10 +83,31 @@ class DefinitionParser:
   def get_parser(self, api_name):
     if api_name == 'vicuna':
       return vicuna_api_parser
+    elif api_name == 'mixtral':
+      return vicuna_api_parser
     elif 'gpt' in api_name:
       return gpt_api_parser
+    elif 'llama' in api_name:
+      return llama_api_parser
     else:
       return gen_api_parser  
+
+class IdentityParser:
+  
+  def __init__(self, api_name):
+    self.parser =  self.get_parser(api_name)
+    
+  def get_parser(self, api_name):
+    if api_name == 'vicuna':
+      return vicuna_identity_parser
+    elif 'gpt' in api_name:
+      return gpt_identity_parser
+    elif 'llama' in api_name:
+      return llama_identity_parser
+    elif api_name == 'mixtral':
+      return vicuna_identity_parser
+    else:
+      return gen_identity_parser  
 
 def extract_json_from_content(content):
   """Extracts JSON data from a text file."""

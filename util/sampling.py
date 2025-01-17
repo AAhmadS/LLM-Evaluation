@@ -54,7 +54,7 @@ def sample_dataframe(df, context_column, values, quality_column):
     return sampled_df
 
 
-def process_dataframe(df, context_function, column, use_response = True):
+def process_dataframe(df, context_function, column, use_response = True, response_column = "response"):
   """
   Processes a DataFrame, creates a list of dictionaries, and returns a string.
 
@@ -79,8 +79,8 @@ def process_dataframe(df, context_function, column, use_response = True):
   for index,value in enumerate(values):
       subset = df[df[column] == value]
       context = context_function(df.iloc[2*index])
-      good = subset.iloc[1]["response"]
-      bad = subset.iloc[0]["response"]
+      good = subset.iloc[1][response_column]
+      bad = subset.iloc[0][response_column]
       index = subset.index[0]
 
       output_string += key_stringer(index,context, good, bad) if use_response else key_stringer(index,context, None, None)

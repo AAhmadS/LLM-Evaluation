@@ -9,6 +9,7 @@ def load_data_info(info_dir, data_name):
              "default_task_description": pickle.load(open(os.path.join(loading_dir,"default_task_description.pkl"),"rb")),
              "overall_score_column_name": pickle.load(open(os.path.join(loading_dir,"overall_score_column_name.pkl"),"rb")),
              "content_column_name": pickle.load(open(os.path.join(loading_dir,"content_column_name.pkl"),"rb")),
+             "response_column_name": pickle.load(open(os.path.join(loading_dir,"response_column_name.pkl"), "rb")),
              "scoring_task_description": pickle.load(open(os.path.join(loading_dir,"scoring_task_description.pkl"),"rb"))
             }
     return infos
@@ -30,4 +31,5 @@ class Dataset:
         self.dataset_description = information["default_task_description"]
         self.overall_score_column_name = information["overall_score_column_name"]
         self.content_column_name = information["content_column_name"]
+        self.response_column_name = information["response_column_name"]
         self.scoring_task_description = information["scoring_task_description"]

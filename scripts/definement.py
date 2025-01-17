@@ -18,7 +18,7 @@ from models.api_loader import load_api
 from data.data_loader import Dataset
 from models.runners import end_to_end_definement
 from util.configuration import Configuration
-from util.formatting_tools import DefinitionParser
+from util.formatting_tools import DefinitionParser, IdentityParser
 from prompts.prompt_template import retrieve_set_of_tools
 #################Main function######################
 def definement():
@@ -58,13 +58,17 @@ def definement():
     set_of_tools = retrieve_set_of_tools(args.api)
     
     print('Loading the parser...')
-    parser = DefinitionParser(args.api).parser
+    definition_parser = DefinitionParser(args.api).parser
+    identity_parser = IdentityParser(args.api).parser
+    set_of_tools["expert_identity_parser"] = identity_parser
+    set_of_tools["definement_parser"] = definition_parser
+    
+    
         
     print('Running the runner with the data and API...')
     
     metrics = end_to_end_definement(api_function, 
-                                    set_of_tools[0],
-                                    parser,
+                                    set_of_tools,
                                     configuration,
                                     dataset, 
                                     seed = 42)

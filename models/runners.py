@@ -14,14 +14,13 @@ from results.save_and_load import save_results
 
 def end_to_end_definement(api_function, 
                           set_of_tools,
-                          parser,
                           run_configuration,
                           dataset, 
                           seed = 42):
   random.seed(seed)
   
   # extracting run args
-  use_system, use_sample, use_response, number_of_shots, use_temperature, use_restriction = run_configuration.dump()
+  model_name, use_system, use_sample, use_response, number_of_shots, use_temperature, use_restriction = run_configuration.dump()
   
   # extract dataset information
   data = dataset.data
@@ -29,12 +28,15 @@ def end_to_end_definement(api_function,
   task_description = dataset.definement_task_description
   overall_score_column_name = dataset.overall_score_column_name
   content_column_name = dataset.content_column_name
-  
+  response_column_name = dataset.response_column_name
   # settings_string for saving in the end
   saving_settings_string = run_configuration.to_string()
 
   # check for expert identity
-  system_prompt = generate_system_prompt(task_description, use_system,api_function)
+  system_prompt = generate_system_prompt(model_name,
+                                         dataset_name,
+                                         task_description, use_system,
+                                         api_function, set_of_tools["expert_identity_structure"], set_of_tools["expert_identity_parser"])
   print("system_prompt:\n", system_prompt)
     
   # check for using samples
@@ -43,7 +45,8 @@ def end_to_end_definement(api_function,
                                              use_response,
                                              number_of_shots, 
                                              overall_score_column_name, 
-                                             content_column_name
+                                             content_column_name,
+                                             response_column_name
                                              )
 
   else:
@@ -64,19 +67,19 @@ def end_to_end_definement(api_function,
   # check for using temperature (when generating the metrics with different temperatures)
   if use_temperature:
     # list of temperatures to use
-    temperatures = np.arange(0.5, 0.9, 0.1, dtype=float)
+    temperatures = np.arange(0.5, 1, 0.1, dtype=float)
   else:
-    temperatures = [0.7] * 5
+    temperatures = [0.7]
     
   for temperature in temperatures:
-    metrics.extend(generate_metrics(api_function, parser, set_of_tools, definition_chain_of_prompts, temperature))
+    metrics.extend(generate_metrics(api_function, set_of_tools["definement_parser"], set_of_tools["definement"], definition_chain_of_prompts, temperature))
     print(f"---Generated Metrics with Temperature {temperature}---")
 
-  new_row = {'metrics': metrics}
-  metrics_dataframe = pd.concat([metrics_dataframe, pd.DataFrame([new_row])], ignore_index=True)
+  # new_row = {'metrics': metrics}
+  # metrics_dataframe = pd.concat([metrics_dataframe, pd.DataFrame([new_row])], ignore_index=True)
   
   print("---Saving Metrics---")
-  save_results("definition",metrics_dataframe, dataset_name, saving_settings_string)
+  save_results("definition",metrics, dataset_name, saving_settings_string)
   
   return metrics
   

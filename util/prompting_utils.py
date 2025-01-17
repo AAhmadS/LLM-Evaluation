@@ -1,6 +1,8 @@
 import pandas as pd 
-from prompts.prompt_template import StringFormatter, role_description
+from prompts.prompt_template import StringFormatter, RoleDescription
 from util.sampling import sample_dataframe, get_distinct_random_values, process_dataframe
+import os
+import pickle
 
 
 EXPERT_PROMPT = "For each instruction, write a high-quality description about the most capable\
@@ -64,23 +66,48 @@ Based on these steps, provide a revised version that removes all evaluation crit
 \
 [Revised Role]:"
 
-def generate_system_prompt(task_description, use_system, api_function):
+def generate_system_prompt(model_name, dataset_name,
+                           task_description, use_system, 
+                           api_function, response_tool, parsing_tool):
   if use_system:
-    system_prompt = generate_expert_prompt(task_description, api_function)
+    system_prompt = generate_expert_prompt(model_name, dataset_name,
+                                           task_description, 
+                                           api_function, response_tool, parsing_tool)
   else:
     system_prompt = "You are a helpful and knowledgeable AI assistant who provides accurate and detailed responses."
   return system_prompt
 
-def generate_expert_prompt(task_description, api):
+def generate_expert_prompt(model_name, dataset_name,
+                           task_description, 
+                           api, response_tool, parsing_tool):
+  # Generate a cache file name based on the api function name
+  cache_file_name = f"results/cached_system_prompt/{model_name}_{dataset_name}_cache.pkl"
+  
+  # Check if the cache file exists
+  if os.path.exists(cache_file_name):
+    with open(cache_file_name, 'rb') as cache_file:
+      cached_result = pickle.load(cache_file)
+      print("Loaded cached result.")
+      return cached_result
+  
+  # initial generation
   task_specific_question = task_description
   prompt = EXPERT_PROMPT.replace("[Description]", task_specific_question)
   messages = [{"role": "user", "content": prompt}]
-  output = api(messages, role_description,temperature = 0).role_description
+  output = parsing_tool(api(messages, response_tool, temperature=0))
   print("Expert Identity generated")
+  
+  # revision (is essential, since we aim to avoid any possible biases)
   revision_prompt = REVISION_PROMPT.replace("[Agent Description]", output).replace("[Description]", task_description)
   messages = [{"role": "user", "content": revision_prompt}]
-  output = api(messages, role_description, temperature = 0).role_description
-  print("Expert Identity revised.")
+  output = parsing_tool(api(messages, response_tool, temperature=0))
+  print("Expert Identity revised.", output)
+  
+  # Cache the result
+  with open(cache_file_name, 'wb') as cache_file:
+    pickle.dump(output, cache_file)
+    print("Cached the result.")
+  
   return output
 
 def generate_metrics(api_function, parser, set_of_tools, definement_prompt, temperature):
@@ -93,10 +120,14 @@ def generate_samples_prompt(data,
                             use_response, 
                             number_of_shots, 
                             overall_score_column_name, 
-                            content_column_name):
+                            content_column_name,
+                            response_column_name):
   distinct_values = get_distinct_random_values(data, content_column_name, num_values = number_of_shots)
   sampled_dataframe = sample_dataframe(data, content_column_name, distinct_values, overall_score_column_name)
-  samples_prompt = process_dataframe(sampled_dataframe, lambda x: "[Context] "+ x["context"] + "[/Context]\n[Facts] "+ x["fact"]+ "[/Facts]", content_column_name, use_response)
+  context_function = lambda x: "[Context] "+ x["context"] + "[/Context]"
+  if overall_score_column_name == "overall":
+    context_function = lambda x: "[Context] "+ x["context"] + "[/Context]\n[Facts] "+ x["fact"]+ "[/Facts]"
+  samples_prompt = process_dataframe(sampled_dataframe, context_function, content_column_name, use_response, response_column_name)
   return samples_prompt
   
 def format_definition_prompt(system_prompt,

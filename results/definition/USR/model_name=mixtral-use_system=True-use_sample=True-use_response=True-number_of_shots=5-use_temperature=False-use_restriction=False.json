@@ -1,1 +1,32 @@
-[[{"name": "Relevance", "description": "Measures how well the continuation is connected to the context and the preceding conversation. The response should be logically and contextually related to the topic at hand.", "scale": "Binary (0 or 1) or a continuous scale (e.g., 0-1)", "instruction": ""}, {"name": "Fluency", "description": "Measures the grammatical correctness and readability of the continuation. The response should be free from grammatical errors and easy to read and understand.", "scale": "Binary (0 or 1) or a continuous scale (e.g., 0-1)", "instruction": ""}, {"name": "Coherence", "description": "Measures the logical flow and coherence of the continuation. The response should be well-connected and structured, with clear and consistent ideas.", "scale": "Binary (0 or 1) or a continuous scale (e.g., 0-1)", "instruction": ""}, {"name": "Creativity", "description": "Measures the originality and uniqueness of the continuation. The response should be engaging and interesting, avoiding clich\u00e9s and generic statements.", "scale": "Continuous scale (e.g., 1-5)", "instruction": ""}, {"name": "Engagement", "description": "Measures the ability of the continuation to spark interest and maintain the conversation. The response should encourage further dialogue and avoid abrupt ends or off-topic remarks.", "scale": "Continuous scale (e.g., 1-5)", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the continuation is related to the context and the conversation flow. A relevant response should be a natural progression from the context and maintain a clear connection to the topic.",
+        "scale": "0 (not relevant) to 10 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical consistency and grammatical correctness of the continuation. A coherent response should be easy to understand, grammatically correct, and logically consistent.",
+        "scale": "0 (incoherent) to 10 (highly coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Determines whether the continuation encourages further conversation and sustains the user's interest. An engaging response should show enthusiasm, open-mindedness, and a genuine interest in the conversation.",
+        "scale": "0 (not engaging) to 10 (highly engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Informativeness",
+        "description": "Assesses the amount of new, relevant, and interesting information provided in the continuation. An informative response should offer valuable insights, facts, or anecdotes that contribute to the conversation.",
+        "scale": "0 (not informative) to 10 (highly informative)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Evaluates the originality and imaginative aspects of the continuation. A creative response should demonstrate an innovative and thought-provoking perspective on the topic.",
+        "scale": "0 (not creative) to 10 (highly creative)",
+        "instruction": ""
+    }
+]

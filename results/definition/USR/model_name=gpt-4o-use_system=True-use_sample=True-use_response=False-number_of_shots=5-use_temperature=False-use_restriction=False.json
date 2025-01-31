@@ -1,1 +1,44 @@
-[[{"name": "Relevance", "description": "Measures how well the response aligns with the given context and the interesting fact provided. It assesses whether the continuation logically follows the preceding conversation and relates to the topic at hand.", "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.", "instruction": ""}, {"name": "Engagement", "description": "Evaluates the ability of the response to engage the conversation partner, encouraging further discussion or eliciting interest. It considers how likely the response is to prompt a meaningful exchange.", "scale": "1 to 5, where 1 is not engaging and 5 is highly engaging.", "instruction": ""}, {"name": "Coherence", "description": "Assesses the logical flow and clarity of the response. It checks whether the continuation is easy to understand and follows a logical sequence of ideas without abrupt shifts or confusion.", "scale": "1 to 5, where 1 is incoherent and 5 is highly coherent.", "instruction": ""}, {"name": "Creativity", "description": "Measures the originality and inventiveness of the response. It evaluates whether the continuation introduces novel ideas or perspectives that enrich the conversation.", "scale": "1 to 5, where 1 is not creative and 5 is highly creative.", "instruction": ""}, {"name": "Politeness", "description": "Evaluates the tone and manner of the response, ensuring it is respectful and considerate. It assesses whether the language used is appropriate and maintains a positive conversational atmosphere.", "scale": "1 to 5, where 1 is impolite and 5 is highly polite.", "instruction": ""}, {"name": "Fact Utilization", "description": "Assesses how effectively the interesting fact provided is incorporated into the response. It evaluates whether the fact is used in a meaningful way that enhances the conversation.", "scale": "1 to 5, where 1 is not utilized and 5 is effectively utilized.", "instruction": ""}, {"name": "Grammar and Syntax", "description": "Evaluates the grammatical correctness and sentence structure of the response. It checks for errors in grammar, punctuation, and syntax that might affect readability.", "scale": "1 to 5, where 1 is poor grammar and 5 is excellent grammar.", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the continuation aligns with the context of the conversation. It assesses whether the response is pertinent and directly related to the preceding dialogue.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates the ability of the continuation to sustain interest and encourage further interaction. It assesses if the response prompts additional questions or comments.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and clarity of the continuation. It considers whether the response is understandable and follows a logical sequence without abrupt topic changes.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Informative Value",
+        "description": "Measures the amount of new, useful, or interesting information provided in the continuation. It gauges whether the response adds value to the conversation with facts or insights.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Tone Appropriateness",
+        "description": "Evaluates whether the tone of the continuation matches the tone of the conversation context. It considers whether the response maintains a consistent mood or sentiment.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Personalization",
+        "description": "Assesses the extent to which the continuation reflects personal input or customization based on the context or the participants involved.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Grammar and Syntax",
+        "description": "Measures the correctness of the continuation in terms of grammar, punctuation, and sentence structure. It ensures that the response is linguistically sound.",
+        "scale": "Poor, Fair, Good, Excellent",
+        "instruction": ""
+    }
+]

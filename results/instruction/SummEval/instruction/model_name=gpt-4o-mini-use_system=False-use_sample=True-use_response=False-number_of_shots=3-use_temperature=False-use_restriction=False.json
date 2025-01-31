@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the summary captures the main topics and events of the original article.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": "\n1- Read the original news article carefully to understand its main topics and events.\n2- Read the contestant's summary thoroughly.\n3- Evaluate the summary based on how well it captures the main topics and events of the original article.\n4- Assign a relevance score from 1 to 5 based on the evaluation.\n5- Provide a brief justification for the assigned score."
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the clarity of the summary, including grammar, syntax, and overall readability.",
+        "scale": "1 (very unclear) to 5 (very clear)",
+        "instruction": "\n1- Read the summary carefully to assess its overall clarity.\n2- Evaluate the grammar and syntax used in the summary.\n3- Consider the overall readability of the summary, including sentence structure and word choice.\n4- Assign a clarity score from 1 to 5 based on your evaluation.\n5- Provide a brief justification for the score you assigned."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the brevity of the summary while retaining essential information from the original article.",
+        "scale": "1 (too verbose) to 5 (perfectly concise)",
+        "instruction": "\n1- Read the contestant's summary carefully.\n2- Identify the key points and essential information from the original article.\n3- Compare the summary to the original article to determine if it includes all necessary information.\n4- Assess the length of the summary to see if it is overly verbose or if it maintains brevity.\n5- Rate the summary on a scale from 1 to 5 based on its conciseness."
+    },
+    {
+        "name": "Coverage",
+        "description": "Determines how well the summary covers all key points from the original article without missing significant details.",
+        "scale": "1 (misses most key points) to 5 (covers all key points)",
+        "instruction": "\n1- Read the original news article carefully to identify all key points and significant details.\n2- Read the contestant's summary to evaluate how well it captures the key points from the original article.\n3- Assign a score from 1 to 5 based on the coverage of key points in the summary.\n4- Provide feedback on the summary, highlighting any key points that were missed or particularly well-covered.\n5- Document the score and feedback for each contestant's summary."
+    },
+    {
+        "name": "Engagement",
+        "description": "Rates how engaging or interesting the summary is for the reader, including the use of language and narrative style.",
+        "scale": "1 (not engaging) to 5 (very engaging)",
+        "instruction": "\n1- Read the summary provided by the contestant.\n2- Evaluate the summary based on the engagement metric, considering factors such as language, narrative style, and overall interest.\n3- Assign a score from 1 to 5 based on your evaluation.\n4- Provide a brief justification for the score you assigned."
+    },
+    {
+        "name": "Objectivity",
+        "description": "Measures the neutrality of the summary, assessing whether it presents the information without bias or subjective opinions.",
+        "scale": "1 (highly biased) to 5 (completely objective)",
+        "instruction": "\n1- Read the contestant's summary carefully.\n2- Identify any subjective language or opinions present in the summary.\n3- Assess the overall tone of the summary to determine if it maintains neutrality.\n4- Rate the summary on a scale from 1 to 5 based on the level of objectivity, where 1 is highly biased and 5 is completely objective.\n5- Provide a brief justification for the rating given."
+    }
+]

@@ -1,0 +1,40 @@
+[
+    [
+        {
+            "name": "Coherence",
+            "description": "Measures how logically consistent and understandable the continuation is within the context of the original conversation.",
+            "scale": "Low, Medium, High",
+            "instruction": ""
+        },
+        {
+            "name": "Relevance",
+            "description": "Assesses how closely the response aligns with the topic and context of the original dialogue and the interesting fact provided.",
+            "scale": "Irrelevant, Somewhat Relevant, Highly Relevant",
+            "instruction": ""
+        },
+        {
+            "name": "Creativity",
+            "description": "Evaluates the uniqueness and originality of the response compared to typical conversational continuations.",
+            "scale": "Low Creativity, Moderate Creativity, High Creativity",
+            "instruction": ""
+        },
+        {
+            "name": "Engagement Level",
+            "description": "Determines the extent to which the response invites further dialogue or interaction from the other party.",
+            "scale": "Low Engagement, Moderate Engagement, High Engagement",
+            "instruction": ""
+        },
+        {
+            "name": "Empathy",
+            "description": "Measures the degree to which the response demonstrates an understanding of the emotions and perspectives of the other participant in the conversation.",
+            "scale": "Low Empathy, Moderate Empathy, High Empathy",
+            "instruction": ""
+        },
+        {
+            "name": "Clarity",
+            "description": "Assesses how clearly the ideas are expressed in the continuation, allowing for easy understanding by the audience.",
+            "scale": "Unclear, Somewhat Clear, Very Clear",
+            "instruction": ""
+        }
+    ]
+]

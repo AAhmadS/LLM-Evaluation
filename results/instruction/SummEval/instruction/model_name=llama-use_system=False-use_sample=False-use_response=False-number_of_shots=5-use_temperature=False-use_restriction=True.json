@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Informativeness",
+        "description": "The degree to which the summary presents useful and relevant information from the original article.",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Coherence",
+        "description": "The degree to which the summary is well-organized, logically connected, and easy to follow.",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Fluency",
+        "description": "The degree to which the summary is grammatically correct, clear, and concise.",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Relevance",
+        "description": "The degree to which the summary accurately reflects the content and main points of the original article.",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Creativity",
+        "description": "The degree to which the summary presents a unique and original perspective on the content of the original article.",
+        "scale": "1-5",
+        "instruction": null
+    }
+]

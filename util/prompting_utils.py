@@ -2,7 +2,7 @@ import pandas as pd
 from prompts.prompt_template import StringFormatter, RoleDescription
 from util.sampling import sample_dataframe, get_distinct_random_values, process_dataframe
 import os
-import pickle
+import json
 
 
 EXPERT_PROMPT = "For each instruction, write a high-quality description about the most capable\
@@ -47,25 +47,30 @@ EXPERT_PROMPT = "For each instruction, write a high-quality description about th
 [Instruction]: [Description]\n\
 [Agent Description]: "
 
-REVISION_PROMPT = "We have defined a role description for the following mentioned task. Let's revise this role description to remove any evaluation metrics:\
-1. First, read the task description carefully to understand its core objectives and requirements\
-2. Second, analyze the role description thoroughly to identify any sentences containing keywords or phrases that suggest metrics, benchmarks, or evaluation criteria\
-3. For each identified sentence, determine the appropriate action:\
-   - Remove sentences focused exclusively on metrics or evaluation\
-   - Modify sentences that combine essential expertise with evaluation criteria\
-   - Preserve sentences that describe qualifications and knowledge\
-4. Rewrite the description while:\
-   - Maintaining the original expertise level and authoritative tone\
-   - Emphasizing the agent's knowledge and capabilities\
-   - Ensuring clarity and coherence in the revised text\
-5. Review the final description to confirm it retains the expert's qualifications while excluding evaluation elements\
-Task: [Description]\
-Role: [Agent Description]\
-\
-Based on these steps, provide a revised version that removes all evaluation criteria while preserving the expert's qualifications and knowledge.\
-\
-[Revised Role]:"
+INSTRUCTION_PROMPT = '''{Description}
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
 
+Evaluation Criteria:
+{Metric}
+Evaluation Steps:
+'''
+
+SCORING_PROMPT = """
+{Description}
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+Evaluation Criteria:
+{Metric}
+
+Evaluation Steps:
+{Steps}
+{Additional_info}
+Sample of Evaluation:
+{Sample}
+Evaluation of {Metric_name}:\n
+"""
+
+#################Generation functions##########################
 def generate_system_prompt(model_name, dataset_name,
                            task_description, use_system, 
                            api_function, response_tool, parsing_tool):
@@ -81,12 +86,12 @@ def generate_expert_prompt(model_name, dataset_name,
                            task_description, 
                            api, response_tool, parsing_tool):
   # Generate a cache file name based on the api function name
-  cache_file_name = f"results/cached_system_prompt/{model_name}_{dataset_name}_cache.pkl"
+  cache_file_name = f"results/cached_system_prompt/{model_name}_{dataset_name}_cache.json"
   
   # Check if the cache file exists
   if os.path.exists(cache_file_name):
-    with open(cache_file_name, 'rb') as cache_file:
-      cached_result = pickle.load(cache_file)
+    with open(cache_file_name, 'r') as cache_file:
+      cached_result = json.load(cache_file)
       print("Loaded cached result.")
       return cached_result
   
@@ -97,17 +102,10 @@ def generate_expert_prompt(model_name, dataset_name,
   output = parsing_tool(api(messages, response_tool, temperature=0))
   print("Expert Identity generated")
   
-  # revision (is essential, since we aim to avoid any possible biases)
-  revision_prompt = REVISION_PROMPT.replace("[Agent Description]", output).replace("[Description]", task_description)
-  messages = [{"role": "user", "content": revision_prompt}]
-  output = parsing_tool(api(messages, response_tool, temperature=0))
-  print("Expert Identity revised.", output)
-  
   # Cache the result
-  with open(cache_file_name, 'wb') as cache_file:
-    pickle.dump(output, cache_file)
+  with open(cache_file_name, 'w') as cache_file:
+    json.dump(output, cache_file, indent=4)
     print("Cached the result.")
-  
   return output
 
 def generate_metrics(api_function, parser, set_of_tools, definement_prompt, temperature):
@@ -116,7 +114,37 @@ def generate_metrics(api_function, parser, set_of_tools, definement_prompt, temp
   parsed_results = [parser(output)]
   return parsed_results
 
-def generate_samples_prompt(data, 
+def generate_instruction(api_function, parser, set_of_tools, instruction_prompt, temperature):
+  while True:
+    try:
+      output = api_function(instruction_prompt, set_of_tools, temperature=temperature)
+      parsed_results = parser(output)
+      break
+    except:
+      continue
+  return parsed_results
+ 
+def generate_scores(api_function, parser, set_of_tools, scoring_prompt, use_temperature):
+  if use_temperature:
+    temperatures = [0.3, 0.5, 0.7]
+    parsed_results = {
+      "score": [],
+      "reasoning": []
+    }
+    for temperature in temperatures:
+      output = api_function(scoring_prompt, set_of_tools, temperature=temperature)
+      parsed_output = parser(output)
+      parsed_results["score"].append(parsed_output["score"])
+      parsed_results["reasoning"].append(parsed_output["reasoning"])
+
+  else:
+    temperature = 0
+    output = api_function(scoring_prompt, set_of_tools, temperature=temperature)
+    parsed_results = parser(output)
+  return parsed_results
+
+###################Formatting functions#########################
+def format_samples_prompt(data, 
                             use_response, 
                             number_of_shots, 
                             overall_score_column_name, 
@@ -124,23 +152,92 @@ def generate_samples_prompt(data,
                             response_column_name):
   distinct_values = get_distinct_random_values(data, content_column_name, num_values = number_of_shots)
   sampled_dataframe = sample_dataframe(data, content_column_name, distinct_values, overall_score_column_name)
-  context_function = lambda x: "[Context] "+ x["context"] + "[/Context]"
+  context_function = lambda x: "[Context] "+ x[content_column_name] + "[/Context]"
   if overall_score_column_name == "overall":
-    context_function = lambda x: "[Context] "+ x["context"] + "[/Context]\n[Facts] "+ x["fact"]+ "[/Facts]"
+    context_function = lambda x: "[Context] "+ x[content_column_name] + "[/Context]\n[Facts] "+ x["fact"]+ "[/Facts]"
   samples_prompt = process_dataframe(sampled_dataframe, context_function, content_column_name, use_response, response_column_name)
   return samples_prompt
+ 
+def format_instruction_prompt(system_prompt,
+                              task_description,
+                              metric):
   
+    template = StringFormatter(INSTRUCTION_PROMPT)
+    user_prompt = template.apply({
+      "Description": task_description,
+      "Metric": metric.to_str(),
+    })
+    return [
+        {
+            "role": "system",
+            "content": system_prompt
+        },
+        {
+            "role": "user",
+            "content": user_prompt
+        }
+              ]
+
+def format_example_prompt(example,
+                          dataset_name,
+                          content_column_name,
+                          response_column_name
+                          ):
+  context = example[content_column_name]
+  response = example[response_column_name]
+  if dataset_name == "USR":
+    return f"[Context] {context} [/Context]\n[Fact] {example["fact"]} [/Fact]\n[Response] {response} [/Response]"
+  return f"[Context] {context} [/Context]\n[Response] {response} [/Response]"
+
+def format_scoring_prompt(system_prompt,
+                          samples,
+                          example,
+                          task_description,
+                          metric
+                          ):
+
+    metric_name = metric.name
+    metric_str = metric.to_str()
+    metric_instruction = metric.instruction
+    
+    if samples == "":
+      additional_info = "\n"
+    else:
+      additional_info = "\n" + samples
+      
+    template = StringFormatter(SCORING_PROMPT)
+    user_prompt = template.apply({
+      "Description": task_description,
+      "Metric": metric_str,
+      "Steps": metric_instruction,
+      "Additional_info": additional_info,
+      "Sample": example,
+      "Metric_name": metric_name
+    })
+    return [
+        {
+            "role": "system",
+            "content": system_prompt
+        },
+        {
+            "role": "user",
+            "content": user_prompt
+        }
+              ]
+
 def format_definition_prompt(system_prompt,
                             task_description,
                             samples_prompt,
-                            use_restriction):
+                            use_restriction,
+                            number_of_metrics
+                            ):
     template = StringFormatter("{Description}\n{samples_prompt}\nBased on"\
       "this information define a {_metrics_} that we should use to assess the quality of contestants' answers. "\
       "For each metric only include "\
       "these entities: Name, Description, Scale")
     user_prompt = template.apply({
       "Description": task_description,
-      "_metrics_": "five metrics" if use_restriction else "a set of metrics",
+      "_metrics_": f"{number_of_metrics} metrics" if use_restriction else "a set of metrics",
       "samples_prompt": samples_prompt
     })
     return [

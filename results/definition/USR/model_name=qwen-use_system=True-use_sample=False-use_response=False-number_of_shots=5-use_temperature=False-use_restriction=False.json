@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance to Context",
+        "description": "Measures how well the response aligns with the provided context and interesting fact.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the extent to which the response encourages further conversation and interaction.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Evaluates the clarity and coherence of the response, ensuring it is easy to understand.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and creativity of the response, including the use of unique ideas or expressions.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Emotional Resonance",
+        "description": "Assesses the emotional impact of the response and its ability to connect with the audience on an emotional level.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Grammar and Syntax",
+        "description": "Evaluates the correctness of grammar, punctuation, and syntax in the response.",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

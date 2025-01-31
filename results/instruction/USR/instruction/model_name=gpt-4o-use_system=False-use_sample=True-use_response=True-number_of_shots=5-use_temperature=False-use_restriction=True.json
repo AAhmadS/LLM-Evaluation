@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how relevant the response is to the preceding context and conversation. The response should logically follow from the conversation and address the topics or questions raised.",
+        "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": "\n1- Read the entire conversation provided to understand the context and topics being discussed.\n2- Read the potential response that is provided for the next turn in the conversation.\n3- Determine how well the response logically follows from the conversation. Consider whether it addresses the topics or questions raised in the preceding context.\n4- Assign a relevance score to the response based on how well it fits into the conversation, using the scale from 1 to 5, where 1 is not relevant at all and 5 is highly relevant.\n5- Provide a brief justification for the score, explaining why the response is or isn't relevant to the conversation."
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and clarity of the response. The response should be comprehensible and logically structured, making sense within the context of the conversation.",
+        "scale": "1 to 5, where 1 is not coherent at all and 5 is highly coherent.",
+        "instruction": "\n1- Read the conversation provided to understand the context.\n2- Read the potential response that is to be evaluated.\n3- Consider how well the response logically follows from the previous parts of the conversation.\n4- Evaluate the clarity of the response. Is it easy to understand?\n5- Rate the response on a scale from 1 to 5 based on its coherence, where 1 is not coherent at all and 5 is highly coherent.\n6- Provide a brief justification for the rating, explaining why the response was rated as such."
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how engaging or interesting the response is. The response should capture the interest of the reader and keep the conversation lively and dynamic.",
+        "scale": "1 to 5, where 1 is not engaging at all and 5 is highly engaging.",
+        "instruction": "\n1- Read the entire conversation provided to understand the context.\n2- Read the potential response and the interesting fact provided.\n3- Evaluate how engaging the response is based on the provided metric description.\n4- Rate the response on a scale from 1 to 5, where 1 is not engaging at all and 5 is highly engaging.\n5- Consider how well the response captures interest and maintains a lively conversation."
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and creativity of the response. The response should demonstrate unique or imaginative thinking, offering fresh perspectives or interesting facts.",
+        "scale": "1 to 5, where 1 is not creative at all and 5 is highly creative.",
+        "instruction": "\n1- Read the entire conversation provided to understand the context.\n2- Read the potential response that is to be evaluated.\n3- Consider how original and imaginative the response is. Does it offer a fresh perspective or an interesting fact that is not commonly known?\n4- Rate the response on a scale from 1 to 5 based on its creativity, where 1 is not creative at all and 5 is highly creative.\n5- Provide a brief justification for the rating, explaining why the response was rated at that level of creativity."
+    },
+    {
+        "name": "Fact Accuracy",
+        "description": "Assesses the accuracy and correctness of any facts or information provided in the response. The response should be factually accurate and not contain misleading or incorrect information.",
+        "scale": "1 to 5, where 1 is completely inaccurate and 5 is completely accurate.",
+        "instruction": "\n1- Read the conversation provided to understand the context.\n2- Read the potential response that includes an interesting fact.\n3- Identify the fact or information presented in the response.\n4- Verify the accuracy of the fact using reliable sources or your own knowledge.\n5- Rate the response on a scale from 1 to 5 based on the accuracy of the fact, where 1 is completely inaccurate and 5 is completely accurate.\n6- Provide a brief explanation for the rating, citing any sources or knowledge used to verify the fact."
+    }
+]

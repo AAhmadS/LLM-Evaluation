@@ -1,1 +1,32 @@
-[[{"name": "Relevance", "description": "Measures how well the response relates to the context of the conversation. A relevant response directly addresses or connects to the preceding dialogue and provided facts.", "scale": "High, Medium, Low", "instruction": ""}, {"name": "Coherence", "description": "Assesses the logical flow and clarity of the response. A coherent response should make sense and follow logically from the context without introducing confusing or unrelated elements.", "scale": "High, Medium, Low", "instruction": ""}, {"name": "Engagement", "description": "Evaluates the ability of the response to maintain or enhance the interest of the conversation. An engaging response invites further interaction or adds an interesting perspective.", "scale": "High, Medium, Low", "instruction": ""}, {"name": "Creativity", "description": "Judges the originality and inventiveness of the response. A creative response offers a unique or unexpected continuation that enriches the dialogue.", "scale": "High, Medium, Low", "instruction": ""}, {"name": "Fact Utilization", "description": "Measures how effectively the response incorporates the interesting fact provided. A good use of the fact enhances the conversation and ties back to the context.", "scale": "High, Medium, Low", "instruction": ""}, {"name": "Tone Appropriateness", "description": "Checks if the tone of the response matches the tone of the conversation. An appropriate tone maintains consistency with the context and the other participant's style.", "scale": "High, Medium, Low", "instruction": ""}]]
+[
+    {
+        "name": "Contextual Relevance",
+        "description": "Measures how well the response aligns with the context of the conversation, including maintaining the topic and providing appropriate content.",
+        "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement Factor",
+        "description": "Assesses the response's ability to engage the conversation partner, either by adding new information, asking questions, or expanding on the topic.",
+        "scale": "1 to 5, where 1 is not engaging at all and 5 is highly engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and consistency of the response, ensuring it makes sense within itself and in the context of the conversation.",
+        "scale": "1 to 5, where 1 is not coherent at all and 5 is highly coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and inventiveness of the response, looking at how it introduces interesting or novel ideas.",
+        "scale": "1 to 5, where 1 is not creative at all and 5 is highly creative.",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance of Facts",
+        "description": "Assesses the appropriateness and accuracy of any factual information included in the response, ensuring it is pertinent to the conversation.",
+        "scale": "1 to 5, where 1 is not relevant or accurate at all and 5 is highly relevant and accurate.",
+        "instruction": ""
+    }
+]

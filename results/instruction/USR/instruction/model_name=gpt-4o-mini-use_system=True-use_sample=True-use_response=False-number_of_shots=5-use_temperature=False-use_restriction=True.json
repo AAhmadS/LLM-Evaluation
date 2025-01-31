@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the preceding conversation and context, including the interesting fact provided.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": "\n1- Read the preceding conversation carefully to understand the context and topics discussed.\n2- Examine the interesting fact provided and determine its significance in relation to the conversation.\n3- Analyze the potential response to see how well it connects to both the preceding conversation and the interesting fact.\n4- Assign a relevance score from 1 to 5 based on the analysis, where 1 indicates the response is not relevant at all and 5 indicates it is highly relevant.\n5- Provide a brief justification for the assigned score, explaining how the response relates to the conversation and the interesting fact."
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the level of enthusiasm and interest expressed in the response, indicating how likely it is to foster further conversation.",
+        "scale": "1 (not engaging) to 5 (very engaging)",
+        "instruction": "\n1- Read the conversation context carefully to understand the topic and tone.\n2- Analyze the provided response for its enthusiasm and interest level.\n3- Consider how the response might encourage further dialogue or exploration of the topic.\n4- Assign a score from 1 to 5 based on the engagement level of the response.\n5- Provide a brief justification for the assigned score."
+    },
+    {
+        "name": "Clarity",
+        "description": "Evaluates the clarity and coherence of the response, including proper grammar and structure, making it easy to understand.",
+        "scale": "1 (unclear) to 5 (very clear)",
+        "instruction": "\n1- Read the conversation context carefully to understand the flow and topic.\n2- Analyze the proposed response for clarity, coherence, grammar, and structure.\n3- Assign a clarity score from 1 to 5 based on the evaluation criteria.\n4- Provide a brief justification for the assigned score."
+    },
+    {
+        "name": "Informational Value",
+        "description": "Determines the extent to which the response provides new information, insights, or interesting facts that contribute to the conversation.",
+        "scale": "1 (no new information) to 5 (highly informative)",
+        "instruction": "\n1- Read the conversation between the two individuals carefully.\n2- Review the potential response provided for the next turn.\n3- Consider the interesting fact that is included in the response.\n4- Evaluate the response based on the Informational Value metric, considering how much new information or insights it adds to the conversation.\n5- Assign a score from 1 to 5 based on the evaluation."
+    },
+    {
+        "name": "Tone Appropriateness",
+        "description": "Measures how well the tone of the response fits the context of the conversation, including friendliness, professionalism, and tone consistency.",
+        "scale": "1 (inappropriate tone) to 5 (highly appropriate tone)",
+        "instruction": "\n1- Read the conversation context carefully to understand the tone and mood.\n2- Analyze the provided response for its tone, considering factors like friendliness, professionalism, and consistency with the conversation.\n3- Rate the response on a scale from 1 to 5 based on how appropriate the tone is for the context.\n4- Provide a brief justification for the rating given, highlighting specific elements of the tone that influenced your decision."
+    }
+]

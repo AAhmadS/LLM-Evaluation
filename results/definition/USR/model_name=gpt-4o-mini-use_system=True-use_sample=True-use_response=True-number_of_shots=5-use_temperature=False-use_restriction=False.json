@@ -1,1 +1,38 @@
-[[{"name": "Coherence", "description": "Measures how logically consistent and connected the response is to the preceding conversation.", "scale": "1 (not coherent) to 5 (highly coherent)", "instruction": ""}, {"name": "Relevance", "description": "Assesses how pertinent the response is to the topic being discussed in the conversation.", "scale": "1 (not relevant) to 5 (highly relevant)", "instruction": ""}, {"name": "Engagement Level", "description": "Evaluates how engaging and interesting the response is, including its ability to encourage further conversation.", "scale": "1 (not engaging) to 5 (very engaging)", "instruction": ""}, {"name": "Creativity", "description": "Measures the originality and inventiveness of the response, particularly in introducing new ideas or perspectives.", "scale": "1 (not creative) to 5 (very creative)", "instruction": ""}, {"name": "Contextual Awareness", "description": "Assesses the respondent's understanding and incorporation of the context and facts provided in the conversation.", "scale": "1 (not aware) to 5 (highly aware)", "instruction": ""}, {"name": "Emotional Resonance", "description": "Evaluates the ability of the response to connect on an emotional level, fostering empathy or shared feelings.", "scale": "1 (no emotional connection) to 5 (strong emotional connection)", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the previous dialogue and maintains the context of the conversation.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the ability of the response to encourage further conversation and interest from the other participant.",
+        "scale": "1 (not engaging) to 5 (very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Informative Value",
+        "description": "Evaluates whether the response provides interesting information or insights that contribute to the conversation.",
+        "scale": "1 (not informative) to 5 (very informative)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Determines how logically structured and clear the response is within the flow of the conversation.",
+        "scale": "1 (not coherent) to 5 (very coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and uniqueness of the response compared to typical conversational replies.",
+        "scale": "1 (not creative) to 5 (very creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Assesses the degree to which the response demonstrates understanding and connection to the other person's feelings or experiences.",
+        "scale": "1 (not empathetic) to 5 (very empathetic)",
+        "instruction": ""
+    }
+]

@@ -1,1 +1,32 @@
-[[{"name": "Fluency", "description": "The generated continuation should be grammatically correct, fluent, and free of spelling errors. It should flow smoothly and naturally, making it easy to read and understand.", "scale": "Measured on a scale of 1 to 5, where 1 is very poor fluency and 5 is excellent fluency.", "instruction": ""}, {"name": "Coherence", "description": "The generated continuation should be logically consistent and coherent with the provided context and fact. It should maintain the same topic and not deviate from the main idea.", "scale": "Measured on a scale of 1 to 5, where 1 is very poor coherence and 5 is excellent coherence.", "instruction": ""}, {"name": "Relevance", "description": "The generated continuation should be relevant to the provided context and fact. It should not introduce irrelevant information or topics.", "scale": "Measured on a scale of 1 to 5, where 1 is very poor relevance and 5 is excellent relevance.", "instruction": ""}, {"name": "Creativity", "description": "The generated continuation should be original and imaginative, showcasing a unique perspective or novel ideas. It should not be a simple regurgitation of the provided context and fact.", "scale": "Measured on a scale of 1 to 5, where 1 is very poor creativity and 5 is excellent creativity.", "instruction": ""}, {"name": "Engagement", "description": "The generated continuation should be interesting and engaging, capturing the reader's attention and encouraging them to continue reading. It should not be boring or monotonous.", "scale": "Measured on a scale of 1 to 5, where 1 is very poor engagement and 5 is excellent engagement.", "instruction": ""}]]
+[
+    {
+        "name": "Contextual Relevance",
+        "description": "Measures how well the generated continuation aligns with the provided context and the interesting fact, ensuring that the response is coherent and relevant to the conversation.",
+        "scale": "1-5 (1: Irrelevant, 5: Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence and Cohesion",
+        "description": "Evaluates the logical flow and connectivity within the generated continuation, ensuring that the response is easy to follow and understand.",
+        "scale": "1-5 (1: Incoherent, 5: Highly Coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency and Grammaticality",
+        "description": "Assesses the grammatical correctness, sentence structure, and overall readability of the generated continuation, ensuring that the response is fluent and grammatically sound.",
+        "scale": "1-5 (1: Poor, 5: Excellent)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement and Creativity",
+        "description": "Measures the ability of the generated continuation to engage the user and demonstrate creativity, ensuring that the response is interesting and original.",
+        "scale": "1-5 (1: Uninteresting, 5: Highly Engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Factual Accuracy",
+        "description": "Evaluates the correctness and reliability of the information presented in the generated continuation, ensuring that the response is factually accurate and trustworthy.",
+        "scale": "1-5 (1: Inaccurate, 5: Highly Accurate)",
+        "instruction": ""
+    }
+]

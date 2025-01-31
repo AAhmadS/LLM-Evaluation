@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Non-Repetition and no factual Redundancy",
+        "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
+        "scale": "1-10",
+        "instruction": "\n1- Read the contestant's summary carefully and identify any instances of repeated sentences or phrases.\n2- Check for factual redundancy, where the same factual information is presented more than once in different words.\n3- Assign a score from 1 to 10 based on the level of non-repetition and lack of factual redundancy, where 10 indicates no repetition or redundancy, and 1 indicates excessive repetition and redundancy.\n4- Provide a brief justification for the score, highlighting any specific instances of repetition or redundancy if applicable."
+    },
+    {
+        "name": "Coherence",
+        "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
+        "scale": "1-10",
+        "instruction": "\n1- Read the entire summary provided by the contestant.\n2- Identify the main arguments or points presented in the summary.\n3- Evaluate whether the arguments or points are logically connected and flow smoothly from one to the next.\n4- Consider if the summary maintains a consistent focus on the main topic or concept throughout.\n5- Assign a coherence score between 1 and 10, where 1 indicates very poor coherence with disjointed or unrelated points, and 10 indicates excellent coherence with a seamless and logical flow of ideas."
+    },
+    {
+        "name": "Readability",
+        "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
+        "scale": "1-10",
+        "instruction": "\n1- Read the contestant's summary carefully.\n2- Assess the spelling in the summary. Check for any spelling errors or typos.\n3- Evaluate the grammar used in the summary. Look for grammatical errors, including incorrect verb tenses, subject-verb agreement, and sentence structure.\n4- Consider the overall understandability of the summary. Determine if the summary is clear and easy to understand.\n5- Rate the summary on a scale from 1 to 10 based on the readability criteria: spelling, grammar, and understandability. A score of 10 indicates perfect readability, while a score of 1 indicates very poor readability.\n6- Provide a brief justification for the score given, highlighting any specific issues or strengths in the summary's readability."
+    },
+    {
+        "name": "Informativeness, Overlap and Focus",
+        "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
+        "scale": "1-10",
+        "instruction": "\n1- Read the original news article to understand the main points and key information it contains.\n2- Read the contestant's summary carefully.\n3- Identify the key information and keywords or key phrases in the original article.\n4- Check the contestant's summary for the presence of these key information points and keywords or key phrases.\n5- Evaluate how well the summary covers the main points of the article. Consider if any important information is missing or if there is any irrelevant information included.\n6- Assess the overlap of keywords or key phrases between the original article and the summary. Ensure that the summary maintains focus on the same topic as the original article.\n7- Rate the summary on a scale of 1-10 based on how informative it is, considering both the coverage of key information and the overlap and focus of keywords or key phrases."
+    },
+    {
+        "name": "Overall Quality",
+        "description": "Given your answers above, what is your overall impression of the quality of this summary?",
+        "scale": "1-10",
+        "instruction": "\n1- Read the contestant's summary carefully and ensure you understand the content.\n2- Consider the clarity of the summary. Is the information presented in a clear and understandable manner?\n3- Evaluate the conciseness of the summary. Does it capture the essential points of the news article without unnecessary details?\n4- Assess the coherence of the summary. Are the ideas and points logically connected and well-organized?\n5- Check the accuracy of the summary. Does it accurately reflect the main points and facts of the original news article?\n6- Consider the relevance of the information included. Does the summary focus on the most important aspects of the news article?\n7- Rate the overall quality of the summary on a scale from 1 to 10, where 1 is poor quality and 10 is excellent quality, based on your evaluations in the previous steps."
+    }
+]

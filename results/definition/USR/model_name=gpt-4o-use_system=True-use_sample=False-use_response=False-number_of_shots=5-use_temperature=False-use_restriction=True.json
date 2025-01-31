@@ -1,1 +1,32 @@
-[[{"name": "Relevance", "description": "Measures how well the response aligns with the context and interesting fact provided. A relevant response should directly address the main topic and incorporate the interesting fact meaningfully.", "scale": "1 to 5, where 1 is irrelevant and 5 is highly relevant.", "instruction": ""}, {"name": "Coherence", "description": "Assesses the logical flow and clarity of the response. A coherent response should be easy to understand and follow a logical sequence of ideas.", "scale": "1 to 5, where 1 is incoherent and 5 is highly coherent.", "instruction": ""}, {"name": "Engagement", "description": "Evaluates the ability of the response to capture and maintain interest. An engaging response should provoke thought, curiosity, or emotional reaction.", "scale": "1 to 5, where 1 is not engaging and 5 is highly engaging.", "instruction": ""}, {"name": "Creativity", "description": "Measures the originality and innovativeness of the response. A creative response presents ideas in a novel or unexpected way.", "scale": "1 to 5, where 1 is not creative and 5 is highly creative.", "instruction": ""}, {"name": "Completeness", "description": "Assesses whether the response fully addresses the task requirements, providing a comprehensive answer. A complete response should cover all necessary points and details.", "scale": "1 to 5, where 1 is incomplete and 5 is fully complete.", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the continuation relates to the given context and provided interesting fact. It assesses if the response stays on topic and uses the information effectively.",
+        "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates the ability of the continuation to capture and maintain the interest of the conversation partner. This includes the use of engaging language and stimulating further dialogue.",
+        "scale": "1 to 5, where 1 is not engaging and 5 is highly engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and consistency of the continuation. A coherent response should be easy to follow and make sense within the context of the conversation.",
+        "scale": "1 to 5, where 1 is incoherent and 5 is highly coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and inventiveness of the continuation. A creative response should present ideas or insights that are novel and thought-provoking while remaining appropriate to the context.",
+        "scale": "1 to 5, where 1 is not creative and 5 is highly creative.",
+        "instruction": ""
+    },
+    {
+        "name": "Tone Appropriateness",
+        "description": "Evaluates whether the tone of the continuation is suitable for the context and aligns with the intended mood or atmosphere of the conversation.",
+        "scale": "1 to 5, where 1 is inappropriate tone and 5 is perfectly appropriate tone.",
+        "instruction": ""
+    }
+]

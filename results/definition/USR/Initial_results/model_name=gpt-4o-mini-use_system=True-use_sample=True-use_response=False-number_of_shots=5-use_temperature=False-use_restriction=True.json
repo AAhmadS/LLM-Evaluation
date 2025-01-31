@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "name": "Coherence",
+            "description": "Measures how logically consistent and connected the generated response is to the preceding conversation. It assesses whether the response follows naturally from the previous dialogue turns.",
+            "scale": "1-5 (1=Not coherent at all, 5=Highly coherent)",
+            "instruction": ""
+        },
+        {
+            "name": "Relevance",
+            "description": "Evaluates the degree to which the response directly addresses the topic or question posed in the conversation. It checks if the response stays on topic and contributes meaningfully to the dialogue.",
+            "scale": "1-5 (1=Not relevant at all, 5=Highly relevant)",
+            "instruction": ""
+        },
+        {
+            "name": "Engagement",
+            "description": "Assesses the level of interest and enthusiasm reflected in the response. It considers the use of engaging language, questions, or comments that encourage further interaction.",
+            "scale": "1-5 (1=Not engaging at all, 5=Very engaging)",
+            "instruction": ""
+        },
+        {
+            "name": "Creativity",
+            "description": "Measures the originality and inventiveness of the response. It looks at how unique or imaginative the response is compared to standard conversational replies.",
+            "scale": "1-5 (1=Not creative at all, 5=Highly creative)",
+            "instruction": ""
+        },
+        {
+            "name": "Informational Value",
+            "description": "Evaluates the amount of new information or insights provided in the response. It considers whether the response introduces interesting facts or knowledge that enhances the conversation.",
+            "scale": "1-5 (1=No informational value, 5=High informational value)",
+            "instruction": ""
+        }
+    ]
+]

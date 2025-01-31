@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The extent to which the summary covers the key points and main ideas of the original article.",
+        "scale": "1-5, with 1 being not relevant and 5 being highly relevant",
+        "instruction": null
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical flow and clarity of the summary, ensuring that it is easy to understand and follow.",
+        "scale": "1-5, with 1 being incoherent and 5 being highly coherent",
+        "instruction": null
+    },
+    {
+        "name": "Conciseness",
+        "description": "The ability of the summary to convey the main points succinctly without unnecessary details.",
+        "scale": "1-5, with 1 being very verbose and 5 being very concise",
+        "instruction": null
+    },
+    {
+        "name": "Accuracy",
+        "description": "The faithfulness of the summary to the original content, avoiding misrepresentation or omission of key facts.",
+        "scale": "1-5, with 1 being highly inaccurate and 5 being highly accurate",
+        "instruction": null
+    },
+    {
+        "name": "Engagement",
+        "description": "The ability of the summary to capture and maintain the reader's interest.",
+        "scale": "1-5, with 1 being unengaging and 5 being highly engaging",
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": \"[{\\\"step\\\": {\\\"step_id\\\": \\\"1\\\", \\\"description\\\": \\\"Read the summary carefully and consider how it would appeal to a general audience.\\\"}}, {\\\"step\\\": {\\\"step_id\\\": \\\"2\\\", \\\"description\\\": \\\"Assess the clarity and conciseness of the summary. A clear and concise summary is more likely to engage readers.\\\"}}, {\\\"step\\\": {\\\"step_id\\\": \\\"3\\\", \\\"description\\\": \\\"Evaluate the use of language and tone. Does the summary use language that is interesting and appropriate for the topic?\\\"}}, {\\\"step\\\": {\\\"step_id\\\": \\\"4\\\", \\\"description\\\": \\\"Consider the relevance and importance of the information provided. Does the summary highlight key points that are likely to interest readers?\\\"}}, {\\\"step\\\": {\\\"step_id\\\": \\\"5\\\", \\\"description\\\": \\\"Rate the summary on a scale of 1 to 5 based on the overall engagement level, with 1 being unengaging and 5 being highly engaging.\\\"}]\"}}"
+    }
+]

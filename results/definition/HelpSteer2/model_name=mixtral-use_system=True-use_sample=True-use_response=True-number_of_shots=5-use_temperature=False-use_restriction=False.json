@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response addresses the user's question or request. A highly relevant response provides a direct and accurate answer or response to the user's input.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Measures the logical flow and consistency of the response. A coherent response maintains a consistent train of thought and is easy to follow.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Measures the extent to which the response provides all necessary information to address the user's question or request. A complete response is comprehensive and does not omit any significant details.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Measures the correctness of the information provided in the response. An accurate response is factually correct and does not contain any misleading or false information.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Readability",
+        "description": "Measures the ease with which the response can be read and understood. A readable response uses clear and concise language, appropriate formatting, and avoids grammatical or spelling errors.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Politeness",
+        "description": "Measures the level of courtesy and respect conveyed in the response. A polite response is considerate, respectful, and professional in tone.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Helpfulness",
+        "description": "Measures the extent to which the response assists the user in achieving their desired outcome. A helpful response provides useful guidance, suggestions, or solutions to the user's question or request.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Factuality",
+        "description": "Measures the extent to which the response is grounded in factual information. A factual response is based on verifiable facts and avoids speculation or personal opinions.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Fairness",
+        "description": "Measures the extent to which the response treats all parties involved in a fair and unbiased manner. A fair response avoids favoritism or discrimination and considers the perspectives and interests of all relevant parties.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    }
+]

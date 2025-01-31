@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The extent to which the response is relevant to the provided context and interesting fact.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "The degree to which the response is engaging and interesting to the reader or listener.",
+        "scale": "1 (Not Engaging) to 5 (Highly Engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "The clarity and coherence of the response, including the use of clear and concise language.",
+        "scale": "1 (Very Unclear) to 5 (Very Clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "The level of creativity and originality in the response.",
+        "scale": "1 (Not Creative) to 5 (Highly Creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Insightfulness",
+        "description": "The depth of insight and thoughtfulness in the response.",
+        "scale": "1 (Shallow) to 5 (Deep and Insightful)",
+        "instruction": ""
+    }
+]

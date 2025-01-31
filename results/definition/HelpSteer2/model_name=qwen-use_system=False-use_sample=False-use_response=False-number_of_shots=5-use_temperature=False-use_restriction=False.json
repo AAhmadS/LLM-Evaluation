@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The degree to which the response is relevant to the user's query or prompt.",
+        "scale": "1-5, where 1 is not relevant at all and 5 is highly relevant",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "The clarity and coherence of the response, including grammar and sentence structure.",
+        "scale": "1-5, where 1 is very unclear and 5 is very clear",
+        "instruction": ""
+    },
+    {
+        "name": "Depth",
+        "description": "The depth and comprehensiveness of the response, including the level of detail and insight provided.",
+        "scale": "1-5, where 1 is superficial and 5 is deep and insightful",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "The extent to which the response is engaging and interesting to the user.",
+        "scale": "1-5, where 1 is not engaging at all and 5 is highly engaging",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "The creativity and originality of the response, including the use of novel ideas or perspectives.",
+        "scale": "1-5, where 1 is not creative and 5 is highly creative",
+        "instruction": ""
+    },
+    {
+        "name": "Responsiveness",
+        "description": "The degree to which the response directly addresses the user's needs or questions.",
+        "scale": "1-5, where 1 is not responsive at all and 5 is highly responsive",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "The accuracy and correctness of the information provided in the response.",
+        "scale": "1-5, where 1 is highly inaccurate and 5 is highly accurate",
+        "instruction": ""
+    }
+]

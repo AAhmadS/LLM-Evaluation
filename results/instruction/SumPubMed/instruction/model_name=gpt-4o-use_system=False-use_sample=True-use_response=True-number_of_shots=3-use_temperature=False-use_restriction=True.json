@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main ideas and essential information from the original document.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": "\n1- Read the original biomedical research paper to understand its main ideas and essential information.\n2- Read the provided summary of the research paper.\n3- Compare the summary to the original document to determine how well it captures the main ideas and essential information.\n4- Assign a relevance score to the summary based on how well it captures the main ideas and essential information from the original document, using the following scale: '0' for Low relevance, '1' for Medium relevance, and '2' for High relevance.\n5- Document the assigned score and provide any necessary comments or justification for the score given."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates whether the summary is succinct and free of unnecessary details while still covering the critical points.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": "\n1- Read the original biomedical research paper to understand its main points and essential details.\n2- Read the contestant's summary of the research paper.\n3- Determine if the summary includes all critical points from the original paper without adding unnecessary details.\n4- Rate the summary on the Conciseness metric using the scale: '0' for Low (contains many unnecessary details or misses critical points), '1' for Medium (some unnecessary details or minor omissions of critical points), '2' for High (succinct and includes all critical points without unnecessary details)."
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and clarity of the summary, ensuring that the information is presented in a well-organized manner.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": "\n1- Read the entire summary provided by the contestant.\n2- Identify the main points or arguments presented in the summary.\n3- Evaluate the logical flow of the summary. Check if the points are presented in a sequence that makes sense and is easy to follow.\n4- Assess the clarity of the summary. Determine if the information is presented in a clear and understandable manner.\n5- Rate the coherence of the summary on a scale from 0 to 2, where '0' indicates low coherence, '1' indicates medium coherence, and '2' indicates high coherence.\n6- Provide a brief justification for the rating, highlighting specific aspects of the summary that influenced your decision."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Determines if the summary accurately reflects the information in the original document without introducing errors or misinterpretations.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": "\n1- Read the original biomedical research paper thoroughly to understand its main points, arguments, and conclusions.\n2- Read the provided summary carefully, noting the key points and information presented.\n3- Compare the key points in the summary with those in the original document to check for accuracy.\n4- Identify any errors or misinterpretations in the summary compared to the original document.\n5- Rate the summary based on the accuracy of its content using the provided scale: '0' for low accuracy, '1' for medium accuracy, and '2' for high accuracy.\n6- Provide a brief justification for the rating, highlighting specific areas where the summary was accurate or where it failed to accurately reflect the original document."
+    },
+    {
+        "name": "Coverage",
+        "description": "Checks if the summary includes all significant aspects and sections of the original text, providing a comprehensive overview.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": "\n1- Read the original biomedical research paper carefully to understand its main points, sections, and significant aspects.\n2- Read the provided summary of the research paper.\n3- Compare the summary to the original paper to determine if all significant aspects and sections are included.\n4- Evaluate the comprehensiveness of the summary in terms of how well it covers the main points and sections of the original paper.\n5- Assign a coverage score to the summary based on the following scale: '0' for low coverage, '1' for medium coverage, and '2' for high coverage.\n6- Document the reasons for the assigned score, noting any missing significant aspects or sections if applicable."
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance to Context",
+        "description": "Evaluates how well the summary captures the main points and stays relevant to the provided context.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Assesses the clarity and coherence of the summary, ensuring it is easy to understand and logically structured.",
+        "scale": "1 (Poor) to 5 (Excellent)",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy of Information",
+        "description": "Measures the accuracy of the information presented in the summary, ensuring it aligns with the original context.",
+        "scale": "1 (Inaccurate) to 5 (Highly Accurate)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the brevity and conciseness of the summary, ensuring it is succinct without omitting crucial information.",
+        "scale": "1 (Very Wordy) to 5 (Very Concise)",
+        "instruction": ""
+    },
+    {
+        "name": "Critical Analysis",
+        "description": "Assesses the depth of critical analysis and insight provided in the summary, beyond mere factual reporting.",
+        "scale": "1 (Superficial) to 5 (Deep and Insightful)",
+        "instruction": ""
+    }
+]

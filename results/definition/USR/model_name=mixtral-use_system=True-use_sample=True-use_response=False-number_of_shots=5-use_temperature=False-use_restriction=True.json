@@ -1,1 +1,32 @@
-[[{"name": "Contextual Relevance", "description": "Measure of how well the generated continuation aligns with the provided context and maintains a consistent topic throughout the conversation.", "scale": "Binary (0: irrelevant, 1: relevant)", "instruction": ""}, {"name": "Fluency", "description": "Assessment of the grammatical correctness, coherence, and readability of the generated continuation, considering factors such as sentence structure, punctuation, and word usage.", "scale": "Continuous (0-1: low to high fluency)", "instruction": ""}, {"name": "Engagement", "description": "Evaluation of the generated continuation's ability to stimulate further conversation, considering factors such as the use of open-ended questions, personal anecdotes, and interesting facts.", "scale": "Continuous (0-1: low to high engagement)", "instruction": ""}, {"name": "Creativity", "description": "Measure of the originality, uniqueness, and imaginative elements in the generated continuation, considering factors such as novel ideas, humor, and unexpected twists.", "scale": "Continuous (0-1: low to high creativity)", "instruction": ""}, {"name": "Fact Accuracy", "description": "Assessment of the factual correctness of the information presented in the generated continuation, considering the context and the provided interesting fact.", "scale": "Binary (0: inaccurate, 1: accurate)", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "The degree to which the generated continuation is related to the conversation context and the interesting fact provided. A relevant response should be on-topic and take into account the information given.",
+        "scale": "0 (completely off-topic) to 5 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "The degree to which the generated continuation is coherent and logically follows from the conversation context and the interesting fact provided. A coherent response should make sense in the context of the conversation and should not contain contradictions or non-sequiturs.",
+        "scale": "0 (completely incoherent) to 5 (highly coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency",
+        "description": "The degree to which the generated continuation is fluent and grammatically correct. A fluent response should be easy to read and understand, and should not contain errors in grammar, spelling, or punctuation.",
+        "scale": "0 (completely ungrammatical) to 5 (highly fluent)",
+        "instruction": ""
+    },
+    {
+        "name": "Informativeness",
+        "description": "The degree to which the generated continuation provides new and interesting information. An informative response should contribute to the conversation and provide value to the user.",
+        "scale": "0 (completely uninformative) to 5 (highly informative)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "The degree to which the generated continuation is engaging and holds the user's attention. An engaging response should be interesting, entertaining, and emotionally resonant.",
+        "scale": "0 (completely unengaging) to 5 (highly engaging)",
+        "instruction": ""
+    }
+]

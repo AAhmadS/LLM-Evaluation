@@ -1,0 +1,146 @@
+Filename: model_name=qwen-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Relevance, Description: Measures how relevant the continuation is to the provided context and interesting fact., Scale: 1-5, with 5 being highly relevant [Metric]
+
+[Metric]: Name: Creativity, Description: Evaluates the originality and creativity of the response., Scale: 1-5, with 5 being highly creative [Metric]
+
+[Metric]: Name: Clarity, Description: Assesses how clear and coherent the continuation is., Scale: 1-5, with 5 being very clear and coherent [Metric]
+
+[Metric]: Name: Engagement, Description: Measures how engaging and interesting the response is to the reader., Scale: 1-5, with 5 being highly engaging [Metric]
+
+[Metric]: Name: Consistency, Description: Evaluates the consistency of the response with the provided context and fact., Scale: 1-5, with 5 being highly consistent [Metric]
+
+
+Filename: model_name=qwen-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Relevance, Description: The degree to which the response is relevant to the provided context and fact., Scale: 1 (not relevant) to 5 (highly relevant) [Metric]
+
+[Metric]: Name: Creativity, Description: The originality and creativity of the response in integrating the provided fact., Scale: 1 (not creative) to 5 (highly creative) [Metric]
+
+[Metric]: Name: Engagement, Description: The extent to which the response encourages further conversation or engagement., Scale: 1 (not engaging) to 5 (highly engaging) [Metric]
+
+[Metric]: Name: Clarity, Description: The clarity and coherence of the response in conveying the intended message., Scale: 1 (very unclear) to 5 (very clear) [Metric]
+
+[Metric]: Name: Insightfulness, Description: The depth and insightfulness of the response in relation to the context and fact., Scale: 1 (not insightful) to 5 (highly insightful) [Metric]
+
+
+Filename: model_name=qwen-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Relevance, Description: Measures how relevant the response is to the context and the previous message., Scale: 1-5, with 5 being highly relevant [Metric]
+
+[Metric]: Name: Engagement, Description: Measures how well the response encourages further conversation., Scale: 1-5, with 5 being highly engaging [Metric]
+
+[Metric]: Name: Coherence, Description: Measures how coherent the response is in the context of the conversation., Scale: 1-5, with 5 being highly coherent [Metric]
+
+[Metric]: Name: Creativity, Description: Measures how creative and interesting the response is, including the use of interesting facts or unique perspectives., Scale: 1-5, with 5 being highly creative [Metric]
+
+[Metric]: Name: Empathy, Description: Measures how well the response demonstrates empathy and understanding towards the other person., Scale: 1-5, with 5 being highly empathetic [Metric]
+
+
+Filename: model_name=qwen-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Relevance, Description: Measures how relevant the response is to the given context and the preceding conversation., Scale: 1-5, where 1 is not relevant at all and 5 is highly relevant [Metric]
+
+[Metric]: Name: Engagement, Description: Evaluates how well the response keeps the conversation engaging and interesting., Scale: 1-5, where 1 is not engaging at all and 5 is highly engaging [Metric]
+
+[Metric]: Name: Naturalness, Description: Assesses how natural and fluent the response sounds in the context of the conversation., Scale: 1-5, where 1 is very unnatural and 5 is very natural [Metric]
+
+[Metric]: Name: Information Content, Description: Measures the amount of new and interesting information provided in the response., Scale: 1-5, where 1 is no new information and 5 is a lot of new and interesting information [Metric]
+
+[Metric]: Name: Coherence, Description: Evaluates the logical flow and coherence of the response within the conversation., Scale: 1-5, where 1 is incoherent and 5 is highly coherent [Metric]
+
+
+Filename: model_name=qwen-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Relevance, Description: Measures how relevant the response is to the context and the conversation flow., Scale: 1 (Not Relevant) to 5 (Highly Relevant) [Metric]
+
+[Metric]: Name: Engagement, Description: Evaluates how well the response encourages further conversation and interaction., Scale: 1 (Does Not Engage) to 5 (Highly Engaging) [Metric]
+
+[Metric]: Name: Creativity, Description: Assesses the originality and creativity of the response., Scale: 1 (Not Creative) to 5 (Highly Creative) [Metric]
+
+[Metric]: Name: Accuracy, Description: Determines the factual accuracy of the response, especially if it includes specific information., Scale: 1 (Inaccurate) to 5 (Accurate) [Metric]
+
+[Metric]: Name: Contextual Appropriateness, Description: Measures how well the response fits the context and tone of the conversation., Scale: 1 (Inappropriate) to 5 (Appropriate) [Metric]
+
+
+Filename: model_name=qwen-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Relevance, Description: Measures how closely the continuation is related to the context and the conversation flow., Scale: 1-5, with 5 being highly relevant and 1 being completely irrelevant [Metric]
+
+[Metric]: Name: Engagement, Description: Evaluates the extent to which the continuation encourages further interaction and maintains the conversation., Scale: 1-5, with 5 being highly engaging and 1 being disengaging [Metric]
+
+[Metric]: Name: Creativity, Description: Assesses the originality and uniqueness of the continuation, including the use of interesting facts or anecdotes., Scale: 1-5, with 5 being highly creative and 1 being unoriginal [Metric]
+
+[Metric]: Name: Accuracy, Description: Measures the factual correctness and appropriateness of the information provided in the continuation., Scale: 1-5, with 5 being completely accurate and 1 being incorrect or inappropriate [Metric]
+
+[Metric]: Name: Coherence, Description: Evaluates the logical flow and consistency of the continuation within the context of the conversation., Scale: 1-5, with 5 being highly coherent and 1 being incoherent [Metric]
+
+
+Filename: model_name=qwen-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Contextual Relevance, Description: The degree to which the continuation is relevant to the given context and interesting fact., Scale: 1-5 [Metric]
+
+[Metric]: Name: Factual Accuracy, Description: The accuracy of the information provided in the continuation, including the correct use of the interesting fact., Scale: 1-5 [Metric]
+
+[Metric]: Name: Creativity, Description: The originality and inventiveness of the continuation, including the creative use of the interesting fact., Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: The logical flow and clarity of the continuation, ensuring it makes sense and is easy to follow., Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: The ability of the continuation to captivate and engage the reader or listener, making them interested in the conversation., Scale: 1-5 [Metric]
+
+
+Filename: model_name=qwen-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Relevance, Description: Measures how well the response aligns with the provided context and interesting fact., Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: Assesses the logical flow and consistency of the response., Scale: 1-5 [Metric]
+
+[Metric]: Name: Creativity, Description: Evaluates the originality and imaginative quality of the response., Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: Measures how interesting and captivating the response is to the reader or listener., Scale: 1-5 [Metric]
+
+[Metric]: Name: Factual Accuracy, Description: Assesses the accuracy of any facts or details included in the response., Scale: 1-5 [Metric]
+
+
+Filename: model_name=qwen-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Coherence, Description: The degree to which the response is logically consistent and flows naturally from the context provided., Scale: 1-5 [Metric]
+
+[Metric]: Name: Relevance, Description: The extent to which the response is directly related to the context and the previous statements in the conversation., Scale: 1-5 [Metric]
+
+[Metric]: Name: Creativity, Description: The originality and freshness of the response, including the use of interesting and novel ideas or expressions., Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: The ability of the response to maintain or enhance the interest and involvement of the conversational partner., Scale: 1-5 [Metric]
+
+[Metric]: Name: Factual Accuracy, Description: The accuracy of any factual information or statements included in the response., Scale: 1-5 [Metric]
+
+[Metric]: Name: Contextual Appropriateness, Description: The appropriateness of the response given the social and situational context of the conversation., Scale: 1-5 [Metric]
+
+
+Filename: model_name=qwen-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Coherence, Description: Measures how logically and consistently the response flows from the context and previous utterances., Scale: 1-5 [Metric]
+
+[Metric]: Name: Relevance, Description: Evaluates how closely the response aligns with the context and the provided interesting fact., Scale: 1-5 [Metric]
+
+[Metric]: Name: Creativity, Description: Assesses the originality and uniqueness of the response, including the use of interesting facts and personal insights., Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: Measures how well the response invites further conversation and maintains the interest of the interlocutor., Scale: 1-5 [Metric]
+
+[Metric]: Name: Factuality, Description: Evaluates the accuracy and truthfulness of the information provided in the response., Scale: 1-5 [Metric]
+
+
+Filename: model_name=qwen-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+[Metric]: Name: Relevance, Description: The extent to which the response is relevant to the context and the previous conversation., Scale: 1-5 (1 = Not relevant, 5 = Highly relevant) [Metric]
+
+[Metric]: Name: Engagement, Description: The degree to which the response promotes further conversation and interaction., Scale: 1-5 (1 = Not engaging, 5 = Highly engaging) [Metric]
+
+[Metric]: Name: Creativity, Description: The originality and uniqueness of the response, including the use of interesting facts or anecdotes., Scale: 1-5 (1 = Not creative, 5 = Highly creative) [Metric]
+
+[Metric]: Name: Coherence, Description: The logical flow and clarity of the response, ensuring it makes sense within the conversation., Scale: 1-5 (1 = Incoherent, 5 = Highly coherent) [Metric]
+
+[Metric]: Name: Accuracy, Description: The factual accuracy of the response, including the correct use of information and details., Scale: 1-5 (1 = Inaccurate, 5 = Accurate) [Metric]
+
+
+Filename: model_name=qwen-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+[Metric]: Name: Relevance, Description: Measures how well the response is aligned with the context and the preceding conversation., Scale: 1-5 [Metric]
+
+[Metric]: Name: Engagement, Description: Evaluates how well the response keeps the conversation interesting and engaging for the other participant., Scale: 1-5 [Metric]
+
+[Metric]: Name: Creativity, Description: Assesses the originality and creativity of the response, including the use of interesting facts or unique insights., Scale: 1-5 [Metric]
+
+[Metric]: Name: Coherence, Description: Measures the logical flow and clarity of the response, ensuring it is easy to follow and understand., Scale: 1-5 [Metric]
+
+[Metric]: Name: Factuality, Description: Evaluates the accuracy and truthfulness of any facts or information mentioned in the response., Scale: 1-5 [Metric]
+
+

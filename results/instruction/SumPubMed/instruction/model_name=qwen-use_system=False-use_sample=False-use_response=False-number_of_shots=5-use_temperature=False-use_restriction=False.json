@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The degree to which the summary accurately reflects the main points and findings of the original document.",
+        "scale": "1 to 5",
+        "instruction": null
+    },
+    {
+        "name": "Clarity",
+        "description": "The ease with which the summary can be understood, including the use of clear and concise language.",
+        "scale": "1 to 5",
+        "instruction": null
+    },
+    {
+        "name": "Completeness",
+        "description": "The extent to which the summary covers all the important aspects of the original document without omitting key details.",
+        "scale": "1 to 5",
+        "instruction": "To ensure a thorough and consistent evaluation of the summaries based on the **Completeness** metric, please follow these structured steps:\n\n1. **Read the Original Document**: Before evaluating the summary, thoroughly read and understand the original biomedical research paper. Pay attention to the main findings, methods, results, and conclusions.\n\n2. **Identify Key Elements**: Identify the key elements and important aspects of the original document. These typically include:\n   - **Introduction and Background**: The context and rationale for the research.\n   - **Methods**: The procedures and techniques used in the study.\n   - **Results**: The main findings and data.\n   - **Discussion and Conclusion**: The interpretation of the results and their implications.\n\n3. **Compare the Summary to the Original**: Carefully compare the summary to the original document. Check if the summary:\n   - **Covers all key elements**: Ensure that the summary includes the main points from the introduction, methods, results, and discussion.\n   - **Omits no key details**: Verify that no important information is left out.\n   - **Is accurate**: Confirm that the information in the summary is correct and not misleading.\n\n4. **Rate the Summary**: Based on the comparison, rate the summary on a scale of 1 to 5, where:\n   - **1**: The summary is highly incomplete and omits many key details.\n   - **2**: The summary is incomplete and omits some key details.\n   - **3**: The summary is moderately complete but may omit a few minor details.\n   - **4**: The summary is mostly complete and covers most key details.\n   - **5**: The summary is fully complete and covers all key details without omission.\n\n5. **Provide Feedback**: Optionally, provide specific feedback on what aspects of the summary were well-covered and what could be improved.\n\nWould you like to proceed with the evaluation, or do you need further clarification on any of these steps?"
+    },
+    {
+        "name": "Conciseness",
+        "description": "The ability of the summary to convey the main points in a succinct and direct manner without unnecessary details.",
+        "scale": "1 to 5",
+        "instruction": null
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical flow and organization of the summary, ensuring that the information is presented in a coherent and structured manner.",
+        "scale": "1 to 5",
+        "instruction": null
+    },
+    {
+        "name": "Accuracy",
+        "description": "The precision and correctness of the information presented in the summary, avoiding any misrepresentations or errors.",
+        "scale": "1 to 5",
+        "instruction": "To ensure a clear and structured evaluation process, I will outline the steps for assessing the summaries based on the **Accuracy** metric. Here are the steps:\n\n1. **Read the Original Document**: Carefully read the original biomedical research paper to understand the content, key findings, and conclusions.\n2. **Read the Summary**: Read the summary provided by the contestant.\n3. **Compare the Summary to the Original**: Evaluate the summary for the following:\n   - **Precision**: Does the summary accurately reflect the content of the original document?\n   - **Correctness**: Are there any factual errors or misrepresentations in the summary?\n   - **Completeness**: Does the summary cover the main points and key findings of the original document?\n4. **Assign a Score**: Based on the evaluation, assign a score from 1 to 5, where:\n   - **1**: The summary contains significant errors or misrepresentations.\n   - **2**: The summary has multiple inaccuracies or omissions.\n   - **3**: The summary is generally accurate but has some minor errors or omissions.\n   - **4**: The summary is mostly accurate with only minor issues.\n   - **5**: The summary is highly accurate and correctly represents the original document.\n\nWould you like me to format these steps in the suitable format for the metric?"
+    }
+]

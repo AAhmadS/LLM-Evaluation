@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points and important details of the original article.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Assesses the ability of the summary to convey the essential information without unnecessary details or verbosity.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and clarity of the summary, ensuring that ideas are presented in a clear and understandable manner.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Determines whether the information in the summary is factually correct and free from misinterpretations of the original article.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": ""
+    },
+    {
+        "name": "Grammaticality",
+        "description": "Assesses the grammatical correctness of the summary, including syntax, punctuation, and spelling.",
+        "scale": "'0':Low, '1':Medium, '2':High",
+        "instruction": ""
+    }
+]

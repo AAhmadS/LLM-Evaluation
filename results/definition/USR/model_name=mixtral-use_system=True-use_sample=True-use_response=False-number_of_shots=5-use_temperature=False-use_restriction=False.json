@@ -1,1 +1,44 @@
-[[{"name": "Fluency", "description": "The generated text should be grammatically correct, coherent, and fluent, without any spelling or punctuation errors.", "scale": "Binary (0 or 1)", "instruction": ""}, {"name": "Relevance", "description": "The generated text should be relevant to the context and topic of the conversation. It should also take into account the interesting fact provided.", "scale": "Binary (0 or 1)", "instruction": ""}, {"name": "Engagement", "description": "The generated text should be engaging and interesting to the reader. This can be determined by the use of varied vocabulary, creative language, and the introduction of new ideas or perspectives.", "scale": "Binary (0 or 1)", "instruction": ""}, {"name": "Coherence", "description": "The generated text should maintain a logical flow and coherence with the context and the previous dialogue. It should be able to continue the conversation in a natural and seamless way.", "scale": "Binary (0 or 1)", "instruction": ""}, {"name": "Creativity", "description": "The generated text should demonstrate creativity in its response. This can be in the form of introducing new ideas, perspectives, or humor.", "scale": "Binary (0 or 1)", "instruction": ""}, {"name": "Factual Accuracy", "description": "The generated text should be factually accurate, especially when referring to the interesting fact provided.", "scale": "Binary (0 or 1)", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the generated continuation maintains the topic and context of the conversation. It evaluates if the response is coherent and relevant to the previous conversation turn.",
+        "scale": "Binary (0 or 1)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Measures how logically consistent and well-structured the generated continuation is. It evaluates if the response makes sense and flows naturally from the previous conversation turn.",
+        "scale": "Likert scale (1-5)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how interesting and engaging the generated continuation is. It evaluates if the response encourages further conversation or discussion.",
+        "scale": "Likert scale (1-5)",
+        "instruction": ""
+    },
+    {
+        "name": "Grammaticality",
+        "description": "Measures the grammatical correctness of the generated continuation. It evaluates if the response is free of grammatical errors and adheres to the rules of language.",
+        "scale": "Likert scale (1-5)",
+        "instruction": ""
+    },
+    {
+        "name": "Factuality",
+        "description": "Measures the factual accuracy of the generated continuation. It evaluates if the response is based on correct and verifiable information.",
+        "scale": "Binary (0 or 1)",
+        "instruction": ""
+    },
+    {
+        "name": "Diversity",
+        "description": "Measures the variety and creativity of the generated continuation. It evaluates if the response introduces new ideas or perspectives, rather than repeating or paraphrasing the previous conversation turn.",
+        "scale": "Likert scale (1-5)",
+        "instruction": ""
+    },
+    {
+        "name": "Politeness",
+        "description": "Measures the level of politeness and respect exhibited in the generated continuation. It evaluates if the response is considerate and respectful towards the other conversation participant.",
+        "scale": "Likert scale (1-5)",
+        "instruction": ""
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Content Coverage",
+        "description": "Measures the extent to which the summary captures all the key points and important information from the original document.",
+        "scale": "0 to 1, where 0 indicates no coverage and 1 indicates complete coverage of key points.",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "Assesses whether the information included in the summary is pertinent to the main topic of the original document.",
+        "scale": "0 to 1, where 0 indicates no relevance and 1 indicates high relevance.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and clarity of the summary, ensuring that it reads smoothly as a standalone text.",
+        "scale": "0 to 1, where 0 indicates no coherence and 1 indicates perfect coherence.",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Assesses the degree to which the summary eliminates unnecessary details and provides information in a brief manner.",
+        "scale": "0 to 1, where 0 indicates excessive verbosity and 1 indicates optimal conciseness.",
+        "instruction": ""
+    },
+    {
+        "name": "Terminology Accuracy",
+        "description": "Checks the correctness and appropriateness of biomedical terminology used in the summary.",
+        "scale": "0 to 1, where 0 indicates incorrect use of terminology and 1 indicates perfect accuracy.",
+        "instruction": ""
+    },
+    {
+        "name": "Readability",
+        "description": "Measures how easy it is to read and understand the summary, considering sentence structure and complexity.",
+        "scale": "0 to 100, based on readability formulas like Flesch-Kincaid.",
+        "instruction": ""
+    },
+    {
+        "name": "Factual Accuracy",
+        "description": "Ensures that the factual information in the summary matches the original document, without introducing errors or misinformation.",
+        "scale": "0 to 1, where 0 indicates high factual errors and 1 indicates no factual errors.",
+        "instruction": ""
+    }
+]

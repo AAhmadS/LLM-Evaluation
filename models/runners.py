@@ -3,14 +3,18 @@ import numpy as np
 import pandas as pd
 from util.prompting_utils import (
   generate_system_prompt, 
-  generate_samples_prompt, 
+  format_samples_prompt, 
   format_definition_prompt,
-  # format_scoring_prompt,
-  generate_metrics
+  format_instruction_prompt,
+  format_scoring_prompt,
+  format_example_prompt,
+  generate_instruction,
+  generate_metrics,
+  generate_scores
 )
-from util.formatting_tools import parse_metrics
 from util.similarity_tools import merge_similar_metrics
 from results.save_and_load import save_results
+from tqdm import tqdm
 
 def end_to_end_definement(api_function, 
                           set_of_tools,
@@ -29,6 +33,8 @@ def end_to_end_definement(api_function,
   overall_score_column_name = dataset.overall_score_column_name
   content_column_name = dataset.content_column_name
   response_column_name = dataset.response_column_name
+  metrics_list = dataset.ground_truth_metrics
+  number_of_metrics = len(metrics_list) if dataset_name != "USR" else len(metrics_list) -1
   # settings_string for saving in the end
   saving_settings_string = run_configuration.to_string()
 
@@ -41,7 +47,7 @@ def end_to_end_definement(api_function,
     
   # check for using samples
   if use_sample:
-    samples_prompt = generate_samples_prompt(data,
+    samples_prompt = format_samples_prompt(data,
                                              use_response,
                                              number_of_shots, 
                                              overall_score_column_name, 
@@ -56,7 +62,8 @@ def end_to_end_definement(api_function,
   definition_chain_of_prompts = format_definition_prompt(system_prompt,
                                                          task_description,
                                                          samples_prompt,
-                                                         use_restriction
+                                                         use_restriction,
+                                                         number_of_metrics
                                                          )
   print("definition_chain_of_prompts:\n", definition_chain_of_prompts)
   
@@ -83,72 +90,167 @@ def end_to_end_definement(api_function,
   
   return metrics
   
+def metric_instruction_generation(api_function,
+                                  model_name, 
+                                  set_of_tools,
+                                  dataset, 
+                                  metrics_list,
+                                  use_system,
+                                  seed=42):
+  random.seed(seed)
   
-def similarity_based_filtering(metrics, 
-                               use_similarity, 
-                               similarity_threshold, 
-                               meaningfulness_threshold
-                               ):
-
-  # parse the metrics
-  print('---Metrics Parsed---')
-  # check for using similarity
-  metrics = merge_similar_metrics(metrics, use_similarity, similarity_threshold, meaningfulness_threshold)
-  print(f"---Finalized Metrics: {metrics['name']}---")
-  return metrics
-
-# def instruction_generation(api_function,
-#                            metrics_list,
-#                            seed=42):
-#   random.seed(seed)
-#   # define instruction for metrics
+  # extract dataset information
+  dataset_name = dataset.dataset_name
+  task_description = dataset.scoring_task_description
+  
+  # check for expert identity
+  system_prompt = generate_system_prompt(model_name,
+                                         dataset_name,
+                                         task_description, use_system,
+                                         api_function, set_of_tools["expert_identity_structure"], set_of_tools["expert_identity_parser"])
+  print("system_prompt:\n", system_prompt)
   
   
-# def end_to_end_evaluation(api_function,
-#                           dataset,
-#                           metrics_set,
-#                           run_configuration,
-#                           seed=42
-#                           ):
-  
-#   random.seed(seed)
-#   # extract dataset information
-#   data = dataset.selected_subset
-#   dataset_name = dataset.dataset_name
-#   task_description = dataset.task_description
-#   overall_score_column_name = dataset.overall_score_column_name
-#   content_column_name = dataset.content_column_name
+  for metric in metrics_list:
+    # finalizing the definition prompt
+    instruction_chain_of_prompt = format_instruction_prompt(system_prompt,
+                                                            task_description,
+                                                            metric
+                                                            )
+    print("instruction_generation_chain_of_prompt:\n", instruction_chain_of_prompt)
     
-#   # settings_string for saving in the end
-#   saving_settings_string = run_configuration.to_string()
-
-#   # check for expert identity
-#   system_prompt = generate_system_prompt(task_description, True, api_function)
-#   print("system_prompt:\n", system_prompt)
+    
+    
+      
+    instruction = generate_instruction(api_function, 
+                                       set_of_tools["instruction_parser"], 
+                                       set_of_tools["instruction"], 
+                                       instruction_chain_of_prompt, 
+                                       temperature=0)
+    
+    metric.instruction = instruction
+    print(f"---Generated Instruction for Metric: {metric.name}---")
   
-#   scoring_chain_of_prompts = format_scoring_prompt(system_prompt,
-#                                                       task_description,
-#                                                       samples_prompt
-#                                                       )
-#   print("definition_chain_of_prompts:\n", definition_chain_of_prompts)
-#   metrics = []
-#   metrics_dataframe = pd.DataFrame(columns=['results'])
+  return metrics_list
+
+import concurrent.futures
+
+def process_sample(index, sample, metric, 
+                   system_prompt, samples_prompt, 
+                   task_description, api_function, 
+                   set_of_tools, use_temperature, 
+                   dataset_name, content_column_name, 
+                   response_column_name
+                   ):
+  example = format_example_prompt(sample, dataset_name, content_column_name, response_column_name)
+  scoring_chain_of_prompt = format_scoring_prompt(system_prompt,
+                                                  samples_prompt,
+                                                  example,
+                                                  task_description, 
+                                                  metric
+                                                  )
+  try:
+    evaluation = generate_scores(api_function, 
+                                  set_of_tools["scoring_parser"], 
+                                  set_of_tools["scoring"], 
+                                  scoring_chain_of_prompt, 
+                                  use_temperature
+                                  )
+    return index, metric.name, evaluation["score"], evaluation["reasoning"]
+  except:
+    print(f"Error occurred while evaluating sample: {sample}\n metric: {metric.name}")
+    return index, metric.name, None, None
+
+def end_to_end_scoring(api_function,
+                    model_name, 
+                    set_of_tools,
+                    dataset, 
+                    metrics_list,
+                    configuration,
+                    overall_assessment_metric = None,
+                    seed=42):
+  random.seed(seed)
+  # extract configuration information
+  model_name, use_system, use_sample, number_of_shots, use_temperature = configuration.dump()
+  use_response = True
+
   
-#   # five times generation, hence two times appearance seems sufficiently meaningful.(we might not use this in final version)
-#   meaningfulness_threshold = 2
+  # extract dataset information
+  dataset_name = dataset.dataset_name
+  task_description = dataset.scoring_task_description
+  test_set = dataset.selected_subset
+  data = dataset.data
+  overall_score_column_name = dataset.overall_score_column_name
+  content_column_name = dataset.content_column_name
+  response_column_name = dataset.response_column_name
+  
+  test_less_data = data[~data.apply(tuple, 1).isin(test_set.apply(tuple, 1))]
+  
+  # check for expert identity
+  system_prompt = generate_system_prompt(model_name,
+                                         dataset_name,
+                                         task_description, use_system,
+                                         api_function, set_of_tools["expert_identity_structure"], set_of_tools["expert_identity_parser"])
+  print("system_prompt:\n", system_prompt)
+  
+  if use_sample:
+    samples_prompt = format_samples_prompt(test_less_data,
+                                             use_response,
+                                             number_of_shots, 
+                                             overall_score_column_name, 
+                                             content_column_name,
+                                             response_column_name
+                                             )
 
-#   # check for using temperature (when generating the metrics with different temperatures)
-#   if use_temperature:
-#     # list of temperatures to use
-#     temperatures = np.arange(0.5, 0.9, 0.1, dtype=float)
-#   else:
-#     temperatures = [0.7] * 5
+  else:
+    samples_prompt = ""
+  print("samples_prompt:\n", samples_prompt)
 
-#   for temperature in temperatures:
-#     metrics.extend(generate_metrics(api_function, definition_chain_of_prompts, temperature))
-#     print(f"---Generated Metrics with Temperature {temperature}---")
+  # with concurrent.futures.ThreadPoolExecutor() as executor:
+  #   futures = []
+  #   for metric in metrics_list:
+  #     test_set[f"{metric.name}_score"] = [0] * len(test_set)
+  #     test_set[f"{metric.name}_reasoning"] = [""] * len(test_set)
+  #     for index, sample in test_set.iterrows():
+  #       futures.append(executor.submit(process_sample, index, sample, metric, system_prompt, samples_prompt, task_description, api_function, set_of_tools, use_temperature, dataset_name, content_column_name, response_column_name))
 
-#   new_row = {'results': metrics}
-#   metrics_dataframe = pd.concat([metrics_dataframe, pd.DataFrame([new_row])], ignore_index=True)
-#   print("---Saving Metrics---")
-#   save_results("definition",metrics, dataset_name, saving_settings_string)
+  #   for future in tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc="Scoring"):
+  #     index, metric_name, score, reasoning = future.result()
+  #     if score is not None and reasoning is not None:
+  #       test_set.loc[index, f"{metric_name}_score"] = score
+  #       test_set.loc[index, f"{metric_name}_reasoning"] = reasoning
+
+  count = 0 
+  for metric in metrics_list:
+    test_set[f"{metric.name}_score"] = [0] * len(test_set)
+    test_set[f"{metric.name}_reasoning"] = [""] * len(test_set)
+    for index, sample in tqdm(test_set.iterrows(), total=len(test_set), desc=f"Scoring {metric.name}"):
+      example = format_example_prompt(sample, dataset_name, content_column_name, response_column_name)
+      scoring_chain_of_prompt = format_scoring_prompt(system_prompt,
+                                                      samples_prompt,
+                                                      example,
+                                                      task_description, 
+                                                      metric
+                                                      )
+      count = 0
+      while True:
+        try:
+          evaluation = generate_scores(api_function, 
+                                        set_of_tools["scoring_parser"], 
+                                        set_of_tools["scoring"], 
+                                        scoring_chain_of_prompt, 
+                                        use_temperature
+                                        )
+          test_set.loc[index, f"{metric.name}_score"] = evaluation["score"]
+          test_set.loc[index, f"{metric.name}_reasoning"] = evaluation["reasoning"]
+          break
+        except:
+          count += 1
+          print(f"Error occurred while evaluating sample: {sample}")
+          if count == 3:
+            test_set.loc[index, f"{metric.name}_score"] = -1
+            test_set.loc[index, f"{metric.name}_reasoning"] = "Error"
+            break
+        continue
+           
+  return test_set

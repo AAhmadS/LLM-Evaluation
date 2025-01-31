@@ -30,7 +30,14 @@ def retrieve_set_of_tools(api_name):
             "scoring":get_vicuna_score_prompt,
             "instruction":get_vicuna_instruction_prompt
         }
-        
+    elif "qwen" in api_name:
+        set_of_tools = {
+            "simple_response": function_to_json(simple_output),
+            "definement": function_to_json(define_metrics),
+            "expert_identity_structure":function_to_json(role_description_output),
+            "scoring":function_to_json(get_metric_score),
+            "instruction":function_to_json(set_metric_instruction)
+        }
     elif "gpt" in api_name:
         set_of_tools = {
             "simple_response": SimpleResponse,
@@ -101,7 +108,7 @@ def function_to_json(func):
             'parameters': parameters
         }
     }
-
+ 
 ####################GPT-API Prompt Formatting Classes#####################
 # Simple response structure
 class SimpleResponse(BaseModel):
@@ -122,11 +129,11 @@ class MetricsList(BaseModel):
     
 # structure for metric instruction generation
 class AbstractStep(BaseModel):
-    step_id: str = Field(description="step number.")
+    step_id: int = Field(description="step number.")
     description: str = Field(description="description of the step. What should be done?")
     
 class MetricInstruction(BaseModel):
-    steps: List[str] = Field(description="List of steps to be evaluated.")
+    steps: List[AbstractStep] = Field(description="List of steps to be evaluated.")
 
 # structure for metric scoring  
 class MetricScore(BaseModel):
@@ -265,7 +272,7 @@ def set_metric_instruction(steps: List[str]) -> str:
         steps_str += f"{step_id}-{description}\n"
     return steps_str   # A real function should probably actually get the wind speed!
 
-def get_metric_score(evaluation: str) -> int:
+def get_metric_score(evaluation: str) -> dict:
     """
     Recieves a string of the evaluation in the following structure:
     {
@@ -274,12 +281,16 @@ def get_metric_score(evaluation: str) -> int:
             "score": <score based on the provided scale>
         }
     }
-    and returns the score.
+    and returns the score and reasoning.
     Args:
         evaluation: The structured evaluation.
     Returns:
-        The score.
+        The score and the evaluation reasoning.
     """
     evaluation_dict = json.loads(evaluation)
     score = evaluation_dict["evaluation result"]["score"]
-    return int(score)
+    reasoning = evaluation_dict["evaluation result"]["reasoning"]
+    return {
+        "score": score,
+        "reasoning": reasoning
+    }

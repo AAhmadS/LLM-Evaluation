@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The answer is relevant to the question or context provided, and it addresses the main point of the prompt.",
+        "scale": "Binary (Relevant or Not Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "The answer is factually correct and provides accurate information.",
+        "scale": "Binary (Correct or Incorrect)",
+        "instruction": ""
+    },
+    {
+        "name": "Comprehensiveness",
+        "description": "The answer provides a complete and detailed response to the prompt, covering all relevant aspects of the topic.",
+        "scale": "Continuous (0 to 10, with 10 being the most comprehensive)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "The answer is clear, concise, and easy to understand.",
+        "scale": "Continuous (0 to 10, with 10 being the clearest)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "The answer is engaging, interesting, and encourages further conversation or exploration of the topic.",
+        "scale": "Continuous (0 to 10, with 10 being the most engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Follows Instructions",
+        "description": "The answer follows the instructions provided in the prompt.",
+        "scale": "Binary (Follows Instructions or Does Not Follow Instructions)",
+        "instruction": ""
+    }
+]

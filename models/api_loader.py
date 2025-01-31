@@ -26,11 +26,11 @@ def llama_api(messages, response_format, temperature=0.7):
     
     # Build the API request
     api_request_json = {
-        "model": "llama3.1-70b",
+        "model": "llama3.1-405b",
         "messages": messages,
         "tools" : [response_format],
         "temperature" : temperature,
-        "max_tokens" : 4096,
+        "max_tokens" : 1000,
         "stream": False,
         "function_call": response_format["function"]["name"],
     }
@@ -52,12 +52,34 @@ def mistral_api(messages, response_format, temperature=0.7):
     chat_response = client.chat.complete(
         model = model,
         messages = messages,
-        temperature = 0.7,
+        temperature = temperature,
         max_tokens = 4096,
         stream = False,
     )
 
     return chat_response.choices[0].message.content
+###############################################################################
+
+def qwen_api(messages, response_format, temperature=0.7):
+
+    deepinfra_api_key = os.getenv("DEEPINFRA_API_KEY")
+    openai = OpenAI(
+        api_key= deepinfra_api_key,
+        base_url="https://api.deepinfra.com/v1/openai",
+    )
+
+    chat_completion = openai.chat.completions.create(
+        model="Qwen/Qwen2.5-72B-Instruct",
+        messages= messages,
+        tools = [response_format],
+        temperature = temperature,
+        max_tokens = 4096,
+        stream= False,
+        function_call= response_format["function"]["name"],
+    )
+
+    return chat_completion
+
 ###############################################################################
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from accelerate import init_empty_weights, infer_auto_device_map, load_checkpoint_and_dispatch
@@ -111,18 +133,16 @@ def load_api(api_name):
     if 'gpt' in api_name:
         os.environ["OPENAI_MODEL"] = api_name
         return gpt_api
+    elif api_name == 'llama':
+        return llama_api
+    elif api_name == 'qwen':
+        return qwen_api
+    elif api_name == 'mixtral':
+        return mistral_api
     elif api_name == 'vicuna':
         model_name = "lmsys/vicuna-13b-v1.5-16k"
         model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", torch_dtype=torch.float16)
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         return partial(vicuna_chat_completion, model=model, tokenizer=tokenizer)
-    elif api_name == 'llama':
-        return llama_api
-    elif api_name == 'qwen':
-        model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-32B-Instruct", device_map="auto", torch_dtype=torch.float16)
-        tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-32B-Instruct")
-        return partial(chat_with_accelerate, model=model, tokenizer=tokenizer)
-    elif api_name == 'mixtral':
-        return mistral_api
     else:
         raise ValueError(f"Unknown API name: {api_name}")

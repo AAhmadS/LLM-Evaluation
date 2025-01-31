@@ -2,7 +2,7 @@ class Configuration:
     def __init__(self, **kwargs):
         self.config = kwargs
         
-    DUMP_ORDER = ["model_name", "use_system", "use_sample", "use_response", "number_of_shots", "use_temperature", "use_restriction"]  # Define your specific order here
+    DUMP_ORDER = ["model_name", "use_system", "use_sample", "use_response", "number_of_shots", "use_temperature", "use_restriction", "source"]  # Define your specific order here
     
     def dump(self):
         unknown_keys = set(self.config.keys()) - set(self.DUMP_ORDER)

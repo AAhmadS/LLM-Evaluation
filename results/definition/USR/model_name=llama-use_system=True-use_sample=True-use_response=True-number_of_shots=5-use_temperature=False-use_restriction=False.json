@@ -1,1 +1,44 @@
-[[{"name": "Coherence", "description": "How well the response follows the context and conversation flow", "scale": "1-5", "instruction": ""}, {"name": "Relevance", "description": "How relevant the response is to the conversation topic", "scale": "1-5", "instruction": ""}, {"name": "Fluency", "description": "How natural and smooth the response sounds", "scale": "1-5", "instruction": ""}, {"name": "Engagement", "description": "How engaging and interesting the response is", "scale": "1-5", "instruction": ""}, {"name": "Semantic Similarity", "description": "How similar the response is to the context in terms of meaning", "scale": "0-1", "instruction": ""}, {"name": "Novelty", "description": "How unique and original the response is", "scale": "1-5", "instruction": ""}, {"name": "Diversity", "description": "How diverse the response is in terms of vocabulary and ideas", "scale": "1-5", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "How well the response is related to the context and the interesting fact",
+        "scale": "Scale of 1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "How engaging and interesting the response is",
+        "scale": "Scale of 1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Contextual Understanding",
+        "description": "How well the response demonstrates understanding of the context",
+        "scale": "Scale of 1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Response Adequacy",
+        "description": "How well the response addresses the question or prompt",
+        "scale": "Scale of 1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Conversational Flow",
+        "description": "How well the response contributes to a natural conversational flow",
+        "scale": "Scale of 1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Interestingness",
+        "description": "How interesting and unique the response is",
+        "scale": "Scale of 1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Overall Quality",
+        "description": "The overall quality of the response",
+        "scale": "Scale of 1-5",
+        "instruction": ""
+    }
+]

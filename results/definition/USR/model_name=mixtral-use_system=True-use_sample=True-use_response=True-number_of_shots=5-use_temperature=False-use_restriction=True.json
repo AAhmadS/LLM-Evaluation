@@ -1,1 +1,32 @@
-[[{"name": "Relevance", "description": "Measures how well the generated continuation is connected to the context and the preceding conversation. A relevant response maintains the topic and flow, while an irrelevant response strays off-topic or introduces unrelated information.", "scale": "0-3 (0: Completely irrelevant, 1: Barely related, 2: Somewhat relevant, 3: Fully relevant)", "instruction": ""}, {"name": "Coherence", "description": "Assesses the logical consistency and grammatical correctness of the generated continuation. A coherent response is well-structured and easy to understand, whereas an incoherent response may contain errors in syntax, semantics, or logic.", "scale": "0-3 (0: Incoherent, 1: Somewhat incoherent, 2: Mostly coherent, 3: Fully coherent)", "instruction": ""}, {"name": "Engagement", "description": "Evaluates the ability of the generated continuation to stimulate further conversation or interest in the topic. An engaging response piques curiosity, introduces new information, or provokes thought, while a disengaging response fails to encourage continued discussion.", "scale": "0-3 (0: Disengaging, 1: Somewhat engaging, 2: Mostly engaging, 3: Fully engaging)", "instruction": ""}, {"name": "Creativity", "description": "Measures the originality and inventiveness of the generated continuation. A creative response introduces novel ideas, perspectives, or connections, while a non-creative response merely repeats information or provides uninspired replies.", "scale": "0-3 (0: Not creative, 1: Somewhat creative, 2: Mostly creative, 3: Highly creative)", "instruction": ""}, {"name": "Fluency", "description": "Assesses the naturalness and fluency of the generated continuation. A fluent response is smooth, idiomatic, and indistinguishable from human-written text, while a disfluent response may sound robotic, stilted, or unnatural.", "scale": "0-3 (0: Disfluent, 1: Somewhat fluent, 2: Mostly fluent, 3: Fully fluent)", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the generated continuation is related to the context and maintains the flow of the conversation. High scores indicate that the continuation is closely connected to the context and contributes to the conversation in a meaningful way.",
+        "scale": "1-5 (1: not relevant, 5: highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical consistency and grammatical correctness of the generated continuation. High scores indicate that the continuation is well-structured, grammatically correct, and logically consistent with the context.",
+        "scale": "1-5 (1: incoherent, 5: highly coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Informativeness",
+        "description": "Assesses the amount of new, interesting, and relevant information provided in the generated continuation. High scores indicate that the continuation offers valuable insights, facts, or opinions that contribute to the conversation.",
+        "scale": "1-5 (1: not informative, 5: highly informative)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures the ability of the generated continuation to stimulate further conversation or interest. High scores indicate that the continuation is engaging, thought-provoking, and encourages the conversation to continue.",
+        "scale": "1-5 (1: not engaging, 5: highly engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency",
+        "description": "Evaluates the language quality and naturalness of the generated continuation. High scores indicate that the continuation is fluent, natural-sounding, and free of awkward or unnatural expressions.",
+        "scale": "1-5 (1: not fluent, 5: highly fluent)",
+        "instruction": ""
+    }
+]

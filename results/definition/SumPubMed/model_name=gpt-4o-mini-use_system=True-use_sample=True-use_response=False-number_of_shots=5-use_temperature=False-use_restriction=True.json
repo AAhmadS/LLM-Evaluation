@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Clarity",
+        "description": "Measures how clearly the summary conveys the main findings and conclusions of the original study without ambiguity or confusion.",
+        "scale": "1 (Very Poor) to 5 (Excellent)",
+        "instruction": ""
+    },
+    {
+        "name": "Comprehensiveness",
+        "description": "Assesses whether the summary includes all essential components of the study, such as background, methods, results, and conclusions, without omitting key information.",
+        "scale": "1 (Missing Key Information) to 5 (All Key Information Included)",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "Evaluates the degree to which the summary focuses on the most important aspects of the original paper, avoiding extraneous details that do not contribute to understanding the main research findings.",
+        "scale": "1 (Irrelevant) to 5 (Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Determines how well the summary conveys the necessary information in a succinct manner, avoiding unnecessary verbosity or overly complex language.",
+        "scale": "1 (Very Wordy) to 5 (Perfectly Concise)",
+        "instruction": ""
+    },
+    {
+        "name": "Scientific Accuracy",
+        "description": "Measures the accuracy of the information presented in the summary compared to the original paper, including correct use of terminology and adherence to scientific principles.",
+        "scale": "1 (Inaccurate) to 5 (Completely Accurate)",
+        "instruction": ""
+    }
+]

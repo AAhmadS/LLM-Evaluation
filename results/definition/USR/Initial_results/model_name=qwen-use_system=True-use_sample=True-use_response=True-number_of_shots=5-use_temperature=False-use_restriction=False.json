@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "name": "Relevance",
+            "description": "The extent to which the response is relevant to the context and the previous conversation.",
+            "scale": "1-5 (1 = Not relevant, 5 = Highly relevant)",
+            "instruction": ""
+        },
+        {
+            "name": "Engagement",
+            "description": "The degree to which the response promotes further conversation and interaction.",
+            "scale": "1-5 (1 = Not engaging, 5 = Highly engaging)",
+            "instruction": ""
+        },
+        {
+            "name": "Creativity",
+            "description": "The originality and uniqueness of the response, including the use of interesting facts or anecdotes.",
+            "scale": "1-5 (1 = Not creative, 5 = Highly creative)",
+            "instruction": ""
+        },
+        {
+            "name": "Coherence",
+            "description": "The logical flow and clarity of the response, ensuring it makes sense within the conversation.",
+            "scale": "1-5 (1 = Incoherent, 5 = Highly coherent)",
+            "instruction": ""
+        },
+        {
+            "name": "Accuracy",
+            "description": "The factual accuracy of the response, including the correct use of information and details.",
+            "scale": "1-5 (1 = Inaccurate, 5 = Accurate)",
+            "instruction": ""
+        }
+    ]
+]

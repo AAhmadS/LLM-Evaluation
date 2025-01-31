@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "name": "Relevance",
+            "description": "Measures how well the generated continuation aligns with the given context and fact, ensuring it remains on-topic and relevant throughout.",
+            "scale": "Scored from 1 (not relevant) to 5 (highly relevant)",
+            "instruction": ""
+        },
+        {
+            "name": "Coherence",
+            "description": "Assesses the logical consistency and flow of the generated continuation, ensuring it forms a coherent and understandable conversation.",
+            "scale": "Scored from 1 (incoherent) to 5 (highly coherent)",
+            "instruction": ""
+        },
+        {
+            "name": "Fluency",
+            "description": "Evaluates the grammatical correctness and linguistic smoothness of the generated continuation, ensuring it reads like a naturally written text.",
+            "scale": "Scored from 1 (poor fluency) to 5 (excellent fluency)",
+            "instruction": ""
+        },
+        {
+            "name": "Engagement",
+            "description": "Measures the ability of the generated continuation to attract and maintain the reader's interest, making it enjoyable and captivating.",
+            "scale": "Scored from 1 (boring) to 5 (highly engaging)",
+            "instruction": ""
+        },
+        {
+            "name": "Creativity",
+            "description": "Assesses the originality and imaginative aspects of the generated continuation, ensuring it goes beyond simple fact recitation.",
+            "scale": "Scored from 1 (unoriginal) to 5 (highly creative)",
+            "instruction": ""
+        }
+    ]
+]

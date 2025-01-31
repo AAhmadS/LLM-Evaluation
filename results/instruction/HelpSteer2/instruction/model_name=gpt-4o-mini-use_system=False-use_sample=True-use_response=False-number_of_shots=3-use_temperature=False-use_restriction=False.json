@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the response addresses the user's prompt or question.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": "\n1- Read the user's prompt or question carefully.\n2- Analyze the response provided by the contestant.\n3- Determine how closely the response addresses the prompt or question.\n4- Assign a relevance score from 1 to 5 based on the analysis.\n5- Provide a brief justification for the assigned score."
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses how clear and understandable the response is, including grammar and spelling.",
+        "scale": "1 (Very Unclear) to 5 (Very Clear)",
+        "instruction": "\n1- Read the contestant's response carefully.\n2- Evaluate the response based on clarity, considering grammar, spelling, and overall understandability.\n3- Assign a score from 1 to 5 based on the clarity of the response.\n4- Provide a brief justification for the score given."
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates whether the response provides a full answer to the user\u2019s question, covering all necessary aspects.",
+        "scale": "1 (Incomplete) to 5 (Fully Complete)",
+        "instruction": "\n1- Read the user's prompt or question carefully.\n2- Analyze the response provided by the contestant.\n3- Determine if the response addresses all parts of the user's question.\n4- Evaluate the depth and detail of the response.\n5- Assign a score from 1 to 5 based on the completeness of the response."
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging or interesting the response is to the user, encouraging further interaction.",
+        "scale": "1 (Not Engaging) to 5 (Highly Engaging)",
+        "instruction": "\n1- Read the response carefully to understand its content and context.\n2- Evaluate the response based on how engaging it is to the user.\n3- Consider if the response encourages further interaction or prompts additional questions.\n4- Assign a score from 1 to 5 based on the level of engagement.\n5- Provide a brief justification for the score given."
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Assesses the accuracy of the technical information provided in response to the user's query, especially for specialized topics.",
+        "scale": "1 (Inaccurate) to 5 (Highly Accurate)",
+        "instruction": "\n1- Read the user's query carefully to understand the technical topic being addressed.\n2- Evaluate the response provided by the contestant for its technical accuracy.\n3- Assign a score from 1 to 5 based on the accuracy of the technical information.\n4- Provide a brief justification for the score assigned, highlighting any inaccuracies or confirming the correctness of the information."
+    },
+    {
+        "name": "Supportiveness",
+        "description": "Evaluates how supportive and helpful the assistant's response is, particularly in providing guidance or assistance.",
+        "scale": "1 (Not Supportive) to 5 (Very Supportive)",
+        "instruction": "\n1- Read the contestant's response carefully.\n2- Assess the response based on the supportiveness metric.\n3- Consider how well the response provides guidance or assistance.\n4- Rate the response on a scale from 1 to 5, where 1 is not supportive and 5 is very supportive.\n5- Provide a brief justification for the rating given."
+    }
+]

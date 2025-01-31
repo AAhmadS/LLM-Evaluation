@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how relevant and contextually appropriate the response is to the previous message.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how well the response encourages further interaction and maintains the flow of the conversation.",
+        "scale": "1 (Does Not Engage) to 5 (Highly Engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and consistency of the response within the conversation.",
+        "scale": "1 (Incoherent) to 5 (Highly Coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Information Quality",
+        "description": "Measures the accuracy, depth, and relevance of the information provided in the response.",
+        "scale": "1 (Low Quality) to 5 (High Quality)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Evaluates the degree to which the response shows understanding and consideration of the other person's feelings and perspectives.",
+        "scale": "1 (No Empathy) to 5 (Highly Empathetic)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and creativity in the response, including the use of interesting facts or unique insights.",
+        "scale": "1 (Not Creative) to 5 (Highly Creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Evaluates the clarity and understandability of the response, including the use of clear and concise language.",
+        "scale": "1 (Unclear) to 5 (Very Clear)",
+        "instruction": ""
+    }
+]

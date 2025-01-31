@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance to Context",
+        "description": "Evaluates how well the summary captures the main points and stays relevant to the provided context.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": null
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Assesses the clarity and coherence of the summary, ensuring it is easy to understand and logically structured.",
+        "scale": "1 (Poor) to 5 (Excellent)",
+        "instruction": null
+    },
+    {
+        "name": "Accuracy of Information",
+        "description": "Measures the accuracy of the information presented in the summary, ensuring it aligns with the original context.",
+        "scale": "1 (Inaccurate) to 5 (Highly Accurate)",
+        "instruction": "To ensure a clear and structured evaluation process, I will outline the steps for assessing the summaries based on the provided metric. Here are the steps:\n\n1. **Read the Original Document**: Carefully read the original biomedical research paper to understand the context, key findings, and overall message.\n\n2. **Read the Summary**: Read the summary provided by the contestant to understand their interpretation and presentation of the information.\n\n3. **Compare the Summary to the Original**: Evaluate the summary by comparing it to the original document. Focus on the following aspects:\n   - **Factual Accuracy**: Ensure that all information in the summary is correct and does not contain any factual errors.\n   - **Contextual Accuracy**: Verify that the summary accurately reflects the context and nuances of the original document.\n   - **Completeness**: Check if the summary includes all the key points and findings from the original document.\n\n4. **Rate the Summary**: Assign a score from 1 to 5 based on the accuracy of the information:\n   - **1 (Inaccurate)**: The summary contains significant factual errors or misrepresents the original content.\n   - **2 (Somewhat Inaccurate)**: The summary has some factual errors or misrepresents parts of the original content.\n   - **3 (Moderately Accurate)**: The summary is generally accurate but may have minor factual errors or omissions.\n   - **4 (Accurate)**: The summary is accurate with only minor issues that do not significantly affect the overall understanding.\n   - **5 (Highly Accurate)**: The summary is highly accurate, with no factual errors and a clear, correct representation of the original content.\n\n5. **Provide Feedback**: Optionally, provide feedback to the contestant to help them understand the strengths and areas for improvement in their summary.\n\nWould you like me to format these steps into the suitable format for the metric?"
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the brevity and conciseness of the summary, ensuring it is succinct without omitting crucial information.",
+        "scale": "1 (Very Wordy) to 5 (Very Concise)",
+        "instruction": "To ensure a clear and structured evaluation process for the summaries based on the metric of **Conciseness**, I will follow these steps:\n\n1. **Understand the Summary**: Read the summary carefully to grasp the main points and the overall message.\n2. **Identify Key Information**: Determine the essential information that should be included in the summary based on the original document.\n3. **Assess Brevity**: Evaluate whether the summary is succinct and to the point, without unnecessary details.\n4. **Check for Omissions**: Ensure that no crucial information is missing from the summary.\n5. **Rate the Summary**: Assign a score from 1 to 5 based on the conciseness of the summary, where:\n   - **1 (Very Wordy)**: The summary is overly detailed and includes a lot of unnecessary information.\n   - **2 (Wordy)**: The summary is somewhat detailed and could be more concise.\n   - **3 (Neutral)**: The summary is neither particularly concise nor wordy.\n   - **4 (Concise)**: The summary is well-structured and to the point, with minimal unnecessary details.\n   - **5 (Very Concise)**: The summary is highly succinct and includes only the most essential information.\n\nWould you like me to proceed with the evaluation of a specific summary, or do you need further clarification on any of these steps?"
+    },
+    {
+        "name": "Critical Analysis",
+        "description": "Assesses the depth of critical analysis and insight provided in the summary, beyond mere factual reporting.",
+        "scale": "1 (Superficial) to 5 (Deep and Insightful)",
+        "instruction": "To ensure a clear and structured evaluation, the steps for assessing the summaries based on the **Critical Analysis** metric are as follows:\n\n1. **Read the Summary Thoroughly**: Begin by reading the summary in its entirety to understand the overall content and context.\n\n2. **Identify Factual Reporting**: Note any sections where the summary primarily reports facts and information from the original document without adding deeper analysis or insight.\n\n3. **Assess Depth of Analysis**: Evaluate the extent to which the summary goes beyond mere factual reporting. Look for:\n   - **Interpretation**: Does the summary interpret the findings or data in a meaningful way?\n   - **Evaluation**: Does the summary evaluate the significance of the research, its strengths, and limitations?\n   - **Synthesis**: Does the summary connect the findings to broader contexts or other relevant research?\n   - **Critical Thinking**: Does the summary demonstrate critical thinking, questioning assumptions, and exploring implications?\n\n4. **Rate the Summary**: Assign a score from 1 to 5 based on the depth of critical analysis:\n   - **1 (Superficial)**: The summary is primarily factual with little to no critical analysis.\n   - **2 (Limited)**: The summary includes some critical analysis, but it is minimal and not well-developed.\n   - **3 (Moderate)**: The summary includes a reasonable amount of critical analysis, but it could be more thorough.\n   - **4 (Substantial)**: The summary demonstrates a good level of critical analysis, with clear interpretation and evaluation.\n   - **5 (Deep and Insightful)**: The summary provides deep and insightful critical analysis, with thorough interpretation, evaluation, and synthesis.\n\n5. **Provide Feedback**: Offer specific feedback to the contestant, highlighting areas of strength and areas for improvement.\n\nWould you like to proceed with the evaluation, or do you need further clarification on any of these steps?"
+    }
+]

@@ -1,1 +1,32 @@
-[[{"name": "Coherence", "description": "Measures how logically the response follows from the previous exchange and maintains the topic of conversation.", "scale": "1-5 (1: Not coherent at all, 5: Very coherent)", "instruction": ""}, {"name": "Relevance", "description": "Evaluates how well the response relates to the preceding statements and the overall context of the conversation.", "scale": "1-5 (1: Not relevant at all, 5: Highly relevant)", "instruction": ""}, {"name": "Engagement", "description": "Assesses the level of interest and enthusiasm conveyed in the response, indicating how likely it is to encourage further conversation.", "scale": "1-5 (1: Not engaging at all, 5: Very engaging)", "instruction": ""}, {"name": "Creativity", "description": "Rates the originality and novelty of the response, particularly in how it contributes uniquely to the conversation.", "scale": "1-5 (1: Not creative at all, 5: Very creative)", "instruction": ""}, {"name": "Informative Value", "description": "Measures how much new or interesting information is provided in the response that adds depth to the conversation.", "scale": "1-5 (1: Not informative at all, 5: Very informative)", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the context and previous messages in the conversation.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the ability of the response to encourage continued conversation and interest from the other participant.",
+        "scale": "1 (Not Engaging) to 5 (Highly Engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Informative Value",
+        "description": "Evaluates the amount of new and interesting information provided in the response, particularly in relation to the interesting fact shared.",
+        "scale": "1 (Not Informative) to 5 (Very Informative)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Analyzes the logical flow and clarity of the response, ensuring it makes sense within the conversation context.",
+        "scale": "1 (Incoherent) to 5 (Very Coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and creativity of the response, particularly in how it relates to the topic of discussion.",
+        "scale": "1 (Not Creative) to 5 (Highly Creative)",
+        "instruction": ""
+    }
+]

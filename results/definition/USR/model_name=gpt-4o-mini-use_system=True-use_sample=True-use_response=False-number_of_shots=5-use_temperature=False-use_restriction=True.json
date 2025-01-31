@@ -1,1 +1,32 @@
-[[{"name": "Coherence", "description": "Measures how logically consistent and connected the generated response is to the preceding conversation. It assesses whether the response follows naturally from the previous dialogue turns.", "scale": "1-5 (1=Not coherent at all, 5=Highly coherent)", "instruction": ""}, {"name": "Relevance", "description": "Evaluates the degree to which the response directly addresses the topic or question posed in the conversation. It checks if the response stays on topic and contributes meaningfully to the dialogue.", "scale": "1-5 (1=Not relevant at all, 5=Highly relevant)", "instruction": ""}, {"name": "Engagement", "description": "Assesses the level of interest and enthusiasm reflected in the response. It considers the use of engaging language, questions, or comments that encourage further interaction.", "scale": "1-5 (1=Not engaging at all, 5=Very engaging)", "instruction": ""}, {"name": "Creativity", "description": "Measures the originality and inventiveness of the response. It looks at how unique or imaginative the response is compared to standard conversational replies.", "scale": "1-5 (1=Not creative at all, 5=Highly creative)", "instruction": ""}, {"name": "Informational Value", "description": "Evaluates the amount of new information or insights provided in the response. It considers whether the response introduces interesting facts or knowledge that enhances the conversation.", "scale": "1-5 (1=No informational value, 5=High informational value)", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the preceding conversation and context, including the interesting fact provided.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the level of enthusiasm and interest expressed in the response, indicating how likely it is to foster further conversation.",
+        "scale": "1 (not engaging) to 5 (very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Evaluates the clarity and coherence of the response, including proper grammar and structure, making it easy to understand.",
+        "scale": "1 (unclear) to 5 (very clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Informational Value",
+        "description": "Determines the extent to which the response provides new information, insights, or interesting facts that contribute to the conversation.",
+        "scale": "1 (no new information) to 5 (highly informative)",
+        "instruction": ""
+    },
+    {
+        "name": "Tone Appropriateness",
+        "description": "Measures how well the tone of the response fits the context of the conversation, including friendliness, professionalism, and tone consistency.",
+        "scale": "1 (inappropriate tone) to 5 (highly appropriate tone)",
+        "instruction": ""
+    }
+]

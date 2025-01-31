@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "How well the response addresses the user's question or concern.",
+        "scale": "[1, 2, 3, 4, 5]",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "The correctness of the information provided in the response.",
+        "scale": "[1, 2, 3, 4, 5]",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "How thoroughly the response answers the user's question or addresses their concern.",
+        "scale": "[1, 2, 3, 4, 5]",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "How easy it is to understand the response.",
+        "scale": "[1, 2, 3, 4, 5]",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "How well the response engages the user and encourages further interaction.",
+        "scale": "[1, 2, 3, 4, 5]",
+        "instruction": ""
+    },
+    {
+        "name": "Contextual Understanding",
+        "description": "How well the response demonstrates an understanding of the context and the user's needs.",
+        "scale": "[1, 2, 3, 4, 5]",
+        "instruction": ""
+    }
+]

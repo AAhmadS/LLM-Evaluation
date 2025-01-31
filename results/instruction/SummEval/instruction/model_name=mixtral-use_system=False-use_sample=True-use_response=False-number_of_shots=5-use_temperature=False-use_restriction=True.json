@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measure of how well the summary captures the main points and key details from the original article.",
+        "scale": "On a scale of 1-5, 1 being completely irrelevant and 5 being highly relevant.",
+        "instruction": "\n1- Read the original news article thoroughly to understand its main points and key details.\n2- Read the contestant's summary carefully, ensuring you understand their interpretation of the article.\n3- Compare the contestant's summary with the original article, identifying any main points or key details that were included or excluded in the summary.\n4- Rate the summary on a scale of 1-5 based on the Relevance metric, where 1 is completely irrelevant and 5 is highly relevant. Consider how well the summary captures the main points and key details from the original article."
+    },
+    {
+        "name": "Coherence",
+        "description": "Measure of the logical flow and organization of ideas in the summary, ensuring that it is easy to understand and follow.",
+        "scale": "On a scale of 1-5, 1 being incoherent and 5 being highly coherent.",
+        "instruction": "\n1- Read the provided news article and the contestant's summary carefully to understand the main points and arguments presented.\n2- Evaluate the logical flow of ideas in the summary. Check if the summary presents the main points in a clear and organized manner, and if the ideas transition smoothly from one to another.\n3- Assess the coherence of the summary. Determine if the summary is easy to understand and follow, and if the ideas are presented in a way that makes sense to the reader.\n4- Rate the summary on a scale of 1-5 based on the Coherence metric. A score of 1 indicates that the summary is incoherent and difficult to understand, while a score of 5 indicates that the summary is highly coherent and easy to follow."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measure of how well the summary avoids unnecessary details and redundancies, focusing only on the most important information.",
+        "scale": "On a scale of 1-5, 1 being highly verbose and 5 being highly concise.",
+        "instruction": "\n1- Read the original news article to understand the main points and key information.\n2- Read the contestant's summary carefully, paying attention to the length and the level of detail included.\n3- Evaluate the conciseness of the summary by determining if it avoids unnecessary details and redundancies, focusing only on the most important information.\n4- Rate the summary on a scale of 1-5, with 1 being highly verbose and 5 being highly concise, based on the evaluation in step 3."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Measure of the factual correctness of the summary, ensuring that it does not contain any misinformation or misrepresentations.",
+        "scale": "On a scale of 1-5, 1 being highly inaccurate and 5 being highly accurate.",
+        "instruction": "\n1- Read the original news article and the contestant's summary carefully to understand the context and content.\n2- Compare the contestant's summary with the original news article to identify any factual inaccuracies, misinformation, or misrepresentations.\n3- Rate the summary on a scale of 1-5 based on the Accuracy metric, where 1 is highly inaccurate and 5 is highly accurate."
+    },
+    {
+        "name": "Objectivity",
+        "description": "Measure of the impartiality and neutrality of the summary, ensuring that it does not contain any biased or subjective language.",
+        "scale": "On a scale of 1-5, 1 being highly biased and 5 being highly objective.",
+        "instruction": "\n1- Read the provided news article summary carefully and thoroughly to understand its content.\n2- Identify any subjective or biased language in the summary, such as personal opinions, value judgments, or emotional appeals.\n3- Determine the extent to which the summary is objective and neutral, based on the absence of biased or subjective language.\n4- Rate the summary on a scale of 1-5, with 1 being highly biased and 5 being highly objective, based on the identified level of objectivity."
+    }
+]

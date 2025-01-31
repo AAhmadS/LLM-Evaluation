@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "name": "Contextual Relevance",
+            "description": "Measure of how well the generated continuation aligns with the provided context and maintains a consistent topic throughout the conversation.",
+            "scale": "Binary (0: irrelevant, 1: relevant)",
+            "instruction": ""
+        },
+        {
+            "name": "Fluency",
+            "description": "Assessment of the grammatical correctness, coherence, and readability of the generated continuation, considering factors such as sentence structure, punctuation, and word usage.",
+            "scale": "Continuous (0-1: low to high fluency)",
+            "instruction": ""
+        },
+        {
+            "name": "Engagement",
+            "description": "Evaluation of the generated continuation's ability to stimulate further conversation, considering factors such as the use of open-ended questions, personal anecdotes, and interesting facts.",
+            "scale": "Continuous (0-1: low to high engagement)",
+            "instruction": ""
+        },
+        {
+            "name": "Creativity",
+            "description": "Measure of the originality, uniqueness, and imaginative elements in the generated continuation, considering factors such as novel ideas, humor, and unexpected twists.",
+            "scale": "Continuous (0-1: low to high creativity)",
+            "instruction": ""
+        },
+        {
+            "name": "Fact Accuracy",
+            "description": "Assessment of the factual correctness of the information presented in the generated continuation, considering the context and the provided interesting fact.",
+            "scale": "Binary (0: inaccurate, 1: accurate)",
+            "instruction": ""
+        }
+    ]
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how relevant the response is to the given context and the preceding conversation.",
+        "scale": "1-5, where 1 is not relevant at all and 5 is highly relevant",
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read and understand the conversation and the context.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the key points and themes in the conversation.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Read and understand the potential response and the interesting fact provided.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Evaluate the relevance of the response to the conversation and context based on the criteria provided.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Assign a score from 1 to 5 based on the relevance of the response.\"}], \"required\": [\"steps\"]}}"
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how well the response keeps the conversation engaging and interesting.",
+        "scale": "1-5, where 1 is not engaging at all and 5 is highly engaging",
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the conversation and the potential response provided.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the interesting fact mentioned in the potential response.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate how well the response keeps the conversation engaging and interesting based on the Engagement metric.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Provide a rating from 1 to 5, where 1 is not engaging at all and 5 is highly engaging.\"}], \"required\": [\"steps\"]}}"
+    },
+    {
+        "name": "Naturalness",
+        "description": "Assesses how natural and fluent the response sounds in the context of the conversation.",
+        "scale": "1-5, where 1 is very unnatural and 5 is very natural",
+        "instruction": "To proceed with the evaluation, I need the conversation between the two individuals, the potential response for the next turn, and the interesting fact that the response concerns. Please provide these details so I can rate the response based on the naturalness metric."
+    },
+    {
+        "name": "Information Content",
+        "description": "Measures the amount of new and interesting information provided in the response.",
+        "scale": "1-5, where 1 is no new information and 5 is a lot of new and interesting information",
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the conversation and the potential response.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the interesting fact provided in the response.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate the amount of new and interesting information provided in the response based on the Information Content metric.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Provide a score between 1 and 5 for the Information Content metric.\"}]}}"
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and coherence of the response within the conversation.",
+        "scale": "1-5, where 1 is incoherent and 5 is highly coherent",
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the conversation and the provided response.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the interesting fact mentioned in the response.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate if the response logically follows from the conversation and if the interesting fact is relevant and adds value to the conversation.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Rate the response on a scale of 1 to 5 based on the Coherence metric.\"}], \"required\": [\"steps\"]}}"
+    }
+]

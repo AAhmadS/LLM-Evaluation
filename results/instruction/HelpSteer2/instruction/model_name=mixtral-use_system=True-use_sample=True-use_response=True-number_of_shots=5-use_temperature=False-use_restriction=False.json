@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response addresses the user's question or request. A highly relevant response provides a direct and accurate answer or response to the user's input.",
+        "scale": "Continuous (0-1)",
+        "instruction": "\n1- Read the user's prompt or question carefully to understand the context and the expected response.\n2- Analyze the contestant's response to determine if it directly addresses the user's question or request.\n3- Evaluate the accuracy of the response by checking if it provides correct and relevant information based on the given context.\n4- Assign a relevance score on a continuous scale from 0 to 1, where 0 indicates that the response is completely irrelevant, and 1 indicates that the response is highly relevant and directly addresses the user's question or request."
+    },
+    {
+        "name": "Coherence",
+        "description": "Measures the logical flow and consistency of the response. A coherent response maintains a consistent train of thought and is easy to follow.",
+        "scale": "Continuous (0-1)",
+        "instruction": "\n1- Read the user's prompt and the contestant's response carefully to understand the context and the intended message.\n2- Evaluate the logical flow of the response by checking if the ideas presented are connected and build upon each other in a meaningful way.\n3- Assess the consistency of the response by verifying if the response maintains a consistent train of thought and does not contain contradictory or irrelevant information.\n4- Determine the ease of following the response by checking if the response is clear, concise, and well-structured.\n5- Assign a score between 0 and 1 based on the coherence of the response, where 0 indicates no coherence and 1 indicates perfect coherence."
+    },
+    {
+        "name": "Completeness",
+        "description": "Measures the extent to which the response provides all necessary information to address the user's question or request. A complete response is comprehensive and does not omit any significant details.",
+        "scale": "Continuous (0-1)",
+        "instruction": "\n1- Read the user's prompt or question carefully to understand the context and the information required in the response.\n2- Analyze the contestant's response to determine if it addresses all aspects of the user's prompt or question.\n3- Check if the response provides all necessary information to address the user's question or request. Ensure that the response is comprehensive and does not omit any significant details.\n4- Assign a score on the Completeness metric using a continuous scale from 0 to 1. A score of 1 indicates that the response is complete and provides all necessary information, while a score of 0 indicates that the response is incomplete and lacks significant details."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Measures the correctness of the information provided in the response. An accurate response is factually correct and does not contain any misleading or false information.",
+        "scale": "Continuous (0-1)",
+        "instruction": "\n1- Read the user prompt and the contestant's response carefully.\n2- Research the topic or verify the information provided in the response to ensure its factual correctness.\n3- Check if the response contains any misleading or false information. If it does, note the inaccuracies.\n4- Assign a score on the continuous scale of 0-1, where 0 represents completely inaccurate information and 1 represents completely accurate information. Consider the severity and frequency of any inaccuracies when determining the score."
+    },
+    {
+        "name": "Readability",
+        "description": "Measures the ease with which the response can be read and understood. A readable response uses clear and concise language, appropriate formatting, and avoids grammatical or spelling errors.",
+        "scale": "Continuous (0-1)",
+        "instruction": "\n1- Read the response carefully and assess its overall structure, including the use of paragraphs, bullet points, or numbered lists, if applicable.\n2- Evaluate the language used in the response, checking for clarity and conciseness. Ensure that the response avoids unnecessary jargon or complex language that may hinder understanding.\n3- Check the response for grammatical errors, such as incorrect verb tense, subject-verb agreement, or punctuation mistakes.\n4- Identify any spelling errors in the response. This includes checking for correctly spelled words used in the wrong context.\n5- Consider the coherence and cohesion of the response. The response should flow logically from one point to the next, and the ideas should be connected clearly.\n6- Based on the above evaluations, assign a score on the continuous scale of 0-1, where 0 indicates very poor readability and 1 indicates excellent readability."
+    },
+    {
+        "name": "Politeness",
+        "description": "Measures the level of courtesy and respect conveyed in the response. A polite response is considerate, respectful, and professional in tone.",
+        "scale": "Continuous (0-1)",
+        "instruction": "\n1- Read the user prompt and the contestant's response carefully to understand the context and the intended message.\n2- Evaluate the tone of the response. A polite response should have a positive, respectful, and considerate tone.\n3- Check for the use of polite language, such as 'please', 'thank you', and 'you're welcome'. However, note that the absence of these phrases does not necessarily indicate impoliteness.\n4- Assess the response for any signs of rudeness, aggression, or disrespect. A polite response should not contain any offensive or derogatory language.\n5- Consider the professionalism of the response. A polite response is professional in its language and presentation, even in informal contexts.\n6- Rate the response on a scale of 0 to 1, where 0 indicates no politeness and 1 indicates perfect politeness. Use decimal points to indicate levels of politeness between these two extremes."
+    },
+    {
+        "name": "Helpfulness",
+        "description": "Measures the extent to which the response assists the user in achieving their desired outcome. A helpful response provides useful guidance, suggestions, or solutions to the user's question or request.",
+        "scale": "Continuous (0-1)",
+        "instruction": "\n1- Read the user's prompt or instruction carefully to understand the context and the desired outcome.\n2- Analyze the contestant's response to determine if it addresses the user's question or request directly.\n3- Evaluate the usefulness of the information provided in the response. Consider whether the response offers valuable guidance, suggestions, or solutions that can help the user achieve their desired outcome.\n4- Assess the clarity and coherence of the response. A helpful response should be easy to understand and follow.\n5- Consider the relevance of the response to the user's prompt or instruction. A helpful response should be directly related to the user's request.\n6- Rate the response on a scale of 0 to 1, where 0 indicates that the response is not helpful at all, and 1 indicates that the response is extremely helpful. Use decimal points to provide a more precise rating."
+    },
+    {
+        "name": "Factuality",
+        "description": "Measures the extent to which the response is grounded in factual information. A factual response is based on verifiable facts and avoids speculation or personal opinions.",
+        "scale": "Continuous (0-1)",
+        "instruction": "\n1- Read the user prompt and the contestant's response carefully to understand the context and the information provided.\n2- Identify the factual claims made in the response. These can be explicit statements or implicit assumptions.\n3- For each factual claim, determine whether it is verifiable and based on reliable sources. This can be done by checking the claim against reputable sources or using common knowledge.\n4- Evaluate the extent to which the response is grounded in factual information. A response that is entirely based on verifiable facts and avoids speculation or personal opinions should receive a high score. Conversely, a response that includes unverifiable claims, speculation, or personal opinions should receive a lower score.\n5- Assign a score on a continuous scale from 0 to 1, where 0 indicates that the response is not factual at all and 1 indicates that the response is entirely factual. The score should reflect the proportion of the response that is based on verifiable facts."
+    },
+    {
+        "name": "Fairness",
+        "description": "Measures the extent to which the response treats all parties involved in a fair and unbiased manner. A fair response avoids favoritism or discrimination and considers the perspectives and interests of all relevant parties.",
+        "scale": "Continuous (0-1)",
+        "instruction": "\n1- Read the prompt and the generated response carefully to understand the context and the perspectives involved.\n2- Identify all parties involved in the prompt and the response. This could include individuals, groups, or entities.\n3- Analyze the response to determine if it treats all parties involved in a fair and unbiased manner. This involves checking if the response avoids favoritism or discrimination and considers the perspectives and interests of all relevant parties.\n4- Rate the response on a continuous scale from 0 to 1, where 0 indicates that the response does not treat all parties fairly or is biased, and 1 indicates that the response treats all parties fairly and unbiasedly, considering all perspectives and interests."
+    }
+]

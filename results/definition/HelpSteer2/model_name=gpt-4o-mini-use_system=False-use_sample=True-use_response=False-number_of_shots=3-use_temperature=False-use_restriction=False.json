@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the response addresses the user's prompt or question.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses how clear and understandable the response is, including grammar and spelling.",
+        "scale": "1 (Very Unclear) to 5 (Very Clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates whether the response provides a full answer to the user\u2019s question, covering all necessary aspects.",
+        "scale": "1 (Incomplete) to 5 (Fully Complete)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging or interesting the response is to the user, encouraging further interaction.",
+        "scale": "1 (Not Engaging) to 5 (Highly Engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Assesses the accuracy of the technical information provided in response to the user's query, especially for specialized topics.",
+        "scale": "1 (Inaccurate) to 5 (Highly Accurate)",
+        "instruction": ""
+    },
+    {
+        "name": "Supportiveness",
+        "description": "Evaluates how supportive and helpful the assistant's response is, particularly in providing guidance or assistance.",
+        "scale": "1 (Not Supportive) to 5 (Very Supportive)",
+        "instruction": ""
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response addresses the user's prompt or question. High relevance indicates the response is directly related to the user's input, while low relevance suggests a disconnection from the prompt.",
+        "scale": "0 (not relevant) to 5 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the clarity of the response. A clear response is easy to understand, with well-structured sentences and coherent thoughts, while a unclear response may be confusing or poorly organized.",
+        "scale": "0 (very unclear) to 5 (very clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates whether the response provides a thorough answer to the user's question or prompt. A complete response addresses all aspects of the question, while an incomplete response leaves out key information.",
+        "scale": "0 (not complete) to 5 (fully complete)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging the response is. An engaging response captures the user's interest and encourages further interaction, while a non-engaging response may feel flat or uninviting.",
+        "scale": "0 (not engaging) to 5 (very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Assesses the level of empathy demonstrated in the response. A high empathy score indicates that the responder acknowledges the user's feelings and concerns, while a low score suggests a lack of emotional awareness.",
+        "scale": "0 (no empathy) to 5 (high empathy)",
+        "instruction": ""
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Evaluates the correctness of the information provided in the response, especially in contexts where factual accuracy is crucial, such as technical or legal advice.",
+        "scale": "0 (not accurate) to 5 (highly accurate)",
+        "instruction": ""
+    }
+]

@@ -1,1 +1,44 @@
-[[{"name": "Coherence", "description": "Measures how logically consistent and understandable the continuation is within the context of the original conversation.", "scale": "Low, Medium, High", "instruction": ""}, {"name": "Relevance", "description": "Assesses how closely the response aligns with the topic and context of the original dialogue and the interesting fact provided.", "scale": "Irrelevant, Somewhat Relevant, Highly Relevant", "instruction": ""}, {"name": "Creativity", "description": "Evaluates the uniqueness and originality of the response compared to typical conversational continuations.", "scale": "Low Creativity, Moderate Creativity, High Creativity", "instruction": ""}, {"name": "Engagement Level", "description": "Determines the extent to which the response invites further dialogue or interaction from the other party.", "scale": "Low Engagement, Moderate Engagement, High Engagement", "instruction": ""}, {"name": "Empathy", "description": "Measures the degree to which the response demonstrates an understanding of the emotions and perspectives of the other participant in the conversation.", "scale": "Low Empathy, Moderate Empathy, High Empathy", "instruction": ""}, {"name": "Clarity", "description": "Assesses how clearly the ideas are expressed in the continuation, allowing for easy understanding by the audience.", "scale": "Unclear, Somewhat Clear, Very Clear", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response aligns with the given context and interesting fact.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the clarity of expression and how easily the response can be understood by others.",
+        "scale": "1 (Very Unclear) to 5 (Very Clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates the ability of the response to capture interest and provoke further interaction or conversation.",
+        "scale": "1 (Not Engaging) to 5 (Highly Engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and inventiveness of the response, considering how unique or novel it is.",
+        "scale": "1 (Not Creative) to 5 (Highly Creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and consistency of the response, ensuring that ideas are connected and make sense together.",
+        "scale": "1 (Not Coherent) to 5 (Highly Coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Emotion",
+        "description": "Evaluates the emotional resonance of the response, considering how well it conveys feelings or evokes an emotional reaction.",
+        "scale": "1 (No Emotion) to 5 (Highly Emotional)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures how succinctly ideas are expressed without unnecessary verbosity while maintaining meaning.",
+        "scale": "1 (Very Wordy) to 5 (Very Concise)",
+        "instruction": ""
+    }
+]

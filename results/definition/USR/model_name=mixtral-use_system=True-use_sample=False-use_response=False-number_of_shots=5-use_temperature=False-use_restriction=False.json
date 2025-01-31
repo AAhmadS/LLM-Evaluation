@@ -1,1 +1,32 @@
-[[{"name": "Relevance", "description": "Measures how well the generated continuation aligns with the given context and fact, ensuring it remains on-topic and relevant throughout.", "scale": "Scored from 1 (not relevant) to 5 (highly relevant)", "instruction": ""}, {"name": "Coherence", "description": "Assesses the logical consistency and flow of the generated continuation, ensuring it forms a coherent and understandable conversation.", "scale": "Scored from 1 (incoherent) to 5 (highly coherent)", "instruction": ""}, {"name": "Fluency", "description": "Evaluates the grammatical correctness and linguistic smoothness of the generated continuation, ensuring it reads like a naturally written text.", "scale": "Scored from 1 (poor fluency) to 5 (excellent fluency)", "instruction": ""}, {"name": "Engagement", "description": "Measures the ability of the generated continuation to attract and maintain the reader's interest, making it enjoyable and captivating.", "scale": "Scored from 1 (boring) to 5 (highly engaging)", "instruction": ""}, {"name": "Creativity", "description": "Assesses the originality and imaginative aspects of the generated continuation, ensuring it goes beyond simple fact recitation.", "scale": "Scored from 1 (unoriginal) to 5 (highly creative)", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the generated continuation relates to the provided context and interesting fact. A high score indicates that the continuation is on-topic and relevant to the conversation.",
+        "scale": "Scored on a scale of 1-5, with 1 being not relevant and 5 being highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and organization of the generated continuation. A high score indicates that the continuation is well-structured, easy to follow, and maintains a consistent theme throughout.",
+        "scale": "Scored on a scale of 1-5, with 1 being incoherent and 5 being highly coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency",
+        "description": "Assesses the grammatical correctness and readability of the generated continuation. A high score indicates that the continuation is grammatically correct, well-written, and easy to understand.",
+        "scale": "Scored on a scale of 1-5, with 1 being not fluent and 5 being highly fluent.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how interesting and engaging the generated continuation is. A high score indicates that the continuation is captivating, informative, and encourages further conversation.",
+        "scale": "Scored on a scale of 1-5, with 1 being not engaging and 5 being highly engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Factual Accuracy",
+        "description": "Evaluates the correctness of any factual information presented in the generated continuation. A high score indicates that the continuation is accurate and reliable.",
+        "scale": "Scored on a scale of 1-5, with 1 being factually inaccurate and 5 being highly accurate.",
+        "instruction": ""
+    }
+]

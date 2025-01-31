@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "How well the continuation relates to the context",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Coherence",
+        "description": "How logically connected the continuation is",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Engagement",
+        "description": "How interesting and engaging the continuation is",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Contextual Understanding",
+        "description": "How well the contestant understands the context",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Creativity",
+        "description": "How unique and creative the continuation is",
+        "scale": "1-5",
+        "instruction": null
+    }
+]

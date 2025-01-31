@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Non-Repetition and no factual Redundancy",
+        "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
+        "scale": "1-10",
+        "instruction": null
+    },
+    {
+        "name": "Coherence",
+        "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
+        "scale": "1-10",
+        "instruction": "To ensure a clear and structured evaluation process, I will outline the steps for assessing the summaries based on the Coherence metric. Here are the steps:\n\n1. **Read the Summary Thoroughly**: Begin by reading the summary in its entirety to get an overall sense of the content and flow.\n2. **Identify the Main Concepts**: Note the main ideas or concepts that the summary is supposed to convey.\n3. **Assess Sentence-to-Sentence Flow**: Evaluate how well each sentence connects to the next. Look for logical transitions and whether the ideas flow naturally.\n4. **Check for Consistency**: Ensure that the summary maintains a consistent focus on the main concepts without introducing irrelevant information.\n5. **Evaluate Clarity and Comprehensibility**: Determine if the summary is clear and easy to understand, with no confusing or ambiguous statements.\n6. **Rate the Coherence**: Assign a score from 1 to 10 based on the overall coherence of the summary. A score of 1 indicates very poor coherence, while a score of 10 indicates excellent coherence.\n\nWould you like me to format these steps into the suitable format for the metric?"
+    },
+    {
+        "name": "Readability",
+        "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
+        "scale": "1-10",
+        "instruction": "To ensure a clear and structured evaluation process for the summaries based on the **Readability** metric, please follow these steps:\n\n1. **Initial Review**:\n   - Read the summary in its entirety to get an overall sense of its content and structure.\n   - Note any immediate impressions regarding clarity and coherence.\n\n2. **Spelling and Grammar**:\n   - Check for any spelling errors.\n   - Ensure that grammar is correct, including proper use of punctuation, sentence structure, and verb tenses.\n\n3. **Understandability**:\n   - Assess whether the summary is easy to understand.\n   - Consider if the language used is appropriate for the intended audience (e.g., medical professionals, general public).\n\n4. **Clarity and Coherence**:\n   - Evaluate if the summary is logically organized and flows well.\n   - Check if the main points of the research paper are clearly conveyed.\n\n5. **Conciseness**:\n   - Determine if the summary is concise and to the point.\n   - Avoid overly verbose or redundant language.\n\n6. **Technical Accuracy**:\n   - Ensure that any technical terms or jargon are used correctly and are explained if necessary.\n\n7. **Scoring**:\n   - Assign a score from 1 to 10 based on the overall readability of the summary.\n   - Use the following scale as a guide:\n     - **1-3**: Poor readability with multiple errors and difficult to understand.\n     - **4-6**: Fair readability with some errors and areas for improvement.\n     - **7-9**: Good readability with minor errors and clear understanding.\n     - **10**: Excellent readability with no errors and very clear understanding.\n\n8. **Final Review**:\n   - Re-read the summary to ensure all criteria have been considered.\n   - Adjust the score if necessary based on a final assessment.\n\nWould you like to proceed with the evaluation, or do you need further clarification on any of these steps?"
+    },
+    {
+        "name": "Informativeness, Overlap and Focus",
+        "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
+        "scale": "1-10",
+        "instruction": null
+    },
+    {
+        "name": "Overall Quality",
+        "description": "Given your answers above, what is your overall impression of the quality of this summary?",
+        "scale": "1-10",
+        "instruction": "To ensure a clear and structured evaluation, I will outline the steps for assessing the summaries based on the provided metric. Here are the steps:\n\n1. **Read the Summary Thoroughly**: Carefully read through the summary to understand its content and structure.\n2. **Assess Relevance**: Evaluate how well the summary captures the key points and main findings of the original document.\n3. **Evaluate Clarity and Coherence**: Assess whether the summary is clear, concise, and logically organized.\n4. **Check for Accuracy**: Ensure that the information in the summary is accurate and does not contain any factual errors.\n5. **Consider Completeness**: Determine if the summary includes all the essential information from the original document.\n6. **Assess Writing Style**: Evaluate the writing style for professionalism and appropriateness for the intended audience.\n7. **Overall Impression**: Based on the above criteria, form an overall impression of the quality of the summary.\n8. **Assign a Score**: Provide a score on a scale of 1 to 10, where 1 is very poor and 10 is excellent.\n\nWould you like me to format these steps into the suitable format for the metric?"
+    }
+]

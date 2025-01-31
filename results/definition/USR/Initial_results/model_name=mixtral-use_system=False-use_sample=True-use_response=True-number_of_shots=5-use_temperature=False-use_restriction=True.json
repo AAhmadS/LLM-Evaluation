@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "name": "Relevance",
+            "description": "Measures how well the generated response is connected to the context and continues the conversation in a meaningful way.",
+            "scale": "Binary (Relevant or Irrelevant)",
+            "instruction": ""
+        },
+        {
+            "name": "Coherence",
+            "description": "Evaluates the logical flow and consistency of the generated response with the context and the previous conversation.",
+            "scale": "Continuous (1-5, where 1 is not coherent and 5 is highly coherent)",
+            "instruction": ""
+        },
+        {
+            "name": "Informativeness",
+            "description": "Assesses the amount of new, relevant, and useful information provided in the generated response.",
+            "scale": "Continuous (1-5, where 1 is not informative and 5 is highly informative)",
+            "instruction": ""
+        },
+        {
+            "name": "Engagement",
+            "description": "Measures the ability of the generated response to maintain the interest of the conversation partner and encourage further interaction.",
+            "scale": "Continuous (1-5, where 1 is not engaging and 5 is highly engaging)",
+            "instruction": ""
+        },
+        {
+            "name": "Creativity",
+            "description": "Evaluates the novelty and imaginative aspects of the generated response, considering the context and the conversation topic.",
+            "scale": "Continuous (1-5, where 1 is not creative and 5 is highly creative)",
+            "instruction": ""
+        }
+    ]
+]

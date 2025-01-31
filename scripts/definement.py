@@ -23,7 +23,7 @@ from prompts.prompt_template import retrieve_set_of_tools
 #################Main function######################
 def definement():
     parser = argparse.ArgumentParser(description='Run the specified runner with the given data and API.')
-    parser.add_argument('--data', choices=["USR", "SummEval", "SumPubMed", "MT-Bench", "CommonGen"], default="USR", help='The name of the dataset to use')
+    parser.add_argument('--data', choices=["USR", "SummEval", "SumPubMed", "MT-Bench", "CommonGen", "HelpSteer2"], default="USR", help='The name of the dataset to use')
     parser.add_argument('--api', choices=["gpt-4o","gpt-4o-mini","llama","vicuna","mixtral","qwen"], default="gpt-4o-mini", help='The LLM API to use')
     parser.add_argument('--use_system', action='store_true', default=False, help='Whether to use system')
     parser.add_argument('--use_temperature', action='store_true', default=False, help='Whether to use temperature method in metric generation')

@@ -1,1 +1,32 @@
-[[{"name": "Relevance", "description": "How well the response relates to the context and interesting fact", "scale": "1-5", "instruction": ""}, {"name": "Coherence", "description": "How logical and consistent the response is", "scale": "1-5", "instruction": ""}, {"name": "Fluency", "description": "How natural and smooth the language used in the response is", "scale": "1-5", "instruction": ""}, {"name": "Engagement", "description": "How interesting and captivating the response is", "scale": "1-5", "instruction": ""}, {"name": "Originality", "description": "How unique and creative the response is", "scale": "1-5", "instruction": ""}]]
+[
+    {
+        "name": "Contextual Relevance",
+        "description": "How well does the response relate to the context of the conversation?",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Interesting Fact Incorporation",
+        "description": "How well is the interesting fact incorporated into the response?",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Response Adequacy",
+        "description": "How well does the response address the conversational prompt?",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence and Cohesion",
+        "description": "How well does the response flow logically and coherently?",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement and Originality",
+        "description": "How engaging and original is the response?",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

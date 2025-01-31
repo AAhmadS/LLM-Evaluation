@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response addresses the user's query or task in a meaningful way.",
+        "scale": "Scale from 1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Assesses the factual correctness of the information provided in the response.",
+        "scale": "Scale from 1 to 5, where 1 is completely inaccurate and 5 is entirely accurate.",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates whether the response provides a full and comprehensive answer to the user's query.",
+        "scale": "Scale from 1 to 5, where 1 is very incomplete and 5 is fully complete.",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Measures how clearly the response communicates the information, including language and structure.",
+        "scale": "Scale from 1 to 5, where 1 is very unclear and 5 is extremely clear.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the ability of the response to engage the user, encouraging further interaction or interest.",
+        "scale": "Scale from 1 to 5, where 1 is not engaging at all and 5 is highly engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Politeness and Empathy",
+        "description": "Evaluates the tone of the response, ensuring it is polite and empathetic to the user's situation or query.",
+        "scale": "Scale from 1 to 5, where 1 is rude or indifferent and 5 is very polite and empathetic.",
+        "instruction": ""
+    }
+]

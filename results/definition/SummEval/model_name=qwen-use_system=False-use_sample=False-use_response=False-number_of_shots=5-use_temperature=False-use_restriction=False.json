@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The extent to which the summary covers the key points and main ideas of the original article.",
+        "scale": "1-5, with 1 being not relevant and 5 being highly relevant",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical flow and clarity of the summary, ensuring that it is easy to understand and follow.",
+        "scale": "1-5, with 1 being incoherent and 5 being highly coherent",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "The ability of the summary to convey the main points succinctly without unnecessary details.",
+        "scale": "1-5, with 1 being very verbose and 5 being very concise",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "The faithfulness of the summary to the original content, avoiding misrepresentation or omission of key facts.",
+        "scale": "1-5, with 1 being highly inaccurate and 5 being highly accurate",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "The ability of the summary to capture and maintain the reader's interest.",
+        "scale": "1-5, with 1 being unengaging and 5 being highly engaging",
+        "instruction": ""
+    }
+]

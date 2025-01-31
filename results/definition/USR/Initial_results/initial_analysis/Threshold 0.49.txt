@@ -1,0 +1,121 @@
+Threshold 0.49:
+4o-mini model_name=gpt-4o-mini-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.6233511328697204)
+4o-mini model_name=gpt-4o-mini-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 4, 1.0, 0.6512027829885483)
+4o-mini model_name=gpt-4o-mini-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 4, 1.0, 0.6751524358987808)
+4o-mini model_name=gpt-4o-mini-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.6037601828575134)
+4o-mini model_name=gpt-4o-mini-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6411779642105102)
+4o-mini model_name=gpt-4o-mini-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.621091890335083)
+4o-mini model_name=gpt-4o-mini-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6710034728050231)
+4o-mini model_name=gpt-4o-mini-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.617471206188202)
+4o-mini model_name=gpt-4o-mini-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.5928292870521545)
+4o-mini model_name=gpt-4o-mini-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 0.8333333333333334, 0.6304168939590454)
+4o-mini model_name=gpt-4o-mini-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.6086658000946045)
+4o-mini model_name=gpt-4o-mini-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(False, 4, 1.0, 0.6683980971574783)
+4o model_name=gpt-4o-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.6261752963066101)
+4o model_name=gpt-4o-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 4, 0.8571428571428571, 0.6371402442455292)
+4o model_name=gpt-4o-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.6393056154251099)
+4o model_name=gpt-4o-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 0.8, 0.6281304240226746)
+4o model_name=gpt-4o-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6124972581863404)
+4o model_name=gpt-4o-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6691014885902404)
+4o model_name=gpt-4o-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6333580136299133)
+4o model_name=gpt-4o-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 4, 0.8571428571428571, 0.6265228688716888)
+4o model_name=gpt-4o-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6388964176177978)
+4o model_name=gpt-4o-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6246760845184326)
+4o model_name=gpt-4o-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6031734347343445)
+4o model_name=gpt-4o-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 0.8333333333333334, 0.6239629745483398)
+llama model_name=llama-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.7503450870513916)
+llama model_name=llama-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.7334563493728637)
+llama model_name=llama-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.7323801994323731)
+llama model_name=llama-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.7503450870513916)
+llama model_name=llama-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 2, 0.6, 0.6311998069286346)
+llama model_name=llama-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.7349904656410218)
+llama model_name=llama-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.7164813160896302)
+llama model_name=llama-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 2, 0.5714285714285714, 0.5988874435424805)
+llama model_name=llama-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.7233182072639466)
+llama model_name=llama-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.7205071091651917)
+llama model_name=llama-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(False, 2, 0.8, 0.5919923484325409)
+llama model_name=llama-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.734307861328125)
+mixtral model_name=mixtral-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6081624507904053)
+mixtral model_name=mixtral-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6390166759490967)
+mixtral model_name=mixtral-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(False, 2, 0.6, 0.5815480947494507)
+mixtral model_name=mixtral-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(False, 1, 0.4, 0.5120826959609985)
+mixtral model_name=mixtral-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.5972493290901184)
+mixtral model_name=mixtral-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 1, 0.16666666666666666, 0.5610346794128418)
+mixtral model_name=mixtral-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.5867762207984925)
+mixtral model_name=mixtral-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 2, 0.6, 0.5422047078609467)
+mixtral model_name=mixtral-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 0.8, 0.5988593101501465)
+mixtral model_name=mixtral-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 4, 1.0, 0.6497783809900284)
+mixtral model_name=mixtral-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.5940092921257019)
+mixtral model_name=mixtral-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 3, 0.6, 0.6520233949025472)
+qwen model_name=qwen-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.6308039784431457)
+qwen model_name=qwen-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6662475228309631)
+qwen model_name=qwen-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 2, 0.6, 0.5719920694828033)
+qwen model_name=qwen-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(False, 4, 1.0, 0.6438872069120407)
+qwen model_name=qwen-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(False, 4, 0.8, 0.6509503275156021)
+qwen model_name=qwen-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.663421368598938)
+qwen model_name=qwen-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.6648510575294495)
+qwen model_name=qwen-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(False, 4, 0.8, 0.6491968929767609)
+qwen model_name=qwen-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 0.8, 0.6315580248832703)
+qwen model_name=qwen-use_system=False-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(False, 2, 0.6, 0.6270326375961304)
+qwen model_name=qwen-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json
+(True, 5, 1.0, 0.6499670267105102)
+qwen model_name=qwen-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json
+(True, 5, 1.0, 0.6680415630340576)

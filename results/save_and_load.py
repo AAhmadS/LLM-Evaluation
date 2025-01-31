@@ -13,6 +13,32 @@ def save_results(phase,
         """
         save_path = os.path.join(base_path, phase, dataset_name)
         os.makedirs(save_path, exist_ok=True)
-        results = [[serialize_metric(metric) for metric in metrics] for metrics in results]
-        json.dump(results, open(os.path.join(save_path, setting_name + ".json"),"w"))
+        results = [serialize_metric(metric) for metrics in results for metric in metrics]
+        json.dump(results, open(os.path.join(save_path, setting_name + ".json"),"w"),indent=4)
         # results.to_csv(f"{os.path.join(save_path, setting_name)}.csv")
+        
+def save_instruction_results(phase,
+                            metrics, 
+                            dataset_name,
+                            setting_name
+                            ):
+        """
+        Save the results to a JSON file.
+        """
+        save_path = os.path.join(base_path, phase, dataset_name,"instruction")
+        os.makedirs(save_path, exist_ok=True)
+        results = [serialize_metric(metric) for metric in metrics]
+        json.dump(results, open(os.path.join(save_path, setting_name),"w"),indent=4)
+
+def save_scoring_results(phase,
+                         scored_samples,
+                         dataset_name,
+                         api_name,
+                         metrics_source
+                         ):
+        """
+        Save the results to a csv file.
+        """
+        save_path = os.path.join(base_path, phase, dataset_name, api_name)
+        os.makedirs(save_path, exist_ok=True)
+        scored_samples.to_csv(os.path.join(save_path, metrics_source + ".csv"), index=False)

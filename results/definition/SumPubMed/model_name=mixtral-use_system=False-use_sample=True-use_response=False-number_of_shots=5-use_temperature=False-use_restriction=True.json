@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Completeness",
+        "description": "The metric measures the extent to which the summary covers all the important details in the original text. This includes the ability to accurately convey the main ideas, methods, and conclusions of the study.",
+        "scale": "A scale from 0 to 10, where 0 means that the summary misses most of the important information, and 10 means that the summary includes all the essential details.",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "The metric evaluates the correctness of the information presented in the summary. It checks whether the summary contains any factual errors or misrepresentations of the original text.",
+        "scale": "A scale from 0 to 10, where 0 means that the summary contains many factual errors, and 10 means that the summary is completely accurate and free from errors.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "The metric assesses the logical flow and organization of the summary. It checks whether the summary presents the information in a clear and understandable manner, with proper transitions between ideas.",
+        "scale": "A scale from 0 to 10, where 0 means that the summary is disjointed and difficult to follow, and 10 means that the summary is well-structured and easy to understand.",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "The metric measures the ability of the summary to convey the essential information succinctly and without unnecessary details. It checks whether the summary avoids repetition and redundancy.",
+        "scale": "A scale from 0 to 10, where 0 means that the summary is verbose and includes irrelevant details, and 10 means that the summary is concise and to the point.",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "The metric evaluates the extent to which the summary addresses the specific question or topic of the original text. It checks whether the summary includes only the most relevant information and excludes any extraneous details.",
+        "scale": "A scale from 0 to 10, where 0 means that the summary includes many irrelevant details, and 10 means that the summary is highly relevant and focused on the main topic.",
+        "instruction": ""
+    }
+]

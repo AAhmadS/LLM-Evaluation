@@ -68,7 +68,19 @@ def replace_similar_metrics(df, similar_metrics_dict):
         df.loc[value, 'description'] = df.loc[key, 'description']
   return df
 
-
+def filter_names(metrics_list):
+  """
+  Filters a metrics_list and removes redundancies based on metric names.
+  """
+  
+  names_list = []
+  list_of_metrics = []
+  for metric in metrics_list:
+    if metric.name not in names_list:
+      names_list.append(metric.name)
+      list_of_metrics.append(metric)
+  
+  return list_of_metrics
 
 def normalize_similar_names(df, threshold=0.8):
     """

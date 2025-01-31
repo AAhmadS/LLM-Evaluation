@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "How well does the answer relate to the prompt?",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": " Fluency",
+        "description": "How natural and smooth is the answer?",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Coherence",
+        "description": "How well does the answer make sense?",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Informativeness",
+        "description": "How much useful information does the answer contain?",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Engagement",
+        "description": "How engaging and interesting is the answer?",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Accuracy",
+        "description": "How accurate is the information in the answer?",
+        "scale": "1-5",
+        "instruction": null
+    }
+]

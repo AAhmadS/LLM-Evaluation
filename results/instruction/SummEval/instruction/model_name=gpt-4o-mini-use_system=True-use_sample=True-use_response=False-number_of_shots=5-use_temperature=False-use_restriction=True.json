@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Comprehensiveness",
+        "description": "Measures the extent to which the summary captures all key points and essential information from the original article.",
+        "scale": "0-5 (0 = no key points covered, 5 = all key points covered)",
+        "instruction": "\n1- Read the original news article thoroughly to identify all key points and essential information.\n2- Read the contestant's summary carefully and note the key points that are included.\n3- Compare the key points from the original article with those in the summary to assess coverage.\n4- Assign a score from 0 to 5 based on how many key points are covered in the summary.\n5- Provide feedback on the summary, highlighting strengths and areas for improvement based on comprehensiveness."
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses how clearly the summary conveys the information, including sentence structure and word choice.",
+        "scale": "0-5 (0 = very unclear, 5 = very clear)",
+        "instruction": "\n1- Read the summary carefully to understand the main points being conveyed.\n2- Evaluate the sentence structure for clarity. Are the sentences well-formed and easy to follow?\n3- Assess the word choice used in the summary. Are the words appropriate and do they enhance understanding?\n4- Consider the overall coherence of the summary. Does it flow logically from one point to the next?\n5- Assign a score from 0 to 5 based on the clarity of the summary, providing justification for the score given."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the ability of the summary to present information succinctly without unnecessary detail or filler.",
+        "scale": "0-5 (0 = very verbose, 5 = very concise)",
+        "instruction": "\n1- Read the summary provided by the contestant.\n2- Identify the key points and essential information included in the summary.\n3- Assess the length of the summary in relation to the amount of information conveyed.\n4- Determine if there are any unnecessary details or filler content that do not contribute to the main message.\n5- Assign a score from 0 to 5 based on the evaluation of conciseness."
+    },
+    {
+        "name": "Relevance",
+        "description": "Determines the degree to which the summary includes only relevant information that directly pertains to the main topic of the original article.",
+        "scale": "0-5 (0 = mostly irrelevant, 5 = entirely relevant)",
+        "instruction": "\n1- Read the original news article carefully to understand its main topic and key points.\n2- Read the contestant's summary to identify the information included.\n3- Compare the information in the summary to the main topic and key points of the original article.\n4- Assign a relevance score from 0 to 5 based on how much of the summary pertains to the main topic of the article.\n5- Provide feedback on the summary, highlighting areas of strength and suggestions for improvement."
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging and interesting the summary is, potentially influencing a reader's desire to learn more about the topic.",
+        "scale": "0-5 (0 = not engaging, 5 = very engaging)",
+        "instruction": "\n1- Read the summary carefully to understand its content and tone.\n2- Evaluate the use of language in the summary. Look for vivid, descriptive, and compelling language that captures attention.\n3- Assess the relevance of the summary to the original article. Determine if it highlights key points that would intrigue a reader.\n4- Consider the emotional appeal of the summary. Does it evoke curiosity or interest in the topic?\n5- Assign a score from 0 to 5 based on the overall engagement level of the summary."
+    }
+]

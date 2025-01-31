@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the generated continuation addresses the given prompt or instruction.",
+        "scale": "0 to 5, where 0 is completely irrelevant and 5 is highly relevant.",
+        "instruction": "\n1- Read the given prompt or instruction carefully to understand the context and requirements.\n2- Read the generated continuation provided by the contestant.\n3- Assess how well the generated continuation addresses the specific requirements and context of the prompt or instruction.\n4- Assign a relevance score to the generated continuation based on how well it meets the prompt's requirements, using the scale from 0 to 5, where 0 is completely irrelevant and 5 is highly relevant.\n5- Document any specific observations or reasons for the assigned score, noting any particular strengths or weaknesses in the response's relevance to the prompt."
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical consistency and flow within the generated continuation.",
+        "scale": "0 to 5, where 0 is completely incoherent and 5 is perfectly coherent.",
+        "instruction": "\n1- Read the entire response carefully to understand the overall message and intent.\n2- Identify any logical inconsistencies or contradictions within the response.\n3- Evaluate the flow of ideas, ensuring that each part of the response logically follows from the previous part.\n4- Consider the clarity of the response, checking if the ideas are expressed in a straightforward and understandable manner.\n5- Assign a score from 0 to 5 based on the coherence of the response, where 0 indicates a completely incoherent response and 5 indicates a perfectly coherent response."
+    },
+    {
+        "name": "Fluency",
+        "description": "Evaluates the grammatical correctness and naturalness of the language used in the continuation.",
+        "scale": "0 to 5, where 0 is highly unnatural or ungrammatical and 5 is perfectly fluent.",
+        "instruction": "\n1- Read the entire response carefully to understand the context and content.\n2- Identify any grammatical errors, awkward phrasing, or unnatural language in the response.\n3- Consider the overall flow and coherence of the response. Does it read smoothly and logically?\n4- Assign a score from 0 to 5 based on the following scale: 0 - Highly unnatural or ungrammatical, 1 - Mostly unnatural with frequent errors, 2 - Somewhat unnatural with several errors, 3 - Neutral with occasional errors, 4 - Mostly fluent with minor errors, 5 - Perfectly fluent with no errors.\n5- Provide a brief justification for the score, highlighting key aspects that influenced your decision."
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and innovativeness of the response in comparison to typical or expected answers.",
+        "scale": "0 to 5, where 0 is not creative at all and 5 is highly creative.",
+        "instruction": "\n1- Read the user's prompt or instruction carefully to understand the context and what is being asked.\n2- Read the contestant's response thoroughly to grasp the content and the approach taken.\n3- Consider how typical or expected the response is based on common knowledge or standard answers to the prompt.\n4- Evaluate the originality of the response. Determine if the contestant has introduced new ideas, perspectives, or approaches that are not commonly seen.\n5- Assess the innovativeness of the response. Check if the contestant has used creative language, unique examples, or novel concepts that enhance the response's creativity.\n6- Assign a score from 0 to 5 based on the creativity of the response, where 0 indicates no creativity and 5 indicates a highly creative response.\n7- Document the reasoning behind the assigned score, noting specific elements of the response that influenced the creativity rating."
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the ability of the continuation to capture and maintain the reader's interest.",
+        "scale": "0 to 5, where 0 is not engaging at all and 5 is highly engaging.",
+        "instruction": "\n1- Read the entire response carefully to understand its content and context.\n2- Consider the prompt or instruction given to the contestant to ensure the response is relevant.\n3- Evaluate the response for its ability to capture interest. Look for elements such as creativity, novelty, and the use of engaging language.\n4- Assess whether the response maintains interest throughout. Check for consistency in engagement from start to finish.\n5- Rate the response on a scale from 0 to 5 based on your assessment of its engagement level, where 0 is not engaging at all and 5 is highly engaging.\n6- Provide a brief justification for the score given, highlighting specific aspects of the response that influenced your decision."
+    },
+    {
+        "name": "BLEU Score",
+        "description": "Evaluates the similarity of the generated continuation to a set of reference continuations using n-gram overlap.",
+        "scale": "0 to 1, where 0 is no overlap and 1 is perfect overlap.",
+        "instruction": "\n1- Collect the generated continuation and the set of reference continuations for the given prompt.\n2- Tokenize both the generated continuation and the reference continuations into n-grams. Typically, use unigrams, bigrams, trigrams, and 4-grams.\n3- Calculate the precision for each n-gram level by dividing the number of matching n-grams in the generated continuation by the total number of n-grams in the generated continuation.\n4- Apply a brevity penalty to account for the length of the generated continuation compared to the reference continuations. This penalizes overly short continuations.\n5- Compute the BLEU score by taking the geometric mean of the precision scores for all n-gram levels and then applying the brevity penalty.\n6- Assign a BLEU score between 0 and 1 to the generated continuation based on the calculated value."
+    },
+    {
+        "name": "ROUGE Score",
+        "description": "Measures the recall of the generated continuation in terms of overlap with reference continuations, focusing on n-grams and longest common subsequences.",
+        "scale": "0 to 1, where 0 is no recall and 1 is perfect recall.",
+        "instruction": "\n1- Familiarize yourself with the ROUGE score metric, understanding its focus on recall and overlap with reference continuations.\n2- Obtain the reference continuation for the given prompt or instruction.\n3- Analyze the generated continuation provided by the contestant.\n4- Calculate the ROUGE score by comparing the n-grams and longest common subsequences of the generated continuation with the reference continuation.\n5- Assign a score between 0 and 1 based on the calculated ROUGE score, where 0 indicates no recall and 1 indicates perfect recall.\n6- Document the score and any relevant observations about the overlap and recall of the generated continuation."
+    },
+    {
+        "name": "Human Satisfaction",
+        "description": "Gauges the overall satisfaction of human evaluators with the response, considering all aspects of quality.",
+        "scale": "0 to 5, where 0 is not satisfied at all and 5 is extremely satisfied.",
+        "instruction": "\n1- Read the user prompt or instruction carefully to understand the context and what is being asked.\n2- Read the contestant's response thoroughly to ensure you capture all aspects of the response.\n3- Consider the relevance of the response to the prompt. Does it address the prompt directly and appropriately?\n4- Evaluate the clarity of the response. Is the response easy to understand and free of ambiguity?\n5- Assess the completeness of the response. Does it provide a full and comprehensive answer to the prompt?\n6- Judge the creativity and engagement of the response. Is the response interesting and engaging to read?\n7- Rate the overall satisfaction with the response on a scale from 0 to 5, considering all the aspects evaluated in the previous steps.\n8- Document any specific strengths or weaknesses in the response that influenced your satisfaction rating."
+    }
+]

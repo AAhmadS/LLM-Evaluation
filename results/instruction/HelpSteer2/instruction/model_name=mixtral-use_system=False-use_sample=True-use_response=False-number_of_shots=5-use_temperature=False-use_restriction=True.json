@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The answer is relevant to the question or context provided, and it addresses the main point of the prompt.",
+        "scale": "Binary (Relevant or Not Relevant)",
+        "instruction": "\n1- Read the user's prompt or question carefully.\n2- Read the contestant's response to the prompt or question.\n3- Determine if the contestant's response is relevant to the user's prompt or question. The response is considered relevant if it addresses the main point of the prompt or question.\n4- If the response is relevant, rate it as 'Relevant'. If the response is not relevant, rate it as 'Not Relevant'."
+    },
+    {
+        "name": "Accuracy",
+        "description": "The answer is factually correct and provides accurate information.",
+        "scale": "Binary (Correct or Incorrect)",
+        "instruction": "\n1- Read the contestant's response carefully and thoroughly.\n2- Research the topic or verify the information provided in the response to ensure its accuracy.\n3- Determine if the response is factually correct and provides accurate information.\n4- If the response is factually correct and provides accurate information, rate it as 'Correct'. If not, rate it as 'Incorrect'."
+    },
+    {
+        "name": "Comprehensiveness",
+        "description": "The answer provides a complete and detailed response to the prompt, covering all relevant aspects of the topic.",
+        "scale": "Continuous (0 to 10, with 10 being the most comprehensive)",
+        "instruction": "\n1- Read and understand the provided response to the prompt/instruction.\n2- Identify the main topic and relevant aspects of the prompt/instruction.\n3- Evaluate the response based on the Comprehensiveness metric, considering if it provides a complete and detailed response to the prompt, covering all relevant aspects of the topic.\n4- Rate the response on a scale of 0 to 10, with 10 being the most comprehensive."
+    },
+    {
+        "name": "Clarity",
+        "description": "The answer is clear, concise, and easy to understand.",
+        "scale": "Continuous (0 to 10, with 10 being the clearest)",
+        "instruction": "\n1- Read the contestant's response carefully and thoroughly.\n2- Evaluate the response based on the provided metric, Clarity. Consider if the answer is clear, concise, and easy to understand.\n3- Rate the response on a continuous scale from 0 to 10, with 10 being the clearest. Make sure to provide a score that accurately reflects the clarity of the response."
+    },
+    {
+        "name": "Engagement",
+        "description": "The answer is engaging, interesting, and encourages further conversation or exploration of the topic.",
+        "scale": "Continuous (0 to 10, with 10 being the most engaging)",
+        "instruction": "\n1- Read the contestant's response carefully and thoroughly.\n2- Consider the Engagement metric: The answer is engaging, interesting, and encourages further conversation or exploration of the topic.\n3- Rate the response on a scale of 0 to 10, with 10 being the most engaging.\n4- Ensure that the rating is based solely on the Engagement metric and not influenced by other factors.\n5- Repeat the process for each response, ensuring consistency in the evaluation process."
+    },
+    {
+        "name": "Follows Instructions",
+        "description": "The answer follows the instructions provided in the prompt.",
+        "scale": "Binary (Follows Instructions or Does Not Follow Instructions)",
+        "instruction": "\n1- Read and understand the given task and evaluation criteria.\n2- Read the contestant's response to the prompt/instructions provided by the user.\n3- Determine if the contestant's response follows the instructions provided in the prompt.\n4- If the response follows the instructions, rate it as 'Follows Instructions'. If it does not follow the instructions, rate it as 'Does Not Follow Instructions'."
+    }
+]

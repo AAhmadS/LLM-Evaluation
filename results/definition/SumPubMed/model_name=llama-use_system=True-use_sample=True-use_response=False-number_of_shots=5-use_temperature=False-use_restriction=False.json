@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Relevance",
+        "description": "How well the answer addresses the question",
+        "scale": "[0, 1]",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "How accurate the answer is",
+        "scale": "[0, 1]",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "How complete the answer is",
+        "scale": "[0, 1]",
+        "instruction": ""
+    },
+    {
+        "name": "Consistency",
+        "description": "How consistent the answer is with the context",
+        "scale": "[0, 1]",
+        "instruction": ""
+    }
+]

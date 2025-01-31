@@ -1,1 +1,32 @@
-[[{"name": "Coherence", "description": "Measures how logically consistent and understandable the response is within the context of the conversation.", "scale": "1 (low coherence) to 5 (high coherence)", "instruction": ""}, {"name": "Relevance", "description": "Assesses the degree to which the response pertains to the topic and context of the preceding dialogue and the interesting fact provided.", "scale": "1 (not relevant) to 5 (highly relevant)", "instruction": ""}, {"name": "Creativity", "description": "Evaluates the originality and inventiveness of the response, considering how unique or surprising it is compared to typical conversational continuations.", "scale": "1 (not creative) to 5 (very creative)", "instruction": ""}, {"name": "Engagement Level", "description": "Determines how well the response encourages further dialogue and interaction, fostering a sense of connection or interest.", "scale": "1 (low engagement) to 5 (high engagement)", "instruction": ""}, {"name": "Clarity", "description": "Measures how clearly the ideas are expressed in the response, including grammar, vocabulary, and overall comprehensibility.", "scale": "1 (unclear) to 5 (very clear)", "instruction": ""}]]
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response aligns with the given context and the interesting fact provided. A higher score indicates a strong connection to the prompt.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Assesses the originality and uniqueness of the response. Responses that introduce novel ideas or perspectives receive higher scores.",
+        "scale": "1 (Not Creative) to 5 (Highly Creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and clarity of the response. A coherent response should make sense and be easy to follow.",
+        "scale": "1 (Not Coherent) to 5 (Highly Coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures the ability of the response to capture interest and provoke further conversation. Higher scores indicate a more engaging continuation.",
+        "scale": "1 (Not Engaging) to 5 (Highly Engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Assesses the level of understanding and consideration of the conversational partner's perspective. Responses that show awareness of emotions and context score higher.",
+        "scale": "1 (Lacks Empathy) to 5 (Highly Empathetic)",
+        "instruction": ""
+    }
+]

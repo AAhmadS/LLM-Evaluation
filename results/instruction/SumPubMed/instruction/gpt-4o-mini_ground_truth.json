@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Non-Repetition and no factual Redundancy",
+        "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
+        "scale": "1-10",
+        "instruction": "\n1- Read the provided summary carefully.\n2- Identify any instances of factual redundancy, where the same information is presented multiple times.\n3- Check for repetition of sentences or phrases within the summary.\n4- Assign a score from 1 to 10 based on the level of non-repetition and absence of factual redundancy, where 1 indicates high redundancy and repetition, and 10 indicates no redundancy or repetition.\n5- Provide a brief justification for the score assigned."
+    },
+    {
+        "name": "Coherence",
+        "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
+        "scale": "1-10",
+        "instruction": "\n1- Read the provided summary carefully.\n2- Identify the main concepts and arguments presented in the summary.\n3- Check if the sentences flow logically from one to the next, maintaining a clear connection to the main topic.\n4- Evaluate if the summary presents a continuous sense of understanding without abrupt shifts or disjointed ideas.\n5- Assign a coherence score from 1 to 10 based on the clarity and logical flow of the summary."
+    },
+    {
+        "name": "Readability",
+        "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
+        "scale": "1-10",
+        "instruction": "\n1- Read the summary carefully to assess its overall clarity and coherence.\n2- Check for spelling errors and grammatical mistakes in the summary.\n3- Evaluate the use of appropriate vocabulary and sentence structure for readability.\n4- Consider the logical flow of ideas and whether the summary is easy to follow.\n5- Assign a score from 1 to 10 based on the overall readability of the summary, where 1 is very poor and 10 is excellent."
+    },
+    {
+        "name": "Informativeness, Overlap and Focus",
+        "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
+        "scale": "1-10",
+        "instruction": "\n1- Read the provided summary carefully.\n2- Identify key concepts, keywords, and key phrases in the summary.\n3- Compare the identified keywords and phrases with those in the original biomedical research paper.\n4- Evaluate the frequency of the keywords and phrases in both the summary and the original document.\n5- Assess whether the summary maintains focus on the main topic of the original document.\n6- Assign a score from 1 to 10 based on the level of informativeness, overlap, and focus of the summary."
+    },
+    {
+        "name": "Overall Quality",
+        "description": "Given your answers above, what is your overall impression of the quality of this summary?",
+        "scale": "1-10",
+        "instruction": "\n1- Read the provided summary carefully, ensuring you understand the main points and findings of the original biomedical research paper.\n2- Evaluate the clarity of the summary. Is it easy to understand? Does it convey the main ideas without unnecessary jargon?\n3- Assess the completeness of the summary. Does it cover all the essential aspects of the original paper, including objectives, methods, results, and conclusions?\n4- Consider the accuracy of the summary. Are the key findings and data from the original paper represented correctly?\n5- Rate the overall quality of the summary on a scale from 1 to 10, where 1 is very poor quality and 10 is excellent quality."
+    }
+]

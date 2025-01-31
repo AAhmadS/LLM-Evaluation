@@ -9,10 +9,9 @@ These are the motivational questions to this project.
 We selected 5 top-performing and a diverse set of closed/open source LLMs including:
 *   GPT-4o
 *   GPT-4o-mini
-*   LLaMA-3.1-70B
+*   LLaMA-3.1-70B (405B)
 *   Qwen2.5-32B
 *   Mixtral-8*22B
-*   Vicuna-7B
 
 We divided the evaluation approach into metric definition and scoring/assessment. We perform the evaluation framework and study differences of these LLMs from ground-truth human annotations.
 Selected tasks:
@@ -20,6 +19,4 @@ Selected tasks:
 *  SummEval
 *  SumPubMed
 *  HelpSteer2
-*  CommonGen
-
 

@@ -3,30 +3,30 @@
         "name": "Relevance",
         "description": "Measures how relevant the continuation is to the provided context and interesting fact.",
         "scale": "1-5, with 5 being highly relevant",
-        "instruction": "Sure, I understand the task. Please provide the conversation between the two individuals, the potential response for the next turn, and the interesting fact. I will then evaluate the response based on the relevance metric."
+        "instruction": "1-Read and understand the conversation and the provided interesting fact.\n2-Evaluate the potential response based on the Relevance metric.\n3-Provide a score from 1 to 5, with 5 being highly relevant.\n"
     },
     {
         "name": "Creativity",
         "description": "Evaluates the originality and creativity of the response.",
         "scale": "1-5, with 5 being highly creative",
-        "instruction": "To proceed with the evaluation, I need the conversation between the two individuals, the potential response for the next turn, and the interesting fact that the response concerns. Please provide these details so I can rate the response based on the creativity metric."
+        "instruction": "1-Read and understand the conversation and the provided response.\n2-Identify the interesting fact mentioned in the response.\n3-Evaluate the creativity of the response based on the provided metric criteria.\n4-Provide a score from 1 to 5, with 5 being highly creative.\n"
     },
     {
         "name": "Clarity",
         "description": "Assesses how clear and coherent the continuation is.",
         "scale": "1-5, with 5 being very clear and coherent",
-        "instruction": "Sure, I understand the task. Please provide the conversation between the two individuals, the potential response for the next turn, and the interesting fact. I will then evaluate the response based on the clarity metric."
+        "instruction": "1-Read the conversation and the potential response provided.\n2-Identify the interesting fact mentioned in the potential response.\n3-Evaluate the clarity and coherence of the potential response based on the provided metric.\n4-Provide a rating from 1 to 5, with 5 being very clear and coherent.\n"
     },
     {
         "name": "Engagement",
         "description": "Measures how engaging and interesting the response is to the reader.",
         "scale": "1-5, with 5 being highly engaging",
-        "instruction": "To proceed with the evaluation, I need the conversation between the two individuals, the potential response for the next turn, and the interesting fact that the response concerns. Please provide these details so I can rate the response based on the Engagement metric."
+        "instruction": "1-Read and understand the conversation and the provided response.\n2-Identify the interesting fact mentioned in the response.\n3-Evaluate the response based on how engaging and interesting it is to the reader.\n4-Rate the response on a scale of 1-5, with 5 being highly engaging.\n"
     },
     {
         "name": "Consistency",
         "description": "Evaluates the consistency of the response with the provided context and fact.",
         "scale": "1-5, with 5 being highly consistent",
-        "instruction": "To proceed with the evaluation, I need the conversation context, the potential response, and the interesting fact to be provided. Please share these details so I can rate the response based on the consistency metric."
+        "instruction": "1-Read and understand the conversation and the provided fact.\n2-Evaluate the response based on the consistency with the provided context and fact.\n3-Rate the response on a scale of 1-5, with 5 being highly consistent.\n"
     }
 ]

@@ -115,13 +115,18 @@ def generate_metrics(api_function, parser, set_of_tools, definement_prompt, temp
   return parsed_results
 
 def generate_instruction(api_function, parser, set_of_tools, instruction_prompt, temperature):
+  count = 0
   while True:
     try:
       output = api_function(instruction_prompt, set_of_tools, temperature=temperature)
       parsed_results = parser(output)
       break
     except:
-      continue
+      count += 1
+      if count > 3:
+        return "Error occurred in generation."
+      print("Error occurred in generation, retrying...")
+      pass
   return parsed_results
  
 def generate_scores(api_function, parser, set_of_tools, scoring_prompt, use_temperature):

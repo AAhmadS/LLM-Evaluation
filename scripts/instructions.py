@@ -72,21 +72,21 @@ def instruction_generation():
     print('printing results of instruction generation...')
     for metric in metrics:
         print(metric.to_inst())
-        
-    ground_truth_metrics = dataset.ground_truth_metrics
-    if args.data == "USR":
-        ground_truth_metrics = ground_truth_metrics[:-1]
-    metrics = metric_instruction_generation(api_function,
-                                            args.api,
-                                            set_of_tools,
-                                            dataset,
-                                            ground_truth_metrics,
-                                            False,
-                                            seed=42
-                                            )
-    if args.data == "USR":
-        metrics.append(dataset.ground_truth_metrics[-1])
-    save_instruction_results("instruction", metrics, args.data, f"{args.api}_ground_truth.json")
+    if not os.path.exists(f"results/instruction/{args.data}/instruction/{args.api}_ground_truth.json"):
+        ground_truth_metrics = dataset.ground_truth_metrics
+        if args.data == "USR":
+            ground_truth_metrics = ground_truth_metrics[:-1]
+        metrics = metric_instruction_generation(api_function,
+                                                args.api,
+                                                set_of_tools,
+                                                dataset,
+                                                ground_truth_metrics,
+                                                False,
+                                                seed=42
+                                                )
+        if args.data == "USR":
+            metrics.append(dataset.ground_truth_metrics[-1])
+        save_instruction_results("instruction", metrics, args.data, f"{args.api}_ground_truth.json")
     
     print('Process completed successfully.')
 

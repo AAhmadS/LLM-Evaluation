@@ -3,30 +3,30 @@
         "name": "Non-Repetition and no factual Redundancy",
         "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1-Check for redundancy in factual information\n2-Check for repetition of sentences\n"
     },
     {
         "name": "Coherence",
         "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1-The summary should have a clear and logical structure, with each sentence building on the previous one to convey a cohesive message.\n2-The language should be concise and free of unnecessary jargon or technical terms that may confuse the reader.\n3-The summary should provide a clear and accurate representation of the main points and findings of the original text.\n4-The tone should be formal and objective, avoiding any emotional or sensational language that may detract from the coherence of the summary.\n5-The summary should be well-organized and easy to follow, with a clear introduction, body, and conclusion that work together to convey a unified message.\n"
     },
     {
         "name": "Readability",
         "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1-Check for good spelling in the summaries\n2-Check for correct grammar in the summaries\n3-Check for understandability in the summaries\n"
     },
     {
         "name": "Informativeness, Overlap and Focus",
         "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1-Read and understand the instructions carefully\n2-Keep the document open while reviewing and refer to it as needed\n3-Evaluate the summaries based on the Informativeness, Overlap and Focus metric\n4-Compare the keywords' (or key-phrases) occurrence frequency to ensure the summaries are on the same topic\n5-Rate the responses on a scale of 1-10\n"
     },
     {
         "name": "Overall Quality",
         "description": "Given your answers above, what is your overall impression of the quality of this summary?",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1-Read and understand the instructions carefully\n2-Keep the document open while reviewing and refer to it as needed\n3-Evaluate the summaries based on the Overall Quality metric\n4-Rate the responses on a scale of 1-10\n"
     }
 ]

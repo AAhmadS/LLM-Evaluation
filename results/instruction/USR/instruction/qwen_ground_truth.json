@@ -3,31 +3,31 @@
         "name": "Understandable",
         "description": "Is the response understandable given the previous context?",
         "scale": "0-1",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read and understand the conversation and the provided response.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the interesting fact mentioned in the response.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate if the response is understandable given the previous context.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Rate the response on the Understandable metric using the scale 0-1.\"}]}}"
+        "instruction": "1-Read and understand the conversation and the provided response.\n2-Identify the interesting fact mentioned in the response.\n3-Evaluate if the response is understandable given the previous context.\n4-Rate the response on the Understandable metric using the scale 0-1.\n"
     },
     {
         "name": "Natural",
         "description": "Does the response seem to be something that a person would naturally say?",
         "scale": "1-3",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read and understand the conversation and the provided response.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the interesting fact mentioned in the response.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate if the response sounds natural and something a person would naturally say in the context of the conversation.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Rate the response on the 'Natural' metric using the scale of 1-3.\"}]}}"
+        "instruction": "1-Read and understand the conversation and the provided response.\n2-Identify the interesting fact mentioned in the response.\n3-Evaluate if the response sounds natural and something a person would naturally say in the context of the conversation.\n4-Rate the response on the 'Natural' metric using the scale of 1-3.\n"
     },
     {
         "name": "Maintains Context",
         "description": "Does the response serve as a valid continuation of the preceding conversation?",
         "scale": "1-3",
-        "instruction": "To evaluate the response based on the \"Maintains Context\" metric, I will follow these steps:\n\n1. **Read the Conversation**: Carefully read the conversation provided to understand the context and flow of the dialogue.\n2. **Read the Potential Response**: Examine the potential response to see if it logically follows from the preceding conversation.\n3. **Assess Contextual Relevance**: Determine if the response maintains the context of the conversation, considering the topics, tone, and any ongoing threads.\n4. **Rate the Response**: Assign a score of 1, 2, or 3 based on the following scale:\n   - **1**: The response does not maintain the context and seems out of place or irrelevant.\n   - **2**: The response somewhat maintains the context but may be slightly off or could be improved.\n   - **3**: The response effectively maintains the context and serves as a valid continuation of the conversation.\n\nPlease provide the conversation and the potential response for evaluation."
+        "instruction": "1-Read and understand the conversation and the provided response.\n2-Identify the context of the conversation.\n3-Determine if the provided response maintains the context of the conversation.\n4-Rate the response on a scale of 1-3 based on how well it maintains the context.\n"
     },
     {
         "name": "Interesting",
         "description": "Is the response dull or interesting?",
         "scale": "1-3",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the conversation and the potential response.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the interesting fact provided.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate the response based on the 'Interesting' metric.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Provide a rating from 1 to 3, where 1 is dull and 3 is very interesting.\"}], \"required\": [\"steps\"]}}"
+        "instruction": "1-Read and understand the conversation and the provided response.\n2-Identify the interesting fact mentioned in the response.\n3-Evaluate if the response is dull or interesting based on the interesting fact.\n4-Rate the response on a scale of 1 to 3, where 1 is dull and 3 is very interesting.\n"
     },
     {
         "name": "Uses Knowledge",
         "description": "Given the fact that the response is conditioned on, how well does the response use that fact?",
         "scale": "0-1",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read and understand the conversation and the provided response.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the interesting fact that the response is conditioned on.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate how well the response uses the provided fact.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Rate the response on a scale of 0-1 based on how well it uses the fact.\"}], \"required\": [\"steps\"]}}"
+        "instruction": "1-Read and understand the conversation and the provided response.\n2-Identify the interesting fact that the response is conditioned on.\n3-Evaluate how well the response uses the provided fact.\n4-Rate the response on a scale of 0-1 based on how well it uses the provided fact.\n"
     },
     {
         "name": "Overall Quality",

@@ -3,30 +3,30 @@
         "name": "Informativeness",
         "description": "The degree to which the summary presents useful and relevant information from the original article.",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the original article to understand the content.\n2-Read the summary provided by the contestant.\n3-Evaluate the summary based on the Informativeness metric, considering how well it presents useful and relevant information from the original article.\n4-Rate the summary on a scale of 1-5, where 1 is the lowest and 5 is the highest, based on the Informativeness metric.\n"
     },
     {
         "name": "Coherence",
         "description": "The degree to which the summary is well-organized, logically connected, and easy to follow.",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-The degree to which the summary is well-organized, logically connected, and easy to follow.\n"
     },
     {
         "name": "Fluency",
         "description": "The degree to which the summary is grammatically correct, clear, and concise.",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the generated summary carefully.\n2-Check the summary for grammatical errors, clarity, and conciseness.\n3-Rate the summary on a scale of 1-5 based on its fluency, with 1 being the lowest and 5 being the highest.\n"
     },
     {
         "name": "Relevance",
         "description": "The degree to which the summary accurately reflects the content and main points of the original article.",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the original article and the contestant's summary\n2-Evaluate the degree to which the summary accurately reflects the content and main points of the original article\n3-Rate the summary on a scale of 1-5 based on its relevance to the original article\n"
     },
     {
         "name": "Creativity",
         "description": "The degree to which the summary presents a unique and original perspective on the content of the original article.",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the original article to understand the content.\n2-Read the generated summary to understand the contestant's perspective.\n3-Evaluate the degree to which the summary presents a unique and original perspective on the content of the original article.\n4-Rate the summary on a scale of 1-5 based on the creativity metric.\n"
     }
 ]

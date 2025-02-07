@@ -3,30 +3,30 @@
         "name": "Relevance",
         "description": "How well does the summary relate to the original document?",
         "scale": "Scale of 1-5",
-        "instruction": null
+        "instruction": "1-Read and understand the instructions carefully\n2-Keep the document open while reviewing and refer to it as needed\n3-Evaluate the summaries based on the relevance metric\n"
     },
     {
         "name": "Accuracy",
         "description": "How accurate is the summary in conveying the main points of the original document?",
         "scale": "Scale of 1-5",
-        "instruction": null
+        "instruction": "1-Read and understand the instructions carefully\n2-Keep the document open while reviewing and refer to it as needed\n3-Evaluate the summaries based on the accuracy metric\n"
     },
     {
         "name": "Completeness",
         "description": "How well does the summary cover all the key points of the original document?",
         "scale": "Scale of 1-5",
-        "instruction": null
+        "instruction": "1-Read the original document and identify the key points.\n2-Read the summary and check if it covers all the key points identified in step 1.\n3-Rate the summary on a scale of 1-5 based on how well it covers the key points.\n"
     },
     {
         "name": "Fluency",
         "description": "How well-written and easy to understand is the summary?",
         "scale": "Scale of 1-5",
-        "instruction": null
+        "instruction": "1-Read the summary carefully and assess its overall writing quality and clarity.\n2-Consider the summary\u2019s coherence, grammar, and sentence structure.\n3-Evaluate how well the summary conveys the main points of the original document in a clear and concise manner.\n4-Rate the summary on a scale of 1-5, where 1 is \u201cpoorly written and difficult to understand\u201d and 5 is \u201cwell-written and easy to understand\u201d.\n"
     },
     {
         "name": "Coherence",
         "description": "How logical and connected are the ideas presented in the summary?",
         "scale": "Scale of 1-5",
-        "instruction": null
+        "instruction": "1-Read and understand the instructions carefully\n2-Keep the document open while reviewing and refer to it as needed\n3-Rate the responses on the Coherence metric using a scale of 1-5\n"
     }
 ]

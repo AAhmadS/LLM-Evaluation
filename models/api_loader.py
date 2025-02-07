@@ -18,26 +18,27 @@ def gpt_api(messages, response_format, temperature=0.7):
     )
     return chat_completion.choices[0].message.parsed
 ###############################################################################
-from llamaapi import LlamaAPI
-import json
+# from llamaapi import LlamaAPI
+# import json
 
-def llama_api(messages, response_format, temperature=0.7):
-    llama = LlamaAPI(os.getenv("LLAMA_API_KEY"))
+# def llama_api(messages, response_format, temperature=0.7):
+#     llama = LlamaAPI(os.getenv("LLAMA_API_KEY"))
     
-    # Build the API request
-    api_request_json = {
-        "model": "llama3.1-405b",
-        "messages": messages,
-        "tools" : [response_format],
-        "temperature" : temperature,
-        "max_tokens" : 1000,
-        "stream": False,
-        "function_call": response_format["function"]["name"],
-    }
-    # Execute the Request
-    response = llama.run(api_request_json)
+#     # Build the API request
+#     api_request_json = {
+#         "model": "llama3.1-405b",
+#         "messages": messages,
+#         "tools" : [response_format],
+#         "temperature" : temperature,
+#         "max_tokens" : 1000,
+#         "stream": False,
+#         "function_call": response_format["function"]["name"],
+#         "tool_choice": "required"
+#     }
+#     # Execute the Request
+#     response = llama.run(api_request_json)
 
-    return response.json()
+#     return response.json()
 ###############################################################################
 import os
 from mistralai import Mistral
@@ -75,7 +76,28 @@ def qwen_api(messages, response_format, temperature=0.7):
         temperature = temperature,
         max_tokens = 4096,
         stream= False,
-        function_call= response_format["function"]["name"],
+        function_call= {"name":response_format["function"]["name"]},
+        tool_choice="required"
+    )
+
+    return chat_completion
+
+def llama_api(messages, response_format, temperature=0.7):
+    deepinfra_api_key = os.getenv("DEEPINFRA_API_KEY")
+    openai = OpenAI(
+        api_key= deepinfra_api_key,
+        base_url="https://api.deepinfra.com/v1/openai",
+    )
+
+    chat_completion = openai.chat.completions.create(
+        model="meta-llama/Meta-Llama-3.1-405B-Instruct",
+        messages= messages,
+        tools = [response_format],
+        temperature = temperature,
+        max_tokens = 4096,
+        stream= False,
+        function_call= {"name":response_format["function"]["name"]},
+        tool_choice="required"
     )
 
     return chat_completion

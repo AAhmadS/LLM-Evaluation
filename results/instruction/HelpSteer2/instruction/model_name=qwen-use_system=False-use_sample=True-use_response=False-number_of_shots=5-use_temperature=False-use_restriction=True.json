@@ -3,36 +3,36 @@
         "name": "Relevance",
         "description": "The extent to which the response is relevant to the user's question or request.",
         "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": \"[{\\\"step\\\": {\\\"step_id\\\": \\\"1\\\", \\\"description\\\": \\\"Read and understand the user's question or request.\\\"}}, {\\\"step\\\": {\\\"step_id\\\": \\\"2\\\", \\\"description\\\": \\\"Evaluate the response based on the Relevance metric.\\\"}}, {\\\"step\\\": {\\\"step_id\\\": \\\"3\\\", \\\"description\\\": \\\"Assign a score from 1 to 5, where 1 is Not Relevant and 5 is Highly Relevant.\\\"}], \\\"required\\\": [\\\"steps\\\"]}}"
+        "instruction": "1-Read and understand the user's question or request.\n2-Evaluate the response based on how well it addresses the user's question or request.\n3-Rate the response on a scale of 1 to 5, where 1 is 'Not Relevant' and 5 is 'Highly Relevant'.\n"
     },
     {
         "name": "Accuracy",
         "description": "The accuracy and correctness of the information provided in the response.",
         "scale": "1 (Incorrect) to 5 (Accurate)",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read and understand the provided instructions and evaluation criteria.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Review the response provided by the contestant.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Assess the accuracy and correctness of the information in the response.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Assign a score from 1 to 5 based on the accuracy of the response.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Provide a brief explanation for the score given.\"}]}]}"
+        "instruction": "1-Read and understand the provided instructions and evaluation criteria.\n2-Review the response provided by the contestant.\n3-Assess the accuracy and correctness of the information in the response.\n4-Assign a score from 1 to 5 based on the accuracy of the response.\n5-Provide a brief explanation for the score given.\n"
     },
     {
         "name": "Completeness",
         "description": "The extent to which the response provides a complete and thorough answer to the user's question or request.",
         "scale": "1 (Incomplete) to 5 (Complete)",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read and understand the user's question or request.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Evaluate the response based on the completeness and thoroughness of the information provided.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Assign a score from 1 to 5, where 1 is Incomplete and 5 is Complete.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Provide a brief explanation for the score given.\"}]}}"
+        "instruction": "1-Read and understand the user's question or request.\n2-Evaluate the response based on the completeness and thoroughness of the information provided.\n3-Assign a score from 1 to 5, where 1 is Incomplete and 5 is Complete.\n4-Provide a brief explanation for the score given.\n"
     },
     {
         "name": "Clarity",
         "description": "The clarity and understandability of the language used in the response.",
         "scale": "1 (Confusing) to 5 (Clear)",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read and understand the provided instructions and evaluation criteria.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Review the response provided by the contestant.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Assess the clarity and understandability of the language used in the response.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Assign a score from 1 to 5 based on the clarity of the response.\"}], \"metric\": \"Clarity\"}}"
+        "instruction": "1-Read and understand the provided instructions and evaluation criteria.\n2-Review the response provided by the contestant.\n3-Assess the clarity and understandability of the language used in the response.\n4-Assign a score from 1 to 5 based on the clarity of the response.\n5-Provide a brief explanation for the score given.\n"
     },
     {
         "name": "Engagement",
         "description": "The level of engagement and interaction with the user, including follow-up questions and providing additional helpful information.",
         "scale": "1 (Low Engagement) to 5 (High Engagement)",
-        "instruction": null
+        "instruction": "1-Read and understand the provided instructions and evaluation criteria.\n2-Review the contestant's response to the user's prompt or instruction.\n3-Assess the level of engagement and interaction with the user, including follow-up questions and providing additional helpful information.\n4-Rate the response on a scale of 1 (Low Engagement) to 5 (High Engagement).\n"
     },
     {
         "name": "Empathy",
         "description": "The level of empathy and understanding shown towards the user's situation and emotions.",
         "scale": "1 (No Empathy) to 5 (High Empathy)",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": \"[{\\\"step\\\": {\\\"step_id\\\": \\\"1\\\", \\\"description\\\": \\\"Read and understand the user's prompt or instruction carefully.\\\"}}, {\\\"step\\\": {\\\"step_id\\\": \\\"2\\\", \\\"description\\\": \\\"Identify the user's emotional state or situation from the prompt or instruction.\\\"}}, {\\\"step\\\": {\\\"step_id\\\": \\\"3\\\", \\\"description\\\": \\\"Evaluate the response for signs of empathy and understanding, such as acknowledging the user's feelings, showing concern, or offering support.\\\"}}, {\\\"step\\\": {\\\"step_id\\\": \\\"4\\\", \\\"description\\\": \\\"Rate the response on a scale of 1 to 5 based on the level of empathy and understanding demonstrated.\\\"}]}}"
+        "instruction": "1-Read and understand the user's prompt or instruction.\n2-Identify the user's emotional state or situation.\n3-Assess the response for signs of empathy and understanding.\n4-Rate the response on a scale of 1 to 5 based on the level of empathy shown.\n"
     }
 ]

@@ -3,18 +3,19 @@ import os
 import glob
 
 # Define the allowed values for each parameter
-# files = ['model_name=gpt-4o-mini-use_system=False-use_sample=True-use_response=False-number_of_shots=3-use_temperature=False-use_restriction=False.json', 
-#          'model_name=gpt-4o-mini-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json', 
-#          'model_name=gpt-4o-use_system=False-use_sample=True-use_response=True-number_of_shots=3-use_temperature=False-use_restriction=True.json', 
-#          'model_name=gpt-4o-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json', 
-files =  ['model_name=llama-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json', 
-         'model_name=llama-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json', ]
-# files = ['model_name=mixtral-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json', 
-#          'model_name=mixtral-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json']
-# files = ['model_name=qwen-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json', 
-#          'model_name=qwen-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json']
+files = ['model_name=gpt-4o-mini-use_system=False-use_sample=True-use_response=False-number_of_shots=3-use_temperature=False-use_restriction=False.json', 
+         'model_name=gpt-4o-mini-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json', 
+         'model_name=gpt-4o-use_system=False-use_sample=True-use_response=True-number_of_shots=3-use_temperature=False-use_restriction=True.json', 
+         'model_name=gpt-4o-use_system=True-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json', 
+         'model_name=llama-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json', 
+         'model_name=llama-use_system=True-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json', 
+         'model_name=mixtral-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json', 
+         'model_name=mixtral-use_system=True-use_sample=True-use_response=True-number_of_shots=5-use_temperature=False-use_restriction=False.json'
+         'model_name=qwen-use_system=False-use_sample=False-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=False.json', 
+         'model_name=qwen-use_system=False-use_sample=True-use_response=False-number_of_shots=5-use_temperature=False-use_restriction=True.json']
 
-dataset_names = ["USR", "SummEval", "SumPubMed", "HelpSteer2"]
+dataset_names = ["USR","SummEval", "SumPubMed", "HelpSteer2"]
+# dataset_names = ["USR"]
 
 results_dir = os.path.join("results", "definition")
 

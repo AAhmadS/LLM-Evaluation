@@ -246,7 +246,7 @@ def define_metrics(metrics: List[str]) -> List[Metric]:
         metric_list.append(Metric(**metric_json["metric"]))
     return metric_list  
 
-def set_metric_instruction(steps: List[str]) -> str:
+def set_metric_instruction(steps: List[dict]) -> str:
     """
     Recieves a string of steps in the following structure:
     [
@@ -260,16 +260,16 @@ def set_metric_instruction(steps: List[str]) -> str:
 
     and returns the suitable format for the metric.
     Args:
-        stesp: The structured ordered steps.
+        steps: The structured ordered steps.
     Returns:
         A string of steps in the suitable format for the metric.
     """
     steps_str = ""
     for step in steps:
-        step = json.loads(step)
-        step_id = step["step"]["step_id"]
-        description = step["step"]["description"]
-        steps_str += f"{step_id}-{description}\n"
+        step = step["step"]
+        step_id = step["step_id"]
+        description = step["description"]
+        steps_str += f"{str(step_id)}-{description}\n"
     return steps_str   # A real function should probably actually get the wind speed!
 
 def get_metric_score(evaluation: str) -> dict:
@@ -287,9 +287,10 @@ def get_metric_score(evaluation: str) -> dict:
     Returns:
         The score and the evaluation reasoning.
     """
-    evaluation_dict = json.loads(evaluation)
-    score = evaluation_dict["evaluation result"]["score"]
-    reasoning = evaluation_dict["evaluation result"]["reasoning"]
+    if type(evaluation) == str:
+        evaluation = json.loads(evaluation)
+    score = evaluation["evaluation result"]["score"]
+    reasoning = evaluation["evaluation result"]["reasoning"]
     return {
         "score": score,
         "reasoning": reasoning

@@ -3,6 +3,7 @@ import os
 import pandas as pd
 from typing import List
 from models.metric import Metric
+import re
 from prompts.prompt_template import (
 MetricsList, 
 define_metrics,
@@ -24,6 +25,23 @@ def extract_arguments(api_response: str):
   arguments = response_dict['arguments']
   return arguments
 
+def modify_qwen_string(input_string):
+    """
+    Finds the second "]" from the right, checks if two characters before it is "}". 
+    If false, replaces the "}" before the "]" with "}}".
+    """
+    try:
+        # Find the second ']' from the right
+        bracket_index = input_string.rfind(']')
+        
+        # Check if the second ']' is found
+        if bracket_index == -1:
+            return input_string  # Return original string if not found
+
+        modified_string = input_string[:bracket_index] + "}" + input_string[bracket_index:]
+        return modified_string
+    except IndexError:
+        return input_string
 #################Definement api parsers#######################
 def gpt_api_parser(metrics: MetricsList):
   metrics_list = []
@@ -130,19 +148,38 @@ def vicuna_instruction_parser(api_response: str):
   
 def llama_instruction_parser(api_response):
   try:
-    instructions = json.loads(api_response["choices"][0]["message"]["tool_calls"][0]["function"]["arguments"])["steps"]
-    steps = set_metric_instruction(instructions)
+    function_call = api_response.choices[0].message.content
+    function_call = function_call[function_call.index('{'):function_call.rindex('}')+1]
+    if type(function_call) == str:      
+      function_call = json.loads(function_call)
+    steps = function_call["steps"]
+    if type(steps) == str:
+      steps = json.loads(steps)
+    steps = set_metric_instruction(steps)
     return steps
   except:
-      instructions = api_response["choices"][0]["message"]["content"]
+      print("in exception")
+      instructions = api_response.choices[0].message.content
       return instructions
 
 def qwen_instruction_parser(api_response):
   try:
-    instructions = json.loads(api_response.choices[0].message.tool_calls[0].function.arguments)["stesps"]
-    steps = set_metric_instruction(instructions)
+    function_call = api_response.choices[0].message.content[15:]
+    if type(function_call) == str:
+      if "required" in function_call:
+        function_call = function_call[:function_call.rindex(',')] + function_call[function_call.rindex(']')+1:]      
+      try:
+        function_call = json.loads(function_call)
+      except:
+        function_call = json.loads(modify_qwen_string(function_call))
+    arguments = function_call["arguments"]
+    if type(arguments) == str:
+      arguments = json.loads(arguments)
+    steps = arguments["steps"]
+    steps = set_metric_instruction(steps)
     return steps
   except:
+      print("in exception")
       instructions = api_response.choices[0].message.content
       return instructions
 
@@ -180,16 +217,35 @@ def llama_scoring_parser(api_response):
 
 def qwen_scoring_parser(api_response):
   try:
-    evaluation = json.loads(api_response.choices[0].message.tool_calls[0].function.arguments)["evaluation"]
-    evaluation_result = get_metric_score(evaluation)
-    return evaluation_result
+    function_call = api_response.choices[0].message.content
+    if "!function_call:" in function_call:
+      if function_call.count("!function_call:") >= 2:
+        function_call = function_call.split("!function_call:")[-1]
+        function_call = function_call[:function_call.rindex('}')+1]
+        if function_call[-2] != "}":
+          function_call = function_call + "}"
+      else:
+        function_call = function_call.replace("!function_call:", "")
+      function_call = json.loads(function_call)
+      function_call = function_call["arguments"]
+      if type(function_call) == str:
+        function_call = json.loads(function_call)
+      function_call = function_call["evaluation"]
+    if type(function_call) == str:  
+      if function_call[0] != "{":
+        function_call = "{" + function_call
+      if "evaluation_result" in function_call:
+        function_call = function_call.replace("evaluation_result", "evaluation result")
+    evaluation = get_metric_score(function_call)
+    return evaluation
   except:
-      response = api_response.choices[0].message.content
-      try:
-        evaluation = spot_list(response)
-        return get_metric_score(evaluation)
-      except:
-        raise Exception("Could not parse response")
+      print("in exception")
+      instructions = api_response.choices[0].message.content
+      integer_value = re.findall(r'\d+', instructions.split()[-1])[-1]
+      return {
+        "score": integer_value,
+        "reasoning": instructions
+      }
 
 def gen_scoring_parser(api_response: str):
   evaluation = api_response

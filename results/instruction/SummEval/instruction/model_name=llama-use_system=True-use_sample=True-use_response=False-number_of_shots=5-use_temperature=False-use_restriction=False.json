@@ -3,36 +3,36 @@
         "name": "Relevance",
         "description": "How well does the summary capture the main points of the original text?",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the original text and identify the main points.\n2-Read the summary and identify the main points captured from the original text.\n3-Evaluate how well the summary captures the main points of the original text.\n4-Rate the summary on a scale of 1-5 based on its relevance to the original text.\n"
     },
     {
         "name": "Coherence",
         "description": "How well does the summary flow and make sense?",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the summary carefully and evaluate its overall coherence\n2-Assess how well the summary flows and makes sense\n3-Rate the summary on a scale of 1-5 based on its coherence\n"
     },
     {
         "name": "Non-redundancy",
         "description": "How well does the summary avoid repeating information?",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the summary carefully and identify any repeated information.\n2-Evaluate the extent to which the summary avoids repeating information, considering the context and content of the news article.\n3-Assign a score from 1 to 5 based on the summary's non-redundancy, with 1 being the lowest and 5 being the highest.\n"
     },
     {
         "name": "Informativeness",
         "description": "How much information does the summary convey about the original text?",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the original text and the summary\n2-Evaluate how much information the summary conveys about the original text\n3-Rate the summary on a scale of 1-5 based on the informativeness\n"
     },
     {
         "name": "Readability",
         "description": "How easy is the summary to read and understand?",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the summary carefully and consider the language, structure, and overall flow of the text.\n2-Assess the clarity and concision of the summary, considering whether it is easy to understand the main points and key information.\n3-Evaluate the use of technical vocabulary, jargon, and complex concepts, considering whether they are explained or defined clearly.\n4-Consider the tone and style of the summary, assessing whether it is engaging, objective, and free of bias.\n5-Assign a score from 1 to 5 based on the overall readability of the summary, with 1 being the lowest and 5 being the highest.\n"
     },
     {
         "name": "Focus",
         "description": "How well does the summary focus on the main topic of the original text?",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1-Read the original text and identify the main topic.\n2-Read the summary and evaluate how well it focuses on the main topic of the original text.\n3-Rate the summary on a scale of 1-5 based on its focus on the main topic.\n"
     }
 ]

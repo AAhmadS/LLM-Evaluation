@@ -8,12 +8,14 @@ from util.prompting_utils import (
   format_instruction_prompt,
   format_scoring_prompt,
   format_example_prompt,
+  format_tagging_prompt,
   generate_instruction,
   generate_metrics,
-  generate_scores
+  generate_scores,
+  generate_tags
 )
 from util.similarity_tools import merge_similar_metrics
-from results.save_and_load import save_results
+from results.save_and_load import save_results, save_tagging_results
 from tqdm import tqdm
 
 def end_to_end_definement(api_function, 
@@ -254,3 +256,32 @@ def end_to_end_scoring(api_function,
         continue
            
   return test_set
+
+def tagger_runner(api_function,
+                    metrics_list,
+                    dataset_name,
+                    task_description,
+                    ground_truth_metrics,
+                    tag_formatter,
+                    tag_parser,
+                    saving_settings_string,
+                    seed = 42):
+  random.seed(seed)
+
+  # finalizing the tagging prompt
+  tagging_chain_of_prompt = format_tagging_prompt(task_description,
+                                                  metrics_list,
+                                                  ground_truth_metrics
+                                                  )
+  print("tagging_chain_of_prompt:\n", tagging_chain_of_prompt)
+  
+  tags = generate_tags(api_function, 
+                          tag_parser,
+                          tag_formatter,
+                          tagging_chain_of_prompt, 
+                          temperature=0
+                          )
+    
+  print("---Saving Tags---")
+  save_tagging_results("tag",tags, dataset_name, saving_settings_string)
+  return tags

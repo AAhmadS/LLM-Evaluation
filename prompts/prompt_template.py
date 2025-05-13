@@ -295,3 +295,14 @@ def get_metric_score(evaluation: str) -> dict:
         "score": score,
         "reasoning": reasoning
     }
+    
+####################Tagging Prompt Formatting functions######################
+
+# structure for metric tagging
+class MetricTags(BaseModel):
+    name: str = Field(description="name of the under-examine metric.")
+    tags: List[str] = Field(description="a list of tags: either the name of the \
+        ground truth metrics covered in this metric, or an external tag.")
+class AllMetricsTags(BaseModel):
+    metrics_tags: List[MetricTags] = Field(description="a list of metrics and their tags.")
+

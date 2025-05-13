@@ -90,7 +90,7 @@ def llama_api(messages, response_format, temperature=0.7):
     )
 
     chat_completion = openai.chat.completions.create(
-        model="meta-llama/Meta-Llama-3.1-405B-Instruct",
+        model="meta-llama/Llama-3.3-70B-Instruct-Turbo",
         messages= messages,
         tools = [response_format],
         temperature = temperature,

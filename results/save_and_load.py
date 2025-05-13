@@ -42,3 +42,12 @@ def save_scoring_results(phase,
         save_path = os.path.join(base_path, phase, dataset_name, api_name)
         os.makedirs(save_path, exist_ok=True)
         scored_samples.to_csv(os.path.join(save_path, metrics_source + ".csv"), index=False)
+        
+def save_tagging_results(phase,
+                         tags,
+                         dataset_name,
+                         saving_string
+                         ):
+        save_path = os.path.join(base_path, phase, dataset_name)
+        os.makedirs(save_path, exist_ok=True)
+        json.dump(tags, open(os.path.join(save_path, saving_string),"w"),indent=4)

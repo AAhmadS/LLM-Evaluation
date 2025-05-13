@@ -12,7 +12,9 @@ role_description_output,
 MetricScore,
 MetricInstruction,
 set_metric_instruction,
-get_metric_score
+get_metric_score,
+MetricTags,
+AllMetricsTags
 )
 
 #################Local tools##################################
@@ -66,12 +68,13 @@ def gen_api_parser(api_response: str):
   metrics_list  = define_metrics(list_of_string_metrics)
   return metrics_list 
 
-def llama_api_parser(api_response: dict):
+def llama_api_parser(api_response):
+  api_response = api_response.choices[0].message.tool_calls[0].function.arguments
   metrics_list = []
-  metrics = json.loads(api_response["choices"][0]["message"]["tool_calls"][0]["function"]["arguments"])["metrics"]
+  metrics = json.loads(api_response)["metrics"]
   if type(metrics) == str:
     metrics = json.loads(metrics)
-  for metric_dict in metrics:    
+  for metric_dict in metrics:
     metric = Metric(**metric_dict["metric"])
     metrics_list.append(metric)
   return metrics_list
@@ -390,3 +393,13 @@ def parse_metrics(metrics_dataframe):
 
   metric_description_df = pd.DataFrame(rows, columns=['name', 'description', 'scale'])
   return metric_description_df
+
+##################Tag Parser#################################
+
+def gpt_tag_parser(metricstags: AllMetricsTags):
+  metric_tags = []
+  for metric_tag in metricstags.metrics_tags:
+    name = metric_tag.name
+    tags = metric_tag.tags
+    metric_tags.append({"name": name, "tags": tags})
+  return metric_tags

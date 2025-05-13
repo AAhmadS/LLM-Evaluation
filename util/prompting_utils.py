@@ -70,6 +70,29 @@ Sample of Evaluation:
 Evaluation of {Metric_name}:\n
 """
 
+TAGGING_PROMPT = """
+We queried a student and their teacher to provide assessable metrics for a designed task. Each person should've provided a list of metrics, 
+containing "metric name", "description", and "scale" from which I will only give you "metric name" and 
+"description" for each metric. I will now provide you with the task description, teacher's set of metrics, 
+and student's set of metrics.
+
+Designed Task:
+{Description}
+
+Teacher's set of metrics:
+{Teacher_metrics}
+
+Student's set of metrics:
+{Student_metrics}
+
+I now want you to tag the metrics provided by student. tags are either the name of the metrics 
+provided by the teacher, or other aspects. you should give me a list containing dictionaries 
+where each dictionary has the keywords of "metric_name" and "tags". for this you should:
+* go through each student metric and read its description.
+* for each student metric, go through the teacher's metrics.
+* if the description or part of the description of the student metric covers the teacher's or most of the eacher's metric's description, tag the student's metric as the teacher's metric under examine.
+* after reviewing all of the teacher metric's for this student metric, if there is any specific aspect that is still covered but not mentioned in the teacher's set, clearly choose a name for the aspect and add it to the tags.
+"""
 #################Generation functions##########################
 def generate_system_prompt(model_name, dataset_name,
                            task_description, use_system, 
@@ -148,6 +171,11 @@ def generate_scores(api_function, parser, set_of_tools, scoring_prompt, use_temp
     parsed_results = parser(output)
   return parsed_results
 
+def generate_tags(api_function, parser, formatter, tagging_chain_of_prompt, temperature=0):
+  output = api_function(tagging_chain_of_prompt, formatter, temperature=temperature)
+  parsed_results = parser(output)
+  return parsed_results
+  
 ###################Formatting functions#########################
 def format_samples_prompt(data, 
                             use_response, 
@@ -237,7 +265,7 @@ def format_definition_prompt(system_prompt,
                             number_of_metrics
                             ):
     template = StringFormatter("{Description}\n{samples_prompt}\nBased on"\
-      "this information define a {_metrics_} that we should use to assess the quality of contestants' answers. "\
+      "this information define {_metrics_} that we should use to assess the quality of contestants' answers. "\
       "For each metric only include "\
       "these entities: Name, Description, Scale")
     user_prompt = template.apply({
@@ -255,3 +283,19 @@ def format_definition_prompt(system_prompt,
             "content": user_prompt
         }
               ]
+    
+def format_tagging_prompt(task_description,
+                          metrics_list,
+                          ground_truth_list):
+  template = StringFormatter(TAGGING_PROMPT)
+  user_prompt = template.apply({
+    "Description": task_description,
+    "Teacher_metrics": json.dumps([{"name": metric.name, "description": metric.description} for metric in ground_truth_list], indent = 2),
+    "Student_metrics": json.dumps([{"name": metric.name, "description": metric.description} for metric in metrics_list], indent = 2)
+  })
+  return [
+      {
+          "role": "user",
+          "content": user_prompt
+      }
+            ]

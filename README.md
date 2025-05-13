@@ -9,7 +9,7 @@ These are the motivational questions to this project.
 We selected 5 top-performing and a diverse set of closed/open source LLMs including:
 *   GPT-4o
 *   GPT-4o-mini
-*   LLaMA-3.3-70B (405B)
+*   LLaMA-3.3-70B
 *   Qwen2.5-32B
 *   Mixtral-8*22B
 

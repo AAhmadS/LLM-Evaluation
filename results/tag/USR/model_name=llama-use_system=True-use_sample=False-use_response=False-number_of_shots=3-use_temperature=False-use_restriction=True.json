@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Contextual Relevance",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Interesting Fact Integration",
+        "tags": [
+            "Uses Knowledge",
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting",
+            "Natural"
+        ]
+    },
+    {
+        "name": "Coherence",
+        "tags": [
+            "Understandable",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Creativity",
+        "tags": [
+            "Interesting",
+            "Creativity"
+        ]
+    }
+]

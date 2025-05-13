@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Relevance",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Coherence",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Use of Provided Fact",
+        "tags": [
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Creativity",
+        "tags": [
+            "Natural",
+            "Interesting",
+            "Originality"
+        ]
+    }
+]

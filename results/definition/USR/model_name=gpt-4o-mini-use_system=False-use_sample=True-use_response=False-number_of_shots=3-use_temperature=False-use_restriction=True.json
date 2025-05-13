@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the response relates to the previous statements and context of the conversation.",
+        "scale": "1-5 (1 = not relevant, 5 = highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the level of engagement the response creates in the conversation, including follow-up questions or comments that invite further discussion.",
+        "scale": "1-5 (1 = very low engagement, 5 = very high engagement)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and clarity of the response in relation to the conversation, ensuring it makes sense and maintains the topic.",
+        "scale": "1-5 (1 = incoherent, 5 = highly coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and inventiveness of the response, including unique insights or unexpected angles that enhance the conversation.",
+        "scale": "1-5 (1 = not creative, 5 = highly creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Assesses the emotional connection and understanding reflected in the response, considering the sentiments expressed by the conversation partner.",
+        "scale": "1-5 (1 = lacks empathy, 5 = highly empathetic)",
+        "instruction": ""
+    }
+]

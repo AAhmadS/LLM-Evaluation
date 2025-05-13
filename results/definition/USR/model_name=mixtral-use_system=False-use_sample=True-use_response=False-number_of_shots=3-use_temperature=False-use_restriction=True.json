@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "This metric measures how well the contestant's response aligns with the context and topic of the conversation. It evaluates if the contestant's response is on-topic and relevant to the conversation.",
+        "scale": "Scale of 1-5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "This metric measures the logical flow and coherence of the contestant's response. It evaluates if the response makes sense within the context of the conversation and if the ideas presented are clear and understandable.",
+        "scale": "Scale of 1-5, where 1 is not coherent at all and 5 is highly coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "This metric measures the level of engagement and interest that the contestant's response generates. It evaluates if the response is interesting, thought-provoking, or adds value to the conversation.",
+        "scale": "Scale of 1-5, where 1 is not engaging at all and 5 is highly engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "This metric measures the factual correctness of the contestant's response. It evaluates if the response is based on correct information and does not contain any misleading or false statements.",
+        "scale": "Scale of 1-5, where 1 is not accurate at all and 5 is highly accurate.",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "This metric measures the originality and creativity of the contestant's response. It evaluates if the response is unique, imaginative, or offers a fresh perspective on the topic.",
+        "scale": "Scale of 1-5, where 1 is not creative at all and 5 is highly creative.",
+        "instruction": ""
+    }
+]

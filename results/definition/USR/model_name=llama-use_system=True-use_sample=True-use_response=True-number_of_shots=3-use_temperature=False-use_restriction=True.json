@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the context and previous conversation",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates how logical and consistent the response is",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the response's ability to engage the user and encourage further conversation",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Informative Value",
+        "description": "Measures the amount of interesting and relevant information provided in the response",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Contextual Understanding",
+        "description": "Evaluates the response's demonstration of understanding the context and user's interests",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Contextual Relevance",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Interesting Fact Integration",
+        "tags": [
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting",
+            "Natural"
+        ]
+    },
+    {
+        "name": "Coherence",
+        "tags": [
+            "Understandable",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Originality",
+        "tags": [
+            "Interesting",
+            "Originality"
+        ]
+    },
+    {
+        "name": "Fluency",
+        "tags": [
+            "Natural",
+            "Fluency"
+        ]
+    }
+]

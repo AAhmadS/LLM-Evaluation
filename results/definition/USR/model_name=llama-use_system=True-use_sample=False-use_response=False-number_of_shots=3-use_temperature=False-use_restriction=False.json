@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Contextual Relevance",
+        "description": "How well the response relates to the conversation context",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Interesting Fact Integration",
+        "description": "How effectively the interesting fact is incorporated into the response",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence and Fluency",
+        "description": "How logical and smooth the response is",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement and Creativity",
+        "description": "How engaging and creative the response is",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

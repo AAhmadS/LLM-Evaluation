@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "How well the response is related to the context",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "How logical and consistent the response is",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "How engaging and interesting the response is",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency",
+        "description": "How natural and fluent the response is",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Information Flow",
+        "description": "How well the response contributes to the flow of information in the conversation",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

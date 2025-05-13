@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Relevance",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting",
+            "Natural"
+        ]
+    },
+    {
+        "name": "Clarity",
+        "tags": [
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Naturalness",
+        "tags": [
+            "Natural"
+        ]
+    },
+    {
+        "name": "Insightfulness",
+        "tags": [
+            "Interesting",
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Empathy",
+        "tags": [
+            "Other: Emotional Understanding"
+        ]
+    },
+    {
+        "name": "Specificity",
+        "tags": [
+            "Other: Detail Orientation"
+        ]
+    }
+]

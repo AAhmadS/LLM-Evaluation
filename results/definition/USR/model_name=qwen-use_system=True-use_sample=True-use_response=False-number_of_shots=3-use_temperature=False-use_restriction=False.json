@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The extent to which the response is relevant to the context and the previous message in the conversation.",
+        "scale": "1-5, where 1 is not relevant at all and 5 is highly relevant",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "The degree to which the response encourages further conversation and interaction.",
+        "scale": "1-5, where 1 is very disengaging and 5 is highly engaging",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "The clarity and coherence of the response, including the use of clear and understandable language.",
+        "scale": "1-5, where 1 is very unclear and 5 is extremely clear",
+        "instruction": ""
+    },
+    {
+        "name": "Naturalness",
+        "description": "The natural flow and conversational tone of the response.",
+        "scale": "1-5, where 1 is very unnatural and 5 is highly natural",
+        "instruction": ""
+    },
+    {
+        "name": "Insightfulness",
+        "description": "The depth and insightfulness of the response, including the ability to provide new or interesting information.",
+        "scale": "1-5, where 1 is not insightful at all and 5 is highly insightful",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "The degree to which the response demonstrates empathy and understanding towards the other person.",
+        "scale": "1-5, where 1 is not empathetic at all and 5 is highly empathetic",
+        "instruction": ""
+    },
+    {
+        "name": "Specificity",
+        "description": "The specificity and detail in the response, including the use of specific examples or details.",
+        "scale": "1-5, where 1 is very vague and 5 is highly specific",
+        "instruction": ""
+    }
+]

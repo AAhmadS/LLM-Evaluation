@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Relevance",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Coherence",
+        "tags": [
+            "Understandable",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Contextual Awareness",
+        "tags": [
+            "Maintains Context",
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Empathy",
+        "tags": [
+            "Other: Emotional Intelligence"
+        ]
+    },
+    {
+        "name": "Creativity",
+        "tags": [
+            "Interesting",
+            "Other: Originality"
+        ]
+    },
+    {
+        "name": "Conciseness",
+        "tags": [
+            "Other: Clarity and Brevity"
+        ]
+    }
+]

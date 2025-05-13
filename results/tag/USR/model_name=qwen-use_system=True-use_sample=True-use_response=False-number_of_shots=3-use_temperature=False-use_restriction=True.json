@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance to Context",
+        "tags": [
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Naturalness",
+        "tags": [
+            "Natural"
+        ]
+    },
+    {
+        "name": "Information Content",
+        "tags": [
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Empathy and Politeness",
+        "tags": [
+            "Empathy"
+        ]
+    }
+]

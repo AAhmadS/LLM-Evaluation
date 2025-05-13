@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the response relates to the context and previous messages in the conversation.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how engaging and interesting the response is, encouraging further conversation.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and clarity of the response within the context of the conversation.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Rates the originality and inventiveness of the response, particularly in adding new information or perspectives.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Emotion",
+        "description": "Measures the emotional tone of the response, considering whether it adds warmth, humor, or empathy to the conversation.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    }
+]

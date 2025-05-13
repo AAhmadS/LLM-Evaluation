@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how relevant the continuation is to the given context and interesting fact.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses how engaging the continuation is, considering factors like curiosity, interest, and conversational hooks.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical and grammatical consistency of the continuation, ensuring it flows naturally from the context.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and inventiveness of the continuation.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Depth",
+        "description": "Assesses the thoughtfulness and insightfulness of the continuation, including the depth of understanding and exploration of the topic.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Politeness",
+        "description": "Evaluates the tone of the continuation to ensure it is respectful and polite.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Humor",
+        "description": "Assesses the use of humor in the continuation, if appropriate, to enhance the conversation.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    }
+]

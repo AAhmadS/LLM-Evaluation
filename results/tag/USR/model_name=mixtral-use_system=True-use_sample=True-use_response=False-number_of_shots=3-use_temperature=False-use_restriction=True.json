@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Relevance",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Fluency",
+        "tags": [
+            "Natural"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Informativeness",
+        "tags": [
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Empathy",
+        "tags": [
+            "Other: Emotional Connection"
+        ]
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the generated response is connected to the context and the previous conversation. A relevant response should be logically related to the conversation topic and maintain the flow of the discussion.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Measures the logical consistency and grammatical correctness of the generated response. A coherent response should be easy to understand, grammatically sound, and logically structured.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Interestingness",
+        "description": "Measures how engaging and captivating the generated response is. An interesting response should provide new and valuable information, share unique perspectives, or spark curiosity.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Informativeness",
+        "description": "Measures the amount of new and relevant information provided in the generated response. An informative response should contain factual details, insights, or opinions that contribute to the conversation.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency",
+        "description": "Measures the grammatical correctness and readability of the generated response. A fluent response should be easy to read, contain proper sentence structures, and use appropriate punctuation and capitalization.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how well the generated response encourages further conversation or interaction. An engaging response should inspire the other party to continue discussing the topic or ask follow-up questions.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    }
+]

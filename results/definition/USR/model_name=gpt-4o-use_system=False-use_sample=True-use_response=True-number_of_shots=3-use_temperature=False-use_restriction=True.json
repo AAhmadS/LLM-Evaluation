@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the given context of the conversation.",
+        "scale": "Scale from 1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses how engaging or interesting the response is, encouraging further conversation.",
+        "scale": "Scale from 1 to 5, where 1 is not engaging at all and 5 is highly engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and understandability of the response within the context.",
+        "scale": "Scale from 1 to 5, where 1 is not coherent at all and 5 is highly coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Informativeness",
+        "description": "Measures how much useful or interesting information is provided in the response.",
+        "scale": "Scale from 1 to 5, where 1 is not informative at all and 5 is highly informative.",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Assesses the originality and creativity of the response in contributing to the conversation.",
+        "scale": "Scale from 1 to 5, where 1 is not creative at all and 5 is highly creative.",
+        "instruction": ""
+    }
+]

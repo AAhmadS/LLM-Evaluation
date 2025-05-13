@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response fits the context of the conversation. It evaluates whether the continuation logically follows the preceding dialogue and stays on topic.",
+        "scale": "1 to 5, where 1 is irrelevant and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the level of engagement the response generates. This includes the introduction of new, interesting topics or questions that encourage further dialogue.",
+        "scale": "1 to 5, where 1 is not engaging and 5 is highly engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and clarity of the response. A coherent response should be easily understandable and free of contradictions.",
+        "scale": "1 to 5, where 1 is incoherent and 5 is highly coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Originality",
+        "description": "Measures the uniqueness and creativity of the response. This considers whether the response introduces fresh perspectives or ideas that are not clich\u00e9d or overly predictable.",
+        "scale": "1 to 5, where 1 is not original and 5 is highly original.",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Assesses the response's ability to recognize and respond to the emotional tone and cues given in the conversation. This includes demonstrating understanding and sensitivity to the conversational partner's emotions.",
+        "scale": "1 to 5, where 1 is not empathetic and 5 is highly empathetic.",
+        "instruction": ""
+    },
+    {
+        "name": "Linguistic Quality",
+        "description": "Evaluates the grammatical correctness, spelling, and overall language quality of the response. A high-quality linguistic response will be free of errors and well-structured.",
+        "scale": "1 to 5, where 1 is poor linguistic quality and 5 is excellent linguistic quality.",
+        "instruction": ""
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The degree to which the response is related to the context and maintains the flow of the conversation.",
+        "scale": "Binary (relevant or not relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical consistency of the response and its grammatical correctness.",
+        "scale": "Categorical (incoherent, somewhat coherent, coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Interestingness",
+        "description": "The degree to which the response provides new, engaging, or thought-provoking information.",
+        "scale": "Likert scale (1-5)",
+        "instruction": ""
+    },
+    {
+        "name": "Factuality",
+        "description": "The accuracy of any factual information or claims presented in the response.",
+        "scale": "Binary (factual or not factual)",
+        "instruction": ""
+    },
+    {
+        "name": "Politeness",
+        "description": "The level of courtesy, respect, and appropriateness demonstrated in the response.",
+        "scale": "Categorical (impolite, somewhat polite, polite)",
+        "instruction": ""
+    }
+]

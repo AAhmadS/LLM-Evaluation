@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how relevant the response is to the context provided.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how well the response encourages further conversation.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Assesses the originality and creativity of the response.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Measures how clear and understandable the response is.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "Factual Accuracy",
+        "description": "Evaluates the factual accuracy of any information provided in the response.",
+        "scale": "1 to 5",
+        "instruction": ""
+    }
+]

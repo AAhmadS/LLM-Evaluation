@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance to Context",
+        "description": "Measures how well the response aligns with the given context and maintains the flow of the conversation.",
+        "scale": "1-5, where 1 is completely irrelevant and 5 is highly relevant",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates the extent to which the response encourages further interaction and keeps the conversation interesting.",
+        "scale": "1-5, where 1 is unengaging and 5 is highly engaging",
+        "instruction": ""
+    },
+    {
+        "name": "Naturalness",
+        "description": "Assesses the naturalness and fluency of the language used in the response.",
+        "scale": "1-5, where 1 is unnatural and 5 is very natural",
+        "instruction": ""
+    },
+    {
+        "name": "Information Content",
+        "description": "Measures the amount of relevant and new information provided in the response.",
+        "scale": "1-5, where 1 is no new information and 5 is a lot of new information",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy and Politeness",
+        "description": "Evaluates the degree of empathy and politeness in the response.",
+        "scale": "1-5, where 1 is impolite and lacking empathy and 5 is very polite and empathetic",
+        "instruction": ""
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures the degree to which the continuation is pertinent and directly related to the given context and interesting fact. It evaluates how well the response aligns with the ongoing conversation and maintains the topic or theme.",
+        "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the ability of the continuation to engage the other participant(s) in the conversation. This includes asking questions, introducing new topics, or providing interesting information that invites further interaction.",
+        "scale": "1 to 5, where 1 is not engaging and 5 is highly engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and consistency of the continuation with the preceding conversation. It checks if the response makes sense in the context of what has been said before and follows a coherent narrative.",
+        "scale": "1 to 5, where 1 is incoherent and 5 is highly coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and inventiveness of the continuation. It evaluates whether the response is unique and adds a creative element to the conversation, making it more interesting.",
+        "scale": "1 to 5, where 1 is not creative and 5 is highly creative.",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Assesses the ability of the continuation to demonstrate understanding and consideration of the other participant(s)' emotions and perspectives. It evaluates the sensitivity and emotional intelligence conveyed in the response.",
+        "scale": "1 to 5, where 1 shows no empathy and 5 shows high empathy.",
+        "instruction": ""
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the generated continuation aligns with the context and topic of the conversation. A relevant continuation should be logically connected to the previous statements and should not introduce irrelevant or off-topic content.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the grammatical correctness and semantic consistency of the generated continuation. A coherent continuation should be free of grammatical errors, logical fallacies, and nonsensical statements.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates the ability of the generated continuation to maintain the conversational flow and stimulate further interaction. An engaging continuation should pose thoughtful questions, provide interesting facts, or introduce new ideas that encourage the other participant(s) to continue the conversation.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Informativeness",
+        "description": "Measures the amount of useful or interesting information provided in the generated continuation. An informative continuation should contribute valuable insights, share relevant facts, or offer helpful advice related to the topic of conversation.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Assesses the level of emotional understanding and responsiveness demonstrated by the generated continuation. An empathetic continuation should acknowledge and address the emotions or sentiments expressed by the other participant(s) in the conversation, fostering a supportive and compassionate atmosphere.",
+        "scale": "Continuous (0-1)",
+        "instruction": ""
+    }
+]

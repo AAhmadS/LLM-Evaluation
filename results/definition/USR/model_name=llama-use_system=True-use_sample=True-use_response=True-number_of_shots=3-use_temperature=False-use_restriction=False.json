@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "How relevant is the response to the context and the previous conversation?",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "How coherent and logical is the response?",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "How engaging and interesting is the response?",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Contextual Understanding",
+        "description": "How well does the response demonstrate an understanding of the context and the conversation?",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Response Adequacy",
+        "description": "How adequate is the response in terms of providing a suitable answer or continuation?",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

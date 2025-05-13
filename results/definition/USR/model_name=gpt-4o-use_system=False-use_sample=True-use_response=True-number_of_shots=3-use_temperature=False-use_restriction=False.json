@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how relevant the response is to the preceding conversation and context. A highly relevant response continues the conversation naturally and directly relates to the topics previously discussed.",
+        "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Interestingness",
+        "description": "Assesses the degree to which the response is engaging and adds value to the conversation, potentially by introducing new and intriguing information.",
+        "scale": "1 to 5, where 1 is not interesting at all and 5 is highly interesting.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Determines how logically consistent and understandable the response is within the context of the conversation, ensuring it follows a clear train of thought.",
+        "scale": "1 to 5, where 1 is incoherent and 5 is completely coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Use of Provided Fact",
+        "description": "Evaluates how effectively the contestant incorporates the provided interesting fact into their response, ensuring it is relevant and enhances the conversation.",
+        "scale": "1 to 5, where 1 means the fact is not used or is used poorly, and 5 means the fact is integrated seamlessly and enhances the response.",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures how original and creative the response is, considering the novelty and uniqueness of the ideas presented.",
+        "scale": "1 to 5, where 1 is not creative at all and 5 is very creative.",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency",
+        "description": "Checks the grammatical correctness and flow of the response, contributing to the overall readability and ease of understanding.",
+        "scale": "1 to 5, where 1 is not fluent at all, with many grammatical errors, and 5 is perfectly fluent.",
+        "instruction": ""
+    }
+]

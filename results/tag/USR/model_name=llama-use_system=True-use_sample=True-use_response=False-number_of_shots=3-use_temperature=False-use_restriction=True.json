@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Contextual Relevance",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Response Coherence",
+        "tags": [
+            "Natural",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Conversational Flow",
+        "tags": [
+            "Natural",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Informational Value",
+        "tags": [
+            "Uses Knowledge",
+            "Informative"
+        ]
+    }
+]

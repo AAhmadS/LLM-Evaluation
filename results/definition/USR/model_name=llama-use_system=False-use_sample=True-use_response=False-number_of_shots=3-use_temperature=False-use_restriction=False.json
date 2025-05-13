@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Coherence",
+        "description": "How well the generated continuation fits with the context of the conversation",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "How relevant the generated continuation is to the topic being discussed",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "How engaging and interesting the generated continuation is",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Contextual Understanding",
+        "description": "How well the generated continuation demonstrates understanding of the context and conversation history",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency",
+        "description": "How fluent and natural the generated continuation sounds",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

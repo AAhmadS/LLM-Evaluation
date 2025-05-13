@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance to Context",
+        "description": "Measures how well the response is related to the context provided in the conversation.",
+        "scale": "1 (Not Relevant) to 5 (Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates the ability of the response to keep the conversation engaging and interesting.",
+        "scale": "1 (Not Engaging) to 5 (Highly Engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Assesses the clarity and coherence of the response, ensuring it is easy to understand and logically structured.",
+        "scale": "1 (Unclear and Incoherent) to 5 (Clear and Coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Use of Interesting Fact",
+        "description": "Measures the effective use of the interesting fact provided in the context, if applicable.",
+        "scale": "1 (Not Used) to 5 (Used Effectively)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Evaluates the creativity and originality of the response in the context of the conversation.",
+        "scale": "1 (Uncreative) to 5 (Highly Creative)",
+        "instruction": ""
+    }
+]

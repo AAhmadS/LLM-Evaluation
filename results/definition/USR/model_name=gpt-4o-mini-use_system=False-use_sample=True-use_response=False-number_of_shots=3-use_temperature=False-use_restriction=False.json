@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the preceding context and conversation. A relevant response should directly address the topics or questions raised in the previous statements.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and clarity of the conversation. A coherent response should connect smoothly with the previous turns and maintain a clear narrative.",
+        "scale": "1 (not coherent) to 5 (highly coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates the level of interest and enthusiasm conveyed in the response. Engaging responses often include follow-up questions or expressions of excitement.",
+        "scale": "1 (not engaging) to 5 (very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Originality",
+        "description": "Determines the uniqueness of the response. Original responses should provide new insights or perspectives rather than repeating common phrases or ideas.",
+        "scale": "1 (not original) to 5 (very original)",
+        "instruction": ""
+    },
+    {
+        "name": "Grammar and Syntax",
+        "description": "Checks the grammatical correctness and syntactical structure of the response. Responses should be free from errors and should follow standard language conventions.",
+        "scale": "1 (many errors) to 5 (no errors)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Measures the degree to which the response shows understanding and sensitivity to the other person's feelings or experiences. Empathetic responses often acknowledge the other person's emotions or perspectives.",
+        "scale": "1 (not empathetic) to 5 (very empathetic)",
+        "instruction": ""
+    }
+]

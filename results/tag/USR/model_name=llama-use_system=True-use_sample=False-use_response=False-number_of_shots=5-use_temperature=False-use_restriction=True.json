@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Contextual Relevance",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Interesting Fact Incorporation",
+        "tags": [
+            "Uses Knowledge",
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Response Adequacy",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Coherence and Cohesion",
+        "tags": [
+            "Natural",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Engagement and Originality",
+        "tags": [
+            "Interesting",
+            "Natural"
+        ]
+    }
+]

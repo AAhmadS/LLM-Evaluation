@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response aligns with the context and maintains the topic of conversation.",
+        "scale": "0 (not relevant) to 5 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the level of interaction in the response, such as asking follow-up questions or expressing interest in the other person's comments.",
+        "scale": "0 (not engaging) to 5 (very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and clarity of the conversation, ensuring that responses make sense in sequence.",
+        "scale": "0 (not coherent) to 5 (highly coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Informative Content",
+        "description": "Examines the presence of interesting facts or insights in the response that enhance the conversation.",
+        "scale": "0 (not informative) to 5 (very informative)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Measures the degree to which the response demonstrates understanding and consideration of the other person's feelings or perspectives.",
+        "scale": "0 (not empathetic) to 5 (very empathetic)",
+        "instruction": ""
+    }
+]

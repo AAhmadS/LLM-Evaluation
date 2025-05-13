@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the context and the ongoing conversation.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and clarity of the response within the conversation.",
+        "scale": "1 (not coherent) to 5 (very coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how engaging and interesting the response is to encourage further conversation.",
+        "scale": "1 (not engaging) to 5 (very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Contextual Awareness",
+        "description": "Determines the extent to which the contestant considers the context and any interesting facts provided.",
+        "scale": "1 (not aware) to 5 (fully aware)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Measures the degree of understanding and emotional intelligence displayed in the response.",
+        "scale": "1 (low empathy) to 5 (high empathy)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Assesses the originality and inventiveness of the response in contributing to the conversation.",
+        "scale": "1 (not creative) to 5 (highly creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the ability to convey ideas clearly and succinctly without unnecessary filler.",
+        "scale": "1 (not concise) to 5 (very concise)",
+        "instruction": ""
+    }
+]

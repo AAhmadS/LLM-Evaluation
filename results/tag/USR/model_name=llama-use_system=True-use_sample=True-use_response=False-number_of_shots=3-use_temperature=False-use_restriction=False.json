@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Coherence",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Relevance",
+        "tags": [
+            "Maintains Context",
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Contextual Understanding",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Response Adequacy",
+        "tags": [
+            "Natural",
+            "Uses Knowledge"
+        ]
+    }
+]

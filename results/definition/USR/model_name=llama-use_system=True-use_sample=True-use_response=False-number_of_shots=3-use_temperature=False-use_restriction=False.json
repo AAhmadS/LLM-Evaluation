@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Coherence",
+        "description": "Measures how well the response follows the conversation context",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "Evaluates how relevant the response is to the previous message",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the response's ability to keep the conversation engaging",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Contextual Understanding",
+        "description": "Measures the response's understanding of the conversation context",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Response Adequacy",
+        "description": "Evaluates the response's ability to provide a suitable answer",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

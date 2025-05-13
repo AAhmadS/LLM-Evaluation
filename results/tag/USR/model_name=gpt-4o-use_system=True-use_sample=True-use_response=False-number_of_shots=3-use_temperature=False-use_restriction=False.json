@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Relevance",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting",
+            "Natural"
+        ]
+    },
+    {
+        "name": "Coherence",
+        "tags": [
+            "Understandable",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Originality",
+        "tags": [
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Empathy",
+        "tags": [
+            "Other: Emotional Sensitivity"
+        ]
+    },
+    {
+        "name": "Linguistic Quality",
+        "tags": [
+            "Other: Language Quality"
+        ]
+    }
+]

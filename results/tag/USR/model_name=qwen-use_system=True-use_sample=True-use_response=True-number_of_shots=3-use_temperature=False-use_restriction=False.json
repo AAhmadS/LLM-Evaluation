@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance to Context",
+        "tags": [
+            "Maintains Context",
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting",
+            "Natural"
+        ]
+    },
+    {
+        "name": "Clarity and Coherence",
+        "tags": [
+            "Understandable",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Originality",
+        "tags": [
+            "Interesting",
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Informativeness",
+        "tags": [
+            "Uses Knowledge",
+            "Interesting"
+        ]
+    },
+    {
+        "name": "Emotional Connection",
+        "tags": [
+            "Natural",
+            "Other: Empathy"
+        ]
+    }
+]

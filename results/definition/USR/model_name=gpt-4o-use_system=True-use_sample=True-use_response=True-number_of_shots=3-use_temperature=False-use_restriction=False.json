@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the preceding context and the interesting fact provided. A relevant response should build logically upon the conversation and incorporate the given fact.",
+        "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the ability of the response to invite further discussion or maintain interest in the conversation. An engaging response should prompt the other person to continue the dialogue.",
+        "scale": "1 to 5, where 1 is not engaging and 5 is very engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and clarity of the response. A coherent response should be easy to understand and follow logically from the previous statements.",
+        "scale": "1 to 5, where 1 is not coherent at all and 5 is highly coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and inventiveness of the response. A creative response provides unique or unexpected insights or information.",
+        "scale": "1 to 5, where 1 is not creative and 5 is highly creative.",
+        "instruction": ""
+    },
+    {
+        "name": "Emotional Tone",
+        "description": "Assesses the appropriateness of the emotional tone of the response in relation to the context. The tone should match the mood of the conversation.",
+        "scale": "1 to 5, where 1 is inappropriate tone and 5 is perfectly matched tone.",
+        "instruction": ""
+    }
+]

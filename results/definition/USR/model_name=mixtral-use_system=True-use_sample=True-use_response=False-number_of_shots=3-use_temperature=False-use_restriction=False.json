@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Contextual Relevance",
+        "description": "Measures how well the generated continuation adheres to the given context, ensuring that the conversation flow remains consistent and coherent.",
+        "scale": "1-5 (1: Irrelevant, 5: Highly Relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Factual Accuracy",
+        "description": "Evaluates the accuracy of any factual information presented in the generated continuation, including sports statistics, player backgrounds, or events.",
+        "scale": "1-5 (1: Inaccurate, 5: Highly Accurate)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and overall coherence of the generated continuation, ensuring that the response is well-structured and easy to understand.",
+        "scale": "1-5 (1: Incoherent, 5: Highly Coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures the ability of the generated continuation to maintain the conversation's engaging and interesting nature, encouraging further discussion.",
+        "scale": "1-5 (1: Not Engaging, 5: Highly Engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Evaluates the creativity and originality of the generated continuation, considering the use of unique phrases, ideas, or perspectives.",
+        "scale": "1-5 (1: Not Creative, 5: Highly Creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Grammatical Correctness",
+        "description": "Assesses the grammatical correctness of the generated continuation, ensuring that the response is free of errors and adheres to proper language rules.",
+        "scale": "1-5 (1: Poor Grammar, 5: Excellent Grammar)",
+        "instruction": ""
+    }
+]

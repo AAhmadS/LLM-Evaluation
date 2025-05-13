@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the context and maintains the flow of conversation.",
+        "scale": "Binary (relevant or not relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Informativeness",
+        "description": "Evaluates the amount of new and useful information provided in the response.",
+        "scale": "Continuous (0-100)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging and interesting the response is to keep the conversation going.",
+        "scale": "Continuous (0-100)",
+        "instruction": ""
+    },
+    {
+        "name": "Consistency",
+        "description": "Evaluates how consistent the response is with the tone, style, and language used in the context.",
+        "scale": "Binary (consistent or not consistent)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Measures how logically and grammatically correct the response is.",
+        "scale": "Continuous (0-100)",
+        "instruction": ""
+    },
+    {
+        "name": "Factual Accuracy",
+        "description": "Evaluates the correctness of the facts and statements provided in the response.",
+        "scale": "Binary (accurate or inaccurate)",
+        "instruction": ""
+    }
+]

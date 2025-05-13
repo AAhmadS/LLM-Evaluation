@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Contextual Relevance",
+        "tags": [
+            "Maintains Context",
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Coherence and Cohesion",
+        "tags": [
+            "Understandable",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Fluency and Grammaticality",
+        "tags": [
+            "Natural",
+            "Fluency"
+        ]
+    },
+    {
+        "name": "Engagement and Creativity",
+        "tags": [
+            "Interesting",
+            "Engagement"
+        ]
+    },
+    {
+        "name": "Factual Accuracy",
+        "tags": [
+            "Uses Knowledge",
+            "Factual Accuracy"
+        ]
+    }
+]

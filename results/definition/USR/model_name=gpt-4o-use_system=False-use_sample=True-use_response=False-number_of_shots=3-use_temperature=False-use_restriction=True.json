@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response aligns with the given context and follows logically from the previous conversation turns.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses how interesting or engaging the continuation is, potentially prompting further interaction or discussion.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and consistency within the response and with the overall conversation.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Use of Provided Fact",
+        "description": "Determines the extent to which the contestant effectively incorporates the given interesting fact into the conversation.",
+        "scale": "Not Used, Partially Used, Fully Integrated",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and creativity of the response, considering how uniquely or inventively the contestant continues the conversation.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    }
+]

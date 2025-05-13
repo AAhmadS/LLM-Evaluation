@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Relevance to Context",
+        "tags": [
+            "Maintains Context",
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting",
+            "Natural"
+        ]
+    },
+    {
+        "name": "Clarity",
+        "tags": [
+            "Understandable"
+        ]
+    },
+    {
+        "name": "Creativity",
+        "tags": [
+            "Interesting",
+            "Creativity"
+        ]
+    },
+    {
+        "name": "Emotional Resonance",
+        "tags": [
+            "Emotional Impact"
+        ]
+    },
+    {
+        "name": "Grammar and Syntax",
+        "tags": [
+            "Grammar and Syntax"
+        ]
+    }
+]

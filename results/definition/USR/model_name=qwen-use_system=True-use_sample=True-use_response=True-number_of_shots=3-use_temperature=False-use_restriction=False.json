@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance to Context",
+        "description": "Measures how well the response is related to the context provided. A response that directly addresses the context and continues the conversation naturally scores higher.",
+        "scale": "1-5, where 1 is completely irrelevant and 5 is highly relevant",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates the extent to which the response encourages further interaction. Responses that ask questions or provide interesting facts that can lead to a continuation of the conversation score higher.",
+        "scale": "1-5, where 1 is non-engaging and 5 is highly engaging",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Assesses the clarity and logical flow of the response. Responses that are easy to understand and maintain a clear line of thought score higher.",
+        "scale": "1-5, where 1 is very unclear and 5 is very clear",
+        "instruction": ""
+    },
+    {
+        "name": "Originality",
+        "description": "Measures the uniqueness and creativity of the response. Responses that offer new insights or unique perspectives score higher.",
+        "scale": "1-5, where 1 is very unoriginal and 5 is very original",
+        "instruction": ""
+    },
+    {
+        "name": " informativeness",
+        "description": "Evaluates the amount and relevance of information provided in the response. Responses that provide useful and relevant information score higher.",
+        "scale": "1-5, where 1 is not informative and 5 is highly informative",
+        "instruction": ""
+    },
+    {
+        "name": "Emotional Connection",
+        "description": "Assesses the response's ability to create an emotional connection with the reader. Responses that are empathetic, warm, and relatable score higher.",
+        "scale": "1-5, where 1 is emotionally distant and 5 is highly emotionally connected",
+        "instruction": ""
+    }
+]

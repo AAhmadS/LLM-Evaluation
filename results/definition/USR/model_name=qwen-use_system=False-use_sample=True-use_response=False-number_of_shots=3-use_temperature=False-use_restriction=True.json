@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the given context and fact. A highly relevant response directly addresses the conversation and the provided fact.",
+        "scale": "1-5 (1: Not relevant, 5: Highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how well the response encourages further conversation. A highly engaging response invites the other party to continue the dialogue.",
+        "scale": "1-5 (1: Not engaging, 5: Highly engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Assesses the originality and uniqueness of the response. A creative response adds new and interesting elements to the conversation.",
+        "scale": "1-5 (1: Not creative, 5: Highly creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Measures the logical flow and consistency of the response. A coherent response maintains a clear and logical sequence of ideas.",
+        "scale": "1-5 (1: Incoherent, 5: Highly coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Evaluates the degree to which the response shows understanding and consideration for the other party's feelings and perspectives. An empathetic response demonstrates emotional intelligence.",
+        "scale": "1-5 (1: Not empathetic, 5: Highly empathetic)",
+        "instruction": ""
+    }
+]

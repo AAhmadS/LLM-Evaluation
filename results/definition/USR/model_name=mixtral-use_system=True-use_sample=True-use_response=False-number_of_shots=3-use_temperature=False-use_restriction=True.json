@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "This metric assesses how well the generated continuation is related to the context and topic of the conversation. It measures whether the response is on-topic, coherent, and consistent with the ongoing discussion.",
+        "scale": "A Likert scale from 1 (not relevant) to 5 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency",
+        "description": "This metric evaluates the linguistic quality and readability of the generated continuation, including grammar, punctuation, sentence structure, and word choice. It measures how smoothly and naturally the response flows within the conversation.",
+        "scale": "A Likert scale from 1 (poor fluency) to 5 (excellent fluency)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "This metric gauges the level of interest and engagement that the generated continuation can evoke in a conversation. It measures the ability of the response to maintain the conversation's momentum, encourage further interaction, and stimulate curiosity or emotional investment from the other participants.",
+        "scale": "A Likert scale from 1 (not engaging) to 5 (highly engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Informativeness",
+        "description": "This metric evaluates the amount of new, relevant, and accurate information that the generated continuation adds to the conversation. It measures the value of the response in terms of providing meaningful content, insights, or facts related to the topic.",
+        "scale": "A Likert scale from 1 (not informative) to 5 (highly informative)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "This metric assesses the degree to which the generated continuation demonstrates understanding and empathy for the other participants' emotions, experiences, or perspectives. It measures the ability of the response to create a sense of connection, rapport, and emotional resonance within the conversation.",
+        "scale": "A Likert scale from 1 (not empathetic) to 5 (highly empathetic)",
+        "instruction": ""
+    }
+]

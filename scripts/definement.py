@@ -30,7 +30,7 @@ def definement():
     parser.add_argument('--use_restriction', action='store_true', default=False, help='Whether to restrict the model to generate as much metrics as the default of the task')
     parser.add_argument('--use_sample', action='store_true', default=False, help='Whether to use samples in the definition prompt')
     parser.add_argument('--use_response', action='store_true', default=False, help='Whether to use responses in samples')
-    parser.add_argument('--number_of_shots', type=int, default=5, help='Number of instances for difinition prompt')
+    parser.add_argument('--number_of_shots', type=int, default=3, help='Number of instances for difinition prompt')
     parser.add_argument('--use_similarity', action='store_true', default=False, help='Whether to use similarity')
     parser.add_argument('--similarity_threshold', type=float, default=0.9, help='Metrics similarity threshold')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points and key findings of the original document.",
+        "scale": "1-5, where 1 is not relevant and 5 is highly relevant",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Evaluates the factual correctness and precision of the information presented in the summary.",
+        "scale": "1-5, where 1 is highly inaccurate and 5 is highly accurate",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the clarity and readability of the summary.",
+        "scale": "1-5, where 1 is very unclear and 5 is very clear",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures how succinctly the summary conveys the necessary information without omitting critical details.",
+        "scale": "1-5, where 1 is very wordy and 5 is very concise",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and coherence of the summary.",
+        "scale": "1-5, where 1 is incoherent and 5 is highly coherent",
+        "instruction": ""
+    },
+    {
+        "name": "Comprehensiveness",
+        "description": "Measures the extent to which the summary covers all the important aspects of the original document.",
+        "scale": "1-5, where 1 is incomplete and 5 is comprehensive",
+        "instruction": ""
+    }
+]

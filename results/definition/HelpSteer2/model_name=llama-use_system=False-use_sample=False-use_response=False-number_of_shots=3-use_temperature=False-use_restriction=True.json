@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "How well the response addresses the prompt or instruction",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "How logically connected and easy to follow the response is",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Fluency",
+        "description": "How natural and smooth the language used in the response is",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "How accurate and factual the information provided in the response is",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "How thoroughly the response covers the topic or instruction",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Tone",
+        "description": "How appropriate and engaging the tone of the response is",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

@@ -3,30 +3,30 @@
         "name": "Non-Repetition and no factual Redundancy",
         "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
         "scale": "1-10",
-        "instruction": "\n1- Read the provided summary carefully.\n2- Identify any instances of factual redundancy, where the same information is presented multiple times.\n3- Check for repetition of sentences or phrases within the summary.\n4- Assign a score from 1 to 10 based on the level of non-repetition and absence of factual redundancy, where 1 indicates high redundancy and repetition, and 10 indicates no redundancy or repetition.\n5- Provide a brief justification for the score assigned."
+        "instruction": "\n1- Read the provided summary carefully.\n2- Identify any sentences or phrases that repeat information already stated in the summary.\n3- Check for factual redundancy, ensuring that no information is unnecessarily repeated or conveyed multiple times in different ways.\n4- Assign a score from 1 to 10 based on the level of non-repetition and factual redundancy, where 1 indicates high redundancy and repetition, and 10 indicates no redundancy or repetition at all.\n5- Provide feedback on your scoring, highlighting any specific instances of repetition or redundancy that influenced your score."
     },
     {
         "name": "Coherence",
         "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
         "scale": "1-10",
-        "instruction": "\n1- Read the provided summary carefully.\n2- Identify the main concepts and arguments presented in the summary.\n3- Check if the sentences flow logically from one to the next, maintaining a clear connection to the main topic.\n4- Evaluate if the summary presents a continuous sense of understanding without abrupt shifts or disjointed ideas.\n5- Assign a coherence score from 1 to 10 based on the clarity and logical flow of the summary."
+        "instruction": "\n1- Read the provided summary carefully, ensuring to grasp the main points and arguments presented.\n2- Identify the flow of ideas in the summary and assess if the sentences connect logically to each other.\n3- Evaluate whether the summary maintains a clear focus on the main concepts from the original biomedical research paper.\n4- Consider if the transitions between different points or sentences are smooth and contribute to a unified understanding.\n5- Assign a score from 1 to 10 based on the coherence of the summary, where 1 indicates very poor coherence and 10 indicates exceptional coherence."
     },
     {
         "name": "Readability",
         "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
         "scale": "1-10",
-        "instruction": "\n1- Read the summary carefully to assess its overall clarity and coherence.\n2- Check for spelling errors and grammatical mistakes in the summary.\n3- Evaluate the use of appropriate vocabulary and sentence structure for readability.\n4- Consider the logical flow of ideas and whether the summary is easy to follow.\n5- Assign a score from 1 to 10 based on the overall readability of the summary, where 1 is very poor and 10 is excellent."
+        "instruction": "\n1- Read the provided summary thoroughly.\n2- Check for spelling errors in the summary.\n3- Verify the grammar used in the summary.\n4- Assess the clarity and understandability of the summary.\n5- Assign a score from 1 to 10 based on the overall readability, considering all the above factors."
     },
     {
         "name": "Informativeness, Overlap and Focus",
         "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
         "scale": "1-10",
-        "instruction": "\n1- Read the provided summary carefully.\n2- Identify key concepts, keywords, and key phrases in the summary.\n3- Compare the identified keywords and phrases with those in the original biomedical research paper.\n4- Evaluate the frequency of the keywords and phrases in both the summary and the original document.\n5- Assess whether the summary maintains focus on the main topic of the original document.\n6- Assign a score from 1 to 10 based on the level of informativeness, overlap, and focus of the summary."
+        "instruction": "\n1- Read the provided summary carefully to understand the key themes and information presented.\n2- Identify the main topics and keywords in the summary that reflect the content of the original biomedical research paper.\n3- Compare the identified keywords and themes in the summary with those present in the original document.\n4- Evaluate the frequency of the matching keywords and phrases in the summary and the original document.\n5- Rate the summary on a scale of 1-10 based on how informative it is, considering the overlap of keywords and the relevance to the main topic.\n6- Provide a brief explanation for the rating given, citing specific examples of keywords or themes that influenced the score."
     },
     {
         "name": "Overall Quality",
         "description": "Given your answers above, what is your overall impression of the quality of this summary?",
         "scale": "1-10",
-        "instruction": "\n1- Read the provided summary carefully, ensuring you understand the main points and findings of the original biomedical research paper.\n2- Evaluate the clarity of the summary. Is it easy to understand? Does it convey the main ideas without unnecessary jargon?\n3- Assess the completeness of the summary. Does it cover all the essential aspects of the original paper, including objectives, methods, results, and conclusions?\n4- Consider the accuracy of the summary. Are the key findings and data from the original paper represented correctly?\n5- Rate the overall quality of the summary on a scale from 1 to 10, where 1 is very poor quality and 10 is excellent quality."
+        "instruction": "\n1- Read the provided summary carefully.\n2- Consider the clarity and coherence of the summary. Is it easy to understand?\n3- Evaluate how well the summary captures the main findings and contributions of the original research paper.\n4- Assess the accuracy of the information presented in the summary. Does it reflect the original paper correctly?\n5- Look for any missing key details or concepts that are crucial to understanding the original research.\n6- Consider the writing style and professionalism of the summary. Is it appropriately formal for a biomedical context?\n7- After evaluating all aspects, assign a score from 1 to 10 based on your overall impression of the quality of the summary."
     }
 ]

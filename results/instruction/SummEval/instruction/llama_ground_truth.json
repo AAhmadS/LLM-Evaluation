@@ -3,30 +3,30 @@
         "name": "Non-Repetition and no factual Redundancy",
         "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
         "scale": "1-10",
-        "instruction": "1-Check for repetition of sentences\n2-Check for redundancy in factual information\n"
+        "instruction": "1-Read and understand the instructions carefully\n2-Review the responses based on the Non-Repetition and no factual Redundancy metric\n3-Assess the responses for redundancy in factual information\n4-Check for repetition of sentences in the responses\n5-Rate the responses on a scale of 1-10 based on the metric\n"
     },
     {
         "name": "Coherence",
         "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
         "scale": "1-10",
-        "instruction": "1-The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.\n"
+        "instruction": null
     },
     {
         "name": "Readability",
         "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
         "scale": "1-10",
-        "instruction": "1-Check for good spelling\n2-Check for correct grammar\n3-Check for understandability\n"
+        "instruction": null
     },
     {
         "name": "Informativeness, Overlap and Focus",
         "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
         "scale": "1-10",
-        "instruction": "1-Read the original news article to understand the content and identify key points.\n2-Read the generated summary to identify key points and keywords (or key phrases).\n3-Compare the key points and keywords (or key phrases) from the original article and the generated summary to determine the overlap and focus.\n4-Evaluate the frequency of occurrence of the keywords (or key phrases) in both the original article and the generated summary to assess the level of informativeness.\n5-Rate the summary on a scale of 1-10 based on the level of informativeness, overlap, and focus, with 1 being the lowest and 10 being the highest.\n"
+        "instruction": null
     },
     {
         "name": "Overall Quality",
         "description": "Given your answers above, what is your overall impression of the quality of this summary?",
         "scale": "1-10",
-        "instruction": "1-Read the summary carefully and consider its content, clarity, and overall impact.\n2-Evaluate the summary based on its ability to effectively convey the main points of the news article.\n3-Consider the tone, style, and language used in the summary and how they contribute to its overall quality.\n4-Assign a score from 1 to 10 based on your overall impression of the summary's quality.\n"
+        "instruction": null
     }
 ]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main ideas and findings of the original research paper. This metric assesses if the contestant has accurately identified and summarized the key points and conclusions of the paper.",
+        "scale": "A 5-point Likert scale: 1 (poor) - 5 (excellent)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and readability of the summary. This metric assesses if the contestant has organized the summary in a coherent and understandable manner, with proper use of language and grammar.",
+        "scale": "A 5-point Likert scale: 1 (poor) - 5 (excellent)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Measures the extent to which the summary covers all the important aspects of the research paper. This metric assesses if the contestant has included all the essential details while avoiding unnecessary information.",
+        "scale": "A 5-point Likert scale: 1 (poor) - 5 (excellent)",
+        "instruction": ""
+    },
+    {
+        "name": "Brevity",
+        "description": "Evaluates the ability of the contestant to write a concise summary without losing the key information. This metric assesses if the contestant has maintained a balance between providing enough detail and keeping the summary succinct.",
+        "scale": "A 5-point Likert scale: 1 (poor) - 5 (excellent)",
+        "instruction": ""
+    },
+    {
+        "name": "Originality",
+        "description": "Measures the uniqueness of the summary in terms of the language and structure used by the contestant. This metric assesses if the contestant has paraphrased the original text effectively and avoided plagiarism.",
+        "scale": "A 5-point Likert scale: 1 (poor) - 5 (excellent)",
+        "instruction": ""
+    }
+]

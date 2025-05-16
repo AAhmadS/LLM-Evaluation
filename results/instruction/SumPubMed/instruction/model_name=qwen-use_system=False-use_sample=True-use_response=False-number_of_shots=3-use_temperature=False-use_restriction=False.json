@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Accuracy",
+        "description": "The extent to which the summary accurately reflects the main points and details of the original text, without introducing errors or misinterpretations.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": null
+    },
+    {
+        "name": "Comprehensiveness",
+        "description": "The degree to which the summary covers all the major aspects and key points of the original text, without omitting important information.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": "To ensure a thorough and consistent evaluation of the summaries based on the Comprehensiveness metric, please follow these steps:\n\n1. **Read the Original Text**: Carefully read the original biomedical research paper to understand its content, key points, and major aspects.\n2. **Read the Summary**: Carefully read the contestant's summary.\n3. **Compare the Summary to the Original Text**: Evaluate whether the summary covers all the major aspects and key points of the original text. Check for any important information that may have been omitted.\n4. **Rate the Summary**: Assign a score from 1 (Very Low) to 5 (Very High) based on the degree to which the summary comprehensively covers the original text.\n\nWould you like to proceed with the evaluation of a specific summary, or do you need further clarification on any of these steps?"
+    },
+    {
+        "name": "Clarity",
+        "description": "The ease with which the summary can be understood, including the use of clear and concise language and logical structure.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": "1-Read the summary carefully to understand its content and structure.\n2-Assess the use of clear and concise language in the summary.\n3-Evaluate the logical structure of the summary, ensuring that the information flows coherently.\n4-Determine if the summary is easy to understand, even for someone not familiar with the topic.\n5-Assign a score from 1 to 5 based on the clarity of the summary, with 1 being 'Very Low' and 5 being 'Very High'.\n"
+    },
+    {
+        "name": "Conciseness",
+        "description": "The ability of the summary to convey the essential information of the original text in a brief and succinct manner, without unnecessary details.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the original document to understand its content and key points.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Read the provided summary to identify the main ideas and information conveyed.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Compare the summary to the original document to determine if the essential information is accurately and succinctly presented.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Evaluate the clarity and coherence of the summary, ensuring it is free from unnecessary details.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Assign a rating from 1 to 5 based on the conciseness of the summary, where 1 is 'Very Low' and 5 is 'Very High'.\"}]}]}"
+    },
+    {
+        "name": "Relevance",
+        "description": "The degree to which the summary focuses on the most important and relevant aspects of the original text, aligning with the main objectives of the study or research.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": null
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical flow and connectedness of the summary, ensuring that the information is presented in a way that makes sense and is easy to follow.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": "To ensure a clear and structured evaluation process for the summaries provided by the contestants, we need to define the steps that will be followed to rate the responses based on the Coherence metric. Here are the evaluation steps:\n\n!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the entire summary to get an overall understanding of its content and structure.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the main points and the flow of information within the summary.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate whether the summary presents the information in a logical sequence, with smooth transitions between ideas.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Check if the summary avoids repetition and redundancy, and if it is concise and to the point.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Assess if the summary is easy to follow and understand, without any confusing or ambiguous statements.\"}}, {\"step\": {\"step_id\": \"6\", \"description\": \"Assign a score from 1 to 5 based on the Coherence metric scale, where 1 is 'Very Low' and 5 is 'Very High'.\"}]}}"
+    },
+    {
+        "name": "Objectivity",
+        "description": "The extent to which the summary is free from bias or personal opinion, presenting the information in a neutral and factual manner.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": null
+    }
+]

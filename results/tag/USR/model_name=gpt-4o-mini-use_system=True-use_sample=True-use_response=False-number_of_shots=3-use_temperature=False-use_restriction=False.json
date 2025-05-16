@@ -29,20 +29,20 @@
     {
         "name": "Empathy",
         "tags": [
-            "Other: Emotional Intelligence"
+            "Emotional Intelligence"
         ]
     },
     {
         "name": "Creativity",
         "tags": [
             "Interesting",
-            "Other: Originality"
+            "Originality"
         ]
     },
     {
         "name": "Conciseness",
         "tags": [
-            "Other: Clarity and Brevity"
+            "Clarity and Brevity"
         ]
     }
 ]

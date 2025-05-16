@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Comprehensiveness",
+        "description": "The extent to which the summary covers the essential points of the source document, including the background, methodology, results, and conclusions.",
+        "scale": "Low, Medium, High",
+        "instruction": "\n1- Read and understand the source document thoroughly to identify the essential points, including the background, methodology, results, and conclusions.\n2- Read the provided summary carefully, paying attention to the information it covers.\n3- Compare the information covered in the summary with the essential points identified in the source document.\n4- If the summary covers all the essential points of the source document, including the background, methodology, results, and conclusions, rate the comprehensiveness as 'High'.\n5- If the summary covers some of the essential points but leaves out important details, rate the comprehensiveness as 'Medium'.\n6- If the summary covers only a few or none of the essential points, rate the comprehensiveness as 'Low'."
+    },
+    {
+        "name": "Clarity",
+        "description": "The degree to which the summary is presented in a logical and coherent manner, making it easy to understand and follow.",
+        "scale": "Low, Medium, High",
+        "instruction": "\n1- Read the given summary carefully and thoroughly to understand the main points and arguments presented.\n2- Determine whether the summary is logically organized, with a clear beginning, middle, and end, and if the sequence of ideas flows naturally and smoothly.\n3- Assess the coherence of the summary by checking if the ideas are well-connected and if the transitions between them are smooth and clear.\n4- Evaluate the language used in the summary, ensuring it is clear and concise, without unnecessary jargon or complex sentence structures.\n5- Based on the assessment of the summary's logical organization, coherence, and language, assign a Clarity score using the scale: Low, Medium, High."
+    },
+    {
+        "name": "Accuracy",
+        "description": "The extent to which the summary correctly represents the information in the source document, without introducing errors or misinterpretations.",
+        "scale": "Low, Medium, High",
+        "instruction": "\n1- Read and understand the source biomedical research paper thoroughly.\n2- Read the provided summary carefully.\n3- Compare the information in the summary with the information in the source document.\n4- Determine if the summary correctly represents the information in the source document without introducing any errors or misinterpretations.\n5- Based on the comparison, rate the summary on the Accuracy metric using the scale: Low, Medium, High."
+    },
+    {
+        "name": "Relevance",
+        "description": "The degree to which the summary focuses on the most important aspects of the source document, as determined by the context and purpose of the assessment.",
+        "scale": "Low, Medium, High",
+        "instruction": "\n1- Read the source document carefully and identify the most important aspects, such as the research question, methods, findings, and conclusions.\n2- Read the provided summary and identify the main points covered.\n3- Compare the main points of the summary with the most important aspects of the source document identified in step 1.\n4- Rate the relevance of the summary on a scale of Low, Medium, or High, based on the degree to which it focuses on the most important aspects of the source document, as determined by the context and purpose of the assessment."
+    },
+    {
+        "name": "Conciseness",
+        "description": "The ability of the summary to convey the essential information of the source document in a succinct and efficient manner.",
+        "scale": "Low, Medium, High",
+        "instruction": "\n1- Read and understand the provided summary for the biomedical research paper.\n2- Compare the summary with the source document to identify any missing or unnecessary information.\n3- Evaluate the summary based on the metric of Conciseness, considering how effectively the essential information is conveyed in a succinct and efficient manner.\n4- Rate the summary on the scale of Low, Medium, or High based on the evaluation of Conciseness. Low indicates the summary is not concise enough, Medium indicates the summary is mostly concise but could be improved, and High indicates the summary is highly concise and effectively conveys the essential information."
+    }
+]

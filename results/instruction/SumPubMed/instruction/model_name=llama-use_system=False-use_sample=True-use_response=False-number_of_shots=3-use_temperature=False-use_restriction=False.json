@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance",
+        "description": "How well does the answer address the question?",
+        "scale": "Ordinal",
+        "instruction": null
+    },
+    {
+        "name": "Accuracy",
+        "description": "How accurate is the information provided in the answer?",
+        "scale": "Ratio",
+        "instruction": null
+    },
+    {
+        "name": "Completeness",
+        "description": "How complete is the answer?",
+        "scale": "Interval",
+        "instruction": null
+    },
+    {
+        "name": "Clarity",
+        "description": "How clear is the answer?",
+        "scale": "Nominal",
+        "instruction": null
+    },
+    {
+        "name": "Coherence",
+        "description": "How coherent is the answer?",
+        "scale": "Ordinal",
+        "instruction": null
+    },
+    {
+        "name": "Depth",
+        "description": "How in-depth is the answer?",
+        "scale": "Interval",
+        "instruction": null
+    },
+    {
+        "name": "Contextual understanding",
+        "description": "How well does the answer demonstrate understanding of the context?",
+        "scale": "Ratio",
+        "instruction": null
+    }
+]

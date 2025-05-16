@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the summary captures the main points of the article.",
+        "scale": "1-5, with 1 being not relevant and 5 being highly relevant",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates if the summary includes all the key information from the article.",
+        "scale": "1-5, with 1 being incomplete and 5 being complete",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Assesses how well the summary is concise and to the point.",
+        "scale": "1-5, with 1 being very wordy and 5 being very concise",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Measures the clarity and readability of the summary.",
+        "scale": "1-5, with 1 being very unclear and 5 being very clear",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how engaging and interesting the summary is to the reader.",
+        "scale": "1-5, with 1 being boring and 5 being highly engaging",
+        "instruction": ""
+    }
+]

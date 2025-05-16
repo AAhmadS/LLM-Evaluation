@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Clarity",
+        "description": "Assesses how clearly the summary conveys the main events and details of the news article. It evaluates the ease with which a reader can understand the key points of the article from the summary.",
+        "scale": "1 to 5, where 1 is unclear and confusing, and 5 is crystal clear and easy to understand.",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures the ability of the summary to distill the article into its most essential points without unnecessary detail or repetition.",
+        "scale": "1 to 5, where 1 is overly detailed and lengthy, and 5 is succinct and to the point.",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "Evaluates whether the summary includes information that is pertinent to the main topic of the article and excludes irrelevant details.",
+        "scale": "1 to 5, where 1 includes mostly irrelevant information, and 5 includes only relevant information.",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Assesses the factual correctness of the information provided in the summary, ensuring it reflects the true content of the article.",
+        "scale": "1 to 5, where 1 contains significant factual errors, and 5 is completely accurate.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures the ability of the summary to capture the reader's interest and encourage them to read the full article.",
+        "scale": "1 to 5, where 1 is not engaging at all, and 5 is very engaging and intriguing.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and connection between sentences and ideas in the summary, ensuring a smooth reading experience.",
+        "scale": "1 to 5, where 1 is disjointed and incoherent, and 5 is well-organized and coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Coverage",
+        "description": "Assesses the extent to which the summary covers all significant aspects of the article, ensuring comprehensive representation of the article's content.",
+        "scale": "1 to 5, where 1 covers very few important points, and 5 covers all significant points comprehensively.",
+        "instruction": ""
+    }
+]

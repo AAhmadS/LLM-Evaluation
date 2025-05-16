@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the key topics and themes of the original article.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": "\n1- Read the original news article carefully to identify the main topics and themes.\n2- Review the contestant's summary to determine if it captures the key topics and themes identified in step 1.\n3- Assess the relevance of the summary based on its connection to the main topics and themes, using the provided scale from 1 to 5.\n4- Provide a justification for the score given, citing specific examples from both the original article and the summary."
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the readability and understandability of the summary. Clear summaries should use straightforward language and structure.",
+        "scale": "1 (very unclear) to 5 (very clear)",
+        "instruction": "\n1- Read the summary provided by the contestant.\n2- Evaluate the language used in the summary for straightforwardness.\n3- Assess the structure of the summary for logical flow and organization.\n4- Consider the overall readability, including sentence length and complexity.\n5- Assign a clarity score from 1 to 5 based on the evaluation."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates how succinctly the summary conveys the information without unnecessary details or filler.",
+        "scale": "1 (too lengthy) to 5 (very concise)",
+        "instruction": "\n1- Read the summary provided by the contestant.\n2- Identify the main points and essential information included in the summary.\n3- Assess the length of the summary in relation to the amount of information conveyed.\n4- Determine if there are any unnecessary details or filler that detract from the overall message.\n5- Rate the summary on a scale from 1 to 5 based on its conciseness."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Measures the correctness of the information presented in the summary compared to the original article.",
+        "scale": "1 (very inaccurate) to 5 (very accurate)",
+        "instruction": "\n1- Read the original news article thoroughly to understand its key points and main arguments.\n2- Review the contestant's summary carefully, noting any factual information presented.\n3- Compare the information in the summary to that in the original article, identifying any discrepancies or inaccuracies.\n4- Assign a score from 1 to 5 based on the level of accuracy of the summary in relation to the original article.\n5- Provide feedback to the contestant on specific aspects of accuracy that were well done or need improvement."
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses how compelling and interesting the summary is to the reader, including the use of language and style.",
+        "scale": "1 (not engaging) to 5 (very engaging)",
+        "instruction": "\n1- Read the summary provided by the contestant.\n2- Evaluate the language used in the summary for compelling and interesting characteristics.\n3- Consider the style of writing\u2014does it draw the reader in? Is it vivid and descriptive?\n4- Assess whether the summary maintains the reader's interest throughout.\n5- Assign a score from 1 to 5 based on the overall engagement level of the summary."
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates whether the summary covers all the major points of the article adequately.",
+        "scale": "1 (very incomplete) to 5 (very complete)",
+        "instruction": "\n1- Read the original news article thoroughly to identify its major points.\n2- Read the contestant's summary carefully.\n3- Compare the major points identified in the article with the content of the contestant's summary.\n4- Rate the summary on a scale from 1 to 5 based on how well it covers the major points of the article.\n5- Provide feedback or notes on any significant points that were missing or inadequately covered in the summary."
+    },
+    {
+        "name": "Objectivity",
+        "description": "Measures the neutrality of the summary, assessing whether it presents information without bias.",
+        "scale": "1 (very biased) to 5 (very objective)",
+        "instruction": "\n1- Read the contestant's summary carefully.\n2- Identify any language or phrasing that indicates bias or subjective opinion.\n3- Evaluate the presentation of facts versus opinions in the summary.\n4- Consider the overall tone of the summary and whether it leans towards any particular viewpoint.\n5- Rate the summary on a scale from 1 to 5 based on its objectivity, with 1 being very biased and 5 being very objective."
+    }
+]

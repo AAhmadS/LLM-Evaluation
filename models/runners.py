@@ -128,7 +128,7 @@ def metric_instruction_generation(api_function,
                                        set_of_tools["instruction_parser"], 
                                        set_of_tools["instruction"], 
                                        instruction_chain_of_prompt, 
-                                       temperature=0)
+                                       temperature=0.7)
     
     metric.instruction = instruction
     print(f"---Generated Instruction for Metric: {metric.name}---")

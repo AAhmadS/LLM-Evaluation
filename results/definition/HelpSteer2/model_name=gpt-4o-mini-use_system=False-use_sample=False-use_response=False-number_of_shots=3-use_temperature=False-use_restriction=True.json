@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the response aligns with the prompt or instruction given by the user.",
+        "scale": "Scale of 1 to 5, where 1 = Not relevant at all, 5 = Highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Assesses the originality and inventiveness of the response, evaluating how unique the ideas presented are.",
+        "scale": "Scale of 1 to 5, where 1 = Not creative at all, 5 = Highly creative.",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Evaluates how clearly the response communicates its message, including grammar, coherence, and structure.",
+        "scale": "Scale of 1 to 5, where 1 = Very unclear, 5 = Very clear.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging or interesting the response is to the reader, considering elements like tone and style.",
+        "scale": "Scale of 1 to 5, where 1 = Not engaging at all, 5 = Extremely engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Assesses whether the response fully addresses all aspects of the prompt or instruction, including any required components.",
+        "scale": "Scale of 1 to 5, where 1 = Incomplete, 5 = Fully complete.",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Evaluates the factual correctness of any claims or information presented in the response, if applicable.",
+        "scale": "Scale of 1 to 5, where 1 = Inaccurate, 5 = Highly accurate.",
+        "instruction": ""
+    }
+]

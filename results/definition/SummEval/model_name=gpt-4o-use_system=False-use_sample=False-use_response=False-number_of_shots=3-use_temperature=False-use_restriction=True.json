@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the key points of the original news article, ensuring that all important information is included.",
+        "scale": "Scale from 1 to 5, where 1 means the summary misses most key points, and 5 means it includes all key points.",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates whether the summary is succinct and free of superfluous details, maintaining brevity while still informative.",
+        "scale": "Scale from 1 to 5, where 1 means the summary is overly verbose or includes unnecessary details, and 5 means it is concise and to the point.",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses how clear and understandable the summary is, with well-structured sentences and logical flow.",
+        "scale": "Scale from 1 to 5, where 1 means the summary is confusing or poorly structured, and 5 means it is exceptionally clear and well-organized.",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Determines the factual correctness of the information presented in the summary, ensuring there are no inaccuracies compared to the original article.",
+        "scale": "Scale from 1 to 5, where 1 means the summary contains several inaccuracies, and 5 means it is completely accurate and factual.",
+        "instruction": ""
+    },
+    {
+        "name": "Language Quality",
+        "description": "Evaluates the grammatical correctness, style, and readability of the summary, focusing on proper language use.",
+        "scale": "Scale from 1 to 5, where 1 means the summary contains numerous grammatical errors or awkward phrasing, and 5 means it is grammatically flawless and well-written.",
+        "instruction": ""
+    }
+]

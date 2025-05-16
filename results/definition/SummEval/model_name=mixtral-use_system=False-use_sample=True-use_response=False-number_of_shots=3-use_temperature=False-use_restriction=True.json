@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points of the article and whether it includes important details such as names, dates, and locations.",
+        "scale": "Low (misses key points) to High (captures all key points)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and structure of the summary, ensuring that it is easy to understand and follows a clear narrative.",
+        "scale": "Low (disjointed and confusing) to High (well-structured and clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Assesses the length and brevity of the summary, ensuring it is succinct while still capturing the essence of the article.",
+        "scale": "Low (too wordy) to High (concise and to the point)",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Measures the factual correctness of the summary, ensuring that it does not contain any errors or misrepresentations.",
+        "scale": "Low (contains errors) to High (factually correct)",
+        "instruction": ""
+    },
+    {
+        "name": "Non-redundancy",
+        "description": "Evaluates the summary for any repetitive or redundant information, ensuring that each detail contributes to the overall understanding of the article.",
+        "scale": "Low (contains redundant information) to High (minimal repetition)",
+        "instruction": ""
+    }
+]

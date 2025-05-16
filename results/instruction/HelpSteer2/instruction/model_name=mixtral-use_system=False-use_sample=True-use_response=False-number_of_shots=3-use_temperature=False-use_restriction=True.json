@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The degree to which the response is directly related to the user's question or the given context. It measures how well the response addresses the user's query or task.",
+        "scale": "0 (completely irrelevant) to 5 (completely relevant)",
+        "instruction": "\n1- Read the user's question or given context carefully.\n2- Read the contestant's response thoroughly.\n3- Determine the relevance of the response to the user's question or given context. Consider if the response addresses the user's query or task directly.\n4- Rate the relevance on a scale of 0 to 5, where 0 means completely irrelevant and 5 means completely relevant."
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical consistency and smoothness of the response. It measures how well the response follows a logical or semantic structure, and how well the ideas and sentences are connected.",
+        "scale": "0 (incoherent) to 5 (highly coherent)",
+        "instruction": "\n1- Read the user's prompt/instruction and the contestant's response carefully.\n2- Evaluate the logical consistency and smoothness of the response. Check if the response follows a logical or semantic structure and if the ideas and sentences are connected coherently.\n3- Rate the response on a scale of 0 to 5 based on the Coherence metric, where 0 represents incoherent and 5 represents highly coherent."
+    },
+    {
+        "name": "Accuracy",
+        "description": "The correctness of the information or instructions provided in the response. It measures how well the response aligns with established facts, theories, and best practices in the relevant domain.",
+        "scale": "0 (completely inaccurate) to 5 (completely accurate)",
+        "instruction": "\n1- Carefully read the response provided by the contestant.\n2- Research and verify the information or instructions given in the response. Use reliable sources to confirm the accuracy of the details provided.\n3- Evaluate the response based on the 'Accuracy' metric, ranging from 0 (completely inaccurate) to 5 (completely accurate). Consider how well the response aligns with established facts, theories, and best practices in the relevant domain.\n4- Document your findings, including the rating and any relevant notes or observations about the response's accuracy."
+    },
+    {
+        "name": "Completeness",
+        "description": "The extent to which the response covers all the necessary aspects of the user's question or task. It measures how well the response addresses all the important details and subtopics.",
+        "scale": "0 (completely incomplete) to 5 (completely complete)",
+        "instruction": "\n1- Read and understand the task instructions and evaluation criteria carefully. Make sure to keep this document open while reviewing for reference.\n2- Review the contestant's response to the user's prompt or instruction.\n3- Evaluate the response based on the 'Completeness' metric, considering the extent to which the response covers all necessary aspects of the user's question or task. Rate the response on a scale of 0 (completely incomplete) to 5 (completely complete).\n4- Document your evaluation, providing a clear explanation for the score given. Make sure to specify the aspects that were covered or missed in the response, as well as any relevant details that were addressed."
+    },
+    {
+        "name": "Conciseness",
+        "description": "The degree to which the response is free of redundancy and unnecessary information. It measures how succinctly the response conveys the required information.",
+        "scale": "0 (highly verbose) to 5 (highly concise)",
+        "instruction": "\n1- Read the contestant's response carefully and thoroughly.\n2- Evaluate the response based on the provided metric, which is Conciseness. Consider whether the response is free of redundancy and unnecessary information, and how succinctly it conveys the required information.\n3- Rate the response on a scale of 0 to 5, where 0 indicates highly verbose and 5 indicates highly concise. Make sure to provide a well-reasoned explanation for the rating, referencing specific parts of the response where appropriate."
+    },
+    {
+        "name": "Clarity",
+        "description": "The ease with which the response can be understood. It measures how effectively the response communicates its intended meaning, using clear, unambiguous language.",
+        "scale": "0 (highly unclear) to 5 (highly clear)",
+        "instruction": "\n1- Read the contestant's response carefully, making sure to understand its intended meaning.\n2- Consider the clarity of the response. Determine how effectively the response communicates its intended meaning using clear, unambiguous language.\n3- Rate the response on a scale of 0 to 5, where 0 represents a highly unclear response and 5 represents a highly clear response."
+    }
+]

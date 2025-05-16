@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Understandable",
+        "description": "Is the response understandable given the previous context?",
+        "scale": "0-1",
+        "instruction": "\n1- Read the conversation provided to understand the context.\n2- Read the potential response that is provided as the next turn in the conversation.\n3- Determine if the response is understandable given the context of the conversation.\n4- Assign a score based on the Understandable metric, where 0 means 'not understandable' and 1 means 'understandable'."
+    },
+    {
+        "name": "Natural",
+        "description": "Does the response seem to be something that a person would naturally say?",
+        "scale": "1-3",
+        "instruction": "\n1- Read the entire conversation provided, including the potential response.\n2- Consider how natural the provided response sounds within the context of the conversation.\n3- Rate the response on a scale of 1 to 3 based on how natural it sounds: 1 = Not Natural, 2 = Somewhat Natural, 3 = Very Natural.\n4- Provide the rating without any additional commentary or justification."
+    },
+    {
+        "name": "Maintains Context",
+        "description": "Does the response serve as a valid continuation of the preceding conversation?",
+        "scale": "1-3",
+        "instruction": "\n1- Read and understand the instructions provided for the evaluation task.\n2- Carefully read the given conversation between two individuals to understand the context.\n3- Review the potential response provided for the next turn in the conversation.\n4- Consider how well the response maintains the context of the conversation. Does it logically follow the previous discussion?\n5- Rate the response on the 'Maintains Context' metric using the scale of 1-3, where 1 means the response does not maintain context at all, 2 means it somewhat maintains context, and 3 means it fully maintains context.\n6- Provide the rating based on your evaluation of the response's ability to maintain the context of the conversation."
+    },
+    {
+        "name": "Interesting",
+        "description": "Is the response dull or interesting?",
+        "scale": "1-3",
+        "instruction": "\n1- Read the entire conversation provided to understand the context and flow of the dialogue.\n2- Carefully read the potential response given for the next turn in the conversation.\n3- Identify the interesting fact within the provided response. Consider how unique, surprising, or engaging the fact is in the context of the conversation.\n4- Rate the response on a scale from 1 to 3 based on its interestingness: 1 = Not interesting, 2 = Moderately interesting, 3 = Highly interesting.\n5- Provide a brief justification for the rating based on the criteria outlined above, explaining why the response is rated at that particular level of interestingness."
+    },
+    {
+        "name": "Uses Knowledge",
+        "description": "Given the fact that the response is conditioned on, how well does the response use that fact?",
+        "scale": "0-1",
+        "instruction": "\n1- Read the conversation provided to understand the context.\n2- Read the interesting fact that is intended to be used in the response.\n3- Read the provided response and determine how well it incorporates or uses the interesting fact.\n4- Evaluate the response based on how effectively it integrates the interesting fact within the conversation context.\n5- Assign a score between 0 and 1 based on the effectiveness of the use of the fact. A score of 1 indicates excellent use, while a score of 0 indicates poor use."
+    },
+    {
+        "name": "Overall Quality",
+        "description": "Given your answers above, what is your overall impression of the quality of this utterance?",
+        "scale": "1-5",
+        "instruction": "Given your answers above, what is your overall impression of this utterance?\nA score of 1 (very bad) means this is a completely invalid response. It would be difficult to recover the conversation after this.\nA score of 2 (bad) means this is a valid response, but otherwise poor in quality.\nA score of 3 (neutral) means this response is neither good nor bad. This response has no negative qualities, but no positive ones either.\nA score of 4 (good) means this is a good response, but falls short of being perfect because of a key flaw.\nA score of 5 (very good) means this response is good and does not have any strong flaws."
+    }
+]

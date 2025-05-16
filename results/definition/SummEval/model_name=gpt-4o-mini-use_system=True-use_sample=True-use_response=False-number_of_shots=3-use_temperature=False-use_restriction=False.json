@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the key topics and themes of the original article.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the readability and understandability of the summary. Clear summaries should use straightforward language and structure.",
+        "scale": "1 (very unclear) to 5 (very clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates how succinctly the summary conveys the information without unnecessary details or filler.",
+        "scale": "1 (too lengthy) to 5 (very concise)",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Measures the correctness of the information presented in the summary compared to the original article.",
+        "scale": "1 (very inaccurate) to 5 (very accurate)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses how compelling and interesting the summary is to the reader, including the use of language and style.",
+        "scale": "1 (not engaging) to 5 (very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates whether the summary covers all the major points of the article adequately.",
+        "scale": "1 (very incomplete) to 5 (very complete)",
+        "instruction": ""
+    },
+    {
+        "name": "Objectivity",
+        "description": "Measures the neutrality of the summary, assessing whether it presents information without bias.",
+        "scale": "1 (very biased) to 5 (very objective)",
+        "instruction": ""
+    }
+]

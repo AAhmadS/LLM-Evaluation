@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The degree to which the contestant's response directly addresses the user's prompt or instruction.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the user's prompt or instruction carefully to understand what is being asked.\n2- Examine the contestant's response to the user's prompt or instruction.\n3- Determine whether the contestant's response directly addresses the user's prompt or instruction.\n4- Rate the relevance of the response based on its directness and appropriateness in addressing the user's prompt according to the following scale: High, Medium, Low.\n5- Assign a 'High' rating if the response is directly relevant and fully addresses the user's prompt or instruction.\n6- Assign a 'Medium' rating if the response somewhat addresses the user's prompt or instruction but may include some irrelevant information or miss some key points.\n7- Assign a 'Low' rating if the response does not directly address the user's prompt or instruction, is off-topic, or fails to provide an appropriate answer.\n8- Document the rating and provide a brief explanation or justification for the rating based on the analysis."
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical flow and consistency of the response, ensuring that it makes sense as a whole.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the entire response from the contestant to understand the overall message and intention.\n2- Identify the main points or arguments presented in the response.\n3- Evaluate whether the response maintains a logical progression from one point to the next.\n4- Check for consistency in the information provided, ensuring there are no contradictions or irrelevant details.\n5- Determine if the response makes sense as a unified whole, considering the logical flow and clarity.\n6- Assign a rating of High, Medium, or Low based on the coherence of the response: \n- High: The response is logically structured, clear, and consistent throughout.\n- Medium: The response is mostly clear but may have minor issues with flow or consistency.\n- Low: The response lacks logical structure, is unclear, or contains contradictions."
+    },
+    {
+        "name": "Completeness",
+        "description": "The extent to which the response fully answers or addresses all parts of the user's prompt.",
+        "scale": "Complete, Partial, Incomplete",
+        "instruction": "\n1- Read the user's prompt carefully to understand all the parts or aspects that need to be addressed.\n2- Read the contestant's response thoroughly to evaluate how well it addresses each part of the user's prompt.\n3- Determine if the response fully answers all parts of the prompt. Consider whether any important aspects are missing or only partially addressed.\n4- Rate the response using the Completeness scale: \n- Complete: If the response fully addresses all parts of the prompt.\n- Partial: If the response addresses some parts of the prompt but not others.\n- Incomplete: If the response fails to address most or all parts of the prompt.\n5- Document your rating decision and provide a brief explanation of why you chose this rating based on the criteria."
+    },
+    {
+        "name": "Clarity",
+        "description": "The ease with which the response can be understood by the user, free of ambiguity or confusion.",
+        "scale": "Clear, Somewhat Clear, Unclear",
+        "instruction": "\n1- Read the user's prompt and the corresponding contestant's response carefully.\n2- Assess the response based on how easily it can be understood by an average user, focusing on the clarity of the language, structure, and presentation of ideas.\n3- Determine if the response is free of ambiguity and confusion. Consider whether the response directly addresses the prompt and provides a clear and concise answer.\n4- Rate the clarity of the response using the following scale: 'Clear' if the response is easily understandable and leaves no room for misunderstanding, 'Somewhat Clear' if the response is mostly understandable but contains some minor ambiguities or unclear phrasing, 'Unclear' if the response is difficult to understand or contains significant ambiguities.\n5- Document your rating and any notes that justify your evaluation. Provide specific examples from the response if necessary to support your rating.\n6- Repeat the process for each response provided by the contestants."
+    },
+    {
+        "name": "Creativity",
+        "description": "The originality and innovativeness of the response, offering unique insights or perspectives.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the user's prompt or instruction carefully to understand the context and what is being asked.\n2- Read the contestant's response thoroughly.\n3- Determine how original and innovative the response is. Consider if the response offers unique insights or perspectives that stand out from typical answers.\n4- Assign a rating based on the Creativity metric: High, Medium, or Low. High indicates a very original and innovative response, Medium indicates some originality but also some common elements, and Low indicates a lack of originality or a typical response.\n5- Provide a brief justification for the assigned rating, highlighting specific elements of the response that influenced your decision."
+    },
+    {
+        "name": "Accuracy",
+        "description": "The correctness of the information provided in the response, based on factual evidence or logical reasoning.",
+        "scale": "Accurate, Somewhat Accurate, Inaccurate",
+        "instruction": "\n1- Read the user's prompt/instruction carefully to understand what information or response is being requested.\n2- Review the contestant's response to the user's prompt.\n3- Determine if the information provided in the response is factually correct based on known evidence or logical reasoning.\n4- Rate the response as 'Accurate' if all the information is correct and fully answers the prompt.\n5- Rate the response as 'Somewhat Accurate' if the response contains some correct information but also has inaccuracies, or if it is incomplete.\n6- Rate the response as 'Inaccurate' if the response contains incorrect information or fails to answer the prompt appropriately.\n7- Provide a brief explanation for your rating to justify your evaluation."
+    }
+]

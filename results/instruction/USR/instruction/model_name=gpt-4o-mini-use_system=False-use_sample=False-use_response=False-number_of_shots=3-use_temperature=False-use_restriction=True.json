@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the generated response aligns with the context and topic of the conversation.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": "\n1- Read the provided conversation carefully to understand the context and topics being discussed.\n2- Consider the potential response given and evaluate how closely it aligns with the conversation's context.\n3- Assign a relevance score from 1 to 5 based on how pertinent the response is to the ongoing dialogue.\n4- Document your score along with a brief justification for your rating."
+    },
+    {
+        "name": "Creativity",
+        "description": "Evaluates the originality and inventiveness of the response, and how well it adds to the conversation.",
+        "scale": "1 (not creative) to 5 (highly creative)",
+        "instruction": "\n1- Read the conversation between the two individuals.\n2- Read the potential response provided.\n3- Evaluate the originality and inventiveness of the response based on how well it adds to the ongoing conversation.\n4- Assign a score from 1 to 5 based on the creativity of the response."
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the clarity and comprehensibility of the response, ensuring it is easy to understand and follows a logical structure.",
+        "scale": "1 (unclear) to 5 (very clear)",
+        "instruction": "\n1- Read the conversation between the two individuals carefully.\n2- Review the potential response provided.\n3- Evaluate the response based on the Clarity metric.\n4- Assign a score from 1 to 5 based on clarity."
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging and interesting the response is, including its ability to spark further conversation.",
+        "scale": "1 (not engaging) to 5 (highly engaging)",
+        "instruction": "\n1- Read the conversation between the two individuals to understand the context.\n2- Consider the provided response and the interesting fact.\n3- Evaluate the response based on the Engagement metric, considering how well it would maintain or enhance interest in the conversation.\n4- Assign a score from 1 to 5 based on its level of engagement.\n5- Justify the assigned score by explaining how the response aligns with the criteria for engagement."
+    },
+    {
+        "name": "Fact Integration",
+        "description": "Evaluates how well the response incorporates the interesting fact provided into the continuation of the conversation.",
+        "scale": "1 (poor integration) to 5 (excellent integration)",
+        "instruction": "\n1- Read the conversation between the two individuals.\n2- Read the potential response that includes the interesting fact.\n3- Evaluate how well the response integrates the interesting fact into the conversation.\n4- Assign a score from 1 to 5 based on the integration of the fact."
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points and important details of the original news article.",
+        "scale": "1 to 5 (1 = not relevant, 5 = highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the readability and understandability of the summary, including grammatical correctness and sentence structure.",
+        "scale": "1 to 5 (1 = very unclear, 5 = very clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the degree to which the summary is succinct without losing essential information; it should be brief yet informative.",
+        "scale": "1 to 5 (1 = excessively verbose, 5 = perfectly concise)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging and interesting the summary is to the reader; it should capture attention and provoke interest.",
+        "scale": "1 to 5 (1 = not engaging, 5 = very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Assesses whether the summary includes all necessary elements of the original article, such as key facts, figures, and quotes.",
+        "scale": "1 to 5 (1 = incomplete, 5 = fully complete)",
+        "instruction": ""
+    }
+]

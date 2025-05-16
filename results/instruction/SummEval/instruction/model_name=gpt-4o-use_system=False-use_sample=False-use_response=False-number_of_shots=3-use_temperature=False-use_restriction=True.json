@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the key points of the original news article, ensuring that all important information is included.",
+        "scale": "Scale from 1 to 5, where 1 means the summary misses most key points, and 5 means it includes all key points.",
+        "instruction": "\n1- Read the original news article to understand its key points and main information.\n2- Read the contestant's summary of the news article.\n3- Compare the key points included in the summary against those in the original article.\n4- Determine how many key points from the original article are present in the summary.\n5- Assign a relevance score based on the number of key points included, using the scale from 1 to 5."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates whether the summary is succinct and free of superfluous details, maintaining brevity while still informative.",
+        "scale": "Scale from 1 to 5, where 1 means the summary is overly verbose or includes unnecessary details, and 5 means it is concise and to the point.",
+        "instruction": "\n1- Read the entire summary carefully to understand its content and main points.\n2- Identify any parts of the summary that seem overly verbose or include unnecessary details that do not contribute to the core message of the article.\n3- Consider whether the summary effectively conveys the main points of the article without including extraneous information.\n4- Rate the summary on a scale from 1 to 5 based on conciseness: 1 means the summary is overly verbose or includes unnecessary details, and 5 means it is concise and to the point.\n5- If necessary, provide a brief justification for your rating to help understand why the summary received its score."
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses how clear and understandable the summary is, with well-structured sentences and logical flow.",
+        "scale": "Scale from 1 to 5, where 1 means the summary is confusing or poorly structured, and 5 means it is exceptionally clear and well-organized.",
+        "instruction": "\n1- Read the summary provided by the contestant carefully.\n2- Assess the clarity of the summary by considering how well the sentences are structured and whether the ideas flow logically from one to the next.\n3- Rate the summary on a scale from 1 to 5 based on the following criteria:\n- 1: The summary is confusing or poorly structured, with unclear sentences and a lack of logical flow.\n- 2: The summary is somewhat unclear, with some poorly constructed sentences and a weak flow.\n- 3: The summary is moderately clear, with generally understandable sentences and a somewhat logical flow.\n- 4: The summary is clear, with well-structured sentences and a logical flow, but may have minor issues.\n- 5: The summary is exceptionally clear and well-organized, with excellently structured sentences and a flawless logical flow.\n4- Provide the rating based on your assessment."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Determines the factual correctness of the information presented in the summary, ensuring there are no inaccuracies compared to the original article.",
+        "scale": "Scale from 1 to 5, where 1 means the summary contains several inaccuracies, and 5 means it is completely accurate and factual.",
+        "instruction": "\n1- Read and understand the provided original news article thoroughly to grasp all the key points and factual information presented in it.\n2- Read the contestant's summary carefully, noting any factual claims or statements made in the summary.\n3- Compare the factual claims and statements in the summary against the information in the original article, identifying any inaccuracies or discrepancies.\n4- Assign a score from 1 to 5 based on the factual accuracy of the summary, using the following guidelines:\n- Score 5: The summary is completely accurate and factual, with no discrepancies.\n- Score 4: The summary is mostly accurate, with one minor factual inaccuracy.\n- Score 3: The summary contains multiple minor inaccuracies or one major inaccuracy.\n- Score 2: The summary contains several inaccuracies, impacting its overall accuracy.\n- Score 1: The summary contains numerous inaccuracies, rendering it unreliable.\n5- Document any inaccuracies found and provide a brief justification for the score assigned based on the identified inaccuracies."
+    },
+    {
+        "name": "Language Quality",
+        "description": "Evaluates the grammatical correctness, style, and readability of the summary, focusing on proper language use.",
+        "scale": "Scale from 1 to 5, where 1 means the summary contains numerous grammatical errors or awkward phrasing, and 5 means it is grammatically flawless and well-written.",
+        "instruction": "\n1- Read the contestant's summary thoroughly to understand its meaning and intent.\n2- Identify any grammatical errors, awkward phrasing, or stylistic issues in the summary. Consider aspects such as sentence structure, word choice, punctuation, and overall readability.\n3- Determine the level of language quality by assessing how these issues impact the readability and grammatical correctness of the summary.\n4- Assign a score from 1 to 5 based on the identified language quality: 1 for numerous grammatical errors or awkward phrasing, 3 for some minor issues that slightly affect readability, and 5 for a grammatically flawless and well-written summary.\n5- Provide any additional comments or feedback that could help the contestant improve their language quality, if applicable."
+    }
+]

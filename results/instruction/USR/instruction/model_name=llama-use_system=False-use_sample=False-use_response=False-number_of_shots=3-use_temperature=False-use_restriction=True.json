@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Coherence",
+        "description": "How well the continuation fits the context of the conversation",
+        "scale": "1-5",
+        "instruction": "I understand the instructions. You want me to evaluate a given response based on how well it fits the context of the conversation, using the Coherence metric on a scale of 1-5. I'm ready to proceed. Please provide the conversation and the potential response."
+    },
+    {
+        "name": "Relevance",
+        "description": "How relevant the continuation is to the interesting fact provided",
+        "scale": "1-5",
+        "instruction": "I understand the instructions. You want me to rate a potential response in a conversation based on its relevance to an interesting fact provided. The evaluation criteria are as follows:\n\n* Metric: Relevance\n* Description: How relevant the continuation is to the interesting fact provided\n* Scale: 1-5\n\nI'm ready to proceed. Please provide the conversation, the potential response, and the interesting fact. I'll rate the response based on its relevance to the fact."
+    },
+    {
+        "name": "Creativity",
+        "description": "How unique and original the continuation is",
+        "scale": "1-5",
+        "instruction": "I understand the instructions. You want me to evaluate a potential response in a conversation based on its creativity, which is defined as how unique and original the continuation is. I will rate the response on a scale of 1-5, where 1 is the least creative and 5 is the most creative. I'm ready to proceed. Please provide the conversation and the potential response."
+    },
+    {
+        "name": "Fluency",
+        "description": "How natural and smooth the language used in the continuation is",
+        "scale": "1-5",
+        "instruction": "I understand the instructions. You want me to evaluate a given response based on its fluency, which refers to how natural and smooth the language used is. I will rate the response on a scale of 1-5, where 1 is the lowest and 5 is the highest. I'm ready to proceed. Please provide the conversation and the potential response."
+    },
+    {
+        "name": "Engagement",
+        "description": "How engaging and interesting the continuation is to read",
+        "scale": "1-5",
+        "instruction": "I understand the instructions. You want me to evaluate a potential response in a conversation based on how engaging and interesting it is to read, using a scale of 1-5. I'm ready to proceed. Please provide the conversation, the potential response, and the interesting fact. I'll rate the response according to the Engagement metric."
+    }
+]

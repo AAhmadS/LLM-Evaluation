@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the response aligns with the prompt's context and specific requirements.",
+        "scale": "1-5 (1=Not relevant at all, 5=Highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the clarity and comprehensibility of the response, including grammar and structure.",
+        "scale": "1-5 (1=Very unclear, 5=Very clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates whether the response addresses all aspects of the prompt and provides sufficient information.",
+        "scale": "1-5 (1=Incomplete, 5=Comprehensive)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures the level of engagement or interaction within the conversation, particularly in dialogue-based prompts.",
+        "scale": "1-5 (1=Not engaging, 5=Very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Assesses the correctness of technical information provided, especially in responses involving specific knowledge (e.g., coding, sports science).",
+        "scale": "1-5 (1=Inaccurate, 5=Completely accurate)",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Evaluates the originality and inventiveness of the response, particularly in more open-ended prompts.",
+        "scale": "1-5 (1=Not creative, 5=Highly creative)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures how succinctly the response conveys its message without unnecessary verbosity.",
+        "scale": "1-5 (1=Very verbose, 5=Very concise)",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "Assesses the degree to which the response acknowledges and addresses the user's feelings or needs, especially in conversational contexts.",
+        "scale": "1-5 (1=Not empathetic, 5=Very empathetic)",
+        "instruction": ""
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Fluency",
+        "description": "How coherent and natural the summary sounds",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "How well the summary captures the main points of the article",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "How accurate the summary is in terms of facts and figures",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "How well the summary covers all the important aspects of the article",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Readability",
+        "description": "How easy the summary is to read and understand",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

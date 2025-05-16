@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the generated continuation fits the given prompt or instruction. It evaluates if the response is on-topic and relevant to the user's query.",
+        "scale": "Binary (Relevant, Not relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and consistency of the generated continuation. It checks if the response is understandable, coherent, and follows a logical sequence.",
+        "scale": " ordinal (Highly incoherent, Somewhat incoherent, Neutral, Somewhat coherent, Highly coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Evaluates the correctness of factual information in the generated continuation. It verifies if the response is factually correct and reliable.",
+        "scale": "Binary (Correct, Incorrect)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Measures the extent to which the generated continuation fully answers the user's prompt or instruction. It checks if the response provides all the necessary information and covers all aspects of the query.",
+        "scale": "Ordinal (Incomplete, Somewhat complete, Neutral, Mostly complete, Complete)",
+        "instruction": ""
+    },
+    {
+        "name": "Grammaticality",
+        "description": "Evaluates the grammatical correctness of the generated continuation. It checks if the response is grammatically sound and follows proper language conventions.",
+        "scale": "Binary (Correct, Incorrect)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagingness",
+        "description": "Measures the level of interest and engagement that the generated continuation can spark in the user. It evaluates if the response is captivating and stimulates further interaction.",
+        "scale": "Ordinal (Not engaging, Somewhat engaging, Neutral, Mostly engaging, Highly engaging)",
+        "instruction": ""
+    }
+]

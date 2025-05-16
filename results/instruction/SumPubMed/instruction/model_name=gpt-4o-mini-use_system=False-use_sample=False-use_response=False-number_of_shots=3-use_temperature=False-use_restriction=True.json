@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Content Coverage",
+        "description": "Measures how well the summary captures the key points and findings of the original research paper, including important concepts, results, and conclusions.",
+        "scale": "0-100% (0% means no key points covered, 100% means all key points covered)",
+        "instruction": "\n1- Read the provided summary carefully.\n2- Identify the key points and findings of the original research paper.\n3- Compare the summary against the identified key points and findings.\n4- Assess the extent to which the summary captures the key points, assigning a percentage score based on the coverage (0-100%).\n5- Document the score along with any notes on areas of strength or weakness in the summary."
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Evaluates the clarity and logical flow of the summary, assessing how easily the reader can understand the main ideas presented.",
+        "scale": "0-10 (0 means very unclear and incoherent, 10 means very clear and coherent)",
+        "instruction": "\n1- Read the provided summary carefully, making note of any areas that seem unclear or disjointed.\n2- Identify the main ideas presented in the summary. Ensure that they are communicated effectively.\n3- Assess the logical flow of the summary. Determine if the ideas are presented in a coherent manner.\n4- Consider the language used in the summary. Evaluate if the terminology is appropriate for the intended audience.\n5- Assign a score from 0 to 10 based on the clarity and coherence of the summary, where 0 is very unclear and incoherent, and 10 is very clear and coherent."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Assesses the brevity of the summary while ensuring that it remains informative. A good summary should be succinct without losing essential information.",
+        "scale": "0-10 (0 means overly verbose, 10 means perfectly concise)",
+        "instruction": "\n1- Read the provided summary carefully to understand the main points and the overall message.\n2- Determine if the summary conveys essential information without unnecessary elaboration.\n3- Assess the length of the summary and identify any overly verbose sections.\n4- Assign a score from 0 to 10 based on how concise the summary is while still being informative.\n5- Provide feedback on specific areas that could be improved for conciseness."
+    },
+    {
+        "name": "Relevance",
+        "description": "Measures the relevance of the summary to the original paper, including whether it stays on topic and reflects the main themes of the research.",
+        "scale": "0-10 (0 means not relevant at all, 10 means highly relevant)",
+        "instruction": "\n1- Read the provided summary carefully.\n2- Read the original biomedical research paper to understand its main themes and findings.\n3- Compare the summary to the original paper to assess how well it reflects the main themes and remains on topic.\n4- Assign a relevance score on a scale from 0 to 10 based on the comparison.\n5- Justify the score given by noting specific aspects of relevance or irrelevance."
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Evaluates the accuracy of the scientific and technical information presented in the summary, including the correct use of terminology and the validity of claims made.",
+        "scale": "0-10 (0 means highly inaccurate, 10 means fully accurate)",
+        "instruction": "\n1- Read the provided summary carefully.\n2- Identify key scientific and technical terms used in the summary.\n3- Cross-check the claims made in the summary against the original research paper or relevant sources.\n4- Evaluate the accuracy of the terminology used in the summary.\n5- Assign a score from 0 to 10 based on the accuracy of the scientific and technical information.\n6- Provide justification for the score assigned, highlighting specific examples of accuracy or inaccuracy."
+    }
+]

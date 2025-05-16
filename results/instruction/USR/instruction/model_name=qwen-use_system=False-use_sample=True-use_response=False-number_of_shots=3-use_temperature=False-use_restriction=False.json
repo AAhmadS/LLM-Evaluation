@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response is related to the context and the previous message.",
+        "scale": "1 to 5",
+        "instruction": "1-Receive the conversation and the potential response.\n2-Identify the main topics and context of the conversation.\n3-Analyze the potential response for relevance to the conversation's context and topics.\n4-Rate the response based on the Relevance metric scale from 1 to 5.\n"
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates the extent to which the response encourages further conversation and interaction.",
+        "scale": "1 to 5",
+        "instruction": "To complete the evaluation, I will follow these steps:\n\n1. **Read the Conversation**: Understand the context and flow of the conversation between the two individuals.\n2. **Examine the Provided Response**: Analyze the response to see how well it fits into the conversation and how it addresses the interesting fact.\n3. **Rate the Response**: Based on the Engagement metric, rate the response on a scale from 1 to 5, where:\n   - 1: The response does not encourage further conversation and interaction.\n   - 2: The response slightly encourages further conversation and interaction.\n   - 3: The response moderately encourages further conversation and interaction.\n   - 4: The response strongly encourages further conversation and interaction.\n   - 5: The response very strongly encourages further conversation and interaction.\n\nPlease provide the conversation and the potential response for me to evaluate."
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and consistency of the response within the conversation.",
+        "scale": "1 to 5",
+        "instruction": "Sure, I understand the instructions and the evaluation criteria. Please provide the conversation, the potential response, and the interesting fact so that I can rate the response based on the Coherence metric."
+    },
+    {
+        "name": "Creativity",
+        "description": "Measures the originality and creativity of the response, considering the use of interesting facts and unique perspectives.",
+        "scale": "1 to 5",
+        "instruction": "Sure, I understand the task. Please provide the conversation between the two individuals, the potential response for the next turn, and the interesting fact to be included. Once I have these details, I can evaluate the response based on the creativity metric."
+    },
+    {
+        "name": "Empathy",
+        "description": "Evaluates the level of understanding and empathy shown towards the other person's feelings and experiences.",
+        "scale": "1 to 5",
+        "instruction": "1-Read and understand the conversation and the potential response.\n2-Identify the feelings and experiences of the person being responded to.\n3-Evaluate the level of understanding and empathy shown in the potential response.\n4-Rate the response on a scale of 1 to 5 based on the level of empathy and understanding.\n"
+    },
+    {
+        "name": "Knowledge",
+        "description": "Assesses the accuracy and depth of information provided in the response.",
+        "scale": "1 to 5",
+        "instruction": "1-Read and understand the conversation and the provided response.\n2-Identify the interesting fact mentioned in the response.\n3-Evaluate the accuracy and depth of the information provided in the response based on the interesting fact.\n4-Rate the response on the Knowledge metric using the scale of 1 to 5.\n"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Fluency",
+        "description": "How coherent and natural the summary sounds",
+        "scale": "1-5",
+        "instruction": "<function=set_metric_instruction [{\"step\": {\"step_id\": \"1\", \"description\": \"Read and understand the instructions carefully\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Keep the document open while reviewing\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Refer to the document as needed\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Evaluate the responses based on the Fluency metric\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Rate the responses on a scale of 1-5\"}}, {\"step\": {\"step_id\": \"6\", \"description\": \"Assess how coherent and natural the summary sounds\"}}]</function>"
+    },
+    {
+        "name": "Relevance",
+        "description": "How well the summary captures the main points of the article",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Accuracy",
+        "description": "How accurate the summary is in terms of facts and figures",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Completeness",
+        "description": "How well the summary covers all the important aspects of the article",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Readability",
+        "description": "How easy the summary is to read and understand",
+        "scale": "1-5",
+        "instruction": null
+    }
+]

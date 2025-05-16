@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Clarity",
+        "description": "Measures how clearly the summary conveys the main findings and concepts of the research paper.",
+        "scale": "1 (Very unclear) to 5 (Very clear)",
+        "instruction": "\n1- Read the summary thoroughly to understand the main findings and concepts presented.\n2- Identify key elements such as the research question, methodology, results, and conclusions in the summary.\n3- Evaluate how well these key elements are communicated in the summary, noting any areas of confusion or ambiguity.\n4- Assign a clarity score from 1 to 5 based on the overall clarity of the summary in conveying the main findings.\n5- Provide a brief rationale for the assigned score, highlighting specific strengths or weaknesses in clarity."
+    },
+    {
+        "name": "Relevance",
+        "description": "Assesses whether the summary accurately reflects the key points and findings of the original paper.",
+        "scale": "1 (Not relevant) to 5 (Highly relevant)",
+        "instruction": "\n1- Read the original biomedical research paper thoroughly to understand its key points, findings, and conclusions.\n2- Read the provided summary carefully.\n3- Identify the main points and findings presented in the original paper.\n4- Compare the summary with the key points identified in the original paper.\n5- Rate the relevance of the summary based on how accurately it reflects the key points and findings of the original paper, using the scale from 1 to 5."
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates if the summary captures all essential elements of the research, including background, methods, results, and conclusions.",
+        "scale": "1 (Very incomplete) to 5 (Very complete)",
+        "instruction": "\n1- Identify the background information provided in the summary. Check if it includes the context and significance of the research.\n2- Evaluate the methods section of the summary. Ensure it briefly describes the methodology used in the research.\n3- Assess the results presented in the summary. Look for key findings and data that highlight the outcomes of the research.\n4- Examine the conclusions drawn in the summary. Confirm if it discusses the implications of the findings and any recommendations.\n5- Rate the summary based on how well it integrates all these elements. Consider how well the summary communicates the essential points regarding background, methods, results, and conclusions."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures the ability to summarize the content effectively without unnecessary details or verbosity.",
+        "scale": "1 (Too verbose) to 5 (Very concise)",
+        "instruction": "\n1- Read the provided summary carefully and identify any unnecessary details that do not contribute to the core message of the summary.\n2- Assess the length of the summary in relation to the original document's key points and findings.\n3- Evaluate whether the summary includes all essential information while avoiding verbosity.\n4- Assign a rating from 1 to 5 based on the identified criteria of conciseness.\n5- Provide feedback on specific areas for improvement if the score is low."
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Assesses the correctness of scientific terminology and accuracy of the concepts presented in the summary.",
+        "scale": "1 (Inaccurate) to 5 (Highly accurate)",
+        "instruction": "\n1- Read the provided summary carefully, ensuring to note any scientific terminology used.\n2- Cross-reference the terminology and concepts presented in the summary with the original research paper to determine accuracy.\n3- Evaluate the overall correctness of the scientific concepts and terminology on a scale from 1 to 5, where 1 indicates inaccuracies and 5 indicates high accuracy.\n4- Provide feedback on specific inaccuracies or areas of improvement related to technical accuracy.\n5- Document the final rating along with any necessary comments for clarity."
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how engaging and interesting the summary is to the reader, potentially influencing their desire to read the original paper.",
+        "scale": "1 (Not engaging) to 5 (Very engaging)",
+        "instruction": "\n1- Read the summary carefully, noting the clarity and flow of the writing.\n2- Assess the use of language and whether it captures the essence of the original research paper.\n3- Evaluate the presence of interesting or compelling elements that would attract a reader's attention.\n4- Determine if the summary provides a clear reason for why the research is important or relevant.\n5- Assign a score from 1 to 5 based on the overall engagement level of the summary."
+    },
+    {
+        "name": "Logical Flow",
+        "description": "Measures how well the information in the summary is organized and presented in a logical manner.",
+        "scale": "1 (Poor flow) to 5 (Excellent flow)",
+        "instruction": "\n1- Read the provided summary carefully.\n2- Identify the main points of the original biomedical research paper.\n3- Assess how well the summary conveys these main points in a logical sequence.\n4- Evaluate the transitions between ideas in the summary to determine if they enhance understanding.\n5- Rate the logical flow of the summary on a scale from 1 to 5 based on the clarity and organization of the information."
+    },
+    {
+        "name": "Objectivity",
+        "description": "Assesses whether the summary maintains an objective tone and avoids bias or personal opinion.",
+        "scale": "1 (Highly biased) to 5 (Very objective)",
+        "instruction": "\n1- Read the summary carefully to identify any subjective language or personal opinion.\n2- Evaluate the tone of the summary to determine if it presents information in a neutral manner.\n3- Look for any loaded language that may indicate bias, such as emotionally charged words or phrases.\n4- Assess whether the summary relies on evidence from the research paper, rather than personal interpretation.\n5- Assign a score from 1 to 5 based on your assessment of the summary's objectivity, where 1 is highly biased and 5 is very objective."
+    }
+]

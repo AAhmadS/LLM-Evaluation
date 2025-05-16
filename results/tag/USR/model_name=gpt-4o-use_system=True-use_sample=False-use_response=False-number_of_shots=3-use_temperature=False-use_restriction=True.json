@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Relevance",
+        "tags": [
+            "Maintains Context",
+            "Uses Knowledge"
+        ]
+    },
+    {
+        "name": "Engagement",
+        "tags": [
+            "Interesting",
+            "Natural"
+        ]
+    },
+    {
+        "name": "Coherence",
+        "tags": [
+            "Understandable",
+            "Maintains Context"
+        ]
+    },
+    {
+        "name": "Creativity",
+        "tags": [
+            "Interesting",
+            "Originality"
+        ]
+    },
+    {
+        "name": "Tone Appropriateness",
+        "tags": [
+            "Tone Suitability"
+        ]
+    }
+]

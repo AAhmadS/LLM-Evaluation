@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "How well the response addresses the user's question or prompt.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "How accurate the information provided in the response is.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "How comprehensive the response is in addressing the user's question or prompt.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "How logical and easy to follow the response is.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Empathy",
+        "description": "How well the response acknowledges and understands the user's perspective or emotions.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Conversational Flow",
+        "description": "How well the response contributes to a natural and engaging conversation.",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

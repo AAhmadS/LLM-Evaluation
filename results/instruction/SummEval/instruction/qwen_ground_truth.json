@@ -3,30 +3,30 @@
         "name": "Non-Repetition and no factual Redundancy",
         "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
         "scale": "1-10",
-        "instruction": "1-Read the summary provided by the contestant.\n2-Identify any repeated sentences or redundant factual information.\n3-Evaluate the summary based on the identified repetitions and redundancies.\n4-Assign a score from 1 to 10, where 1 is the lowest and 10 is the highest, based on the absence of repetition and redundancy.\n"
+        "instruction": null
     },
     {
         "name": "Coherence",
         "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
         "scale": "1-10",
-        "instruction": "1-Read the summary provided by the contestant.\n2-Evaluate the coherence of the summary based on the continuity of sense and the logical connection between sentences.\n3-Assign a score from 1 to 10, where 1 is completely incoherent and 10 is highly coherent.\n4-Provide a brief explanation for the score given.\n"
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the provided summary and ensure it is a coherent piece of writing.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Evaluate if the sentences flow logically and are connected in a way that maintains the reader's understanding.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Check if the summary stays on topic and does not introduce unrelated or off-topic information.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Rate the coherence of the summary on a scale of 1 to 10, with 10 being highly coherent and 1 being incoherent.\"}]}]}}"
     },
     {
         "name": "Readability",
         "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
         "scale": "1-10",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the summary carefully and assess the spelling, grammar, and punctuation.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Evaluate the clarity and coherence of the summary. Is it easy to understand?\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Consider the overall flow and structure of the summary. Does it make logical sense?\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Assign a score from 1 to 10 based on the above criteria, with 10 being the highest readability.\"}]}]}"
+        "instruction": null
     },
     {
         "name": "Informativeness, Overlap and Focus",
         "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
         "scale": "1-10",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Identify the key topics and keywords (or key-phrases) in the reference summary.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Compare the key topics and keywords (or key-phrases) in the contestant\u2019s summary to those in the reference summary.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate the frequency of occurrence of these key topics and keywords (or key-phrases) in the contestant\u2019s summary.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Assess the overall focus and relevance of the contestant\u2019s summary to the reference summary.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Rate the contestant\u2019s summary on a scale of 1-10 based on the criteria of informativeness, overlap, and focus.\"}]}]}"
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Identify the main topic of the news article by examining the key phrases and keywords.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Compare the key phrases and keywords in the summary to those in the original article.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate the frequency of occurrence of these key phrases and keywords in the summary.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Assess how much of the main information from the article is covered in the summary.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Rate the summary on a scale of 1-10 based on the amount of information covered and the overlap of key phrases and keywords.\"}]}]}}"
     },
     {
         "name": "Overall Quality",
         "description": "Given your answers above, what is your overall impression of the quality of this summary?",
         "scale": "1-10",
-        "instruction": "Could you please provide the structured steps for the evaluation process? I need them in the following format to proceed:\n\n```json\n[\n    {\n        \"step\": {\n            \"step_id\": \"<step number>\",\n            \"description\": \"<description of the step>\"\n        }\n    }\n]\n```"
+        "instruction": "Could you please provide the structured steps for the evaluation process? For example, the specific steps you want me to follow to evaluate the summaries according to the \"Overall Quality\" metric. This will help ensure that the evaluation is consistent and aligned with your expectations."
     }
 ]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Accuracy",
+        "description": "How well the summary reflects the content of the original document",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Completeness",
+        "description": "How much of the important information from the original document is included in the summary",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Relevance",
+        "description": "How relevant the summary is to the main topic of the original document",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Coherence",
+        "description": "How well the summary is organized and easy to understand",
+        "scale": "1-5",
+        "instruction": null
+    },
+    {
+        "name": "Conciseness",
+        "description": "How well the summary conveys the important information in a concise manner",
+        "scale": "1-5",
+        "instruction": null
+    }
+]

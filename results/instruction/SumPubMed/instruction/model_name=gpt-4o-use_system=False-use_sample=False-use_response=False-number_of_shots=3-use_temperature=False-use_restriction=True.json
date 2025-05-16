@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points and important information from the original biomedical research paper, focusing on key findings and conclusions.",
+        "scale": "Scale from 1 to 5, where 1 is irrelevant and 5 is highly relevant.",
+        "instruction": "\n1- Read the original biomedical research paper carefully to understand its main points, key findings, and conclusions.\n2- Read the provided summary thoroughly to grasp what information it conveys.\n3- Compare the summary against the original paper to determine how well it captures the main points and important information.\n4- Focus on whether the summary includes key findings and conclusions from the paper.\n5- Rate the relevance of the summary on a scale from 1 to 5, where 1 is irrelevant and 5 is highly relevant, based on how well it reflects the main points and important information of the original paper.\n6- Provide any additional comments or notes that may help explain the rating given, if necessary."
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses how clearly the summary communicates the information, including the use of appropriate language, sentence structure, and absence of ambiguity.",
+        "scale": "Scale from 1 to 5, where 1 is unclear and 5 is very clear.",
+        "instruction": "\n1- Read through the entire summary carefully to understand the overall message and information being communicated.\n2- Evaluate the language used in the summary. Check if the language is appropriate for the intended audience (e.g., professionals in the biomedical field) and if technical terms are used correctly.\n3- Assess the sentence structure of the summary. Look for well-constructed sentences that convey information clearly without unnecessary complexity.\n4- Identify any areas of ambiguity where the meaning is not clear or could be misunderstood. Note if the summary avoids ambiguous phrasing and clearly specifies subjects, objects, and actions.\n5- Rate the clarity of the summary on a scale from 1 to 5, where 1 indicates the summary is unclear and difficult to understand, and 5 indicates the summary is very clear and easy to understand.\n6- Provide feedback or comments to justify the rating, highlighting specific aspects that contributed to the clarity score."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates how well the summary distills the research paper into a shorter form without losing essential information or adding unnecessary details.",
+        "scale": "Scale from 1 to 5, where 1 is verbose and 5 is concise.",
+        "instruction": "\n1- Read the provided summary thoroughly to understand its content and main points.\n2- Identify the key information from the original research paper that should be included in the summary.\n3- Evaluate the summary to determine if it includes all essential information from the original paper. Check if any important details are missing.\n4- Assess whether the summary contains any unnecessary details or redundant information that does not contribute to understanding the core content of the research paper.\n5- Rate the summary on a scale from 1 to 5 based on its conciseness: 1 being verbose with excessive detail or missing key points, and 5 being highly concise, including all necessary information without extraneous content.\n6- Provide a brief justification for the score given, focusing on the balance between conciseness and completeness of information."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Determines the factual correctness of the information presented in the summary compared to the original document, including correct representation of data, findings, and conclusions.",
+        "scale": "Scale from 1 to 5, where 1 is inaccurate and 5 is highly accurate.",
+        "instruction": "\n1- Read the summary provided by the contestant.\n2- Read the original biomedical research document that the summary is based on.\n3- Compare the factual information in the summary with the original document, paying close attention to details such as data, findings, and conclusions.\n4- Identify any discrepancies between the summary and the original document. Note any incorrect, omitted, or misrepresented information.\n5- Based on the accuracy of the factual information presented in the summary, rate the summary on a scale from 1 to 5, where 1 is inaccurate and 5 is highly accurate.\n6- Provide a brief justification for the rating, citing specific examples from the summary and the original document to support the score given."
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and organization of the summary, ensuring that the information is presented in a structured and logically connected manner.",
+        "scale": "Scale from 1 to 5, where 1 is incoherent and 5 is highly coherent.",
+        "instruction": "\n1- Read the summary provided for the biomedical research paper carefully.\n2- Identify the main points and key arguments presented in the summary.\n3- Assess the logical flow of these points and arguments. Determine if each point logically leads to the next.\n4- Evaluate the structure of the summary. Check if it has a clear introduction, body, and conclusion.\n5- Determine if the summary stays focused on the main topic without irrelevant digressions.\n6- Rate the summary on a scale from 1 to 5 based on the coherence of the information presented, where 1 indicates the summary is incoherent and 5 indicates it is highly coherent.\n7- Make a note of any specific areas where the coherence could be improved, if applicable."
+    }
+]

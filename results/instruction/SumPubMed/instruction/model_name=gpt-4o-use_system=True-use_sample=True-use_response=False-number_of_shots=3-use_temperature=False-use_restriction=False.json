@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance to Biomedical Context",
+        "description": "Measures how well the summary captures key information relevant to the biomedical context and research questions posed in the original document.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the original biomedical research paper thoroughly, focusing on the main research questions, objectives, and key findings.\n2- Read the contestant's generated summary carefully, noting any mention of the main research questions, objectives, and key findings as identified in the original paper.\n3- Assess the degree to which the summary includes key information relevant to the biomedical context of the original document. Consider whether the summary accurately reflects the original document's focus and findings.\n4- Rate the summary's relevance to the biomedical context on a scale of High, Medium, or Low: \n- High: The summary captures all or most of the key information, accurately reflecting the main research questions, objectives, and findings.\n- Medium: The summary includes some key information but misses or inaccurately represents other important aspects.\n- Low: The summary fails to capture the main research questions, objectives, and findings, or includes significant inaccuracies.\n5- Provide a brief justification for the rating, citing specific examples from both the original document and the summary to support your evaluation."
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Assesses the readability and logical flow of the summary, ensuring that it is understandable to a biomedical professional.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the summary thoroughly to understand its overall meaning and content.\n2- Identify any sections in the summary that are unclear or confusing. Note if biomedical terminology is used correctly.\n3- Evaluate the logical flow of the summary. Check if the information is presented in a sensible order that aids understanding.\n4- Determine if the summary is coherent, meaning it should be easy to follow and logically consistent throughout.\n5- Consider the perspective of a biomedical professional. Assess if the summary is clear and coherent for someone with this background.\n6- Rate the summary based on the clarity and coherence metric: High (very clear and coherent), Medium (somewhat clear, minor issues with coherence), Low (lacks clarity and logical flow)."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the ability of the summary to convey necessary information without unnecessary detail or repetition.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the full biomedical research paper to understand the main findings, purpose, and conclusions.\n2- Read the generated summary provided by the contestant.\n3- Identify the key points in the paper that should be included in a concise summary, such as main findings, purpose, methodology, and conclusions.\n4- Compare the generated summary against the identified key points from the original paper.\n5- Determine if the summary includes all necessary information without including unnecessary details or repetitions.\n6- Rate the conciseness of the summary on a scale of High (includes all necessary information succinctly without unnecessary details), Medium (includes most necessary information with some unnecessary details), or Low (includes excessive unnecessary details or misses important information).\n7- Document any specific areas where the summary could be improved in terms of conciseness."
+    },
+    {
+        "name": "Terminology Accuracy",
+        "description": "Checks the correct usage of biomedical terms and concepts, reflecting an accurate understanding of the content.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the provided summary thoroughly and identify all biomedical terms and concepts used.\n2- Cross-reference the identified terms with the original document to ensure they are used in the correct context and reflect accurate understanding.\n3- Evaluate the consistency in the usage of terminology throughout the summary compared to the original document.\n4- Rate the summary using the Terminology Accuracy metric: High if all terms are used accurately and consistently, Medium if there are minor inaccuracies or inconsistencies, and Low if there are major inaccuracies or misuse of terms.\n5- Document examples of any inaccuracies or inconsistencies found in the summary."
+    },
+    {
+        "name": "Coverage of Key Findings",
+        "description": "Assesses whether the summary covers all major findings and conclusions of the original document.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the original biomedical document thoroughly to understand its key findings and conclusions.\n2- Read the provided summary carefully, ensuring you grasp the content presented in it.\n3- Identify and list the major findings and conclusions from the original document that should be included in an ideal summary.\n4- Compare the list of key findings and conclusions from the original document with those covered in the summary.\n5- Determine the level of coverage using the following scale: High (all major findings and conclusions are covered accurately), Medium (some major findings and conclusions are covered, but some are missing or inaccurately conveyed), Low (few or none of the major findings and conclusions are covered).\n6- Assign a rating of High, Medium, or Low based on your evaluation of the coverage of key findings.\n7- Document specific examples from the summary that support your rating, noting any missing or inaccurately represented findings and conclusions.\n8- Provide feedback to improve the summary if it does not achieve a High rating, suggesting specific findings or conclusions that should be added or corrected.\n9- Repeat the process for each summary provided in the task, ensuring consistency and fairness in evaluation."
+    },
+    {
+        "name": "Fidelity to Original Intent",
+        "description": "Ensures the summary maintains the intent and emphasis of the original document, without introducing bias or distortion.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the original document carefully to understand its core intent and emphasis.\n2- Read the generated summary thoroughly.\n3- Compare the generated summary against the original document to determine if the intent and emphasis are preserved.\n4- Check for any bias or distortion introduced in the summary compared to the original document.\n5- Rate the summary based on how well it maintains fidelity to the original document's intent and emphasis, using the scale: High (completely faithful), Medium (mostly faithful, minor issues), Low (not faithful, major issues)."
+    },
+    {
+        "name": "Use of Citations and References",
+        "description": "Evaluates how well the summary incorporates and attributes citations and references from the original document.",
+        "scale": "High, Medium, Low",
+        "instruction": "\n1- Read the original biomedical document to identify key citations and references used throughout the text.\n2- Read the generated summary thoroughly to understand its content and structure.\n3- Check if the summary includes citations and references that are present in the original document.\n4- Evaluate how accurately these citations are attributed in the summary compared to the original document.\n5- Assess if the placement of citations in the summary aligns logically with the information being presented.\n6- Rate the use of citations and references in the summary on a scale of High, Medium, Low based on the following criteria: High - All key citations are accurately included and well-placed; Medium - Some key citations are missing or misplaced; Low - Many citations are missing or inaccurately attributed."
+    }
+]

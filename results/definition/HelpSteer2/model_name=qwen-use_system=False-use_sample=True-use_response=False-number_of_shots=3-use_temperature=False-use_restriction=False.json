@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance to Context",
+        "description": "Measures how well the response addresses the specific context and prompt provided by the user.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Evaluates the clarity and coherence of the response, including the logical flow and readability.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "Depth of Information",
+        "description": "Assesses the depth and quality of the information provided, including the level of detail and relevance of the content.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Evaluates the technical accuracy of the information provided, especially in technical or domain-specific contexts.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement and Responsiveness",
+        "description": "Measures how well the response engages the user and responds to their specific questions or concerns.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "User-Friendliness",
+        "description": "Assesses the user-friendliness of the response, including the tone, style, and accessibility of the information.",
+        "scale": "1 to 5",
+        "instruction": ""
+    },
+    {
+        "name": "Consistency",
+        "description": "Evaluates the consistency of the response over multiple interactions, ensuring that the information provided remains aligned and coherent.",
+        "scale": "1 to 5",
+        "instruction": ""
+    }
+]

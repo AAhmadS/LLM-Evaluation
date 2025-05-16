@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance to Biomedical Context",
+        "description": "Measures how well the summary captures key information relevant to the biomedical context and research questions posed in the original document.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Assesses the readability and logical flow of the summary, ensuring that it is understandable to a biomedical professional.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the ability of the summary to convey necessary information without unnecessary detail or repetition.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Terminology Accuracy",
+        "description": "Checks the correct usage of biomedical terms and concepts, reflecting an accurate understanding of the content.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Coverage of Key Findings",
+        "description": "Assesses whether the summary covers all major findings and conclusions of the original document.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Fidelity to Original Intent",
+        "description": "Ensures the summary maintains the intent and emphasis of the original document, without introducing bias or distortion.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Use of Citations and References",
+        "description": "Evaluates how well the summary incorporates and attributes citations and references from the original document.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response relates to the context and the ongoing conversation.",
+        "scale": "1 (not relevant) to 5 (highly relevant)",
+        "instruction": "\n1- Read the provided conversation to understand the context and topics being discussed.\n2- Review the interesting fact that will be used as a response.\n3- Evaluate how well the proposed response aligns with the context of the conversation.\n4- Assign a score from 1 to 5 based on the relevance of the response to the ongoing conversation."
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and clarity of the response within the conversation.",
+        "scale": "1 (not coherent) to 5 (very coherent)",
+        "instruction": "\n1- Read the conversation between the two individuals provided.\n2- Consider the potential response in relation to the context of the conversation.\n3- Evaluate how logically the response flows from the previous statements made in the conversation.\n4- Assess the clarity of the response and how well it maintains the topic or theme of the conversation.\n5- Assign a coherence rating from 1 to 5 based on your evaluation."
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how engaging and interesting the response is to encourage further conversation.",
+        "scale": "1 (not engaging) to 5 (very engaging)",
+        "instruction": "\n1- Read the conversation context carefully to understand the flow and topics discussed.\n2- Assess the provided response for its relevance to the conversation context.\n3- Evaluate how interesting and engaging the response is based on the interesting fact provided.\n4- Assign a score from 1 to 5 based on the engagement level of the response.\n5- Provide a brief rationale for the assigned score to justify your evaluation."
+    },
+    {
+        "name": "Contextual Awareness",
+        "description": "Determines the extent to which the contestant considers the context and any interesting facts provided.",
+        "scale": "1 (not aware) to 5 (fully aware)",
+        "instruction": "\n1- Read the conversation carefully to understand the context and dynamics between the two individuals.\n2- Review the interesting fact provided to assess its relevance to the conversation.\n3- Analyze the potential response to determine if it effectively incorporates the context of the conversation and the interesting fact.\n4- Rate the response on the scale from 1 to 5 based on how well it demonstrates contextual awareness, with 1 being not aware and 5 being fully aware."
+    },
+    {
+        "name": "Empathy",
+        "description": "Measures the degree of understanding and emotional intelligence displayed in the response.",
+        "scale": "1 (low empathy) to 5 (high empathy)",
+        "instruction": "\n1- Read the given conversation carefully to understand the emotional context and the dynamics between the two individuals.\n2- Analyze the potential response to determine how well it reflects empathy towards the emotions and situation of the previous speaker.\n3- Consider the interesting fact provided and evaluate how it is integrated into the response, checking if it enhances the empathetic connection.\n4- Rate the response on a scale from 1 to 5 based on the degree of empathy displayed."
+    },
+    {
+        "name": "Creativity",
+        "description": "Assesses the originality and inventiveness of the response in contributing to the conversation.",
+        "scale": "1 (not creative) to 5 (highly creative)",
+        "instruction": "\n1- Read the given conversation between the two individuals.\n2- Consider the potential response provided and the interesting fact it relates to.\n3- Evaluate the originality and inventiveness of the potential response in the context of the conversation.\n4- Assign a creativity score from 1 to 5 based on the evaluation.\n5- Provide a brief justification for the assigned score."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the ability to convey ideas clearly and succinctly without unnecessary filler.",
+        "scale": "1 (not concise) to 5 (very concise)",
+        "instruction": "\n1- Read the conversation context carefully to understand the flow.\n2- Analyze the potential response for clarity and succinctness.\n3- Identify any unnecessary filler or complex language that could be simplified.\n4- Assign a score from 1 to 5 based on the conciseness of the response, where 1 indicates a lack of conciseness and 5 indicates a very concise response.\n5- Provide a brief justification for the assigned score based on the evaluation."
+    }
+]

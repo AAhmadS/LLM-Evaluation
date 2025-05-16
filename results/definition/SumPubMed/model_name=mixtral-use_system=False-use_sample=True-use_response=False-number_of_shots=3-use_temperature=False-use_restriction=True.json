@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Comprehensiveness",
+        "description": "The extent to which the summary covers the essential points of the source document, including the background, methodology, results, and conclusions.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "The degree to which the summary is presented in a logical and coherent manner, making it easy to understand and follow.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "The extent to which the summary correctly represents the information in the source document, without introducing errors or misinterpretations.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "The degree to which the summary focuses on the most important aspects of the source document, as determined by the context and purpose of the assessment.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "The ability of the summary to convey the essential information of the source document in a succinct and efficient manner.",
+        "scale": "Low, Medium, High",
+        "instruction": ""
+    }
+]

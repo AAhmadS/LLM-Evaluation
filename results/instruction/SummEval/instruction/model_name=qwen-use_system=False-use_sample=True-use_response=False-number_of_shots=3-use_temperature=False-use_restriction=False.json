@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points and key details of the article.",
+        "scale": "1-5, where 1 is not relevant at all and 5 is highly relevant",
+        "instruction": null
+    },
+    {
+        "name": "Clarity",
+        "description": "Evaluates the clarity and coherence of the summary, including the logical flow and ease of understanding.",
+        "scale": "1-5, where 1 is very unclear and 5 is very clear",
+        "instruction": "1-Read the provided summary carefully.\n2-Assess the clarity and coherence of the summary, including the logical flow and ease of understanding.\n3-Rate the summary on a scale of 1 to 5, where 1 is very unclear and 5 is very clear.\n"
+    },
+    {
+        "name": "Conciseness",
+        "description": "Assesses how efficiently the summary conveys the information, avoiding unnecessary details or repetition.",
+        "scale": "1-5, where 1 is very wordy and 5 is very concise",
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the summary provided by the contestant.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Evaluate the summary based on the metric 'Conciseness', which assesses how efficiently the summary conveys the information, avoiding unnecessary details or repetition.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Assign a score from 1 to 5, where 1 is very wordy and 5 is very concise.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Provide a brief justification for the score assigned, explaining why the summary received the particular rating.\"}]}]}"
+    },
+    {
+        "name": "Accuracy",
+        "description": "Measures the accuracy of the information presented in the summary, ensuring no factual errors.",
+        "scale": "1-5, where 1 is highly inaccurate and 5 is highly accurate",
+        "instruction": null
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how engaging and interesting the summary is to the reader.",
+        "scale": "1-5, where 1 is not engaging at all and 5 is highly engaging",
+        "instruction": "1-Read the provided summary.\n2-Assess the level of engagement and interest the summary generates.\n3-Assign a score between 1 and 5 based on the engagement level.\n"
+    }
+]

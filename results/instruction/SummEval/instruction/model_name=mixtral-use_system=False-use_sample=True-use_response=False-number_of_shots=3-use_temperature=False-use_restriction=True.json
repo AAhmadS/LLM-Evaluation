@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points of the article and whether it includes important details such as names, dates, and locations.",
+        "scale": "Low (misses key points) to High (captures all key points)",
+        "instruction": "\n1- Read the original news article thoroughly to understand its main points, important details such as names, dates, and locations.\n2- Read the contestant's summary carefully to understand their interpretation of the article's main points and important details.\n3- Assess how well the contestant's summary captures the main points of the original article. Consider if it includes important details such as names, dates, and locations.\n4- Rate the summary on a scale of Low (misses key points) to High (captures all key points) based on the [Metric].\n5- Repeat the process for each contestant's summary."
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and structure of the summary, ensuring that it is easy to understand and follows a clear narrative.",
+        "scale": "Low (disjointed and confusing) to High (well-structured and clear)",
+        "instruction": "\n1- Read the summary carefully and thoroughly, ensuring a complete understanding of its content.\n2- Identify the logical flow of the summary, paying attention to how the ideas are connected and presented.\n3- Determine if the summary is easy to understand, checking for any confusing or unclear sections.\n4- Evaluate the narrative structure of the summary, assessing whether it follows a clear beginning, middle, and end.\n5- On a scale of Low (disjointed and confusing) to High (well-structured and clear), rate the coherence of the summary."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Assesses the length and brevity of the summary, ensuring it is succinct while still capturing the essence of the article.",
+        "scale": "Low (too wordy) to High (concise and to the point)",
+        "instruction": "\n1- Read and understand the contestant's summary thoroughly.\n2- Check if the summary covers the main points and key ideas of the news article in a succinct manner.\n3- Determine if the summary is too wordy or concise by examining the length and brevity of the sentences used.\n4- Rate the conciseness of the summary on a scale from Low (too wordy) to High (concise and to the point), based on the given Evaluation Criteria."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Measures the factual correctness of the summary, ensuring that it does not contain any errors or misrepresentations.",
+        "scale": "Low (contains errors) to High (factually correct)",
+        "instruction": "\n1- Read the original news article and the generated summary carefully.\n2- Identify the main points in the original news article.\n3- Check if the generated summary accurately reflects the main points from the original news article, without any errors or misrepresentations.\n4- Rate the accuracy of the summary based on the following scale: Low (contains errors), Medium (contains minor inaccuracies), High (factually correct)."
+    },
+    {
+        "name": "Non-redundancy",
+        "description": "Evaluates the summary for any repetitive or redundant information, ensuring that each detail contributes to the overall understanding of the article.",
+        "scale": "Low (contains redundant information) to High (minimal repetition)",
+        "instruction": "\n1- Read the news article and the contestant's summary carefully.\n2- Identify any repetitive or redundant information in the contestant's summary. This could be the same idea expressed in different words, or the same fact stated multiple times.\n3- Evaluate the level of redundancy in the summary. If there are multiple instances of repetition, rate the summary as 'Low' on the non-redundancy metric. If there are minimal instances of repetition, rate the summary as 'High'.\n4- Ensure that each detail in the summary contributes to the overall understanding of the article. If a detail is repeated or does not add value to the summary, it may indicate redundancy.\n5- After evaluating the summary on the non-redundancy metric, provide a detailed explanation of your rating. This should include examples of any repetitive or redundant information found in the summary."
+    }
+]

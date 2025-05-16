@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The degree to which the response is directly related to the user's question or the given context. It measures how well the response addresses the user's query or task.",
+        "scale": "0 (completely irrelevant) to 5 (completely relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical consistency and smoothness of the response. It measures how well the response follows a logical or semantic structure, and how well the ideas and sentences are connected.",
+        "scale": "0 (incoherent) to 5 (highly coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "The correctness of the information or instructions provided in the response. It measures how well the response aligns with established facts, theories, and best practices in the relevant domain.",
+        "scale": "0 (completely inaccurate) to 5 (completely accurate)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "The extent to which the response covers all the necessary aspects of the user's question or task. It measures how well the response addresses all the important details and subtopics.",
+        "scale": "0 (completely incomplete) to 5 (completely complete)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "The degree to which the response is free of redundancy and unnecessary information. It measures how succinctly the response conveys the required information.",
+        "scale": "0 (highly verbose) to 5 (highly concise)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "The ease with which the response can be understood. It measures how effectively the response communicates its intended meaning, using clear, unambiguous language.",
+        "scale": "0 (highly unclear) to 5 (highly clear)",
+        "instruction": ""
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points and important details of the original news article.",
+        "scale": "1 to 5 (1 = not relevant, 5 = highly relevant)",
+        "instruction": "\n1- Read the original news article carefully to understand its main points and important details.\n2- Read the contestant's summary attentively, noting how well it reflects the original article's content.\n3- Evaluate the summary based on the relevance metric: Assign a score from 1 to 5 based on how well the summary captures the main points and important details of the original article.\n4- Provide a brief justification for the score given, highlighting specific points of relevance or irrelevance.\n5- Repeat the evaluation process for each contestant's summary."
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses the readability and understandability of the summary, including grammatical correctness and sentence structure.",
+        "scale": "1 to 5 (1 = very unclear, 5 = very clear)",
+        "instruction": "\n1- Read the contestant's summary carefully to gauge its overall readability.\n2- Check for grammatical correctness, including punctuation and sentence structure.\n3- Assess the clarity of the ideas presented in the summary.\n4- Assign a rating from 1 to 5 based on the clarity of the summary.\n5- Provide a brief justification for the assigned rating."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates the degree to which the summary is succinct without losing essential information; it should be brief yet informative.",
+        "scale": "1 to 5 (1 = excessively verbose, 5 = perfectly concise)",
+        "instruction": "\n1- Read the contestant's summary carefully.\n2- Identify the key information included in the summary.\n3- Evaluate the length of the summary relative to the amount of information provided.\n4- Determine if there are any unnecessary words or phrases that could be removed.\n5- Assign a score from 1 to 5 based on how concise the summary is."
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging and interesting the summary is to the reader; it should capture attention and provoke interest.",
+        "scale": "1 to 5 (1 = not engaging, 5 = very engaging)",
+        "instruction": "\n1- Read the summary provided by the contestant.\n2- Evaluate the summary based on the Engagement metric.\n3- Assign a score from 1 to 5 based on how engaging the summary is.\n4- Provide a brief explanation for the assigned score, highlighting specific elements that contributed to the engagement level."
+    },
+    {
+        "name": "Completeness",
+        "description": "Assesses whether the summary includes all necessary elements of the original article, such as key facts, figures, and quotes.",
+        "scale": "1 to 5 (1 = incomplete, 5 = fully complete)",
+        "instruction": "\n1- Read the original news article thoroughly to understand its key facts, figures, and quotes.\n2- Read the contestant's summary carefully, noting the inclusion of key facts, figures, and quotes from the original article.\n3- Evaluate the completeness of the summary based on the defined metric scale from 1 to 5, considering how well it captures all necessary elements.\n4- Assign a score between 1 and 5 to the summary based on your evaluation.\n5- Provide a brief justification for the score given, highlighting which elements were included or missing."
+    }
+]

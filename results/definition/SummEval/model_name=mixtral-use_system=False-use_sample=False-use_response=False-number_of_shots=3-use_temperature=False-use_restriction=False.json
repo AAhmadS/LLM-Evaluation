@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points of the original article. It checks if the generated summary includes the most important information and facts from the original text.",
+        "scale": "A score from 0 to 5, where 0 means the summary is not relevant at all to the original article and 5 means the summary is highly relevant and captures all the important information.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Measures how well the summary flows and makes sense as a standalone text. It checks if the generated summary is logically consistent, fluent, and easy to understand.",
+        "scale": "A score from 0 to 5, where 0 means the summary is incoherent and difficult to understand and 5 means the summary is highly coherent and flows well.",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures how well the summary avoids redundancy and repetition. It checks if the generated summary is succinct and to the point, without unnecessary details or repetitions.",
+        "scale": "A score from 0 to 5, where 0 means the summary is highly redundant and repetitive and 5 means the summary is highly concise and to the point.",
+        "instruction": ""
+    },
+    {
+        "name": "Grammaticality",
+        "description": "Measures how well the summary adheres to the rules of grammar and syntax. It checks if the generated summary is grammatically correct and free of errors.",
+        "scale": "A score from 0 to 5, where 0 means the summary has many grammatical errors and 5 means the summary is grammatically flawless.",
+        "instruction": ""
+    },
+    {
+        "name": "Factuality",
+        "description": "Measures how accurately the summary represents the facts and information from the original article. It checks if the generated summary is factually correct and does not misrepresent the original content.",
+        "scale": "A score from 0 to 5, where 0 means the summary is highly inaccurate and misrepresents the facts and 5 means the summary is highly accurate and represents the facts correctly.",
+        "instruction": ""
+    }
+]

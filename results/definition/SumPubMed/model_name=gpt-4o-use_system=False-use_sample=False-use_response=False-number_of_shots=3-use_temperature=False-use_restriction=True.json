@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the summary captures the main points and important information from the original biomedical research paper, focusing on key findings and conclusions.",
+        "scale": "Scale from 1 to 5, where 1 is irrelevant and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses how clearly the summary communicates the information, including the use of appropriate language, sentence structure, and absence of ambiguity.",
+        "scale": "Scale from 1 to 5, where 1 is unclear and 5 is very clear.",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Evaluates how well the summary distills the research paper into a shorter form without losing essential information or adding unnecessary details.",
+        "scale": "Scale from 1 to 5, where 1 is verbose and 5 is concise.",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Determines the factual correctness of the information presented in the summary compared to the original document, including correct representation of data, findings, and conclusions.",
+        "scale": "Scale from 1 to 5, where 1 is inaccurate and 5 is highly accurate.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Assesses the logical flow and organization of the summary, ensuring that the information is presented in a structured and logically connected manner.",
+        "scale": "Scale from 1 to 5, where 1 is incoherent and 5 is highly coherent.",
+        "instruction": ""
+    }
+]

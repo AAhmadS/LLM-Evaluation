@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the response aligns with the user's prompt or instruction.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Evaluates the factual correctness and precision of the information provided in the response.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Assesses how clear and understandable the response is to the user.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures the level of engagement and interest the response generates in the user.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Evaluates the originality and creativity of the response.",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Brevity",
+        "description": "Assesses whether the response is concise and to the point, avoiding unnecessary verbosity.",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

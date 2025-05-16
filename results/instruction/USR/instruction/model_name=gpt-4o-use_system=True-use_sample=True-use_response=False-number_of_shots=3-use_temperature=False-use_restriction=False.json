@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the response fits the context of the conversation. It evaluates whether the continuation logically follows the preceding dialogue and stays on topic.",
+        "scale": "1 to 5, where 1 is irrelevant and 5 is highly relevant.",
+        "instruction": "\n1- Read the provided conversation between two individuals thoroughly to understand the context and flow.\n2- Analyze the proposed continuation response that includes an interesting fact.\n3- Assess the logical connection between the continuation response and the preceding conversation. Consider if the response stays on topic and contributes meaningfully to the dialogue.\n4- Rate the response on a scale of 1 to 5 based on its relevance to the context of the conversation: 1 (irrelevant), 2 (slightly relevant), 3 (moderately relevant), 4 (very relevant), 5 (highly relevant)."
+    },
+    {
+        "name": "Engagement",
+        "description": "Assesses the level of engagement the response generates. This includes the introduction of new, interesting topics or questions that encourage further dialogue.",
+        "scale": "1 to 5, where 1 is not engaging and 5 is highly engaging.",
+        "instruction": "\n1- Read the conversation between the two individuals to understand the context.\n2- Examine the potential response provided for the next turn in the conversation.\n3- Identify if the response introduces new, interesting topics or questions that encourage further dialogue.\n4- Rate the response on a scale of 1 to 5 based on how engaging it is, with 1 being not engaging and 5 being highly engaging."
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and clarity of the response. A coherent response should be easily understandable and free of contradictions.",
+        "scale": "1 to 5, where 1 is incoherent and 5 is highly coherent.",
+        "instruction": "\n1- Read the entire conversation provided to understand the context and the flow of the dialogue.\n2- Examine the proposed response to determine how well it fits logically with the preceding conversation.\n3- Assess the clarity of the response, ensuring it is easily understandable and free from any contradictions or confusing elements.\n4- Assign a coherence rating to the response on a scale from 1 to 5, where 1 is incoherent and 5 is highly coherent.\n5- Provide a brief justification for the rating, highlighting specific aspects of the response that influenced the coherence score."
+    },
+    {
+        "name": "Originality",
+        "description": "Measures the uniqueness and creativity of the response. This considers whether the response introduces fresh perspectives or ideas that are not clich\u00e9d or overly predictable.",
+        "scale": "1 to 5, where 1 is not original and 5 is highly original.",
+        "instruction": "\n1- Read the given conversation to understand the context and flow.\n2- Examine the provided response and the interesting fact it contains.\n3- Consider how the response integrates the interesting fact into the conversation. Does it introduce a unique or fresh perspective?\n4- Determine if the response is clich\u00e9d or overly predictable.\n5- Rate the originality of the response on a scale from 1 to 5, based on your analysis of its uniqueness and creativity."
+    },
+    {
+        "name": "Empathy",
+        "description": "Assesses the response's ability to recognize and respond to the emotional tone and cues given in the conversation. This includes demonstrating understanding and sensitivity to the conversational partner's emotions.",
+        "scale": "1 to 5, where 1 is not empathetic and 5 is highly empathetic.",
+        "instruction": "\n1- Read the conversation between the two individuals carefully to understand the context and emotional tone.\n2- Examine the potential response provided for the next turn in the conversation.\n3- Identify emotional cues and tones in the conversation. Consider factors such as word choice, punctuation, and any explicit expressions of feelings.\n4- Evaluate whether the potential response acknowledges and aligns with the emotional tone and cues identified in the conversation.\n5- Assess the response for signs of understanding and sensitivity towards the emotions of the conversational partner.\n6- Rate the response on a scale from 1 (not empathetic) to 5 (highly empathetic) based on its ability to demonstrate empathy.\n7- Provide a brief explanation justifying the rating, citing specific aspects of the response and conversation that influenced your decision."
+    },
+    {
+        "name": "Linguistic Quality",
+        "description": "Evaluates the grammatical correctness, spelling, and overall language quality of the response. A high-quality linguistic response will be free of errors and well-structured.",
+        "scale": "1 to 5, where 1 is poor linguistic quality and 5 is excellent linguistic quality.",
+        "instruction": "\n1- Read the given conversation carefully to understand the context and the flow of dialogue between the two individuals.\n2- Read the potential response provided for the next turn in the conversation. Pay close attention to its grammatical structure, spelling, and overall language quality.\n3- Evaluate the linguistic quality of the response based on grammatical correctness, spelling, and structure. Consider if the response would fit naturally and correctly in the conversation.\n4- Rate the response on a scale from 1 to 5, where 1 represents poor linguistic quality (numerous errors, poor structure) and 5 represents excellent linguistic quality (error-free, well-structured).\n5- Provide a brief justification for your rating, highlighting any specific linguistic strengths or weaknesses in the response."
+    }
+]

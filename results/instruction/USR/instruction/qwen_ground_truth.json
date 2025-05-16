@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Understandable",
+        "description": "Is the response understandable given the previous context?",
+        "scale": "0-1",
+        "instruction": "1-Read and understand the conversation and the provided interesting fact.\n2-Evaluate the given response based on the metric 'Understandable'.\n3-Provide a score between 0 and 1 for the response.\n"
+    },
+    {
+        "name": "Natural",
+        "description": "Does the response seem to be something that a person would naturally say?",
+        "scale": "1-3",
+        "instruction": "1-Read and understand the conversation and the potential response.\n2-Identify the interesting fact mentioned in the potential response.\n3-Evaluate the potential response based on the 'Natural' metric, considering whether it sounds like something a person would naturally say in the context of the conversation.\n4-Provide a score of 1, 2, or 3 for the 'Natural' metric.\n"
+    },
+    {
+        "name": "Maintains Context",
+        "description": "Does the response serve as a valid continuation of the preceding conversation?",
+        "scale": "1-3",
+        "instruction": null
+    },
+    {
+        "name": "Interesting",
+        "description": "Is the response dull or interesting?",
+        "scale": "1-3",
+        "instruction": null
+    },
+    {
+        "name": "Uses Knowledge",
+        "description": "Given the fact that the response is conditioned on, how well does the response use that fact?",
+        "scale": "0-1",
+        "instruction": "1-Read the conversation and the potential response.\n2-Identify the interesting fact provided with the response.\n3-Evaluate how well the response uses the interesting fact in the context of the conversation.\n4-Rate the response on a scale of 0-1 for the 'Uses Knowledge' metric.\n"
+    },
+    {
+        "name": "Overall Quality",
+        "description": "Given your answers above, what is your overall impression of the quality of this utterance?",
+        "scale": "1-5",
+        "instruction": "Given your answers above, what is your overall impression of this utterance?\nA score of 1 (very bad) means this is a completely invalid response. It would be difficult to recover the conversation after this.\nA score of 2 (bad) means this is a valid response, but otherwise poor in quality.\nA score of 3 (neutral) means this response is neither good nor bad. This response has no negative qualities, but no positive ones either.\nA score of 4 (good) means this is a good response, but falls short of being perfect because of a key flaw.\nA score of 5 (very good) means this response is good and does not have any strong flaws."
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Relevance",
+        "description": "The degree to which the contestant's response directly addresses the user's prompt or instruction.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical flow and consistency of the response, ensuring that it makes sense as a whole.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "The extent to which the response fully answers or addresses all parts of the user's prompt.",
+        "scale": "Complete, Partial, Incomplete",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "The ease with which the response can be understood by the user, free of ambiguity or confusion.",
+        "scale": "Clear, Somewhat Clear, Unclear",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "The originality and innovativeness of the response, offering unique insights or perspectives.",
+        "scale": "High, Medium, Low",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "The correctness of the information provided in the response, based on factual evidence or logical reasoning.",
+        "scale": "Accurate, Somewhat Accurate, Inaccurate",
+        "instruction": ""
+    }
+]

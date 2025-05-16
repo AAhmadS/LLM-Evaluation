@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance to Context",
+        "description": "Measures how well the continuation aligns with the given context of the conversation. The response should logically connect to and build upon the preceding dialogue.",
+        "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": "\n1- Read the entire conversation provided to understand the context.\n2- Read the potential response provided for the next turn in the conversation.\n3- Consider the logical flow of the conversation and how well the response connects to the preceding dialogue.\n4- Rate the response on a scale from 1 to 5 based on its relevance to the context of the conversation.\n5- Provide a brief justification for your rating, explaining why the response is rated at that level of relevance."
+    },
+    {
+        "name": "Incorporation of Interesting Fact",
+        "description": "Assesses how effectively the contestant has integrated the interesting fact into their response. The fact should be woven into the conversation naturally and meaningfully.",
+        "scale": "1 to 5, where 1 is not incorporated and 5 is seamlessly and meaningfully incorporated.",
+        "instruction": "\n1- Read the given conversation between the two individuals thoroughly.\n2- Read the potential response provided for the next turn in the conversation.\n3- Identify the interesting fact that is supposed to be incorporated into the response.\n4- Evaluate how well the interesting fact is integrated into the response. Consider if the fact is introduced in a way that feels natural and adds meaningful value to the conversation.\n5- Rate the response using the scale from 1 to 5, where 1 is not incorporated and 5 is seamlessly and meaningfully incorporated.\n6- Provide a brief explanation for the rating, focusing on the integration of the interesting fact into the conversation."
+    },
+    {
+        "name": "Creativity",
+        "description": "Evaluates the originality and inventiveness of the continuation. Creative responses should provide a unique or unexpected twist that enhances the conversation.",
+        "scale": "1 to 5, where 1 is not creative and 5 is highly creative.",
+        "instruction": "\n1- Read the entire conversation provided to understand the context and flow.\n2- Read the potential response that is to be evaluated.\n3- Consider how the response contributes to the conversation. Does it introduce a unique or unexpected twist?\n4- Evaluate whether the response enhances the conversation by adding originality or inventiveness.\n5- Assign a score to the response based on the creativity metric, using the scale from 1 to 5.\n6- Provide a brief justification for the score based on how creatively the response continues the conversation."
+    },
+    {
+        "name": "Coherence and Flow",
+        "description": "Determines the logical structure and smoothness of the continuation. The response should be easy to follow, with ideas flowing naturally from one to the next.",
+        "scale": "1 to 5, where 1 is incoherent and 5 is highly coherent and flows well.",
+        "instruction": "\n1- Read the given conversation carefully to understand the context and flow of the dialogue.\n2- Read the provided response that follows the conversation.\n3- Assess how well the response logically connects to the previous parts of the conversation, ensuring that the transition is smooth and maintains the context.\n4- Evaluate if the ideas in the response flow naturally from one to the next without abrupt shifts or confusing elements.\n5- Rate the response on a scale of 1 to 5 based on its coherence and flow, with 1 being incoherent and 5 being highly coherent and smoothly flowing."
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging and interesting the continuation is to the reader. An engaging response should capture the reader's attention and sustain their interest throughout.",
+        "scale": "1 to 5, where 1 is not engaging and 5 is highly engaging.",
+        "instruction": "\n1- Read the given conversation between the two individuals carefully to understand the context.\n2- Read the potential response that is provided for the next turn in the conversation.\n3- Consider how the response incorporates the interesting fact and whether it captures attention and sustains interest.\n4- Rate the response on the Engagement metric using the scale provided: 1 to 5, where 1 is not engaging and 5 is highly engaging."
+    }
+]

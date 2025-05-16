@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Relevance to Context",
+        "description": "Measures how well the response addresses the specific context and prompt provided by the user.",
+        "scale": "1 to 5",
+        "instruction": "1-Read and understand the context and prompt provided by the user.\n2-Evaluate the response based on how well it addresses the specific context and prompt.\n3-Rate the response on a scale of 1 to 5, where 1 is not relevant and 5 is highly relevant.\n"
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Evaluates the clarity and coherence of the response, including the logical flow and readability.",
+        "scale": "1 to 5",
+        "instruction": "1-Read and understand the provided metric and its description.\n2-Review the response to the user's prompt or instruction.\n3-Evaluate the response based on the clarity and coherence metric, considering the logical flow and readability.\n4-Assign a score from 1 to 5, where 1 is poor and 5 is excellent.\n"
+    },
+    {
+        "name": "Depth of Information",
+        "description": "Assesses the depth and quality of the information provided, including the level of detail and relevance of the content.",
+        "scale": "1 to 5",
+        "instruction": null
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Evaluates the technical accuracy of the information provided, especially in technical or domain-specific contexts.",
+        "scale": "1 to 5",
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read and understand the provided instructions and evaluation criteria.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Review the contestant's response for technical accuracy.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate the response based on the provided scale from 1 to 5.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Provide a detailed justification for the rating given.\"}]}]}"
+    },
+    {
+        "name": "Engagement and Responsiveness",
+        "description": "Measures how well the response engages the user and responds to their specific questions or concerns.",
+        "scale": "1 to 5",
+        "instruction": "1-Read and understand the provided instructions and evaluation criteria.\n2-Review the response provided by the contestant.\n3-Assess the engagement and responsiveness of the response on a scale of 1 to 5, where 1 is poor and 5 is excellent.\n4-Provide a detailed rationale for the score given, explaining how the response meets or fails to meet the criteria.\n"
+    },
+    {
+        "name": "User-Friendliness",
+        "description": "Assesses the user-friendliness of the response, including the tone, style, and accessibility of the information.",
+        "scale": "1 to 5",
+        "instruction": "1-Review the response for tone, ensuring it is friendly and welcoming.\n2-Assess the style of the response, making sure it is clear and concise.\n3-Evaluate the accessibility of the information, ensuring it is easy to understand and follow.\n4-Assign a score from 1 to 5 based on the overall user-friendliness of the response.\n"
+    },
+    {
+        "name": "Consistency",
+        "description": "Evaluates the consistency of the response over multiple interactions, ensuring that the information provided remains aligned and coherent.",
+        "scale": "1 to 5",
+        "instruction": "To ensure a thorough and fair evaluation of the responses based on the consistency metric, please follow these steps:\n\n1. **Review the Initial Response**: Start by reading the initial response provided by the contestant to the user's prompt. Note the key points and information provided.\n\n2. **Follow-Up Interactions**: Continue to review subsequent interactions between the user and the contestant. Pay attention to any follow-up questions, clarifications, or additional information requested by the user.\n\n3. **Check for Alignment**: Evaluate whether the contestant's responses in subsequent interactions remain consistent with the initial response. Look for:\n   - **Coherence**: The information provided should not contradict itself.\n   - **Relevance**: The responses should stay on topic and relevant to the user's queries.\n   - **Accuracy**: Any new information provided should align with the initial information and not introduce inconsistencies.\n\n4. **Rate the Consistency**: Based on your observations, rate the contestant's responses on a scale of 1 to 5, where:\n   - **1**: The responses are highly inconsistent, with frequent contradictions and misalignments.\n   - **2**: The responses show some inconsistencies but are generally aligned.\n   - **3**: The responses are moderately consistent, with occasional minor discrepancies.\n   - **4**: The responses are consistently aligned, with only minor issues.\n   - **5**: The responses are highly consistent, with no contradictions and perfect alignment.\n\n5. **Provide Feedback**: Optionally, you can provide brief feedback on any specific areas where the contestant excelled or could improve in terms of consistency.\n\nWould you like to proceed with the evaluation, or do you have any questions about the steps?"
+    }
+]

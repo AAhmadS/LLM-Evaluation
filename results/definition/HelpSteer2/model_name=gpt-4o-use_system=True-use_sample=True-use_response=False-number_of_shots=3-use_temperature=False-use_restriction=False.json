@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the generated response addresses the user's query or instruction. This includes the appropriateness of the content and its pertinence to the given context.",
+        "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical consistency and flow of the generated response. This includes the clarity of the response and how well it forms a cohesive narrative or explanation.",
+        "scale": "1 to 5, where 1 is incoherent and 5 is highly coherent.",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "Assesses the factual correctness of the information provided in the response. For technical or factual queries, this metric ensures that the information is true and reliable.",
+        "scale": "1 to 5, where 1 is completely inaccurate and 5 is completely accurate.",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging and interesting the response is for the user. This includes the ability to maintain the user's interest and encourage further interaction.",
+        "scale": "1 to 5, where 1 is not engaging at all and 5 is highly engaging.",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "Evaluates how clearly the response is communicated. It considers the use of language, grammar, and ease of understanding.",
+        "scale": "1 to 5, where 1 is very unclear and 5 is very clear.",
+        "instruction": ""
+    },
+    {
+        "name": "Creativity",
+        "description": "Assesses the originality and creativity of the response, particularly for open-ended or creative tasks. This metric evaluates the uniqueness and innovativeness of the solution or narrative provided.",
+        "scale": "1 to 5, where 1 is not creative at all and 5 is highly creative.",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Determines whether the response fully addresses all aspects of the user's query or instruction. This includes covering all necessary points or steps in an explanation or solution.",
+        "scale": "1 to 5, where 1 is very incomplete and 5 is very complete.",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures how concise and to-the-point the response is, without unnecessary elaboration or verbosity.",
+        "scale": "1 to 5, where 1 is very verbose and 5 is very concise.",
+        "instruction": ""
+    }
+]

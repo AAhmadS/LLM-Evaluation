@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Accuracy",
+        "description": "The extent to which the summary accurately reflects the main points and details of the original text, without introducing errors or misinterpretations.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": ""
+    },
+    {
+        "name": "Comprehensiveness",
+        "description": "The degree to which the summary covers all the major aspects and key points of the original text, without omitting important information.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity",
+        "description": "The ease with which the summary can be understood, including the use of clear and concise language and logical structure.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "The ability of the summary to convey the essential information of the original text in a brief and succinct manner, without unnecessary details.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "The degree to which the summary focuses on the most important and relevant aspects of the original text, aligning with the main objectives of the study or research.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": ""
+    },
+    {
+        "name": "Coherence",
+        "description": "The logical flow and connectedness of the summary, ensuring that the information is presented in a way that makes sense and is easy to follow.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": ""
+    },
+    {
+        "name": "Objectivity",
+        "description": "The extent to which the summary is free from bias or personal opinion, presenting the information in a neutral and factual manner.",
+        "scale": "1 (Very Low) to 5 (Very High)",
+        "instruction": ""
+    }
+]

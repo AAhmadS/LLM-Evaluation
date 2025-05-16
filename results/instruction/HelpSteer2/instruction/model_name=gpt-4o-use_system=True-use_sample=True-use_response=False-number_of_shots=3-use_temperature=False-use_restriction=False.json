@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how well the generated response addresses the user's query or instruction. This includes the appropriateness of the content and its pertinence to the given context.",
+        "scale": "1 to 5, where 1 is not relevant at all and 5 is highly relevant.",
+        "instruction": "\n1- Read the user's query or instruction carefully to understand the context and what is being asked.\n2- Read the generated response thoroughly to comprehend the content and its intent.\n3- Compare the generated response to the user's query or instruction to assess its relevance.\n4- Consider how well the response addresses the user's query or instruction, focusing on the appropriateness and pertinence of the content.\n5- Rate the relevance of the response on a scale of 1 to 5, where 1 is not relevant at all and 5 is highly relevant.\n6- Document any specific observations or examples from the response that influenced your rating, if necessary, to provide context for your evaluation."
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical consistency and flow of the generated response. This includes the clarity of the response and how well it forms a cohesive narrative or explanation.",
+        "scale": "1 to 5, where 1 is incoherent and 5 is highly coherent.",
+        "instruction": "\n1- Read the entire response carefully to understand its content and context.\n2- Identify the main idea or argument being presented in the response.\n3- Assess the logical flow of ideas in the response, checking for clear transitions and connections between sentences and paragraphs.\n4- Evaluate the clarity of the response, ensuring that the language used is understandable and precise.\n5- Determine how well the response forms a cohesive narrative or explanation, maintaining relevance to the main idea throughout.\n6- Assign a score from 1 to 5 based on the level of coherence observed, with 1 being incoherent and 5 being highly coherent."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Assesses the factual correctness of the information provided in the response. For technical or factual queries, this metric ensures that the information is true and reliable.",
+        "scale": "1 to 5, where 1 is completely inaccurate and 5 is completely accurate.",
+        "instruction": "\n1- Read the provided user prompt and the contestant's response carefully.\n2- Identify the factual claims made in the contestant's response. These are statements that can be verified as true or false based on objective information.\n3- Research or use your knowledge to verify the accuracy of each factual claim in the response. Ensure that the information aligns with credible sources or established facts.\n4- Assign a score based on the overall accuracy of the response: \n1 - Completely inaccurate: Most or all factual claims are incorrect.\n2 - Mostly inaccurate: Several major errors, with some correct claims.\n3 - Partially accurate: A mix of correct and incorrect claims, but significant inaccuracies.\n4 - Mostly accurate: Minor inaccuracies, but overall correct.\n5 - Completely accurate: All claims are correct and verifiable.\n5- Provide a brief justification for the score, highlighting specific claims that were correct or incorrect and the impact these had on the overall accuracy."
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures how engaging and interesting the response is for the user. This includes the ability to maintain the user's interest and encourage further interaction.",
+        "scale": "1 to 5, where 1 is not engaging at all and 5 is highly engaging.",
+        "instruction": "\n1- Read the contestant's response carefully, ensuring you understand the content and context.\n2- Assess whether the response maintains the user's interest. Consider if the response is compelling and encourages further interaction.\n3- Evaluate if the response includes elements that make it interesting, such as novelty, creativity, or relevance to the user's prompt.\n4- Determine how effectively the response stimulates curiosity or engagement from the user.\n5- Assign a score from 1 to 5 based on your assessment, where 1 is not engaging at all and 5 is highly engaging.\n6- Provide a brief justification for the score, highlighting specific aspects of the response that influenced your rating."
+    },
+    {
+        "name": "Clarity",
+        "description": "Evaluates how clearly the response is communicated. It considers the use of language, grammar, and ease of understanding.",
+        "scale": "1 to 5, where 1 is very unclear and 5 is very clear.",
+        "instruction": "\n1- Read the response thoroughly to understand its main message and purpose.\n2- Assess the language used in the response for simplicity and directness.\n3- Check for grammatical correctness and spelling errors in the response.\n4- Determine how easy it is to understand the response based on the language and grammar used.\n5- Assign a clarity score from 1 to 5, where 1 indicates the response is very unclear and 5 indicates it is very clear.\n6- Provide a brief justification for the score, highlighting any language or grammatical issues that influenced the score."
+    },
+    {
+        "name": "Creativity",
+        "description": "Assesses the originality and creativity of the response, particularly for open-ended or creative tasks. This metric evaluates the uniqueness and innovativeness of the solution or narrative provided.",
+        "scale": "1 to 5, where 1 is not creative at all and 5 is highly creative.",
+        "instruction": "\n1- Read the user's prompt or instruction carefully to understand the context and requirements.\n2- Read the contestant's response thoroughly to grasp the main idea and approach taken.\n3- Analyze the originality of the response by considering how unique the approach or solution is compared to typical or expected responses.\n4- Evaluate the innovativeness of the response by assessing whether it introduces new ideas, concepts, or perspectives.\n5- Consider the narrative or solution provided in terms of its creativity, such as the use of imaginative language, novel ideas, or unexpected twists.\n6- Assign a score from 1 to 5 based on your evaluation, where 1 indicates a lack of creativity and 5 indicates a highly creative response."
+    },
+    {
+        "name": "Completeness",
+        "description": "Determines whether the response fully addresses all aspects of the user's query or instruction. This includes covering all necessary points or steps in an explanation or solution.",
+        "scale": "1 to 5, where 1 is very incomplete and 5 is very complete.",
+        "instruction": "\n1- Read the user's query or instruction carefully to understand what is being asked.\n2- Read the contestant's response thoroughly.\n3- Identify the key aspects or points in the user's query or instruction that need to be addressed.\n4- Check if the contestant's response covers all identified key aspects or points.\n5- Assign a score from 1 to 5 based on how completely the response addresses the user's query or instruction, using the following scale: 1 - very incomplete, 2 - incomplete, 3 - moderately complete, 4 - complete, 5 - very complete.\n6- Provide a brief justification for the score, noting any missing elements or areas where the response could be improved."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures how concise and to-the-point the response is, without unnecessary elaboration or verbosity.",
+        "scale": "1 to 5, where 1 is very verbose and 5 is very concise.",
+        "instruction": "\n1- Familiarize yourself with the definition of conciseness: Conciseness in a response implies delivering the necessary information or answer in a clear and straightforward manner without including superfluous details or excessive elaboration.\n2- Read the contestant\u2019s response carefully and assess whether the response directly addresses the prompt or instruction given by the user.\n3- Identify any parts of the response that seem unnecessary or that do not contribute to directly answering the prompt.\n4- Determine the overall length of the response and consider whether it could be effectively shortened without losing essential information.\n5- Rate the response on a scale of 1 to 5 based on its conciseness: \n1 - Very verbose: Contains a lot of unnecessary information.\n2 - Somewhat verbose: More details than necessary are included.\n3 - Neutral: Adequately concise but could be slightly shortened.\n4 - Concise: Mostly to-the-point with minimal unnecessary information.\n5 - Very concise: Directly answers the prompt with no unnecessary details.\n6- Document the rating and provide a brief explanation for your score, highlighting any key observations that influenced your decision."
+    }
+]

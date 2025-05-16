@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Clarity",
+        "description": "Measures how clearly the summary conveys the main findings and concepts of the research paper.",
+        "scale": "1 (Very unclear) to 5 (Very clear)",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "Assesses whether the summary accurately reflects the key points and findings of the original paper.",
+        "scale": "1 (Not relevant) to 5 (Highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates if the summary captures all essential elements of the research, including background, methods, results, and conclusions.",
+        "scale": "1 (Very incomplete) to 5 (Very complete)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures the ability to summarize the content effectively without unnecessary details or verbosity.",
+        "scale": "1 (Too verbose) to 5 (Very concise)",
+        "instruction": ""
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Assesses the correctness of scientific terminology and accuracy of the concepts presented in the summary.",
+        "scale": "1 (Inaccurate) to 5 (Highly accurate)",
+        "instruction": ""
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how engaging and interesting the summary is to the reader, potentially influencing their desire to read the original paper.",
+        "scale": "1 (Not engaging) to 5 (Very engaging)",
+        "instruction": ""
+    },
+    {
+        "name": "Logical Flow",
+        "description": "Measures how well the information in the summary is organized and presented in a logical manner.",
+        "scale": "1 (Poor flow) to 5 (Excellent flow)",
+        "instruction": ""
+    },
+    {
+        "name": "Objectivity",
+        "description": "Assesses whether the summary maintains an objective tone and avoids bias or personal opinion.",
+        "scale": "1 (Highly biased) to 5 (Very objective)",
+        "instruction": ""
+    }
+]

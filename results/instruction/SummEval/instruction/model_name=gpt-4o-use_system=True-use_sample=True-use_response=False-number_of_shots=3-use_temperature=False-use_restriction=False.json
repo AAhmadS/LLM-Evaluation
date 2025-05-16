@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Clarity",
+        "description": "Assesses how clearly the summary conveys the main events and details of the news article. It evaluates the ease with which a reader can understand the key points of the article from the summary.",
+        "scale": "1 to 5, where 1 is unclear and confusing, and 5 is crystal clear and easy to understand.",
+        "instruction": "\n1- Read the summary carefully without any distractions.\n2- Identify the main events and details presented in the summary.\n3- Assess whether the summary clearly conveys these main events and details without ambiguity or confusion.\n4- Evaluate how easily a reader who is unfamiliar with the original article can understand the key points from the summary.\n5- Rate the summary on a scale from 1 to 5 based on its clarity, where 1 is unclear and confusing, and 5 is crystal clear and easy to understand."
+    },
+    {
+        "name": "Conciseness",
+        "description": "Measures the ability of the summary to distill the article into its most essential points without unnecessary detail or repetition.",
+        "scale": "1 to 5, where 1 is overly detailed and lengthy, and 5 is succinct and to the point.",
+        "instruction": "\n1- Read the summary carefully to understand its content and main points.\n2- Identify the essential points that the summary is trying to convey.\n3- Evaluate if the summary includes any unnecessary details or repetitions that could be omitted without losing the overall meaning.\n4- Assess the length of the summary in relation to the information provided; determine if it is overly detailed or succinct.\n5- Rate the summary on a scale from 1 to 5, where 1 indicates the summary is overly detailed and lengthy, and 5 indicates the summary is succinct and to the point."
+    },
+    {
+        "name": "Relevance",
+        "description": "Evaluates whether the summary includes information that is pertinent to the main topic of the article and excludes irrelevant details.",
+        "scale": "1 to 5, where 1 includes mostly irrelevant information, and 5 includes only relevant information.",
+        "instruction": "\n1- Read the full news article carefully to identify the main topic and key details that are relevant to the topic.\n2- Read the contestant's summary and identify the information included.\n3- Determine the relevance of the information in the summary to the main topic of the article. Consider whether the summary includes key details that are essential to understanding the main topic.\n4- Check if the summary excludes details that are not directly related to the main topic or that do not contribute to the understanding of the main topic.\n5- Assign a score based on how well the summary includes relevant information and excludes irrelevant details. Use the scale: 1 = mostly irrelevant information, 2 = some relevant information but mostly irrelevant, 3 = balanced mix of relevant and irrelevant information, 4 = mostly relevant information with minor irrelevant details, 5 = only relevant information."
+    },
+    {
+        "name": "Accuracy",
+        "description": "Assesses the factual correctness of the information provided in the summary, ensuring it reflects the true content of the article.",
+        "scale": "1 to 5, where 1 contains significant factual errors, and 5 is completely accurate.",
+        "instruction": "\n1- Read the original news article thoroughly to understand its main points, facts, and details.\n2- Carefully read the contestant's summary of the news article.\n3- Compare the facts and details mentioned in the summary with those in the original article.\n4- Identify any factual inaccuracies, omissions, or misrepresentations in the summary.\n5- Rate the summary on a scale of 1 to 5 based on the accuracy of the facts presented, with 1 indicating significant factual errors and 5 indicating complete accuracy."
+    },
+    {
+        "name": "Engagement",
+        "description": "Measures the ability of the summary to capture the reader's interest and encourage them to read the full article.",
+        "scale": "1 to 5, where 1 is not engaging at all, and 5 is very engaging and intriguing.",
+        "instruction": "\n1- Read the provided summary carefully to understand its content and main points.\n2- Assess the language used in the summary. Determine if it is dynamic, vivid, and capable of capturing attention.\n3- Evaluate the structure of the summary to see if it is logically organized and easy to follow, which can enhance reader engagement.\n4- Check if the summary contains intriguing or thought-provoking elements that might pique the reader's curiosity about the full article.\n5- Determine if the summary presents any unique or surprising information that could increase the reader's interest.\n6- Rate the summary on a scale from 1 to 5 based on how well it engages the reader, with 1 being not engaging at all and 5 being very engaging and intriguing."
+    },
+    {
+        "name": "Coherence",
+        "description": "Evaluates the logical flow and connection between sentences and ideas in the summary, ensuring a smooth reading experience.",
+        "scale": "1 to 5, where 1 is disjointed and incoherent, and 5 is well-organized and coherent.",
+        "instruction": "\n1- Read the summary carefully to understand the overall message and structure.\n2- Identify the main ideas presented in the summary and the sequence in which they are presented.\n3- Evaluate whether the sentences logically flow from one to the next, considering transitions and connections between ideas.\n4- Assess if the summary maintains a consistent focus without deviating or introducing unrelated information.\n5- Rate the coherence of the summary on a scale of 1 to 5, where 1 indicates a disjointed and incoherent summary and 5 indicates a well-organized and coherent summary."
+    },
+    {
+        "name": "Coverage",
+        "description": "Assesses the extent to which the summary covers all significant aspects of the article, ensuring comprehensive representation of the article's content.",
+        "scale": "1 to 5, where 1 covers very few important points, and 5 covers all significant points comprehensively.",
+        "instruction": "\n1- Read the original news article carefully to understand its main points and details.\n2- Identify the significant aspects of the article that should be included in a comprehensive summary. These are the key facts, figures, events, and insights that capture the essence of the article.\n3- Read the contestant's summary and evaluate how well it captures the significant aspects identified in Step 2.\n4- Assign a score from 1 to 5 based on the extent to which the contestant's summary covers the significant aspects of the article: 1 = very few important points covered, 2 = some important points covered but many missing, 3 = a moderate number of important points covered, 4 = most important points covered but with some minor omissions, 5 = all significant points covered comprehensively.\n5- Provide a brief justification for the score, highlighting specific areas where the summary either succeeded or failed in covering the article's content comprehensively."
+    }
+]

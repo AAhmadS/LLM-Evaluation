@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Relevance",
+        "description": "Measures how closely the summary captures the main points of the article.",
+        "scale": "1-5, with 1 being not relevant and 5 being highly relevant",
+        "instruction": null
+    },
+    {
+        "name": "Completeness",
+        "description": "Evaluates if the summary includes all the key information from the article.",
+        "scale": "1-5, with 1 being incomplete and 5 being complete",
+        "instruction": "1-Read the original news article thoroughly to understand the key information.\n2-Read the summary provided by the contestant.\n3-Compare the summary to the original article to ensure all key information is included.\n4-Rate the summary on a scale of 1-5, with 1 being incomplete and 5 being complete.\n"
+    },
+    {
+        "name": "Conciseness",
+        "description": "Assesses how well the summary is concise and to the point.",
+        "scale": "1-5, with 1 being very wordy and 5 being very concise",
+        "instruction": "1-Read the summary carefully.\n2-Assess if the summary is clear and direct, without unnecessary details or repetition.\n3-Determine the score based on the scale provided, where 1 is very wordy and 5 is very concise.\n"
+    },
+    {
+        "name": "Clarity",
+        "description": "Measures the clarity and readability of the summary.",
+        "scale": "1-5, with 1 being very unclear and 5 being very clear",
+        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the summary provided by the contestant.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Assess the clarity and readability of the summary.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Rate the summary on a scale of 1 to 5, with 1 being very unclear and 5 being very clear.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Provide feedback on areas for improvement, if any.\"}]}]}"
+    },
+    {
+        "name": "Engagement",
+        "description": "Evaluates how engaging and interesting the summary is to the reader.",
+        "scale": "1-5, with 1 being boring and 5 being highly engaging",
+        "instruction": "To ensure a fair and consistent evaluation of the responses based on the Engagement metric, please follow the structured steps outlined below:\n\n[\n    {\n        \"step\": {\n            \"step_id\": \"1\",\n            \"description\": \"Read the provided summary carefully and ensure you understand the content and context.\"\n        }\n    },\n    {\n        \"step\": {\n            \"step_id\": \"2\",\n            \"description\": \"Assess the summary based on the following criteria:\\n- Does the summary capture the reader's attention immediately?\\n- Is the language used dynamic and interesting?\\n- Does the summary provide a compelling reason for the reader to want to read the full article?\"\n        }\n    },\n    {\n        \"step\": {\n            \"step_id\": \"3\",\n            \"description\": \"Assign a score from 1 to 5 based on the engagement level:\\n- 1: The summary is boring and fails to engage the reader.\\n- 2: The summary is somewhat engaging but lacks excitement.\\n- 3: The summary is moderately engaging and holds the reader's interest.\\n- 4: The summary is very engaging and captures the reader's attention.\\n- 5: The summary is highly engaging and makes the reader eager to read the full article.\"\n        }\n    },\n    {\n        \"step\": {\n            \"step_id\": \"4\",\n            \"description\": \"Provide a brief justification for the score you have assigned, highlighting specific elements that contributed to your rating.\"\n        }\n    }\n]\n\nWould you like me to format these steps into the suitable format for the metric?"
+    }
+]

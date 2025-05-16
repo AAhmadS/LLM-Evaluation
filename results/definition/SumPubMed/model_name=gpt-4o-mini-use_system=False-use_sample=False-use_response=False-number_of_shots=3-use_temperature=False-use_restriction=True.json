@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Content Coverage",
+        "description": "Measures how well the summary captures the key points and findings of the original research paper, including important concepts, results, and conclusions.",
+        "scale": "0-100% (0% means no key points covered, 100% means all key points covered)",
+        "instruction": ""
+    },
+    {
+        "name": "Clarity and Coherence",
+        "description": "Evaluates the clarity and logical flow of the summary, assessing how easily the reader can understand the main ideas presented.",
+        "scale": "0-10 (0 means very unclear and incoherent, 10 means very clear and coherent)",
+        "instruction": ""
+    },
+    {
+        "name": "Conciseness",
+        "description": "Assesses the brevity of the summary while ensuring that it remains informative. A good summary should be succinct without losing essential information.",
+        "scale": "0-10 (0 means overly verbose, 10 means perfectly concise)",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "Measures the relevance of the summary to the original paper, including whether it stays on topic and reflects the main themes of the research.",
+        "scale": "0-10 (0 means not relevant at all, 10 means highly relevant)",
+        "instruction": ""
+    },
+    {
+        "name": "Technical Accuracy",
+        "description": "Evaluates the accuracy of the scientific and technical information presented in the summary, including the correct use of terminology and the validity of claims made.",
+        "scale": "0-10 (0 means highly inaccurate, 10 means fully accurate)",
+        "instruction": ""
+    }
+]

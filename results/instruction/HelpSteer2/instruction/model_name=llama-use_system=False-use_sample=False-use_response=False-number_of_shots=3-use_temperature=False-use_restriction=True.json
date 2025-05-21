@@ -3,36 +3,36 @@
         "name": "Relevance",
         "description": "How well the response addresses the prompt or instruction",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Read and understand the evaluation criteria carefully\n2. Assess the response to determine how well it addresses the prompt or instruction\n3. Assign a score from 1 to 5 based on the relevance of the response to the prompt or instruction\n4. Ensure the score accurately reflects the response's ability to meet the requirements and expectations of the prompt or instruction"
     },
     {
         "name": "Coherence",
         "description": "How logically connected and easy to follow the response is",
         "scale": "1-5",
-        "instruction": "<function=set_metric_instruction [{\"step\": {\"step_id\": \"1\", \"description\": \"Understand the task and the metric to be used for evaluation\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Read and understand the instructions carefully and keep the document open for reference\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate the response based on the Coherence metric, considering how logically connected and easy to follow it is\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Rate the response on a scale of 1-5 based on the Coherence metric\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Provide the final rating for the response\"}}]</function>"
+        "instruction": "1. Read and understand the task and prompts provided by users\n2. Evaluate the coherence of each response based on how logically connected and easy to follow it is\n3. Assign a score from 1 to 5 for the coherence metric\n4. Provide feedback and justification for the assigned score"
     },
     {
         "name": "Fluency",
         "description": "How natural and smooth the language used in the response is",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Read and understand the task and the metric to be evaluated, which is Fluency.\n2. Assess the response to determine how natural and smooth the language used is.\n3. Evaluate the response based on a scale of 1-5, where 1 is the lowest and 5 is the highest.\n4. Provide a rating based on the evaluation criteria."
     },
     {
         "name": "Accuracy",
         "description": "How accurate and factual the information provided in the response is",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Read the prompt carefully and understand what is being asked\n2. Evaluate the response based on the accuracy of the information provided\n3. Assess the factual correctness of the response\n4. Assign a score from 1 to 5 based on the accuracy of the response\n5. Ensure the evaluation is fair and unbiased"
     },
     {
         "name": "Completeness",
         "description": "How thoroughly the response covers the topic or instruction",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Read and understand the evaluation criteria and the task at hand.\n2. Review the response to determine its level of completeness in addressing the topic or instruction.\n3. Assess whether the response covers all essential points and aspects of the topic.\n4. Evaluate the depth and thoroughness of the response in providing relevant information.\n5. Assign a score from 1 to 5 based on the completeness of the response, with 1 being incomplete and 5 being thoroughly complete."
     },
     {
         "name": "Tone",
         "description": "How appropriate and engaging the tone of the response is",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Read and understand the evaluation criteria for the \"Tone\" metric.\n2. Assess the tone of the response based on its appropriateness and engagement.\n3. Evaluate the tone on a scale of 1-5, where 1 is the lowest and 5 is the highest.\n4. Consider the context and audience of the response when evaluating the tone.\n5. Provide a final rating for the tone of the response."
     }
 ]

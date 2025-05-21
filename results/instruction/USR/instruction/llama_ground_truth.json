@@ -3,31 +3,31 @@
         "name": "Understandable",
         "description": "Is the response understandable given the previous context?",
         "scale": "0-1",
-        "instruction": "I understand the instructions. You want me to evaluate a potential response in a conversation based on how understandable it is, given the previous context. I will rate the response on a scale of 0 to 1, where 1 means the response is completely understandable and 0 means it is not understandable at all. I'm ready to proceed. Please provide the conversation and the potential response."
+        "instruction": "1. Read the conversation between the two individuals to understand the context.\n2. Identify the key points discussed in the conversation.\n3. Analyze the given response and the interesting fact it contains.\n4. Determine if the response is relevant to the conversation and if the interesting fact is related to the topic being discussed.\n5. Evaluate if the language used in the response is clear and concise.\n6. Assess if the response is easy to understand given the previous context.\n7. Assign a score between 0 and 1 based on how understandable the response is."
     },
     {
         "name": "Natural",
         "description": "Does the response seem to be something that a person would naturally say?",
         "scale": "1-3",
-        "instruction": "I understand the instructions. You want me to evaluate a potential response in a conversation based on how natural it sounds, using a scale of 1-3, where 1 is the least natural and 3 is the most natural. I'm ready to proceed. Please provide the conversation and the potential response."
+        "instruction": "1. Read and understand the conversation between the two individuals to get the context.\n2. Analyze the given response and the interesting fact it contains.\n3. Evaluate how naturally the response fits into the conversation, considering factors like tone, language, and relevance.\n4. Assign a score from 1 to 3 based on the Natural metric, where 1 is the lowest and 3 is the highest.\n5. Justify the score by explaining why the response seems natural or unnatural in the context of the conversation."
     },
     {
         "name": "Maintains Context",
         "description": "Does the response serve as a valid continuation of the preceding conversation?",
         "scale": "1-3",
-        "instruction": "I understand the instructions. You want me to evaluate a potential response in a conversation based on how well it maintains the context of the previous conversation. I will rate the response on a scale of 1-3, where 1 means the response does not maintain the context, 2 means it somewhat maintains the context, and 3 means it effectively maintains the context. I'm ready to proceed. Please provide the conversation and the potential response."
+        "instruction": "1. Read and understand the conversation between the two individuals to identify the topic and context.\n2. Analyze the given response to determine its relevance to the conversation.\n3. Evaluate if the response serves as a valid continuation of the conversation, considering factors such as relevance, coherence, and consistency with the preceding discussion.\n4. Assign a score from 1 to 3 based on how well the response maintains the context, where 1 indicates a weak connection, 2 indicates a moderate connection, and 3 indicates a strong connection."
     },
     {
         "name": "Interesting",
         "description": "Is the response dull or interesting?",
         "scale": "1-3",
-        "instruction": "I understand the instructions. You want me to evaluate a response based on how interesting it is. The scale is from 1 to 3, where 1 is dull and 3 is interesting. I'm ready to proceed. Please provide the conversation and the potential response."
+        "instruction": "1. Read the conversation between the two individuals to understand the context.\n2. Examine the potential response for the next turn in the conversation.\n3. Identify the interesting fact provided in the response.\n4. Evaluate the response based on the Interesting metric, considering whether it is dull (1) or interesting (3).\n5. Assign a score from 1 to 3, where 1 is dull and 3 is interesting, based on the evaluation."
     },
     {
         "name": "Uses Knowledge",
         "description": "Given the fact that the response is conditioned on, how well does the response use that fact?",
         "scale": "0-1",
-        "instruction": "I understand the instructions. You want me to evaluate a potential response in a conversation based on how well it uses a given interesting fact. I will rate the response on a scale of 0-1 using the \"Uses Knowledge\" metric. Please provide the conversation, the potential response, and the interesting fact, and I'll be happy to assist."
+        "instruction": "1. Read and understand the conversation between the two individuals to grasp the context.\n2. Read and understand the potential response for the next turn in the conversation.\n3. Read and understand the interesting fact that the response is conditioned on.\n4. Evaluate how well the response uses the interesting fact, considering factors such as relevance, accuracy, and integration into the conversation.\n5. Rate the response on the 'Uses Knowledge' metric, using a scale of 0-1, where 0 indicates that the response does not use the fact at all and 1 indicates that the response uses the fact extremely well."
     },
     {
         "name": "Overall Quality",

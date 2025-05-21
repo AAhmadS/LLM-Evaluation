@@ -3,30 +3,30 @@
         "name": "Accuracy",
         "description": "How well the summary reflects the content of the original document",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Read the original document and the provided summary\n2. Identify the main points and key information in the original document\n3. Compare the summary with the original document to assess how well it reflects the content\n4. Evaluate the accuracy of the summary based on the comparison\n5. Assign a score from 1 to 5 based on the evaluation criteria"
     },
     {
         "name": "Completeness",
         "description": "How much of the important information from the original document is included in the summary",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Read the original document and the generated summary carefully\n2. Identify the key points and important information in the original document\n3. Check if all the key points are included in the summary\n4. Evaluate the amount of important information from the original document that is included in the summary\n5. Rate the summary based on the Completeness metric using a scale of 1-5"
     },
     {
         "name": "Relevance",
         "description": "How relevant the summary is to the main topic of the original document",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Read the original document carefully to understand the main topic\n2. Read the provided summary to assess its content\n3. Compare the summary with the original document to evaluate relevance\n4. Assign a score from 1 to 5 based on how well the summary aligns with the main topic of the original document"
     },
     {
         "name": "Coherence",
         "description": "How well the summary is organized and easy to understand",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Read the summary carefully to understand its content and structure\n2. Assess how well the summary is organized, looking for a clear introduction, body, and conclusion\n3. Evaluate the clarity of the language and the coherence of the ideas presented\n4. Check if the summary is concise and free of unnecessary information\n5. Rate the summary based on the coherence scale: 1 (very difficult to understand) to 5 (very easy to understand)"
     },
     {
         "name": "Conciseness",
         "description": "How well the summary conveys the important information in a concise manner",
         "scale": "1-5",
-        "instruction": null
+        "instruction": "1. Step 1: Read the summary and the original biomedical research paper to understand the content.\n2. Step 2: Identify the main points and key information in the original paper.\n3. Step 3: Evaluate how well the summary conveys the important information in a concise manner, considering the scale of 1-5 for Conciseness.\n4. Step 4: Assess whether the summary includes all essential information from the original paper without being too lengthy or redundant.\n5. Step 5: Determine the final rating for Conciseness based on the evaluation in steps 3 and 4."
     }
 ]

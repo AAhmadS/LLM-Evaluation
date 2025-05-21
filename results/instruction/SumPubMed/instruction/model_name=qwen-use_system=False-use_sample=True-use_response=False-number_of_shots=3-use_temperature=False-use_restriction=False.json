@@ -3,42 +3,42 @@
         "name": "Accuracy",
         "description": "The extent to which the summary accurately reflects the main points and details of the original text, without introducing errors or misinterpretations.",
         "scale": "1 (Very Low) to 5 (Very High)",
-        "instruction": null
+        "instruction": "1. Read the original biomedical research paper thoroughly.\n2. Identify the main points and key details of the paper.\n3. Read the provided summary carefully.\n4. Compare the summary to the original paper to check for accuracy, ensuring that the main points and details are correctly reflected and no errors or misinterpretations are introduced.\n5. Assign a score from 1 to 5 based on the accuracy of the summary, where 1 is 'Very Low' and 5 is 'Very High'.\n6. Provide a brief justification for the score given, highlighting any specific areas of strength or weakness."
     },
     {
         "name": "Comprehensiveness",
         "description": "The degree to which the summary covers all the major aspects and key points of the original text, without omitting important information.",
         "scale": "1 (Very Low) to 5 (Very High)",
-        "instruction": "To ensure a thorough and consistent evaluation of the summaries based on the Comprehensiveness metric, please follow these steps:\n\n1. **Read the Original Text**: Carefully read the original biomedical research paper to understand its content, key points, and major aspects.\n2. **Read the Summary**: Carefully read the contestant's summary.\n3. **Compare the Summary to the Original Text**: Evaluate whether the summary covers all the major aspects and key points of the original text. Check for any important information that may have been omitted.\n4. **Rate the Summary**: Assign a score from 1 (Very Low) to 5 (Very High) based on the degree to which the summary comprehensively covers the original text.\n\nWould you like to proceed with the evaluation of a specific summary, or do you need further clarification on any of these steps?"
+        "instruction": "1. Read the original biomedical research paper thoroughly to understand its content and key points.\n2. Review the provided summary to identify the main aspects and key points it covers.\n3. Compare the summary to the original text to determine if all major aspects and key points are adequately addressed.\n4. Assess whether the summary omits any important information that is present in the original text.\n5. Rate the summary on a scale of 1 to 5, where 1 is 'Very Low' and 5 is 'Very High', based on how comprehensively it covers the original text.\n6. Provide a brief justification for the rating given, highlighting specific strengths or weaknesses in the summary."
     },
     {
         "name": "Clarity",
         "description": "The ease with which the summary can be understood, including the use of clear and concise language and logical structure.",
         "scale": "1 (Very Low) to 5 (Very High)",
-        "instruction": "1-Read the summary carefully to understand its content and structure.\n2-Assess the use of clear and concise language in the summary.\n3-Evaluate the logical structure of the summary, ensuring that the information flows coherently.\n4-Determine if the summary is easy to understand, even for someone not familiar with the topic.\n5-Assign a score from 1 to 5 based on the clarity of the summary, with 1 being 'Very Low' and 5 being 'Very High'.\n"
+        "instruction": "1. Read the summary carefully.\n2. Assess the use of clear and concise language.\n3. Evaluate the logical structure of the summary.\n4. Determine if the summary is easy to understand.\n5. Rate the summary on a scale of 1 to 5, where 1 is 'Very Low' and 5 is 'Very High' in terms of clarity."
     },
     {
         "name": "Conciseness",
         "description": "The ability of the summary to convey the essential information of the original text in a brief and succinct manner, without unnecessary details.",
         "scale": "1 (Very Low) to 5 (Very High)",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the original document to understand its content and key points.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Read the provided summary to identify the main ideas and information conveyed.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Compare the summary to the original document to determine if the essential information is accurately and succinctly presented.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Evaluate the clarity and coherence of the summary, ensuring it is free from unnecessary details.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Assign a rating from 1 to 5 based on the conciseness of the summary, where 1 is 'Very Low' and 5 is 'Very High'.\"}]}]}"
+        "instruction": "1. Read the original biomedical research paper thoroughly to understand its core content and key points.\n2. Read the provided summary carefully.\n3. Evaluate if the summary captures the essential information of the original text in a brief and succinct manner.\n4. Assess whether the summary avoids unnecessary details and remains focused on the key points.\n5. Rate the summary on a scale of 1 to 5, where 1 is 'Very Low' and 5 is 'Very High' in terms of conciseness."
     },
     {
         "name": "Relevance",
         "description": "The degree to which the summary focuses on the most important and relevant aspects of the original text, aligning with the main objectives of the study or research.",
         "scale": "1 (Very Low) to 5 (Very High)",
-        "instruction": null
+        "instruction": "1. Read the original biomedical research paper thoroughly to understand the main objectives and key points.\n2. Read the provided summary and identify the main points and focus areas.\n3. Compare the summary to the original text to determine how well it captures the most important and relevant aspects.\n4. Evaluate the degree of alignment between the summary and the main objectives of the study or research.\n5. Rate the summary on a scale of 1 (Very Low) to 5 (Very High) based on the Relevance metric."
     },
     {
         "name": "Coherence",
         "description": "The logical flow and connectedness of the summary, ensuring that the information is presented in a way that makes sense and is easy to follow.",
         "scale": "1 (Very Low) to 5 (Very High)",
-        "instruction": "To ensure a clear and structured evaluation process for the summaries provided by the contestants, we need to define the steps that will be followed to rate the responses based on the Coherence metric. Here are the evaluation steps:\n\n!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the entire summary to get an overall understanding of its content and structure.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Identify the main points and the flow of information within the summary.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate whether the summary presents the information in a logical sequence, with smooth transitions between ideas.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Check if the summary avoids repetition and redundancy, and if it is concise and to the point.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Assess if the summary is easy to follow and understand, without any confusing or ambiguous statements.\"}}, {\"step\": {\"step_id\": \"6\", \"description\": \"Assign a score from 1 to 5 based on the Coherence metric scale, where 1 is 'Very Low' and 5 is 'Very High'.\"}]}}"
+        "instruction": "1. Read the original biomedical research paper to understand the context and main points.\n2. Read the summary provided by the contestant.\n3. Evaluate the coherence of the summary by assessing the logical flow and connectedness of the information presented.\n4. Determine if the summary is easy to follow and makes sense in the context of the original document.\n5. Rate the summary on a scale of 1 (Very Low) to 5 (Very High) based on the coherence metric.\n6. Provide feedback, if necessary, to help the contestant improve the coherence of their summaries."
     },
     {
         "name": "Objectivity",
         "description": "The extent to which the summary is free from bias or personal opinion, presenting the information in a neutral and factual manner.",
         "scale": "1 (Very Low) to 5 (Very High)",
-        "instruction": null
+        "instruction": "1. Read the summary carefully and identify any instances of bias or personal opinion.\n2. Assess the overall tone of the summary to determine if it is neutral and factual.\n3. Evaluate the use of language for objectivity; check for loaded words or phrases that may indicate bias.\n4. Determine the presence of any unsupported claims or assumptions that may affect the objectivity of the summary.\n5. Rate the summary on a scale from 1 to 5 based on the degree of objectivity, where 1 is 'Very Low' and 5 is 'Very High'."
     }
 ]

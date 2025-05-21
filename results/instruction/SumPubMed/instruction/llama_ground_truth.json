@@ -3,30 +3,30 @@
         "name": "Non-Repetition and no factual Redundancy",
         "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1. Step 1: Read the summary response provided by the contestant carefully.\n2. Step 2: Identify any redundant factual information in the summary.\n3. Step 3: Check for repetition of sentences or similar sentences with the same meaning.\n4. Step 4: Evaluate the summary based on the absence of redundancy and repetition, and assign a score from 1 to 10.\n5. Step 5: Justify the assigned score with specific examples from the summary, highlighting instances of redundancy or repetition if present."
     },
     {
         "name": "Coherence",
         "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1. Define the concept of coherence and its importance in biomedical research paper summaries\n2. Identify the key elements that contribute to coherence, such as logical flow, clear arguments, and effective transitions\n3. Develop a scale to rate coherence, ranging from 1 (low coherence) to 10 (high coherence)\n4. Establish clear criteria for each rating level, including specific characteristics and examples\n5. Apply the evaluation criteria to each summary, assessing the continuity of sense and logical flow\n6. Assign a coherence score based on the evaluation, using the established scale and criteria"
     },
     {
         "name": "Readability",
         "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1. Define the readability evaluation criteria\n2. Assess the spelling accuracy in the summaries\n3. Evaluate the grammatical correctness of the summaries\n4. Determine the understandability of the summaries\n5. Assign a score based on the overall readability of the summaries, ranging from 1 to 10"
     },
     {
         "name": "Informativeness, Overlap and Focus",
         "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1. Define the evaluation criteria and identify the key components of the metric, which are Informativeness, Overlap, and Focus.\n2. Read and understand the provided summaries and the corresponding biomedical research papers.\n3. Identify the common keywords or key phrases in both the summaries and the research papers, such as 'Nematodes'.\n4. Compare the occurrence frequency of the keywords or key phrases in the summaries and the research papers to determine the overlap.\n5. Assess the amount of information covered by each summary and evaluate its focus on the main topic.\n6. Assign a score from 1 to 10 based on the evaluation of Informativeness, Overlap, and Focus."
     },
     {
         "name": "Overall Quality",
         "description": "Given your answers above, what is your overall impression of the quality of this summary?",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1. Read and understand the task description and evaluation criteria.\n2. Assess the summary based on its overall quality, considering factors such as accuracy, completeness, and clarity.\n3. Assign a rating from 1 to 10, with 1 being the lowest and 10 being the highest, to reflect the overall quality of the summary.\n4. Ensure the rating is based on the specific criteria provided, focusing on the summary's ability to effectively convey the main points and key findings of the biomedical research paper."
     }
 ]

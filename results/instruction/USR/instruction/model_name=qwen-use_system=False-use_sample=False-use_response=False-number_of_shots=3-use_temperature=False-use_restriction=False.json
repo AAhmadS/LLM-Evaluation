@@ -3,30 +3,30 @@
         "name": "Relevance",
         "description": "Measures how relevant the continuation is to the provided context and interesting fact.",
         "scale": "1-5, with 5 being highly relevant",
-        "instruction": "Sure, I understand the task. Could you please provide the conversation, the potential response, and the interesting fact to proceed with the evaluation?"
+        "instruction": "1. Read the conversation and the potential response carefully.\n2. Identify the main topics and themes in the conversation.\n3. Understand the interesting fact provided.\n4. Evaluate if the potential response aligns with the main topics and themes of the conversation.\n5. Assess if the potential response incorporates the interesting fact in a meaningful way.\n6. Determine the relevance of the potential response on a scale of 1-5, where 5 is highly relevant."
     },
     {
         "name": "Creativity",
         "description": "Evaluates the originality and creativity of the response.",
         "scale": "1-5, with 5 being highly creative",
-        "instruction": "1-Read and understand the conversation and the provided response.\n2-Identify the interesting fact mentioned in the response.\n3-Evaluate the creativity of the response based on the originality and how creatively the fact is integrated into the conversation.\n4-Assign a score from 1 to 5, with 5 being highly creative.\n"
+        "instruction": "1. Read the conversation and the potential response carefully.\n2. Identify the interesting fact mentioned in the potential response.\n3. Evaluate the originality and creativity of the response in the context of the conversation and the interesting fact provided.\n4. Rate the response on a scale of 1 to 5, where 5 is highly creative and 1 is not creative at all."
     },
     {
         "name": "Clarity",
         "description": "Assesses how clear and coherent the continuation is.",
         "scale": "1-5, with 5 being very clear and coherent",
-        "instruction": "1-Read the conversation and the provided response.\n2-Identify the interesting fact mentioned in the response.\n3-Evaluate the clarity and coherence of the response based on how well it integrates the interesting fact.\n4-Rate the response on a scale of 1 to 5, with 5 being very clear and coherent.\n"
+        "instruction": "1. Receive the conversation and the potential response.\n2. Identify the interesting fact provided.\n3. Evaluate the response based on the Clarity metric: how clear and coherent the continuation is, on a scale of 1-5.\n4. Provide the clarity score along with a brief justification."
     },
     {
         "name": "Engagement",
         "description": "Measures how engaging and interesting the response is to the reader.",
         "scale": "1-5, with 5 being highly engaging",
-        "instruction": "1-Read the conversation and the provided response.\n2-Identify the interesting fact mentioned in the response.\n3-Evaluate the response based on how engaging and interesting it is to the reader.\n4-Rate the response on a scale of 1-5, with 5 being highly engaging.\n"
+        "instruction": "1. Read the conversation and the provided response.\n2. Identify the interesting fact mentioned in the response.\n3. Assess how well the interesting fact aligns with the conversation.\n4. Evaluate if the response is likely to capture and maintain the reader's attention based on the interesting fact.\n5. Rate the response on a scale of 1-5, with 5 being highly engaging."
     },
     {
         "name": "Consistency",
         "description": "Evaluates the consistency of the response with the provided context and fact.",
         "scale": "1-5, with 5 being highly consistent",
-        "instruction": "To evaluate the response based on the provided metric, I will follow these steps:\n\n1. **Read the Conversation**: Understand the context of the conversation between the two individuals.\n2. **Read the Response**: Analyze the potential response provided.\n3. **Verify the Fact**: Ensure the response includes the interesting fact provided.\n4. **Assess Consistency**:\n   - **Contextual Relevance**: Check if the response fits naturally within the conversation.\n   - **Fact Accuracy**: Verify that the fact is accurately represented and relevant to the conversation.\n   - **Coherence**: Ensure the response is coherent and logically follows from the previous turns in the conversation.\n5. **Rate the Response**: Assign a score from 1 to 5 based on the consistency of the response with the context and the fact.\n\nPlease provide the conversation, the response, and the interesting fact so I can proceed with the evaluation."
+        "instruction": "1. Read and understand the conversation and the provided response.\n2. Identify the key points in the conversation that relate to the response.\n3. Verify the interesting fact provided and ensure it aligns with the response.\n4. Evaluate if the response is consistent with both the conversation and the fact.\n5. Rate the consistency on a scale of 1-5, where 5 indicates high consistency."
     }
 ]

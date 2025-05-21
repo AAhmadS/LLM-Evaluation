@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Coherence",
+        "description": "How well the summary is organized and easy to understand",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Completeness",
+        "description": "How well the summary covers the main points of the article",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Accuracy",
+        "description": "How accurate the summary is in terms of facts and figures",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Relevance",
+        "description": "How relevant the summary is to the original article",
+        "scale": "1-5",
+        "instruction": ""
+    },
+    {
+        "name": "Readability",
+        "description": "How easy the summary is to read and comprehend",
+        "scale": "1-5",
+        "instruction": ""
+    }
+]

@@ -3,30 +3,30 @@
         "name": "Non-Repetition and no factual Redundancy",
         "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
         "scale": "1-10",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the summary carefully and identify any repeated sentences or redundant factual information.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Evaluate the summary based on the identified repetition and redundancy, using the scale of 1-10.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Provide a score and justify the rating based on the evaluation criteria.\"}]}]}"
+        "instruction": "1. Read the summary carefully and identify any repetition of sentences or redundant factual information.\n2. Evaluate the summary on a scale of 1-10 based on the absence of repetition and redundancy.\n3. Provide a detailed explanation for the score given, highlighting specific instances of repetition or redundancy if present."
     },
     {
         "name": "Coherence",
         "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
         "scale": "1-10",
-        "instruction": "To ensure a structured and consistent evaluation process, we need to outline the steps for assessing the coherence of the summaries provided by the contestants. Here are the steps we will follow:\n\n1. **Read the Summary**: Carefully read the entire summary to understand its content and flow.\n2. **Identify the Main Concepts**: Determine the primary topics or concepts discussed in the summary.\n3. **Assess Continuity of Sense**: Evaluate whether the sentences in the summary are logically connected and whether they build upon each other to form a coherent narrative.\n4. **Check for Relevance**: Ensure that each sentence contributes to the overall understanding of the main concepts.\n5. **Rate the Coherence**: Assign a score from 1 to 10 based on how well the summary meets the coherence criteria.\n\nWould you like me to format these steps in a suitable format for the metric?"
+        "instruction": "1. Read the summary carefully and understand its content.\n2. Identify the main topics and concepts discussed in the summary.\n3. Assess whether the sentences in the summary are logically connected and flow smoothly from one to another.\n4. Determine if the summary maintains a single focus or a set of closely related focuses throughout.\n5. Rate the summary on a scale of 1-10 based on how well it maintains coherence, with 10 being highly coherent and 1 being not coherent at all.\n6. Provide a brief justification for the rating given, explaining any strengths or weaknesses in coherence."
     },
     {
         "name": "Readability",
         "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
         "scale": "1-10",
-        "instruction": "1-Evaluate the spelling and grammar of the summary.\n2-Assess the clarity and coherence of the summary.\n3-Determine if the summary is easy to understand for the intended audience.\n4-Assign a score from 1 to 10 based on the overall readability of the summary.\n"
+        "instruction": "1. Read the original biomedical research paper to understand the content.\n2. Evaluate the summary for correct spelling and grammar.\n3. Assess the understandability of the summary, ensuring it conveys the key points of the paper clearly.\n4. Rate the summary on a scale of 1 to 10, with 10 being the highest readability.\n5. Provide feedback on areas for improvement to enhance readability."
     },
     {
         "name": "Informativeness, Overlap and Focus",
         "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1. Read the original research paper thoroughly to understand its content.\n2. Identify the key terms, phrases, and concepts from the original paper.\n3. Read the summary provided by the contestant.\n4. Identify the key terms, phrases, and concepts in the summary.\n5. Compare the key elements from the original paper and the summary to determine the level of overlap.\n6. Evaluate the informativeness of the summary based on the amount of relevant information it conveys from the original paper.\n7. Assign a score between 1 and 10 for the informativeness, overlap, and focus of the summary, with 10 being the highest level of informativeness, overlap, and focus."
     },
     {
         "name": "Overall Quality",
         "description": "Given your answers above, what is your overall impression of the quality of this summary?",
         "scale": "1-10",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the summary carefully and ensure you understand the content.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Evaluate the accuracy of the information presented in the summary compared to the original document.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Assess the clarity and coherence of the summary.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Determine if the summary captures the main points and key findings of the original document.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Consider the relevance and importance of the information included in the summary.\"}}, {\"step\": {\"step_id\": \"6\", \"description\": \"Evaluate the conciseness of the summary, ensuring it is not overly verbose or lacking important details.\"}}, {\"step\": {\"step_id\": \"7\", \"description\": \"Provide an overall quality rating from 1 to 10 based on the above criteria.\"}]}]}"
+        "instruction": "1. Read the original biomedical research paper thoroughly to understand its content and context.\n2. Review the summary provided by the contestant.\n3. Evaluate the summary based on the following criteria: accuracy, completeness, clarity, and relevance to the original document.\n4. Assign a score from 1 to 10 for the overall quality of the summary, where 1 is very poor and 10 is excellent.\n5. Provide a brief justification for the score given."
     }
 ]

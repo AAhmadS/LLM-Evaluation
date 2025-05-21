@@ -3,30 +3,30 @@
         "name": "Non-Repetition and no factual Redundancy",
         "description": "There should not be redundancy in the factual information, and no repetition of sentences is allowed.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1. Ensure that the summary does not contain any repeated sentences.\n2. Check that there is no redundancy in the factual information presented in the summary.\n3. Score the summary on a scale of 1-10 based on the absence of repetition and redundancy, with 10 being perfect."
     },
     {
         "name": "Coherence",
         "description": "Coherence means 'continuity of sense'. The arguments have to be connected sensibly so that the reader can see consecutive sentences as being about one (or a related) concept.",
         "scale": "1-10",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Read the provided summary and ensure it is a coherent piece of writing.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Evaluate if the sentences flow logically and are connected in a way that maintains the reader's understanding.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Check if the summary stays on topic and does not introduce unrelated or off-topic information.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Rate the coherence of the summary on a scale of 1 to 10, with 10 being highly coherent and 1 being incoherent.\"}]}]}}"
+        "instruction": "1. Read the summary provided by the contestant.\n2. Identify the main topic or concept of the summary.\n3. Evaluate if each sentence in the summary logically follows the previous one, contributing to the main topic or a closely related concept.\n4. Check for any abrupt changes in topic or ideas that disrupt the flow of the summary.\n5. Score the summary on a scale of 1-10 based on how well the sentences are connected and the overall coherence of the summary."
     },
     {
         "name": "Readability",
         "description": "Consideration of general readability criteria such as good spelling, correct grammar, understandability, etc. in the summaries.",
         "scale": "1-10",
-        "instruction": null
+        "instruction": "1. Ensure that the summary is free of spelling and grammatical errors.\n2. Evaluate if the summary is coherent and logically structured.\n3. Assess the clarity and understandability of the summary.\n4. Consider the appropriateness of the vocabulary used for the intended audience.\n5. Rate the summary on a scale of 1-10 based on the overall readability criteria."
     },
     {
         "name": "Informativeness, Overlap and Focus",
         "description": "How much information is covered by the summary. The goal is to find the common pieces of information via matching the same keywords (or key phrases), such as 'Nematodes', across the summary. For overlaps, annotators compare the keywords\u2019 (or key-phrases) occurrence frequency and ensure the summaries are on the same topic.",
         "scale": "1-10",
-        "instruction": "!function_call:{\"call\": \"set_metric_instruction\", \"arguments\": {\"steps\": [{\"step\": {\"step_id\": \"1\", \"description\": \"Identify the main topic of the news article by examining the key phrases and keywords.\"}}, {\"step\": {\"step_id\": \"2\", \"description\": \"Compare the key phrases and keywords in the summary to those in the original article.\"}}, {\"step\": {\"step_id\": \"3\", \"description\": \"Evaluate the frequency of occurrence of these key phrases and keywords in the summary.\"}}, {\"step\": {\"step_id\": \"4\", \"description\": \"Assess how much of the main information from the article is covered in the summary.\"}}, {\"step\": {\"step_id\": \"5\", \"description\": \"Rate the summary on a scale of 1-10 based on the amount of information covered and the overlap of key phrases and keywords.\"}]}]}}"
+        "instruction": "1. Read the original news article to understand the key points and main message.\n2. Identify the key phrases and keywords in the original article that are crucial to the summary's informativeness.\n3. Read each contestant's summary and identify the key phrases and keywords used.\n4. Compare the key phrases and keywords in the contestant's summary to those in the original article.\n5. Evaluate the frequency of occurrence of these key phrases and keywords in the contestant's summary compared to the original article.\n6. Assess how well the summary focuses on the main topic and key points of the original article.\n7. Rate the summary on a scale of 1 to 10 based on the amount of relevant information it covers, the overlap of key phrases and keywords, and its focus on the main topic."
     },
     {
         "name": "Overall Quality",
         "description": "Given your answers above, what is your overall impression of the quality of this summary?",
         "scale": "1-10",
-        "instruction": "Could you please provide the structured steps for the evaluation process? For example, the specific steps you want me to follow to evaluate the summaries according to the \"Overall Quality\" metric. This will help ensure that the evaluation is consistent and aligned with your expectations."
+        "instruction": "1. Read the provided summary carefully.\n2. Consider the overall impression of the quality of the summary based on clarity, coherence, relevance, and conciseness.\n3. Rate the summary on a scale of 1 to 10, where 1 is very poor and 10 is excellent."
     }
 ]

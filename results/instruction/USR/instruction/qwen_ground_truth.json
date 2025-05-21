@@ -3,31 +3,31 @@
         "name": "Understandable",
         "description": "Is the response understandable given the previous context?",
         "scale": "0-1",
-        "instruction": "1-Read and understand the conversation and the provided interesting fact.\n2-Evaluate the given response based on the metric 'Understandable'.\n3-Provide a score between 0 and 1 for the response.\n"
+        "instruction": "1. Read the conversation between the two individuals.\n2. Read the potential response for the next turn in the conversation.\n3. Identify the interesting fact provided.\n4. Evaluate whether the response is understandable given the previous context on a scale of 0-1.\n5. Provide the score and a brief justification for the rating."
     },
     {
         "name": "Natural",
         "description": "Does the response seem to be something that a person would naturally say?",
         "scale": "1-3",
-        "instruction": "1-Read and understand the conversation and the potential response.\n2-Identify the interesting fact mentioned in the potential response.\n3-Evaluate the potential response based on the 'Natural' metric, considering whether it sounds like something a person would naturally say in the context of the conversation.\n4-Provide a score of 1, 2, or 3 for the 'Natural' metric.\n"
+        "instruction": "1. Read the conversation and the potential response.\n2. Consider the interesting fact provided.\n3. Evaluate if the response sounds natural, as if a real person would say it in the given context.\n4. Rate the response on a scale of 1-3, where 1 is not natural and 3 is very natural."
     },
     {
         "name": "Maintains Context",
         "description": "Does the response serve as a valid continuation of the preceding conversation?",
         "scale": "1-3",
-        "instruction": null
+        "instruction": "1. Read the conversation between the two individuals carefully.\n2. Understand the context and the flow of the conversation.\n3. Read the provided response for the next turn in the conversation.\n4. Evaluate if the provided response serves as a valid continuation of the conversation based on the context and flow.\n5. Rate the response on a scale of 1 to 3, where 1 is 'Does not maintain context' and 3 is 'Maintains context very well'."
     },
     {
         "name": "Interesting",
         "description": "Is the response dull or interesting?",
         "scale": "1-3",
-        "instruction": null
+        "instruction": "1. Read the conversation and the potential response carefully.\n2. Identify the interesting fact provided in the response.\n3. Evaluate if the interesting fact adds value to the conversation and if it is engaging.\n4. Rate the response on a scale of 1-3 based on how interesting it is, where 1 is dull and 3 is very interesting."
     },
     {
         "name": "Uses Knowledge",
         "description": "Given the fact that the response is conditioned on, how well does the response use that fact?",
         "scale": "0-1",
-        "instruction": "1-Read the conversation and the potential response.\n2-Identify the interesting fact provided with the response.\n3-Evaluate how well the response uses the interesting fact in the context of the conversation.\n4-Rate the response on a scale of 0-1 for the 'Uses Knowledge' metric.\n"
+        "instruction": "1. Read the conversation and the provided response.\n2. Identify the interesting fact that the response is conditioned on.\n3. Evaluate how well the response uses the provided fact, considering if the fact is accurately represented, relevant, and enhances the conversation.\n4. Rate the response on a scale of 0 to 1 based on how effectively it uses the fact."
     },
     {
         "name": "Overall Quality",

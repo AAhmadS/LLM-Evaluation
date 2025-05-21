@@ -246,31 +246,23 @@ def define_metrics(metrics: List[str]) -> List[Metric]:
         metric_list.append(Metric(**metric_json["metric"]))
     return metric_list  
 
-def set_metric_instruction(steps: List[dict]) -> str:
+def set_metric_instruction(steps: dict) -> str:
     """
-    Recieves a string of steps in the following structure:
-    [
-        {
-            "step": {
-                "step_id": "<step number>",
-                "description": "<description of the step>"
-            }
-        }
-    ]
+    Receives a dictionary with a "steps" key, where the value is a list of step descriptions.
+    The expected structure is:
+    {
+        "steps": [
+            "<step 1 description>",
+            "<step 2 description>",
+            ...
+        ]
+    }
 
-    and returns the suitable format for the metric.
-    Args:
-        steps: The structured ordered steps.
     Returns:
-        A string of steps in the suitable format for the metric.
+        A step-by-step instruction in string format, each step on a new line.
     """
-    steps_str = ""
-    for step in steps:
-        step = step["step"]
-        step_id = step["step_id"]
-        description = step["description"]
-        steps_str += f"{str(step_id)}-{description}\n"
-    return steps_str   # A real function should probably actually get the wind speed!
+    steps = steps.get("steps", [])
+    return "\n".join(f"{idx + 1}. {desc}" for idx, desc in enumerate(steps))
 
 def get_metric_score(evaluation: str) -> dict:
     """

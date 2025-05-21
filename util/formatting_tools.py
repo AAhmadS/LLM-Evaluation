@@ -151,40 +151,25 @@ def vicuna_instruction_parser(api_response: str):
   
 def llama_instruction_parser(api_response):
   try:
-    function_call = api_response.choices[0].message.content
-    function_call = function_call[function_call.index('{'):function_call.rindex('}')+1]
-    if type(function_call) == str:      
-      function_call = json.loads(function_call)
-    steps = function_call["steps"]
-    if type(steps) == str:
-      steps = json.loads(steps)
-    steps = set_metric_instruction(steps)
+    function_call = api_response.choices[0].message.tool_calls[0].function.arguments
+    arguments = json.loads(function_call)
+    steps = set_metric_instruction(arguments)
     return steps
-  except:
+  except Exception as e:
       print("in exception")
-      instructions = api_response.choices[0].message.content
-      return instructions
+      print(api_response)
+      raise e
 
 def qwen_instruction_parser(api_response):
   try:
-    function_call = api_response.choices[0].message.content[15:]
-    if type(function_call) == str:
-      if "required" in function_call:
-        function_call = function_call[:function_call.rindex(',')] + function_call[function_call.rindex(']')+1:]      
-      try:
-        function_call = json.loads(function_call)
-      except:
-        function_call = json.loads(modify_qwen_string(function_call))
-    arguments = function_call["arguments"]
-    if type(arguments) == str:
-      arguments = json.loads(arguments)
-    steps = arguments["steps"]
-    steps = set_metric_instruction(steps)
+    function_call = api_response.choices[0].message.tool_calls[0].function.arguments
+    arguments = json.loads(function_call)
+    steps = set_metric_instruction(arguments)
     return steps
-  except:
+  except Exception as e:
       print("in exception")
-      instructions = api_response.choices[0].message.content
-      return instructions
+      print(api_response)
+      raise e
 
 def gen_instruction_parser(api_response: str):
   instructions = api_response
